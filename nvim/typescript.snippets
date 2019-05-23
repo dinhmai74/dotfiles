@@ -1,0 +1,51 @@
+snippet cmstp "const map state to props"
+const mapStateToProps=state=>state;
+endsnippet
+
+snippet mstp "map state to props"
+const mapStateToProps=(state)=>{
+	return {
+		$1: $2
+	}
+}
+endsnippet
+
+snippet impd "import default file"
+import ${2: $1 } from '${1}'
+endsnippet
+
+snippet dimp "Destructuring import"
+import {
+	$2
+} from '$1'
+endsnippet
+
+snippet (console|log|cl) "console.log"
+console.log('${2:$1: }', ${1});
+endsnippet
+
+
+snippet style " create styel file"
+import { StyleSheet } from 'react-native'
+
+export default StyleSheet.create({
+	container:{}
+})
+endsnippet
+
+snippet ims "import styled-components"
+import styled from 'styled-components'
+endsnippet
+
+snippet dop " destructoring props"
+const { $1 } = this.props;
+endsnippet
+
+
+snippet dos " destructoring states"
+const { $1 } = this.state;
+endsnippet
+
+snippet dob " destructoring states"
+const { $2 } = $1 ;
+endsnippet
