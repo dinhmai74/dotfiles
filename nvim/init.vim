@@ -93,6 +93,10 @@ Plug 'strml/jsxhint'
 Plug 'epilande/vim-es2015-snippets'
 Plug 'epilande/vim-react-snippets'
 
+" flutter
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
+
 
 call plug#end()
 
@@ -184,7 +188,7 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " filenames like *.xml, *.xhtml, ...
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*jsx,*.ts'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*jsx,*.ts,*.tsx'
 let g:closetag_emptyTags_caseSensitive = 1
 let g:vcoolor_map = '<C-c>'
 "#FFAABBQuick fold
@@ -222,13 +226,14 @@ let g:syntastic_javascript_eslint_exe = 'npm run lint --'
   \       'eslint',
   \       'prettier',
   \   ],
+  \   'typescript': ['tslint']
   \}
 
    let g:ale_linters = {
 \   'javascript': ['eslint','flow'],
+\   'typescript': ['tslint']
 \}
 
-let g:ale_fix_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_set_highlights = 0
@@ -256,4 +261,14 @@ let g:ale_sign_warning = '⚠'
 hi ALEWarningSign guifg=#F2C38
 
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:hot_reload_on_save=1
 
+
+" Some of these key choices were arbitrary;
+" it's just an example.
+nnoremap <leader>fa :FlutterRun<cr>
+nnoremap <leader>fq :FlutterQuit<cr>
+nnoremap <leader>fr :FlutterHotReload<cr>
+nnoremap <leader>fR :FlutterHotRestart<cr>
+nnoremap <leader>fD :FlutterVisualDebug<cr>
+autocmd FileType dart :call FlutterMenu()
