@@ -14,8 +14,8 @@ module.exports = {
       defaultBrowser: false
     },
     opacity: {
-      focus: 0.875,
-      blur: 0.4
+      focus: 0.95,
+      blur: 0.9
     },
 
     // default font size in pixels for all tabs
@@ -23,7 +23,7 @@ module.exports = {
 
     // font family with optional fallbacks
     fontFamily:
-      '"Hasklug Nerd Font",Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      '"FiraCode Nerd Font",Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "340",
@@ -114,7 +114,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: "",
+    shell: "zsh",
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
@@ -159,11 +159,14 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     // "hyper-nord",
+    "hyper-electron-highlighter",
     // "hyper-ayu",
-    "hyper-one-dark-vivid",
+    // "hyperocean",
+    // "hyper-one-dark-vivid",
     // "hyper-chesterish",
+    // "hyper-snazzy",
     "hyper-opacity",
-    "hyperpower",
+    // "hyperpower",
     "hyperterm-summon",
     "hyper-alt-click",
     "hyperterm-tabs",
@@ -178,7 +181,6 @@ module.exports = {
     "hyper-blink",
     "hyperterm-cursor",
     "hyperterm-crosshair",
-    "hyperminimal",
     "hyperlinks"
   ],
 
