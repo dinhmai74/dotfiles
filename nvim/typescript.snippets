@@ -71,10 +71,10 @@ endsnippet
 snippet rnce "create react native full component snip"
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
-import {  } from './$1.presets.tsx'
+import { I$1, I$1State } from './$1.presets.tsx'
 import {  } from './$1.props.tsx'
 
-export class ${1:`!v expand('%:t:r')`} extends Component {
+export class ${1:`!v expand('%:t:r')`} extends Component <I$1,I$1State>{
 	render() {
 		return (
 			<${3:View}>
@@ -86,3 +86,10 @@ export class ${1:`!v expand('%:t:r')`} extends Component {
 
 export default $1;
 endsnippet
+
+snippet int "interface"
+export interface $1 {
+	$1
+}
+endsnippet
+
