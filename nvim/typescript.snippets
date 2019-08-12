@@ -49,3 +49,32 @@ endsnippet
 snippet dob " destructoring states"
 const { $2 } = $1 ;
 endsnippet
+
+snippet exd "export * from"
+export * from './$1'
+endsnippet
+
+snippet dp "default props"
+static defaultProps={
+	$1
+}
+endsnippet
+
+snippet rnce "create react native full component snip"
+import React, { Component } from 'react'
+import { Text, View } from 'react-native'
+import {  } from './$1.presets.tsx'
+import {  } from './$1.props.tsx'
+
+export class ${1:`!v expand('%:t:r')`} extends Component {
+	render() {
+		return (
+			<${3:View}>
+				<Text>123 </Text>
+			</$3>
+		);
+	}
+}
+
+export default $1;
+endsnippet
