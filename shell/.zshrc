@@ -157,15 +157,18 @@ alias hpconfig='vi ~/.hyper.js'
 
 autoload -U compinit && compinit
 
+
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export ANDROID_SDK_HOME=$HOME/Library/Android/sdk
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH="$PATH":"$HOME/development/flutter/.pub-cache/bin"
 
-alias emu="cd $ANDROID_HOME && cd tools && emulator -avd Nexus5X"
+alias emu="cd $ANDROID_HOME && cd tools && emulator -avd Nexus_5X_API_29_x86"
+alias ea= "emulator -avd Nexus_5X_API_29_x86"
 alias ios="open -a Simulator"
 alias devmenu="adb shell input keyevent 82"
 alias fr="flutter run"
