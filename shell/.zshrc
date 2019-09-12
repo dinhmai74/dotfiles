@@ -74,9 +74,12 @@ alias getAddress='ipconfig getifaddr en0'
 alias hpconfig='vi ~/.hyper.js'
 
 # ignite
-alias ig="ignite generate"
+alias ig="ignite"
+alias igg="ignite generate"
 alias igs="ignite generate screen"
 alias igc="ignite generate component"
+alias igm="ignite generate model"
+
 
 autoload -U compinit && compinit
 
