@@ -10,11 +10,11 @@ const mapStateToProps=(state)=>{
 }
 endsnippet
 
-snippet impd "import default file"
+snippet imp "import default file"
 import ${2: $1 } from '${1}'
 endsnippet
 
-snippet dimp "Destructuring import"
+snippet impd "Destructuring import"
 import {
 	$2
 } from '$1'
@@ -93,3 +93,70 @@ export interface $1 {
 }
 endsnippet
 
+snippet story "story book default story"
+import * as React from "react"
+import { storiesOf } from "@storybook/react-native"
+import { StoryScreen, Story, UseCase } from "../../../../../storybook/views"
+import TradingItem from "./TradingItem"
+
+declare var module
+
+storiesOf("Trading history card", module)
+  .addDecorator((fn) => <StoryScreen>{fn()}</StoryScreen>)
+  .add("normal item", () => (
+    <Story>
+      <UseCase text="default" usage="default">
+        <TradingItem />
+      </UseCase>
+    </Story>
+  ))
+
+endsnippet
+
+
+snippet rnf "create react native stateless"
+import React, { useState } from 'react'
+import { Text, View, StyleSheet } from 'react-native'
+
+export function ${1:`!v expand('%:t:r')`}({}){
+		return (
+			<${3:View}>
+				<Text>123 </Text>
+			</$3>
+		);
+}
+
+const styles= StyleSheet.create({
+	container:{}
+})
+
+export default $1;
+
+endsnippet
+
+snippet cstyles " const style"
+import { StyleSheet } from 'react-native'
+
+const styles= StyleSheet.create({
+	container:{}
+})
+
+endsnippet
+
+
+snippet dp " destructoring props"
+const { $1 } = this.props;
+endsnippet
+
+
+snippet ds " destructoring states"
+const { $1 } = this.state;
+endsnippet
+
+snippet dob " destructoring "
+const { $2 } = $1;
+endsnippet
+
+snippet cmt "cmt"
+/* ------------- $1 ------------- */
+endsnippet
