@@ -15,8 +15,10 @@ set autowrite     " Automatically :write before running commands
 set noshowmode
 set timeoutlen=1000
 set ttimeoutlen=0
+set tabstop=2
 set shiftwidth=2
 set shiftround
+set expandtab
 set inccommand=nosplit
 set scrolloff=3
 set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
@@ -44,7 +46,6 @@ Plug 'luochen1990/rainbow'
 "Better vim
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion' 
-Plug 'chun-yang/auto-pairs' "insert,or delete brackets,parents,quote in pairs
 Plug 'alvan/vim-closetag' "auto close tags
 Plug 'bling/vim-airline'
 Plug 'vim-syntastic/syntastic'
@@ -69,19 +70,6 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
 " Initialize plugin system
 call plug#end()
-
-let g:rainbow_active = 1
-
-let g:rainbow_load_separately = [
-    \ [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.tex' , [['(', ')'], ['\[', '\]']] ],
-    \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
-    \ ]
-
-let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
-let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
-
 
 inoremap jk <ESC>
 nmap <C-m> :NERDTreeToggle<CR>
@@ -150,6 +138,7 @@ function! SyncTree()
 endfunction
 
 " Highlight currently open buffer in NERDTree
+autocmd BufEnter * call SyncTree()
 
 " coc config
 let g:coc_global_extensions = [
