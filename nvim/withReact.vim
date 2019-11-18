@@ -1,4 +1,4 @@
-"pecify a directory for plugins
+" Specify a directory for plugins
 set notermguicolors
 set shell=zsh " Set bash as the prompt for Vim
 set backspace=2   " Backspace deletes like most programs in insert mode
@@ -15,18 +15,20 @@ set autowrite     " Automatically :write before running commands
 set noshowmode
 set timeoutlen=1000
 set ttimeoutlen=0
-set tabstop=2
 set shiftwidth=2
 set shiftround
-set expandtab
 set inccommand=nosplit
 set scrolloff=3
 set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
 set hidden
 set inccommand=nosplit
-call plug#begin('~/.vim/plugged')
+filetype off            " required
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#begin('~/.vim/plugged')
+" solid sytanc
+Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'  "beauty line
+Plug 'tmhedberg/SimpylFold' "fold code
 
 " jsx highlight"
 Plug 'maxmellon/vim-jsx-pretty'
@@ -35,7 +37,19 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'jiangmiao/auto-pairs'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'luochen1990/rainbow'
 
+"Better vim
+Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion' 
+Plug 'chun-yang/auto-pairs' "insert,or delete brackets,parents,quote in pairs
+Plug 'alvan/vim-closetag' "auto close tags
+Plug 'bling/vim-airline'
+Plug 'vim-syntastic/syntastic'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 "Plug 'tsony-tsonev/nerdtree-git-plugin'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -52,13 +66,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
-"Better vim
-Plug 'tpope/vim-surround'
-Plug 'easymotion/vim-easymotion' 
-Plug 'chun-yang/auto-pairs' "insert,or delete brackets,parents,quote in pairs
-Plug 'alvan/vim-closetag' "auto close tags
-Plug 'bling/vim-airline'
-Plug 'vim-syntastic/syntastic'
+
 " Initialize plugin system
 call plug#end()
 
@@ -82,9 +90,9 @@ nmap <C-m> :NERDTreeToggle<CR>
 
 " open NERDTree automatically
 "autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree
+"autocmd VimEnter * NERDTree
 
-let g:NERDTreeGitStatusWithFlags = 1
+"let g:NERDTreeGitStatusWithFlags = 1
 "let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 "let g:NERDTreeGitStatusNodeColorization = 1
 "let g:NERDTreeColorMapCustom = {
@@ -126,7 +134,6 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
-
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
 function! IsNERDTreeOpen()        
@@ -143,7 +150,6 @@ function! SyncTree()
 endfunction
 
 " Highlight currently open buffer in NERDTree
-autocmd BufEnter * call SyncTree()
 
 " coc config
 let g:coc_global_extensions = [
@@ -287,3 +293,36 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips', 'UltiSnips']
+
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.tsx'
+set autochdir
+map <C-o> :NERDTreeToggle %<CR>
+
+"set path to relative
+:autocmd InsertEnter * let save_cwd = getcwd() | set autochdir
+:autocmd InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
+
+" easymotion
+map <Leader> <Plug>(easymotion-prefix)
+" <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+" s{char}{char} to move to {char}{char}
+"
+nmap s <Plug>(easymotion-overwin-f2)
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+map  N <Plug>(easymotion-prev)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+set autoread
+
+
+"Quick fold
+set foldmethod=indent
+set foldlevel=99
