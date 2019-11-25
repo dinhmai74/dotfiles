@@ -40,7 +40,6 @@ Plug 'mxw/vim-jsx'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'luochen1990/rainbow'
 
 "Better vim
@@ -138,7 +137,7 @@ function! SyncTree()
 endfunction
 
 " Highlight currently open buffer in NERDTree
-autocmd BufEnter * call SyncTree()
+ autocmd BufEnter * call SyncTree()
 
 " coc config
 let g:coc_global_extensions = [
@@ -315,3 +314,5 @@ set autoread
 "Quick fold
 set foldmethod=indent
 set foldlevel=99
+set guifont=Fira\ Code-Light:h16
+
