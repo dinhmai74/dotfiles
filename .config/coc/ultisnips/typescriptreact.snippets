@@ -1,0 +1,214 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+snippet cmstp "const map state to props"
+const mapStateToProps=state=>state;
+endsnippet
+
+snippet mstp "map state to props"
+const mapStateToProps=(state)=>{
+	return {
+		$1: $2
+	}
+}
+endsnippet
+
+snippet imp "import default file"
+import ${2: $1 } from '${1}'
+endsnippet
+
+snippet impd "Destructuring import"
+import {
+	$2
+} from '$1'
+endsnippet
+
+snippet (console|log|cl) "console.log"
+console.log('${2:$1: }', ${1});
+endsnippet
+
+
+snippet style " create styel file"
+import { StyleSheet } from 'react-native'
+
+export default StyleSheet.create({
+	container:{}
+})
+endsnippet
+
+snippet ims "import styled-components"
+import styled from 'styled-components'
+endsnippet
+
+snippet dop " destructoring props"
+const { $1 } = this.props;
+endsnippet
+
+
+snippet dos " destructoring states"
+const { $1 } = this.state;
+endsnippet
+
+snippet dob " destructoring states"
+const { $2 } = $1 ;
+endsnippet
+
+snippet exd "export * from"
+export * from './$1'
+endsnippet
+
+snippet dp "default props"
+static defaultProps={
+	$1
+}
+endsnippet
+
+snippet tls "tron log string"
+console.tron.log('$1')
+endsnippet
+
+snippet tl "tron log"
+console.tron.log('$1', $1)
+endsnippet
+
+snippet rnce "create react native full component snip"
+import React, { Component } from 'react'
+import { Text, View } from 'react-native'
+import { I$1, I$1State } from './$1.presets.tsx'
+import {  } from './$1.props.tsx'
+
+export class ${1:`!v expand('%:t:r')`} extends Component <I$1,I$1State>{
+	render() {
+		return (
+			<${3:View}>
+				<Text>123 </Text>
+			</$3>
+		);
+	}
+}
+
+export default $1;
+endsnippet
+
+snippet int "interface"
+export interface $1 {
+	$1
+}
+endsnippet
+
+snippet story "story book default story"
+import * as React from "react"
+import { storiesOf } from "@storybook/react-native"
+import { StoryScreen, Story, UseCase } from "../../../../../storybook/views"
+import TradingItem from "./TradingItem"
+
+declare var module
+
+storiesOf("Trading history card", module)
+  .addDecorator((fn) => <StoryScreen>{fn()}</StoryScreen>)
+  .add("normal item", () => (
+    <Story>
+      <UseCase text="default" usage="default">
+        <TradingItem />
+      </UseCase>
+    </Story>
+  ))
+
+endsnippet
+
+
+snippet rnf "create react native stateless"
+import React, { useState } from 'react'
+import { Text, View, StyleSheet } from 'react-native'
+
+export function ${1:`!v expand('%:t:r')`}({}){
+		return (
+			<${3:View}>
+				<Text>123 </Text>
+			</$3>
+		);
+}
+
+const styles= StyleSheet.create({
+	container:{}
+})
+
+export default $1;
+
+endsnippet
+
+snippet cstyles " const style"
+import { StyleSheet } from 'react-native'
+
+const styles= StyleSheet.create({
+	container:{}
+})
+
+endsnippet
+
+
+snippet dp " destructoring props"
+const { $1 } = props;
+endsnippet
+
+
+snippet ds " destructoring states"
+const { $1 } = state;
+endsnippet
+
+snippet dob " destructoring "
+const { $2 } = $1;
+endsnippet
+
+snippet cmt "cmt"
+/* ------------- $1 ------------- */
+endsnippet
+
+snippet clc "tronlog"
+console.tron.log(" $1 ", $1)
+endsnippet
+
+snippet rdf "render formik form" 
+render$1 = ({} : FormikProps<FormValues>) => {}
+endsnippet
+
+snippet styled "styled component" 
+const Styled$1= styled($2)`$3`
+endsnippet
+
+snippet exp "export * from" 
+export * from './$1'
+endsnippet
+
+snippet exp "export * from" 
+export * from "./$1"
+endsnippet
+
+snippet styles "styles" 
+const styles= StyleSheet.create({
+	$1
+})
+endsnippet
+

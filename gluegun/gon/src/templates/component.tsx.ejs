@@ -1,0 +1,17 @@
+import * as React from "react"
+import { View, ViewStyle } from "react-native"
+import { Text } from "../"
+
+export interface <%= props.pascalName %>Props {
+  style?: ViewStyle
+}
+
+export function <%= props.pascalName %>(props: <%= props.pascalName %>Props) {
+  // grab the props
+  const { style, ...rest } = props
+
+  return (
+    <View style={style} {...rest}>
+    </View>
+  )
+}

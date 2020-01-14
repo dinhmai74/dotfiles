@@ -44,7 +44,7 @@ module.exports = {
     const props = { name: screenName, pascalName, camelName }
 
     await generate({
-      template: `screen.ts.ejs`,
+      template: `screen.tsx.ejs`,
       target: `app/screens/${screenName}.tsx`,
       props: props
     })
