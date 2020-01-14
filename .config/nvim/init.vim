@@ -1,103 +1,53 @@
 " Specify a directory for plugins
-set notermguicolors
-set shell=zsh " Set bash as the prompt for Vim
-set backspace=2   " Backspace deletes like most programs in insert mode
-set nobackup
-set number
-set numberwidth=5
-set nowritebackup
-set noswapfile    " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
-set history=50
-set ruler         " show the cursor position all the tim
-set showcmd       " display incomplete commands
-set laststatus=2  " Always display the status line
-set autowrite     " Automatically :write before running commands
-set noshowmode
-set timeoutlen=1000
-set ttimeoutlen=0
-set tabstop=2
-set shiftwidth=2
-set shiftround
-set expandtab
-set inccommand=nosplit
-set scrolloff=3
-set hidden
-set inccommand=nosplit
-filetype off            " required
-
 call plug#begin('~/.vim/plugged')
-" solid sytanc
-Plug 'lilydjwg/colorizer'
-Plug 'sheerun/vim-polyglot'
-Plug 'itchyny/lightline.vim'  "beauty line
-Plug 'tmhedberg/SimpylFold' "fold code
-Plug 'KabbAmine/vCoolor.vim'
-
-"css
-Plug 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'mattn/emmet-vim'
-
-
-" jsx highlight"
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'frazrepo/vim-rainbow'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'jiangmiao/auto-pairs'
-Plug 'luochen1990/rainbow'
-Plug 'shmargum/vim-sass-colors'
-Plug 'lilydjwg/colorizer'
-
-
-"Better vim
-Plug 'tpope/vim-surround'
-Plug 'easymotion/vim-easymotion' 
-Plug 'alvan/vim-closetag' "auto close tags
-Plug 'bling/vim-airline'
-Plug 'vim-syntastic/syntastic'
-"react
-"" React code snippets
-Plug 'epilande/vim-react-snippets'
-Plug 'epilande/vim-es2015-snippets'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
+"Plug 'tsony-tsonev/nerdtree-git-plugin'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
-Plug 'terryma/vim-multiple-cursors'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'morhetz/gruvbox'
-Plug 'joshdick/onedark.vim'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+
+Plug 'lilydjwg/colorizer' "colorize all text 
+Plug 'sheerun/vim-polyglot'
+Plug 'tmhedberg/SimpylFold' "fold code
+Plug 'KabbAmine/vCoolor.vim'
+Plug 'mattn/emmet-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'frazrepo/vim-rainbow'
+Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion' 
+Plug 'alvan/vim-closetag' "auto close tags
+
+
 
 " Initialize plugin system
 call plug#end()
 
 inoremap jk <ESC>
 nmap <C-m> :NERDTreeToggle<CR>
-"vmap ++ <plug>NERDCommenterToggle
-"nmap ++ <plug>NERDCommenterToggle
+vmap ++ <plug>NERDCommenterToggle
+nmap ++ <plug>NERDCommenterToggle
 
 " open NERDTree automatically
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * NERDTree
 
-"let g:NERDTreeGitStatusWithFlags = 1
+let g:NERDTreeGitStatusWithFlags = 1
 "let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 "let g:NERDTreeGitStatusNodeColorization = 1
 "let g:NERDTreeColorMapCustom = {
-    "\ "Staged"   : "#0ee375",  
+    "\ "Staged"    : "#0ee375",  
     "\ "Modified"  : "#d9bf91",  
     "\ "Renamed"   : "#51C9FC",  
     "\ "Untracked" : "#FCE77C",  
@@ -127,31 +77,34 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
+set relativenumber
 
-"set smarttab
-"set cindent
-"set tabstop=2
-"set shiftwidth=2
+set smarttab
+set cindent
+set tabstop=2
+set shiftwidth=2
 " always uses spaces instead of tab characters
-"set expandtab
+set expandtab
+
+colorscheme gruvbox
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
-"function! IsNERDTreeOpen()        
-"  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-"endfunction
-"
-"" Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
-"" file, and we're not in vimdiff
-"function! SyncTree()
-"  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
-"    NERDTreeFind
-"    wincmd p
-"  endif
-"endfunction
+function! IsNERDTreeOpen()        
+  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+endfunction
+
+" Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
+" file, and we're not in vimdiff
+function! SyncTree()
+  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+    NERDTreeFind
+    wincmd p
+  endif
+endfunction
 
 " Highlight currently open buffer in NERDTree
-" autocmd BufEnter * call SyncTree()
+autocmd BufEnter * call SyncTree()
 
 " coc config
 let g:coc_global_extensions = [
@@ -281,15 +234,23 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
-nnoremap <silent> <space>p  :<C-u>CocListResume<CR> 
+nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+
+" custom setting
 nmap ev :tabedit $MYVIMRC<CR>
-"colorscheme gruvbox
 
-let g:lightline = {
-  \ 'colorscheme': 'onedark',
-  \ }
-colorscheme onedark
+set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
+
+"Quick fold
+set foldmethod=indent
+set foldlevel=99
+set guifont=Fira\ Code-Light:h1
+
+set ruler         " show the cursor position all the tim
+set showcmd       " display incomplete commands
+
+"colorscheme onedark
 let g:jsx_ext_required = 1
 let g:jsx_pragma_required = 1
 
@@ -301,12 +262,6 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips', 'UltiSnips']
 
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.tsx, *ts'
-set autochdir
-map <C-o> :NERDTreeToggle %<CR>
-
-"set path to relative
-:autocmd InsertEnter * let save_cwd = getcwd() | set autochdir
-:autocmd InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
 
 " easymotion
 map <Leader> <Plug>(easymotion-prefix)
@@ -326,106 +281,3 @@ map  N <Plug>(easymotion-prev)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
-set autoread
-
-
-"Quick fold
-set foldmethod=indent
-set foldlevel=99
-set guifont=Fira\ Code-Light:h16
-
-if has("termguicolors")     " set true colors
-    set t_8f=\[[38;2;%lu;%lu;%lum
-    set t_8b=\[[48;2;%lu;%lu;%lum
-    set termguicolors
-endif
-
-:highlight Pmenu ctermbg=gray guibg=gray
-
-
- map <leader>r :NERDTreeFind<cr>
-
-"autocmd BufEnter * silent! if bufname('%') !~# 'NERD_tree_' | cd %:p:h | NERDTreeCWD | wincmd p | endif
-
-
-"autocmd InsertEnter * let save_cwd = getcwd() | set autochdir
-"autocmd InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
-
-function! NERDTreeToggleInCurDir()                                                                                                                                                             
-   " If NERDTree is open in the current buffer
-   if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
-      exe ":NERDTreeClose"
-   else
-      if (expand("%:t") != '')
-         exe ":NERDTreeFind"
-      else
-         exe ":NERDTreeToggle"
-      endif
-   endif
-endfunction
-
-" j/k will move virtual lines (lines that wrap)
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-" number key
-set relativenumber
-hi MatchParen cterm=none ctermbg=green ctermfg=blue
-
-" transprent bg
-hi Normal guibg=NONE ctermbg=NONE
-hi CocErrorSign  ctermfg=gray guifg=#ffcccc
-"let g:user_emmet_expandabbr_key='<C-i>'
-"imap <expr> <tab> emmet#expandAbbrIntelligent("\<C-i>")
-set spelllang=en
-
-autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
-
-
-"css
-function! KeywordsAll()
-    setl iskeyword=@,48-57,192-255,\@,\$,%,-,_
-endfunc
-
-function! KeywordsBasic()
-    setl iskeyword=@,48-57,192-255
-endfunc
-
-" improve the 'search word under cursor' behavior
-nnoremap * :silent call KeywordsAll() * :silent call KeywordsBasic()
-nnoremap # :silent call KeywordsAll() # :silent call KeywordsBasic()
-
-augroup is_keyword
-  " clear commands before resetting
-  autocmd!
-  " make sure `complete` works as expected for CSS class names whithout
-  " messing with motions (eg. '.foo-bar__baz') and we make sure all
-  " delimiters (_,-,$,%,.) are treated as word separators outside insert mode
-  autocmd InsertEnter,BufLeave * :call KeywordsAll()
-  autocmd InsertLeave,BufEnter * :call KeywordsBasic()
-  " yes, we need to duplicate it on VimEnter for some weird reason
-  autocmd VimEnter * nnoremap * :silent call KeywordsAll() * :silent call KeywordsBasic()
-  autocmd VimEnter * nnoremap # :silent call KeywordsAll() # :silent call KeywordsBasic()
-augroup END
-
-
-let g:vcoolor_map = '<C-c>'
-
-set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
-let t:is_transparent = 0
-function! Toggle_transparent()
-    if t:is_transparent == 0
-        hi Normal guibg=NONE ctermbg=NONE
-        let t:is_transparent = 1
-    else
-        """set background=dark
-        hi Normal guibg=NONE ctermbg=NONE
-        let t:is_tranparent = 0
-    endif
-endfunction
-
-nnoremap <C-t> : call Toggle_transparent()<CR>
-
-" Use <TAB> for select selections ranges, needs server support, like: coc-tsserver, coc-python
-nmap <silent> <TAB> <Plug>(coc-range-select)
-xmap <silent> <TAB> <Plug>(coc-range-select)
-
