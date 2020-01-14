@@ -5,12 +5,25 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Fuit%2Fe_wallet%2Fapp%2Fscreens%2Fbuy-train-ticket-screen%2Fcomponents": [
       "error"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo": [
+      "fix"
     ]
   },
   "symbols": {
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo%2Fapp%2Futils%2Frun-spring": [
       "runSpring",
       "run-spring"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo": [
+      "123",
+      "console"
+    ]
+  },
+  "commands": {
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo": [
+      "edit",
+      "fix"
     ]
   }
 }

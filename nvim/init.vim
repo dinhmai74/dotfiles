@@ -1,3 +1,6 @@
+set notermguicolors
+syntax on
+
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
@@ -8,6 +11,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'  "beauty line
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
@@ -28,7 +32,9 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion' 
 Plug 'alvan/vim-closetag' "auto close tags
-
+Plug 'joshdick/onedark.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'jiangmiao/auto-pairs'
 
 
 " Initialize plugin system
@@ -86,7 +92,6 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
-colorscheme gruvbox
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
@@ -251,17 +256,16 @@ set ruler         " show the cursor position all the tim
 set showcmd       " display incomplete commands
 
 "colorscheme onedark
+colorscheme gruvbox
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
+let g:airline_theme='onedark'
+
 let g:jsx_ext_required = 1
 let g:jsx_pragma_required = 1
 
-
-"ultisnips
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips', 'UltiSnips']
-
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.tsx, *ts'
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.tsx, *.ts, *.jsx'
 
 " easymotion
 map <Leader> <Plug>(easymotion-prefix)
@@ -281,3 +285,33 @@ map  N <Plug>(easymotion-prev)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
+
+" transprent bg
+"hi Normal guibg=NONE ctermbg=NONE
+"hi CocErrorSign  ctermfg=gray guifg=#ffcccc
+"let t:is_transparent = 0
+"function! Toggle_transparent()
+"    if t:is_transparent == 0
+"        hi Normal guibg=NONE ctermbg=NONE
+"        let t:is_transparent = 1
+"    else
+"        """set background=dark
+"        hi Normal guibg=NONE ctermbg=NONE
+"        let t:is_tranparent = 0
+"    endif
+"endfunction
+"nnoremap <C-t> : call Toggle_transparent()<CR>
+
+let g:rainbow_active = 1
+
+let g:multi_cursor_use_default_mapping=0
+
+" Default mapping
+let g:multi_cursor_start_word_key      = '<C-n>'
+let g:multi_cursor_select_all_word_key = '<C-l>'
+let g:multi_cursor_start_key           = 'g<C-n>'
+let g:multi_cursor_select_all_key      = 'g<A-n>'
+let g:multi_cursor_next_key            = '<C-n>'
+let g:multi_cursor_prev_key            = '<C-p>'
+let g:multi_cursor_skip_key            = '<C-x>'
+let g:multi_cursor_quit_key            = '<Esc>'

@@ -1,0 +1,8 @@
+tsserver.organizeImports
+tsserver.executeAutofix
+snippets.editSnippets
+eslint.createConfig
+eslint.executeAutofix
+tsserver.goToProjectConfig
+tsserver.restart
+prettier.formatFile

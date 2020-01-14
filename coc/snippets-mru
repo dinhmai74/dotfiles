@@ -1,9 +1,17 @@
+tl
 dob
+cstyles
+for
+imp
+func
+function
 snippet
+dop
+dp
+log
 settimeout
 style
 impd
-imp
 s
 time
 modeline
@@ -15,13 +23,9 @@ fori
 rff
 class
 doh
-tl
-dop
 (console|log|cl|cls|ls)
-log
 (console|log|cl |cls)
 us.er
-dp
 (console|log|cl)
 clc
 us.s
@@ -52,4 +56,3 @@ dob"
 rdf
 error
 LGPL2
-cstyles

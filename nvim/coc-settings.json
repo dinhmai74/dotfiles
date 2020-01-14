@@ -1,12 +1,15 @@
 {
-  "suggest.noselect": false,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "json",
-    "javascriptreact",
-    "typescript.tsx",
-    "graphql"
-  ]
+"suggest.noselect": false,
+"coc.preferences.formatOnSaveFiletypes": [
+//"javascript",
+"scss",
+"css",
+"typescript",
+"typescriptreact",
+"json",
+//"javascriptreact",
+"typescript.tsx",
+"graphql"
+  ],
+  "eslint.enable": false
 }
