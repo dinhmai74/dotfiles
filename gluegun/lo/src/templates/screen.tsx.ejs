@@ -1,0 +1,26 @@
+import * as React from "react"
+import { observer } from "mobx-react-lite"
+import { ViewStyle, StyleSheet } from "react-native"
+import { Screen, Text, Header } from "../components"
+// import { useStores } from "../models/root-store"
+import { color } from "../theme"
+import { NavigationScreenProp } from "react-navigation"
+
+export interface <%= props.pascalName %>Props {
+  navigation: NavigationScreenProp<any,any>
+}
+
+export const <%= props.pascalName %>: React.FunctionComponent<<%= props.pascalName %>Props> = observer((props) => {
+  // const { someStore } = useStores()
+  return (
+    <Screen style={styles.container} preset="scroll">
+      <Header headerTx="<%= props.camelName %>.header" />
+    </Screen>
+  )
+})
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+})
