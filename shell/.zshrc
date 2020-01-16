@@ -43,15 +43,13 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='clear'
 POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='clear'
 POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='green'
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status)
 # POWERLEVEL9K_TIME_FORMAT="%D{%m/%d %H:%M:%S}"
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
 POWERLEVEL9K_STATUS_VERBOSE=false
 POWERLEVEL9K_HIDE_BRANCH_ICON=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-
-
 POWERLEVEL9K_NODE_VERSION_FOREGROUND="black"
 
 
@@ -90,6 +88,7 @@ zsh_wifi_signal(){
 #
 # Example aliases
 alias zshconfig="code ~/.zshrc"
+alias zshconfigv="vi ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias zshreset="source ~/.zshrc"
 alias yclean="rm -rf node_modules/ && yarn install"
@@ -118,12 +117,15 @@ alias rn5='react-native run-ios --simulator="iPhone 5s"'
 alias rn8='react-native run-ios --simulator="iPhone 8"'
 alias rn8s='react-native run-ios --simulator="iPhone 8s"'
 alias rnx='react-native run-ios --simulator="iPhone X"'
+alias rn11='react-native run-ios --simulator="iPhone 11"'
+alias alacf="vi ~/.config/alacritty/alacritty.yml"
 
 alias sd='sudo shutdown -h now'
 alias rs='sudo shutdown -r now'
 alias cf='caffeinate -i -t '
 alias cfi='caffeinate -i -t 9999999999'
 alias pj='cd ~/Workplace/Project'
+alias st='cd ~/Workplace/Project/swift'
 alias uit='cd ~/Workplace/Project/uit'
 alias nf='cd ~/Workplace/Project/nextfunc'
 alias getAddress='ipconfig getifaddr en0'
@@ -133,7 +135,11 @@ alias igg='ignite generate'
 alias igs='ignite generate screen'
 alias igc='ignite generate component'
 alias yip='y && cd ios && pod install && cd .. && rn'
-
+alias ev="code ~/.config/nvim/init.vim"
+alias vdir="code ~/.config/nvim"
+alias gss="gon screen "
+alias gsc="gon components "
+alias gsu="gon utils "
 
 autoload -U compinit && compinit
 
@@ -142,6 +148,7 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/emulator
+export TOOLCHAINS=swift
 
 alias emu="cd $ANDROID_HOME && cd tools && emulator -avd Nexus5X"
 alias devmenu="adb shell input keyevent 82"
@@ -154,3 +161,5 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 source $(dirname $(gem which colorls))/tab_complete.sh
 PATH=$PATH:$(ruby -e 'puts Gem.bindir')
 eval $(thefuck --alias)
+
+set -o vi

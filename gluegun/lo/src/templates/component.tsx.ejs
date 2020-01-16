@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 import { View, ViewStyle } from "react-native"
 import { Text } from "../"
 
@@ -6,7 +6,7 @@ export interface <%= props.pascalName %>Props {
   style?: ViewStyle
 }
 
-export function <%= props.pascalName %>(props: <%= props.pascalName %>Props) {
+export const <%= props.pascalName %> = (props: <%= props.pascalName %>Props) => {
   // grab the props
   const { style, ...rest } = props
 

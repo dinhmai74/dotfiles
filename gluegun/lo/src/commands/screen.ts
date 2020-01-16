@@ -45,14 +45,14 @@ module.exports = {
 
     await generate({
       template: `screen.tsx.ejs`,
-      target: `app/screens/${screenName}.tsx`,
+      target: `app/screens/${screenName}/${screenName}.tsx`,
       props: props
     })
 
     // make the templates
     // patch the barrel export file
     const barrelExportPath = `${process.cwd()}/app/screens/index.ts`
-    const exportToAdd = `export * from "./${screenName}"\n`
+    const exportToAdd = `export * from "./${screenName}/${screenName}"\n`
 
     if (!filesystem.exists(barrelExportPath)) {
       const msg =

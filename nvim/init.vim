@@ -18,12 +18,9 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'christoomey/vim-tmux-navigator'
 
-Plug 'morhetz/gruvbox'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
-
 Plug 'lilydjwg/colorizer' "colorize all text 
-Plug 'sheerun/vim-polyglot'
 Plug 'tmhedberg/SimpylFold' "fold code
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'mattn/emmet-vim'
@@ -32,9 +29,14 @@ Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion' 
 Plug 'alvan/vim-closetag' "auto close tags
-Plug 'joshdick/onedark.vim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'jiangmiao/auto-pairs'
+Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
+
+"colorscheme
+Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 
 
 " Initialize plugin system
@@ -90,7 +92,7 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 " always uses spaces instead of tab characters
-set expandtab
+"set expandtab
 
 
 " sync open file with NERDTree
@@ -134,9 +136,9 @@ set signcolumn=yes
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+			\ pumvisible() ? "\<C-n>" :
+			\ <SID>check_back_space() ? "\<TAB>" :
+			\ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
@@ -308,10 +310,11 @@ let g:multi_cursor_use_default_mapping=0
 
 " Default mapping
 let g:multi_cursor_start_word_key      = '<C-n>'
-let g:multi_cursor_select_all_word_key = '<C-l>'
+let g:multi_cursor_select_all_word_key = '<C-t>'
 let g:multi_cursor_start_key           = 'g<C-n>'
 let g:multi_cursor_select_all_key      = 'g<A-n>'
 let g:multi_cursor_next_key            = '<C-n>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
+let g:UltiSnipsExpandTrigger="<Enter>"

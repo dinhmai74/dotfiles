@@ -1,6 +1,11 @@
-import { GluegunToolbox } from "gluegun"
+import { GluegunToolbox } from 'gluegun'
 
-export const description = "Generates a component, supporting files, and a storybook test."
+export const description =
+  'Generates a component, supporting files, and a storybook test.'
+
+export const name = 'component'
+export const alias = 'c'
+
 export const run = async function(toolbox: GluegunToolbox) {
   // grab some features
   const {
@@ -10,7 +15,7 @@ export const run = async function(toolbox: GluegunToolbox) {
     strings,
     filesystem,
     patching
-  } = toolbox  
+  } = toolbox
   const { pascalCase, isBlank } = strings
 
   // validation
@@ -30,7 +35,6 @@ export const run = async function(toolbox: GluegunToolbox) {
     props: props
   })
 
-
   await generate({
     template: `component.story.tsx.ejs`,
     target: `app/components/${name}/${name}.story.tsx`,
@@ -42,8 +46,8 @@ export const run = async function(toolbox: GluegunToolbox) {
 
   if (!filesystem.exists(barrelExportPath)) {
     const msg =
-    `No '${barrelExportPath}' file found. Can't export component.` +
-    `Export your new component manually.`
+      `No '${barrelExportPath}' file found. Can't export component.` +
+      `Export your new component manually.`
     print.warning(msg)
     process.exit(1)
   }

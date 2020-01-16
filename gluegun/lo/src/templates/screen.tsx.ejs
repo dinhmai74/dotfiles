@@ -1,9 +1,9 @@
-import * as React from "react"
+import React from "react"
 import { observer } from "mobx-react-lite"
 import { ViewStyle, StyleSheet } from "react-native"
-import { Screen, Text, Header } from "../components"
-// import { useStores } from "../models/root-store"
-import { color } from "../theme"
+import { Screen, Text, Header, View } from "../../components"
+// import { useStores } from "../../models/root-store"
+import { color, spacing } from "../../theme"
 import { NavigationScreenProp } from "react-navigation"
 
 export interface <%= props.pascalName %>Props {
@@ -13,14 +13,17 @@ export interface <%= props.pascalName %>Props {
 export const <%= props.pascalName %>: React.FunctionComponent<<%= props.pascalName %>Props> = observer((props) => {
   // const { someStore } = useStores()
   return (
-    <Screen style={styles.container} preset="scroll">
-      <Header headerTx="<%= props.camelName %>.header" />
+    <Screen preset="scroll">
+      <Header headerTx="<%= props.camelName %>.header" leftIcon="back" />
+      <View style={styles.container} >
+      </View>
     </Screen>
   )
 })
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    paddingHorizontal: spacing[6]
   }
 })
