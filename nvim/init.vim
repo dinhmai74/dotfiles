@@ -87,7 +87,7 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 " always uses spaces instead of tab characters
-set expandtab
+"set expandtab
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
@@ -262,7 +262,7 @@ let g:airline_theme='onedark'
 "let g:jsx_pragma_required = 1
 
 
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.tsx, *.ts '
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.tsx, *.ts, *.jsx'
 
 " easymotion
 map <Leader> <Plug>(easymotion-prefix)
@@ -316,3 +316,6 @@ let g:UltiSnipsExpandTrigger="<Enter>"
 let g:user_emmet_expandabbr_key='<C-z>'
 "imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 "
+
+set notermguicolors
+syntax on
