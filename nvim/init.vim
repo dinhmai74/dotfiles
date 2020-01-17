@@ -1,6 +1,3 @@
-set notermguicolors
-syntax on
-
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
@@ -18,7 +15,6 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'christoomey/vim-tmux-navigator'
 
-
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'lilydjwg/colorizer' "colorize all text 
 Plug 'tmhedberg/SimpylFold' "fold code
@@ -31,7 +27,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'alvan/vim-closetag' "auto close tags
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 
 "colorscheme
@@ -43,7 +38,7 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 
 inoremap jk <ESC>
-nmap <C-m> :NERDTreeToggle<CR>
+nmap <C-c> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
@@ -92,8 +87,7 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 " always uses spaces instead of tab characters
-"set expandtab
-
+set expandtab
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
@@ -264,16 +258,17 @@ let g:lightline = {
   \ }
 let g:airline_theme='onedark'
 
-let g:jsx_ext_required = 1
-let g:jsx_pragma_required = 1
+"let g:jsx_ext_required = 1
+"let g:jsx_pragma_required = 1
 
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.tsx, *.ts, *.jsx'
+
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.tsx, *.ts '
 
 " easymotion
 map <Leader> <Plug>(easymotion-prefix)
 " <Leader>f{char} to move to {char}
-map  <Leader>f <Plug>(easymotion-bd-f)
-nmap <Leader>f <Plug>(easymotion-overwin-f)
+"map  <Leader>f <Plug>(easymotion-bd-f)
+"nmap <Leader>f <Plug>(easymotion-overwin-f)
 " s{char}{char} to move to {char}{char}
 "
 nmap s <Plug>(easymotion-overwin-f2)
@@ -318,3 +313,6 @@ let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 let g:UltiSnipsExpandTrigger="<Enter>"
+let g:user_emmet_expandabbr_key='<C-z>'
+"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+"

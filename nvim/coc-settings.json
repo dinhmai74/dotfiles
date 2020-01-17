@@ -7,9 +7,8 @@
 "typescript",
 "typescriptreact",
 "json",
-//"javascriptreact",
+"javascriptreact",
 "typescript.tsx",
 "graphql"
   ],
-  "eslint.enable": false
 }
