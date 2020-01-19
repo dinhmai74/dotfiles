@@ -108,16 +108,16 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias c="code-insiders ."
 alias cowf="Fortune | cowsay -f vader | lolcat"
 alias ns="npm start"
-alias rn='react-native run-ios'
-alias rna='react-native run-android'
-alias rn6='react-native run-ios --simulator="iPhone 6"'
-alias rn6s='react-native run-ios --simulator="iPhone 6s"'
-alias rne='react-native run-ios --simulator="iPhone'
-alias rn5='react-native run-ios --simulator="iPhone 5s"'
-alias rn8='react-native run-ios --simulator="iPhone 8"'
-alias rn8s='react-native run-ios --simulator="iPhone 8s"'
-alias rnx='react-native run-ios --simulator="iPhone X"'
-alias rn11='react-native run-ios --simulator="iPhone 11"'
+alias rn=       'npx react-native run-ios --simulator="iPhone 6"'
+alias rna=      'npx react-native run-android'
+alias rn6=      'npx react-native run-ios --simulator="iPhone 6"'
+alias rn6s=     'npx react-native run-ios --simulator="iPhone 6s"'
+alias rne=      'npx react-native run-ios --simulator="iPhone'
+alias rn5=      'npx react-native run-ios --simulator="iPhone 5s"'
+alias rn8=      'npx react-native run-ios --simulator="iPhone 8"'
+alias rn8s=     'npx react-native run-ios --simulator="iPhone 8s"'
+alias rnx=      'npx react-native run-ios --simulator="iPhone X"'
+alias rn11=     'npx react-native run-ios --simulator="iPhone 11"'
 alias alacf="vi ~/.config/alacritty/alacritty.yml"
 
 alias sd='sudo shutdown -h now'

@@ -33,7 +33,6 @@ Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 Plug 'joshdick/onedark.vim'
 Plug 'morhetz/gruvbox'
 
-
 " Initialize plugin system
 call plug#end()
 
@@ -251,12 +250,13 @@ set guifont=Fira\ Code-Light:h1
 set ruler         " show the cursor position all the tim
 set showcmd       " display incomplete commands
 
-"colorscheme onedark
-colorscheme gruvbox
+colorscheme onedark
+"colorscheme gruvbox
+"colorscheme nova
 let g:lightline = {
-  \ 'colorscheme': 'onedark',
+  \ 'colorscheme': 'nord',
   \ }
-let g:airline_theme='onedark'
+let g:airline_theme='nord'
 
 "let g:jsx_ext_required = 1
 "let g:jsx_pragma_required = 1
@@ -288,14 +288,14 @@ map  n <Plug>(easymotion-next)
 "hi CocErrorSign  ctermfg=gray guifg=#ffcccc
 "let t:is_transparent = 0
 "function! Toggle_transparent()
-"    if t:is_transparent == 0
-"        hi Normal guibg=NONE ctermbg=NONE
-"        let t:is_transparent = 1
-"    else
-"        """set background=dark
-"        hi Normal guibg=NONE ctermbg=NONE
-"        let t:is_tranparent = 0
-"    endif
+		"if t:is_transparent == 0
+				"hi Normal guibg=NONE ctermbg=NONE
+				"let t:is_transparent = 1
+		"else
+				""""set background=dark
+				"hi Normal guibg=NONE ctermbg=NONE
+				"let t:is_tranparent = 0
+		"endif
 "endfunction
 "nnoremap <C-t> : call Toggle_transparent()<CR>
 
@@ -317,5 +317,3 @@ let g:user_emmet_expandabbr_key='<C-z>'
 "imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 "
 
-set notermguicolors
-syntax on
