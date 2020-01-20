@@ -30,6 +30,12 @@ export const run = async function(toolbox: GluegunToolbox) {
     props: props
   })
 
+  await generate({
+    template: `ultis.index.ts.ejs`,
+    target: `app/utils/${name}/index.ts`,
+    props: props
+  })
+
   // patch the barrel export file
   const barrelExportPath = `${process.cwd()}/app/utils/index.ts`
   const exportToAdd = `export * from "./${name}/${name}"\n`
