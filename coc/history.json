@@ -7,7 +7,8 @@
       "error"
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo": [
-      "fix"
+      "fix",
+      "tslint"
     ]
   },
   "symbols": {
@@ -17,14 +18,14 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo": [
       "123",
-      "console"
+      "console",
+      "Home"
     ]
   },
   "commands": {
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo": [
       "edit",
       "editsni",
-      "fix",
       "org",
       "organ",
       "eslint ",
@@ -32,11 +33,21 @@
       "editS",
       "autofix",
       "eslin",
-      "eslint"
+      "eslint",
+      "es",
+      "ts",
+      "eslintau",
+      "tsorgan",
+      "fix"
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FWuwu": [
       "or",
       "eslint"
+    ]
+  },
+  "extensions": {
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo": [
+      "par"
     ]
   }
 }

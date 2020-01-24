@@ -8,7 +8,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
-Plug 'itchyny/lightline.vim'  "beauty line
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
@@ -20,18 +19,17 @@ Plug 'lilydjwg/colorizer' "colorize all text
 Plug 'tmhedberg/SimpylFold' "fold code
 Plug 'KabbAmine/vCoolor.vim'
 Plug 'mattn/emmet-vim'
-Plug 'maxmellon/vim-jsx-pretty'
 Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion' 
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'alvan/vim-closetag' "auto close tags
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
-Plug 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 
 "colorscheme
 Plug 'joshdick/onedark.vim'
-Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 
 " Initialize plugin system
 call plug#end()
@@ -88,6 +86,11 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 "set expandtab
 
+"colorscheme gruvbox
+colorscheme onedark
+"
+"colorscheme nord
+
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
 function! IsNERDTreeOpen()        
@@ -109,11 +112,15 @@ autocmd BufEnter * call SyncTree()
 " coc config
 let g:coc_global_extensions = [
   \ 'coc-snippets',
-  \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
+  \ 'coc-coc-marketplace', 
   \ 'coc-prettier', 
   \ 'coc-json', 
+  \ 'coc-emmet', 
+  \ 'coc-highlight', 
+  \ 'coc-spell-checker', 
+  \ 'coc-styled-components', 
   \ ]
 " from readme
 " if hidden is not set, TextEdit might fail.
@@ -129,9 +136,9 @@ set signcolumn=yes
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
 inoremap <silent><expr> <TAB>
-			\ pumvisible() ? "\<C-n>" :
-			\ <SID>check_back_space() ? "\<TAB>" :
-			\ coc#refresh()
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
@@ -237,40 +244,11 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
-" custom setting
 nmap ev :tabedit $MYVIMRC<CR>
-
-set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
-
-"Quick fold
-set foldmethod=indent
-set foldlevel=99
 set guifont=Fira\ Code-Light:h1
-
-set ruler         " show the cursor position all the tim
-set showcmd       " display incomplete commands
-
-colorscheme onedark
-"colorscheme gruvbox
-"colorscheme nova
-let g:lightline = {
-  \ 'colorscheme': 'nord',
-  \ }
-let g:airline_theme='nord'
-
-"let g:jsx_ext_required = 1
-"let g:jsx_pragma_required = 1
-
-
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.tsx, *.ts, *.jsx'
 
 " easymotion
 map <Leader> <Plug>(easymotion-prefix)
-" <Leader>f{char} to move to {char}
-"map  <Leader>f <Plug>(easymotion-bd-f)
-"nmap <Leader>f <Plug>(easymotion-overwin-f)
-" s{char}{char} to move to {char}{char}
-"
 nmap s <Plug>(easymotion-overwin-f2)
 " Move to line
 map <Leader>L <Plug>(easymotion-bd-jk)
@@ -282,38 +260,14 @@ map  N <Plug>(easymotion-prev)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
-
-" transprent bg
-"hi Normal guibg=NONE ctermbg=NONE
-"hi CocErrorSign  ctermfg=gray guifg=#ffcccc
-"let t:is_transparent = 0
-"function! Toggle_transparent()
-		"if t:is_transparent == 0
-				"hi Normal guibg=NONE ctermbg=NONE
-				"let t:is_transparent = 1
-		"else
-				""""set background=dark
-				"hi Normal guibg=NONE ctermbg=NONE
-				"let t:is_tranparent = 0
-		"endif
-"endfunction
-"nnoremap <C-t> : call Toggle_transparent()<CR>
-
 let g:rainbow_active = 1
 
-let g:multi_cursor_use_default_mapping=0
-
-" Default mapping
-let g:multi_cursor_start_word_key      = '<C-n>'
-let g:multi_cursor_select_all_word_key = '<C-t>'
-let g:multi_cursor_start_key           = 'g<C-n>'
-let g:multi_cursor_select_all_key      = 'g<A-n>'
-let g:multi_cursor_next_key            = '<C-n>'
-let g:multi_cursor_prev_key            = '<C-p>'
-let g:multi_cursor_skip_key            = '<C-x>'
-let g:multi_cursor_quit_key            = '<Esc>'
-let g:UltiSnipsExpandTrigger="<Enter>"
 let g:user_emmet_expandabbr_key='<C-z>'
-"imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
-"
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx,*.tsx"
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ }
+
+au FileType c,cpp,objc,objcpp,tsx,js call rainbow#load()
 
