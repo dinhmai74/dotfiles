@@ -29,17 +29,21 @@ export const run = async function(toolbox: GluegunToolbox) {
   const pascalName = pascalCase(name)
 
   const props = { name, pascalName }
+  const mainFilePath = `app/components/${name}/${name}.tsx`
   await generate({
     template: `component.tsx.ejs`,
-    target: `app/components/${name}/${name}.tsx`,
+    target: mainFilePath,
     props: props
   })
-
+  print.info('Created file ' + mainFilePath)
+  const storyPath = `app/components/${name}/${name}.story.tsx`
   await generate({
     template: `component.story.tsx.ejs`,
-    target: `app/components/${name}/${name}.story.tsx`,
+    target: storyPath,
     props: props
   })
+  print.info('Created file ' + storyPath)
+
   // patch the barrel export file
   const barrelExportPath = `${process.cwd()}/app/components/index.ts`
   const exportToAdd = `export * from "./${name}/${name}"\n`

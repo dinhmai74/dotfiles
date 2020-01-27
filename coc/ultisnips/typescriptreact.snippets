@@ -147,7 +147,11 @@ snippet rnf "create react native stateless"
 import React, { useState } from 'react'
 import { Text, View, StyleSheet } from 'react-native'
 
-export function ${1:`!v expand('%:t:r')`}({}){
+interface  ${1:`!v expand('%:t:r')`}Props{
+	
+}
+
+export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = ({})=>{
 		return (
 			<${3:View}>
 				<Text>123 </Text>
@@ -159,7 +163,32 @@ const styles= StyleSheet.create({
 	container:{}
 })
 
-export default $1;
+endsnippet
+
+snippet rf "create react FunctionComponent"
+import React from 'react'
+
+interface  ${1:`!v expand('%:t:r')`}Props{
+	
+}
+
+export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = ({}) => {
+		return (
+			<${3:div}>
+			</$3>
+		);
+}
+
+endsnippet
+
+snippet fc "function component" 
+interface $2 {
+	$3
+}
+
+const $1: React.FC<$2> = () => {
+	$4
+}
 
 endsnippet
 

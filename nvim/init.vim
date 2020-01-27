@@ -10,6 +10,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 Plug 'christoomey/vim-tmux-navigator'
@@ -270,4 +272,6 @@ let g:closetag_regions = {
     \ }
 
 au FileType c,cpp,objc,objcpp,tsx,js call rainbow#load()
+
+autocmd BufEnter * silent! :lcd%:p:h
 

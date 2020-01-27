@@ -1,9 +1,9 @@
 editor.action.organizeImport
 eslint.executeAutofix
+snippets.editSnippets
 tsserver.organizeImports
 tsserver.restart
 tsserver.executeAutofix
 prettier.formatFile
-snippets.editSnippets
 eslint.createConfig
 tsserver.goToProjectConfig

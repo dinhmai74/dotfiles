@@ -64,7 +64,14 @@ module.exports = {
     await patching.append(barrelExportPath, exportToAdd)
     // if using `react-navigation` go the extra step
     // and insert the screen into the nav router
-    const appNavFilePath = `${process.cwd()}/app/navigation/primary-navigator.ts`
+    let rootNavigator = parameters.second
+      ? parameters.second
+      : 'primary-navigator'
+    rootNavigator = rootNavigator.endsWith('-navigator')
+      ? rootNavigator
+      : `${rootNavigator}-navigator`
+
+    const appNavFilePath = `${process.cwd()}/app/navigation/${rootNavigator}.ts`
     const importToAdd = `  ${pascalName},\n`
     const routeToAdd = `\n    ${camelName}: { screen: ${pascalName} },`
 
@@ -82,10 +89,16 @@ module.exports = {
       insert: importToAdd
     })
 
+    const ROOT_NAV_ROUTES = `export const ${pascalCase(
+      rootNavigator
+    )}.+[\\s\\S]\\s+{`
+    print.info('root nav ' + ROOT_NAV_ROUTES)
     // insert screen route
     await patching.patch(appNavFilePath, {
-      after: new RegExp(Patterns.ROOT_NAV_ROUTES),
+      after: new RegExp(ROOT_NAV_ROUTES),
       insert: routeToAdd
     })
+
+    print.info(`imported nav to ${rootNavigator}`)
   }
 }
