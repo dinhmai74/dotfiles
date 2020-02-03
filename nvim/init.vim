@@ -2,10 +2,10 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 "Plug 'tsony-tsonev/nerdtree-git-plugin'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
@@ -28,12 +28,14 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'alvan/vim-closetag' "auto close tags
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
+Plug 'morhetz/gruvbox'
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
 
 "colorscheme
-Plug 'joshdick/onedark.vim'
-Plug 'arcticicestudio/nord-vim'
-
-" Initialize plugin system
+"Plug 'joshdick/onedark.vim'
+"Plug 'arcticicestudio/nord-vim'
+"Plug 'wadackel/vim-dogrun'
 call plug#end()
 
 inoremap jk <ESC>
@@ -88,8 +90,10 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 "set expandtab
 
-"colorscheme gruvbox
-colorscheme onedark
+colorscheme gruvbox
+"colorscheme onedark
+"colorscheme dogrun
+"colorscheme nightfly
 "
 "colorscheme nord
 
@@ -116,13 +120,13 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
-  \ 'coc-coc-marketplace', 
+  \ 'coc-marketplace', 
   \ 'coc-prettier', 
   \ 'coc-json', 
   \ 'coc-emmet', 
   \ 'coc-highlight', 
-  \ 'coc-spell-checker', 
-  \ 'coc-styled-components', 
+  "\ 'coc-spell-checker', 
+  "\ 'coc-styled-components', 
   \ ]
 " from readme
 " if hidden is not set, TextEdit might fail.
@@ -247,7 +251,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
 nmap ev :tabedit $MYVIMRC<CR>
-set guifont=Fira\ Code-Light:h1
+"set guifont=Fira\ Code-Light:h1
 
 " easymotion
 map <Leader> <Plug>(easymotion-prefix)
@@ -274,4 +278,8 @@ let g:closetag_regions = {
 au FileType c,cpp,objc,objcpp,tsx,js call rainbow#load()
 
 autocmd BufEnter * silent! :lcd%:p:h
+" transprent bg
+"hi Normal guibg=NONE ctermbg=NONE
+
+:nmap <space>e :CocCommand explorer<CR>
 

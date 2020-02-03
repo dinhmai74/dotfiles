@@ -46,11 +46,26 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo%2Fapp%2Fscreens%2Fcircle-screen": [
       "snipe"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fwuwo%2Fapp%2Fscreens%2Fsign-in-screen": [
+      "tslint",
+      "format"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fwuwo%2Fapp%2Fscreens%2Fsign-in-screen%2Fcomponents": [
+      "dis"
     ]
   },
   "extensions": {
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo": [
       "par"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fwuwo": [
+      "spe"
+    ]
+  },
+  "marketplace": {
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fwuwo%2Fapp%2Fscreens%2Fsign-in-screen": [
+      "tree"
     ]
   }
 }

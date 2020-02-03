@@ -1,9 +1,11 @@
-editor.action.organizeImport
+explorer
+prettier.formatFile
+tslint.fixAllProblems
 eslint.executeAutofix
+editor.action.organizeImport
 snippets.editSnippets
 tsserver.organizeImports
 tsserver.restart
 tsserver.executeAutofix
-prettier.formatFile
 eslint.createConfig
 tsserver.goToProjectConfig
