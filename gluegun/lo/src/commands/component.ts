@@ -14,9 +14,10 @@ export const run = async function(toolbox: GluegunToolbox) {
     print,
     strings,
     filesystem,
-    patching
+    patching,
+    prompt
   } = toolbox
-  const { pascalCase, isBlank } = strings
+  const { pascalCase, isBlank, camelCase } = strings
 
   // validation
   if (isBlank(parameters.first)) {
@@ -25,24 +26,84 @@ export const run = async function(toolbox: GluegunToolbox) {
     return
   }
 
+  let componentType
+  if (!parameters.options["function-component"] && !parameters.options["stateless-function"]) {
+    const componentTypes = [
+      {
+        name: "functionComponent",
+        message: "React.FunctionComponent, aka \"hooks component\"",
+      },
+      {
+        name: "statelessFunction",
+        message: "Stateless function, aka the \"classic\" ignite-bowser component",
+      },
+      {
+        name: "classComponent",
+        message: "Classic class component"
+      }
+    ]
+
+    const { component } = await prompt.ask([
+      {
+        name: "component",
+        message: "Which type of component do you want to generate?",
+        type: "select",
+        choices: componentTypes,
+      },
+    ])
+    componentType = component
+  }
+
+ 
+
   const name = parameters.first
   const pascalName = pascalCase(name)
+  const camelCaseName = camelCase(name)
+  const props = { name, pascalName,camelCaseName}
 
-  const props = { name, pascalName }
-  const mainFilePath = `app/components/${name}/${name}.tsx`
-  await generate({
-    template: `component.tsx.ejs`,
-    target: mainFilePath,
-    props: props
-  })
-  print.info('Created file ' + mainFilePath)
-  const storyPath = `app/components/${name}/${name}.story.tsx`
-  await generate({
-    template: `component.story.tsx.ejs`,
-    target: storyPath,
-    props: props
-  })
-  print.info('Created file ' + storyPath)
+  const jobs = [
+    {
+      template: 'component.story.tsx.ejs',
+      target: `app/components/${name}/${name}.story.tsx`
+    },
+    {
+      template: 'styles.ts.ejs',
+      target: `app/components/${name}/${name}.styles.ts`
+    },
+  ]
+
+
+  if (componentType === "functionComponent" || parameters.options["function-component"]) {
+    jobs.push(
+      {
+        template: 'function-component.tsx.ejs',
+        target: `app/components/${name}/${name}.tsx`
+      }
+    )
+  } else if (componentType === "statelessFunction" || parameters.options["stateless-function"]) {
+    jobs.push(
+      {
+        template: 'component.tsx.ejs',
+        target: `app/components/${name}/${name}.tsx`
+      }
+    )
+  } else {
+    jobs.push({
+      template: 'class-component.tsx.ejs',
+      target: `app/components/${name}/${name}.tsx` 
+    })
+  }
+
+  for(let i =0 ; i < jobs.length; i++){
+    let e= jobs[i]
+    await generate({
+      template: e.template,
+      target: e.target,
+      props: props
+    }) 
+
+    print.info("Created file " + e.target)
+  }
 
   // patch the barrel export file
   const barrelExportPath = `${process.cwd()}/app/components/index.ts`

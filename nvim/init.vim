@@ -82,7 +82,8 @@ noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 set relativenumber
-
+set number
+set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
 set smarttab
 set cindent
 set tabstop=2
@@ -251,7 +252,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 
 nmap ev :tabedit $MYVIMRC<CR>
-"set guifont=Fira\ Code-Light:h1
+set guifont=Fira\ Code-Light:h1
 
 " easymotion
 map <Leader> <Plug>(easymotion-prefix)
