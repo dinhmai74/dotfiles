@@ -9,6 +9,9 @@
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2FLobo": [
       "fix",
       "tslint"
+    ],
+    "%2FUsers%2Fdinhmai": [
+      "pick"
     ]
   },
   "symbols": {
@@ -56,6 +59,14 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fwuwo%2Fapp%2Fscreens%2Fsign-in-screen%2Fcomponents": [
       "dis"
+    ],
+    "%2FUsers%2Fdinhmai": [
+      "make",
+      "pick",
+      "termi"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fhackrank%2Fchallenges": [
+      "renam"
     ]
   },
   "extensions": {
@@ -69,6 +80,9 @@
   "marketplace": {
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fwuwo%2Fapp%2Fscreens%2Fsign-in-screen": [
       "tree"
+    ],
+    "%2FUsers%2Fdinhmai": [
+      "termi"
     ]
   }
 }

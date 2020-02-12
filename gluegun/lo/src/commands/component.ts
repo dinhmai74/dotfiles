@@ -62,10 +62,10 @@ export const run = async function(toolbox: GluegunToolbox) {
   const props = { name, pascalName,camelCaseName}
 
   const jobs = [
-    {
-      template: 'component.story.tsx.ejs',
-      target: `app/components/${name}/${name}.story.tsx`
-    },
+    // {
+    //   template: 'component.story.tsx.ejs',
+    //   target: `app/components/${name}/${name}.story.tsx`
+    // },
     {
       template: 'styles.ts.ejs',
       target: `app/components/${name}/${name}.styles.ts`
@@ -119,8 +119,8 @@ export const run = async function(toolbox: GluegunToolbox) {
   await patching.append(barrelExportPath, exportToAdd)
 
   // wire up example
-  await patching.prepend(
-    './storybook/storybook-registry.ts',
-    `require("../app/components/${name}/${name}.story")\n`
-  )
+  // await patching.prepend(
+  //   './storybook/storybook-registry.ts',
+  //   `require("../app/components/${name}/${name}.story")\n`
+  // )
 }

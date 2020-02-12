@@ -36,6 +36,9 @@ Plug 'morhetz/gruvbox'
 "Plug 'joshdick/onedark.vim'
 "Plug 'arcticicestudio/nord-vim'
 "Plug 'wadackel/vim-dogrun'
+
+Plug 'christoomey/vim-system-copy'
+Plug 'christoomey/vim-sort-motion'
 call plug#end()
 
 inoremap jk <ESC>
@@ -284,3 +287,4 @@ autocmd BufEnter * silent! :lcd%:p:h
 
 :nmap <space>e :CocCommand explorer<CR>
 
+let g:NERDSpaceDelims = 1

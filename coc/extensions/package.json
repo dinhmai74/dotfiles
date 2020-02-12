@@ -2,18 +2,21 @@
   "dependencies": {
     "coc-actions": ">=1.2.1",
     "coc-emmet": ">=1.1.4",
-    "coc-eslint": ">=1.2.5",
+    "coc-eslint": ">=1.2.6",
     "coc-explorer": ">=0.2.17",
     "coc-highlight": ">=1.2.5",
     "coc-json": ">=1.2.4",
     "coc-marketplace": ">=1.7.0",
     "coc-prettier": ">=1.1.11",
+    "coc-project": ">=0.0.9",
     "coc-snippets": ">=2.1.18",
     "coc-styled-components": ">=0.3.0",
     "coc-tabnine": ">=1.2.2",
+    "coc-terminal": ">=0.3.1",
     "coc-tslint": ">=1.0.17",
     "coc-tslint-plugin": ">=1.1.1",
     "coc-tsserver": ">=1.4.9",
+    "coc-word": ">=1.2.2",
     "es7-react-js-snippets": "https://github.com/dsznajder/vscode-es7-javascript-react-snippets"
   }
 }

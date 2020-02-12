@@ -1,4 +1,7 @@
 explorer
+workspace.renameCurrentFile
+terminal.Toggle
+tabnine.openConfig
 prettier.formatFile
 tslint.fixAllProblems
 eslint.executeAutofix
