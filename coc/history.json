@@ -26,6 +26,9 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fexpo-app": [
       "react-native-screens"
+    ],
+    "%2FUsers%2Fnextfuncmac02%2Fworkplace%2Fproject%2Fnextfunc%2Fnugget-mobile-react-native": [
+      "StartAFund"
     ]
   },
   "commands": {
@@ -83,6 +86,9 @@
     ],
     "%2FUsers%2Fdinhmai": [
       "termi"
+    ],
+    "%2FUsers%2Fnextfuncmac02%2Fworkplace%2Fproject%2Fnextfunc%2Fnugget-mobile-react-native": [
+      "high"
     ]
   }
 }

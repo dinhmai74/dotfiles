@@ -29,13 +29,14 @@ Plug 'alvan/vim-closetag' "auto close tags
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
 Plug 'morhetz/gruvbox'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
+Plug 'mgechev/vim-jsx'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'pangloss/vim-javascript'
 
 "colorscheme
-"Plug 'joshdick/onedark.vim'
-"Plug 'arcticicestudio/nord-vim'
-"Plug 'wadackel/vim-dogrun'
+Plug 'joshdick/onedark.vim'
+" Plug 'arcticicestudio/nord-vim'
+Plug 'wadackel/vim-dogrun'
 
 Plug 'christoomey/vim-system-copy'
 Plug 'christoomey/vim-sort-motion'
@@ -95,7 +96,7 @@ set shiftwidth=2
 "set expandtab
 
 colorscheme gruvbox
-"colorscheme onedark
+" colorscheme onedark
 "colorscheme dogrun
 "colorscheme nightfly
 "
@@ -128,10 +129,9 @@ let g:coc_global_extensions = [
   \ 'coc-prettier', 
   \ 'coc-json', 
   \ 'coc-emmet', 
-  \ 'coc-highlight', 
+  \ 'coc-highlight']
   "\ 'coc-spell-checker', 
   "\ 'coc-styled-components', 
-  \ ]
 " from readme
 " if hidden is not set, TextEdit might fail.
 set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
@@ -288,3 +288,4 @@ autocmd BufEnter * silent! :lcd%:p:h
 :nmap <space>e :CocCommand explorer<CR>
 
 let g:NERDSpaceDelims = 1
+let g:vim_jsx_pretty_colorful_config = 1 
