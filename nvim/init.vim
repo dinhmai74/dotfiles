@@ -32,6 +32,8 @@ Plug 'morhetz/gruvbox'
 Plug 'mgechev/vim-jsx'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'pangloss/vim-javascript'
+Plug 'sheerun/vim-polyglot'
+
 
 "colorscheme
 Plug 'joshdick/onedark.vim'
@@ -43,7 +45,7 @@ Plug 'christoomey/vim-sort-motion'
 call plug#end()
 
 inoremap jk <ESC>
-nmap <C-c> :NERDTreeToggle<CR>
+" nmap <C-c> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
@@ -289,3 +291,15 @@ autocmd BufEnter * silent! :lcd%:p:h
 
 let g:NERDSpaceDelims = 1
 let g:vim_jsx_pretty_colorful_config = 1 
+nnoremap th  :tabfirst<CR>
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tl  :tablast<CR>
+nnoremap te  :tabedit<Space>
+nnoremap tn  :tabnext<Space>
+nnoremap tm  :tabm<Space>
+nnoremap td  :tabclose<CR>
+nnoremap tb  :e#
+au FileType * set fo-=c fo-=r fo-=o
+let g:vcoolor_map = '<C-c>'
+
