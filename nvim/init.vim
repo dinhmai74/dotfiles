@@ -1,47 +1,52 @@
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'scrooloose/nerdtree'
-"Plug 'tsony-tsonev/nerdtree-git-plugin'
-"Plug 'Xuyuanp/nerdtree-git-plugin'
-"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
-Plug 'airblade/vim-gitgutter'
+
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
-Plug 'scrooloose/nerdcommenter'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-
-Plug 'christoomey/vim-tmux-navigator'
-
-Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
-Plug 'lilydjwg/colorizer' "colorize all text 
-Plug 'tmhedberg/SimpylFold' "fold code
-Plug 'KabbAmine/vCoolor.vim'
-Plug 'mattn/emmet-vim'
-Plug 'frazrepo/vim-rainbow'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion' 
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'alvan/vim-closetag' "auto close tags
-Plug 'terryma/vim-multiple-cursors'
-Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
+
+" decorations
+Plug 'ryanoasis/vim-devicons'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdcommenter'
+Plug 'lilydjwg/colorizer' "colorize all text 
+Plug 'KabbAmine/vCoolor.vim' "color picker
+Plug 'frazrepo/vim-rainbow'
 Plug 'morhetz/gruvbox'
+
+" git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+
+" all syntax
+Plug 'sheerun/vim-polyglot'
+Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+Plug 'mattn/emmet-vim'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mgechev/vim-jsx'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'pangloss/vim-javascript'
-Plug 'sheerun/vim-polyglot'
 
-
-"colorscheme
-Plug 'joshdick/onedark.vim'
-" Plug 'arcticicestudio/nord-vim'
-Plug 'wadackel/vim-dogrun'
-
+" util
+Plug 'terryma/vim-multiple-cursors'
+Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
+Plug 'alvan/vim-closetag' "auto close tags
+Plug 'tmhedberg/SimpylFold' "fold code
+Plug 'christoomey/vim-tmux-navigator' "navigate screen
 Plug 'christoomey/vim-system-copy'
 Plug 'christoomey/vim-sort-motion'
+
+"session
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
+"colorscheme
+" Plug 'joshdick/onedark.vim'
+" Plug 'arcticicestudio/nord-vim'
+" Plug 'wadackel/vim-dogrun'
+
 call plug#end()
 
 inoremap jk <ESC>
@@ -49,11 +54,17 @@ inoremap jk <ESC>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
 
+colorscheme gruvbox
+" colorscheme onedark
+"colorscheme dogrun
+"colorscheme nightfly
+"colorscheme nord
+
 " open NERDTree automatically
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * NERDTree
 
-let g:NERDTreeGitStatusWithFlags = 1
+" let g:NERDTreeGitStatusWithFlags = 1
 "let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 "let g:NERDTreeGitStatusNodeColorization = 1
 "let g:NERDTreeColorMapCustom = {
@@ -68,7 +79,7 @@ let g:NERDTreeGitStatusWithFlags = 1
     "\ }                         
 
 
-let g:NERDTreeIgnore = ['^node_modules$']
+" let g:NERDTreeIgnore = ['^node_modules$']
 
 " vim-prettier
 "let g:prettier#quickfix_enabled = 0
@@ -87,40 +98,23 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
-set relativenumber
-set number
-set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
-set smarttab
-set cindent
-set tabstop=2
-set shiftwidth=2
-" always uses spaces instead of tab characters
-"set expandtab
-
-colorscheme gruvbox
-" colorscheme onedark
-"colorscheme dogrun
-"colorscheme nightfly
-"
-"colorscheme nord
-
 " sync open file with NERDTree
-" " Check if NERDTree is open or active
-function! IsNERDTreeOpen()        
-  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-endfunction
+" Check if NERDTree is open or active
+" function! IsNERDTreeOpen()        
+	" return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+" endfunction
 
 " Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
 " file, and we're not in vimdiff
-function! SyncTree()
-  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
-    NERDTreeFind
-    wincmd p
-  endif
-endfunction
+" function! SyncTree()
+  " if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+    " NERDTreeFind
+    " wincmd p
+  " endif
+" endfunction
 
 " Highlight currently open buffer in NERDTree
-autocmd BufEnter * call SyncTree()
+" autocmd BufEnter * call SyncTree()
 
 " coc config
 let g:coc_global_extensions = [
@@ -291,6 +285,65 @@ autocmd BufEnter * silent! :lcd%:p:h
 
 let g:NERDSpaceDelims = 1
 let g:vim_jsx_pretty_colorful_config = 1 
+nnoremap tb  :e#
+au FileType * set fo-=c fo-=r fo-=o
+
+" session management
+let g:session_directory = "~/.config/nvim/session"
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+let g:session_command_aliases = 1
+
+"*****************************************************************************
+"" Visual Settings
+"*****************************************************************************
+
+" general
+set relativenumber
+set ruler
+set number
+set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
+set smarttab
+set cindent
+set tabstop=2
+set shiftwidth=2
+" always uses spaces instead of tab characters
+" set expandtab
+	
+"" Fix backspace indent
+set backspace=indent,eol,start
+syntax on
+set syntax=whitespace
+
+"*****************************************************************************
+"" Abbreviations
+"*****************************************************************************
+"" no one is really happy until you have this shortcuts
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
+
+"*****************************************************************************
+"" Commands
+"*****************************************************************************
+" remove trailing whitespaces
+command! FixWhitespace :%s/\s\+$//e
+
+"*****************************************************************************
+"" Mappings
+"*****************************************************************************
+
+"" Split
+noremap <Leader>h :<C-u>split<CR>
+noremap <Leader>v :<C-u>vsplit<CR>
+
 nnoremap th  :tabfirst<CR>
 nnoremap tj  :tabnext<CR>
 nnoremap tk  :tabprev<CR>
@@ -299,7 +352,37 @@ nnoremap te  :tabedit<Space>
 nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
-nnoremap tb  :e#
-au FileType * set fo-=c fo-=r fo-=o
-let g:vcoolor_map = '<C-c>'
 
+let g:vcoolor_map = '<C-c>'
+"" Git
+noremap <Leader>ga :Gwrite<CR>
+noremap <Leader>gc :Gcommit<CR>
+noremap <Leader>gsh :Gpush<CR>
+noremap <Leader>gll :Gpull<CR>
+noremap <Leader>gs :Gstatus<CR>
+noremap <Leader>gb :Gblame<CR>
+noremap <Leader>gd :Gvdiff<CR>
+noremap <Leader>gr :Gremove<CR>
+" session management
+nnoremap <leader>so :OpenSession<Space>
+nnoremap <leader>ss :SaveSession<Space>
+nnoremap <leader>sd :DeleteSession<CR>
+nnoremap <leader>sc :CloseSession<CR>
+"" Set working directory
+nnoremap <leader>. :lcd %:p:h<CR>
+
+"" Opens an edit command with the path of the currently edited file filled in
+noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
+"" Opens a tab edit command with the path of the currently edited file filled
+noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
+
+"Recovery commands from history through FZF
+nmap <leader>y :History:<CR>
+"" Open current line on GitHub
+nnoremap <Leader>o :.Gbrowse<CR>
+
+"*****************************************************************************
+"" Convenience variables
+"*****************************************************************************
