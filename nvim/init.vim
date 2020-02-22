@@ -38,6 +38,10 @@ Plug 'tmhedberg/SimpylFold' "fold code
 Plug 'christoomey/vim-tmux-navigator' "navigate screen
 Plug 'christoomey/vim-system-copy'
 Plug 'christoomey/vim-sort-motion'
+Plug 'cometsong/commentframe.vim'
+Plug 'tpope/vim-abolish' "turn case
+Plug 'nicwest/vim-camelsnek' "turn case
+
 
 "session
 Plug 'xolox/vim-misc'
@@ -358,7 +362,7 @@ let g:vcoolor_map = '<C-c>'
 noremap <Leader>ga :Gwrite<CR>
 noremap <Leader>gc :Gcommit<CR>
 noremap <Leader>gsh :Gpush<CR>
-noremap <Leader>gll :Gpull<CR>
+noremap <Leader>glhl :Gpull<CR>
 noremap <Leader>gs :Gstatus<CR>
 noremap <Leader>gb :Gblame<CR>
 noremap <Leader>gd :Gvdiff<CR>
@@ -386,3 +390,4 @@ nnoremap <Leader>o :.Gbrowse<CR>
 "*****************************************************************************
 "" Convenience variables
 "*****************************************************************************
+					
