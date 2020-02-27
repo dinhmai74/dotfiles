@@ -8,5 +8,8 @@
     "javascriptreact",
     "typescript.tsx",
     "graphql"
-  ]
+  ],
+	"diagnostic.errorSign": "•",
+  "diagnostic.warningSign": "•",
+  "diagnostic.infoSign": "•"
 }
