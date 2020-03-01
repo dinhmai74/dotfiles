@@ -48,6 +48,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mgechev/vim-jsx'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax'
 " Snippet support
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
@@ -69,8 +70,6 @@ Plug 'Shougo/echodoc.vim'
 Plug 'heavenshell/vim-jsdoc'
 
 
-" Trailing whitespace highlighting & automatic fixing
-Plug 'ntpeters/vim-better-whitespace'
 " Improved motion in Vim
 Plug 'easymotion/vim-easymotion'
 
@@ -84,5 +83,12 @@ Plug 'xolox/vim-session'
 " Plug 'wadackel/vim-dogrun'
 Plug 'mhartington/oceanic-next'
 
+"coc
+" #------------------------------------------------------------------------------#
+" #                                  crs, crc...                                 #
+" #------------------------------------------------------------------------------#
+Plug 'neoclide/coc-yank'
 
+Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
