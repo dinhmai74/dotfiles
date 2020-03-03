@@ -33,7 +33,9 @@ set incsearch
 set ignorecase
 set smartcase
 
-set fileformats=unix,dos,mac
+" set fileformats=unix,dos,mac
+" Yank and paste with the system clipboard
+" set clipboard=unnamed
 
 autocmd BufEnter * silent! :lcd%:p:h
 "*****************************************************************************
@@ -158,8 +160,8 @@ function! s:custom_jarvis_colors()
   hi link CocInfoSign Type
 
   " Make background transparent for many things
-  hi Normal ctermbg=NONE guibg=NONE
-  hi NonText ctermbg=NONE guibg=NONE
+  " hi Normal ctermbg=NONE guibg=NONE
+  " hi NonText ctermbg=NONE guibg=NONE
   hi LineNr ctermfg=NONE guibg=NONE
   hi SignColumn ctermfg=NONE guibg=NONE
   " hi StatusLine guifg=#16252b guibg=#6699CC
@@ -182,6 +184,7 @@ endfunction
 
 " autocmd! ColorScheme * call TrailingSpaceHighlights()
 autocmd! ColorScheme gruvbox call s:custom_jarvis_colors()
+" call s:custom_jarvis_colors()
 
 " Editor theme
 set background=dark

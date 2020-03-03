@@ -32,8 +32,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'lilydjwg/colorizer' "colorize all text 
 Plug 'KabbAmine/vCoolor.vim' "color picker
-Plug 'frazrepo/vim-rainbow'
+" Plug 'luochen1990/rainbow'
+" Themes
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'morhetz/gruvbox'
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'sainnhe/vim-color-forest-night'
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -69,7 +73,6 @@ Plug 'Shougo/echodoc.vim'
 " Generate JSDoc commands based on function signature
 Plug 'heavenshell/vim-jsdoc'
 
-
 " Improved motion in Vim
 Plug 'easymotion/vim-easymotion'
 
@@ -81,13 +84,13 @@ Plug 'xolox/vim-session'
 " Plug 'joshdick/onedark.vim'
 " Plug 'arcticicestudio/nord-vim'
 " Plug 'wadackel/vim-dogrun'
-Plug 'mhartington/oceanic-next'
+" Plug 'mhartington/oceanic-next'
 
 "coc
 " #------------------------------------------------------------------------------#
 " #                                  crs, crc...                                 #
 " #------------------------------------------------------------------------------#
-Plug 'neoclide/coc-yank'
+" Plug 'neoclide/coc-yank'
 
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'

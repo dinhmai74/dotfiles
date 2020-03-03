@@ -32,7 +32,7 @@ noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Vim's default buffer
 vnoremap <leader>p "_dP
 noremap YY "+y<CR>
-noremap <leader>p "+gP<CR>
+" noremap <leader>p "+gP<CR>
 noremap XX "+x<CR>
 
 "" Buffer nav
@@ -61,10 +61,10 @@ if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
-"" Copy/Paste/Cut
-if has('unnamedplus')
-  set clipboard=unnamed,unnamedplus
-endif
+" Copy/Paste/Cut
+" if has('unnamedplus')
+  " set clipboard=unnamed,unnamedplus
+" endif
 
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>e :FZF -m<CR

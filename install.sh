@@ -114,12 +114,32 @@ echo "$(tput setaf 2)JARVIS: Installing zsh-autosuggestions.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)Copy .zshrc file into root.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+cp ./shell/.zshrc ~/.
+
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: Switching shell to zsh. You may need to logout.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
 sudo sh -c "echo $(which zsh) >> /etc/shells"
 chsh -s $(which zsh)
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)JARVIS: Installing tmux plugin manager.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+fi
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)JARVIS: Copying tmux.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+cp ./.tmux.conf ~/.
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: System update complete. Currently running at 100% power. Enjoy.$(tput sgr 0)"

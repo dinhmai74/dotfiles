@@ -1,4 +1,5 @@
 export ZSH="/Users/dinhmai/.oh-my-zsh"
+export TERM="xterm-256color"
 
 POWERLEVEL9K_MODE="nerdfont-complete"
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -106,18 +107,19 @@ alias vi="nvim"
 alias oldvim="vim"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias c="code-insiders ."
+alias ra="flutter emulators --launch Nexus_5X_API_29_x86"
 alias cowf="Fortune | cowsay -f vader | lolcat"
 alias ns="npm start"
-alias rn=       'npx react-native run-ios --simulator="iPhone 6"'
-alias rna=      'npx react-native run-android'
-alias rn6=      'npx react-native run-ios --simulator="iPhone 6"'
-alias rn6s=     'npx react-native run-ios --simulator="iPhone 6s"'
-alias rne=      'npx react-native run-ios --simulator="iPhone'
-alias rn5=      'npx react-native run-ios --simulator="iPhone 5s"'
-alias rn8=      'npx react-native run-ios --simulator="iPhone 8"'
-alias rn8s=     'npx react-native run-ios --simulator="iPhone 8s"'
-alias rnx=      'npx react-native run-ios --simulator="iPhone X"'
-alias rn11=     'npx react-native run-ios --simulator="iPhone 11"'
+alias rn='npx react-native run-ios --simulator="iPhone 6"'
+alias rna='npx react-native run-android'
+alias rn6='npx react-native run-ios --simulator="iPhone 6"'
+alias rn6s='npx react-native run-ios --simulator="iPhone 6s"'
+alias rne='npx react-native run-ios --simulator="iPhone'
+alias rn5='npx react-native run-ios --simulator="iPhone 5s"'
+alias rn8='npx react-native run-ios --simulator="iPhone 8"'
+alias rn8s='npx react-native run-ios --simulator="iPhone 8s"'
+alias rnx='npx react-native run-ios --simulator="iPhone X"'
+alias rn11='npx react-native run-ios --simulator="iPhone 11"'
 alias alacf="vi ~/.config/alacritty/alacritty.yml"
 
 alias sd='sudo shutdown -h now'
@@ -130,6 +132,7 @@ alias uit='cd ~/Workplace/Project/uit'
 alias nf='cd ~/Workplace/Project/nextfunc'
 alias getAddress='ipconfig getifaddr en0'
 alias ipAd='ipconfig getifaddr en0'
+alias fun='cd ~/Workplace/Project/fun'
 alias ig='ignite'
 alias igg='ignite generate'
 alias igs='ignite generate screen'
@@ -137,8 +140,10 @@ alias igc='ignite generate component'
 alias yip='y && cd ios && pod install && cd .. && rn'
 alias ev="code ~/.config/nvim/init.vim"
 alias vdir="code ~/.config/nvim"
+alias config="cd ~/.config"
+alias gs="gon "
 alias gss="gon screen "
-alias gsc="gon components "
+alias gsc="gon component "
 alias gsu="gon utils "
 
 autoload -U compinit && compinit
@@ -163,3 +168,17 @@ PATH=$PATH:$(ruby -e 'puts Gem.bindir')
 eval $(thefuck --alias)
 
 set -o vi
+export PATH=$PATH:$HOME/.npm-global/bin
+export PATH=~/development/flutter/bin:$PATH
+
+export EDITOR=nvim
+
+# remove % sign
+unsetopt PROMPT_SP
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+eval "$(starship init zsh)"
+# start tmux
+# if [ "$TMUX" = "" ]; then tmux; fi
+
+-t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
