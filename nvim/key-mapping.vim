@@ -16,7 +16,7 @@ nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 nnoremap tb  :e#<CR>
-noremap e :e <C-R>=expand("%:p:h") . "/" <CR>
+noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 "" Tabs
 nnoremap <Tab> gt

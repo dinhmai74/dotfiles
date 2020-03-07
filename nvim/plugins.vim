@@ -63,6 +63,7 @@ Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
 Plug 'alvan/vim-closetag' "auto close tags
 Plug 'tmhedberg/SimpylFold' "fold code
 Plug 'christoomey/vim-tmux-navigator' "navigate screen
+Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'christoomey/vim-system-copy'
 Plug 'christoomey/vim-sort-motion'
 Plug 'cometsong/commentframe.vim'

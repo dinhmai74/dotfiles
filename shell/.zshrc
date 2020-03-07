@@ -145,6 +145,7 @@ alias gs="gon "
 alias gss="gon screen "
 alias gsc="gon component "
 alias gsu="gon utils "
+alias oiterm="open -a /Applications/iTerm.app ."
 
 autoload -U compinit && compinit
 
@@ -163,11 +164,12 @@ LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 source /Users/dinhmai/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-source $(dirname $(gem which colorls))/tab_complete.sh
 PATH=$PATH:$(ruby -e 'puts Gem.bindir')
+export PATH
+
+source $(dirname $(gem which colorls))/tab_complete.sh
 eval $(thefuck --alias)
 
-set -o vi
 export PATH=$PATH:$HOME/.npm-global/bin
 export PATH=~/development/flutter/bin:$PATH
 
@@ -176,9 +178,10 @@ export EDITOR=nvim
 # remove % sign
 unsetopt PROMPT_SP
 
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(starship init zsh)"
+# export STARSHIP_CONFIG=~/.config/starship/starship.toml
+# eval "$(starship init zsh)"
 # start tmux
 # if [ "$TMUX" = "" ]; then tmux; fi
 
--t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
+# -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
+export PATH="/usr/local/opt/node@10/bin:$PATH"

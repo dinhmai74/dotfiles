@@ -84,6 +84,9 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fcaipu": [
       " e"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Fuit%2Feng-web": [
+      "prett"
     ]
   },
   "marketplace": {
@@ -98,6 +101,16 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fcaipu": [
       "denite"
+    ]
+  },
+  "outline": {
+    "%2FUsers%2Fdinhmai%2F": {
+      "config": [
+        "fd"
+      ]
+    },
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fhackrank%2Fchallenges": [
+      "non"
     ]
   }
 }
