@@ -75,10 +75,21 @@ echo "---------------------------------------------------------"
 npm i -g bash-language-server
 
 echo "---------------------------------------------------------"
-echo "$(tput setaf 2)JARVIS: Installing colorls$(tput sgr 0)"
+echo "$(tput setaf 2)JARVIS: Installing gem pakcages$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
-gem install colorls
+gemPackages=(
+  "colorls"
+  "neovim"
+  "environment"
+)
+
+for i in "${gemPackages[@]}"
+do
+  gem install $i
+  echo "---------------------------------------------------------"
+done
+
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: Installing system fonts.$(tput sgr 0)"
@@ -86,7 +97,9 @@ echo "---------------------------------------------------------"
 
 brew tap homebrew/cask-fonts
 brew cask install font-hack-nerd-font
-
+brew cask install font-hasklig-nerd-font
+brew cask install font-fira-code
+brew cask install font-firacode-nerd-font
 
 localGit="/usr/local/bin/git"
 if ! [[ -f "$localGit" ]]; then

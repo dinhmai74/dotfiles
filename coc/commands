@@ -1,3 +1,4 @@
+tsserver.goToProjectConfig
 explorer
 workspace.renameCurrentFile
 terminal.Toggle
@@ -11,4 +12,3 @@ tsserver.organizeImports
 tsserver.restart
 tsserver.executeAutofix
 eslint.createConfig
-tsserver.goToProjectConfig
