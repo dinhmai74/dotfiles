@@ -157,6 +157,11 @@ echo "---------------------------------------------------------"
 cp ./.tmux.conf ~/.
 
 echo "---------------------------------------------------------"
+echo "$(tput setaf 2)JARVIS: Installing vtop.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+npm install -g vtop
+
+echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: System update complete. Currently running at 100% power. Enjoy.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
