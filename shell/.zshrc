@@ -312,6 +312,7 @@ alias pip="pip3"
 
 alias emu="cd $ANDROID_HOME && cd tools && emulator -avd Nexus5X"
 alias devmenu="adb shell input keyevent 82"
+alias top="vtop --theme=wizard"
 
 autoload -U compinit && compinit
 
