@@ -33,6 +33,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'lilydjwg/colorizer' "colorize all text 
 Plug 'KabbAmine/vCoolor.vim' "color picker
 " Plug 'luochen1990/rainbow'
+Plug 'frazrepo/vim-rainbow'
+
 " Themes
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'morhetz/gruvbox'
@@ -82,7 +84,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 "colorscheme
-" Plug 'joshdick/onedark.vim'
+Plug 'joshdick/onedark.vim'
 " Plug 'arcticicestudio/nord-vim'
 " Plug 'wadackel/vim-dogrun'
 " Plug 'mhartington/oceanic-next'
@@ -95,4 +97,11 @@ Plug 'xolox/vim-session'
 
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+
+" #------------------------------------------------------------------------------#
+" #                                    python                                    #
+" #------------------------------------------------------------------------------#
+Plug 'vim-scripts/indentpython.vim'
+Plug 'nvie/vim-flake8'
+
 call plug#end()

@@ -76,6 +76,10 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fcaipu": [
       "ref"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Fuit%2Fwuwu": [
+      "fix",
+      "esli"
     ]
   },
   "extensions": {
@@ -90,7 +94,12 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Fuit%2Feng-web": [
       "prett"
-    ]
+    ],
+    "%2FUsers%2Fdinhmai%2F": {
+      "config": [
+        " e"
+      ]
+    }
   },
   "marketplace": {
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fwuwo%2Fapp%2Fscreens%2Fsign-in-screen": [
@@ -104,6 +113,9 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fcaipu": [
       "denite"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Fuit%2Fwuwu": [
+      "loremis"
     ]
   },
   "outline": {

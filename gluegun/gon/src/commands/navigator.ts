@@ -8,7 +8,7 @@ export const run = async function(toolbox: GluegunToolbox) {
     parameters,
     print,
     strings: { pascalCase, isBlank, camelCase, kebabCase },
-    ignite,
+    template: { generate },
     filesystem,
     patching,
     prompt: { ask },
@@ -33,19 +33,19 @@ export const run = async function(toolbox: GluegunToolbox) {
   }
 
   // grab the closest package.json
-  const { packageJson } = await require('read-pkg-up')()
-  if (!packageJson) {
-    print.error(`Can't find a package.json here or in parent directories.`)
-    return
-  }
+  // const { packageJson } = await require('read-pkg-up')()
+  // if (!packageJson) {
+  // print.error(`Can't find a package.json here or in parent directories.`)
+  // return
+  // }
 
   // ensure react-navigation is installed
-  if (
-    Object.keys(packageJson.dependencies).includes('react-navigation') === false
-  ) {
-    print.error('This generator only works with react-navigation.')
-    return
-  }
+  // if (
+  // Object.keys(packageJson.dependencies).includes('react-navigation') === false
+  // ) {
+  // print.error('This generator only works with react-navigation.')
+  // return
+  // }
 
   const name = parameters.first
   const navigatorName = name.endsWith('-navigator') ? name : `${name}-navigator`
@@ -139,7 +139,17 @@ export const run = async function(toolbox: GluegunToolbox) {
   ]
 
   // make the template
-  await ignite.copyBatch(toolbox, jobs, props)
+  // await ignite.copyBatch(toolbox, jobs, props)
+  for (let i = 0; i < jobs.length; i++) {
+    let e = jobs[i]
+    await generate({
+      template: e.template,
+      target: e.target,
+      props: props
+    })
+
+    print.info('Created file ' + e.target)
+  }
 
   // import screens/navigators to newly created navigator
   if (!!pascalScreens.length || !!pascalNavigators.length) {

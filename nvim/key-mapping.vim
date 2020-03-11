@@ -16,7 +16,8 @@ nnoremap tn  :tabnext<Space>
 nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 nnoremap tb  :e#<CR>
-noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+nnoremap gb :e#<CR>
+noremap <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
 
 "" Tabs
 nnoremap <Tab> gt
@@ -75,6 +76,14 @@ if has('macunix')
   vmap <C-x> :!pbcopy<CR>
   vmap <C-c> :w !pbcopy<CR><CR>
 endif
+
+" Split window
+nmap ss :split<Return><C-w>w
+nmap sv :vsplit<Return><C-w>w
+
+" python excue
+" nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
 
 
 " //****************************************************************************//

@@ -36,6 +36,7 @@ packages=(
   "ripgrep"
   "fzf"
   "z"
+  "lf"
 )
 
 for i in "${packages[@]}"
@@ -129,9 +130,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosugges
 
 
 echo "---------------------------------------------------------"
-echo "$(tput setaf 2)Copy .zshrc file into root.$(tput sgr 0)"
+echo "$(tput setaf 2)insert .zshrc file into zshenv.$(tput sgr 0)"
 echo "---------------------------------------------------------"
-cp ./shell/.zshrc ~/.
+# cp ./shell/.zshenv ~/.
+echo "ZDOTDIR=~/.config/shell" > ~/.zshenv
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: Switching shell to zsh. You may need to logout.$(tput sgr 0)"

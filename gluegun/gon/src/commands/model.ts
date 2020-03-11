@@ -3,7 +3,14 @@ import { GluegunToolbox } from 'gluegun'
 export const description = 'Generates a model and model test.'
 export const run = async function(toolbox: GluegunToolbox) {
   // grab some features
-  const { parameters, strings, print, ignite, patching, filesystem } = toolbox
+  const {
+    parameters,
+    strings,
+    print,
+    template: { generate },
+    patching,
+    filesystem
+  } = toolbox
   const { camelCase, kebabCase, pascalCase, isBlank } = strings
 
   // validation
@@ -41,7 +48,16 @@ export const run = async function(toolbox: GluegunToolbox) {
     jobs.push({ template: 'rollup-index.ts.ejs', target: rollupPath })
   }
 
-  await ignite.copyBatch(toolbox, jobs, props)
+  for (let i = 0; i < jobs.length; i++) {
+    let e = jobs[i]
+    await generate({
+      template: e.template,
+      target: e.target,
+      props: props
+    })
+
+    print.info('Created file ' + e.target)
+  }
 
   // include stores in root-store
   if (name.endsWith('-store')) {

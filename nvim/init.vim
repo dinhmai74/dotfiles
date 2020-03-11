@@ -3,6 +3,7 @@ source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/plugin-setting.vim
 source ~/.config/nvim/coc-settings.vim
 source ~/.config/nvim/key-mapping.vim
+let g:rainbow_active = 1
 
 "*****************************************************************************
 "" Basic Settings
@@ -15,7 +16,9 @@ set fileencodings=utf-8
 "" Fix backspace indent
 set backspace=indent,eol,start
 set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
-
+set showcmd       " display incomplete commands
+set shell=zsh " Set bash as the prompt for Vim
+set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
 "" Tabs. May be overridden by autocmd rules
 set tabstop=2
 set softtabstop=0
@@ -47,10 +50,10 @@ set relativenumber
 let no_buffers_menu=1
 silent! colorscheme gruvbox
 set mousemodel=popup
-" set guifont=Fira\ Code-Light:h1
+set guifont=Fira\ Code-Light:h1
 set t_Co=256
 set guioptions=egmrti
-set gfn=Monospace\ 10
+" set gfn=Monospace\ 10
 "" Disable the blinking cursor.
 " set gcr=a:blinkon0
 set scrolloff=3
@@ -74,6 +77,7 @@ if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
 
+
 " vim-airline
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
@@ -87,6 +91,8 @@ let g:airline_skip_empty_sections = 1
 "" no one is really happy until you have this shortcuts
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
+cnoreabbrev q1 q!
+cnoreabbrev w1 w!
 cnoreabbrev Qall! qall!
 cnoreabbrev Wq wq
 cnoreabbrev Wa wa
@@ -155,17 +161,18 @@ set autoread
 " See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
 function! s:custom_jarvis_colors()
   " coc.nvim color changes
+  colorscheme gruvbox
   hi link CocErrorSign WarningMsg
   hi link CocWarningSign Number
   hi link CocInfoSign Type
 
   " Make background transparent for many things
-  " hi Normal ctermbg=NONE guibg=NONE
+  hi Normal ctermbg=NONE guibg=NONE
   " hi NonText ctermbg=NONE guibg=NONE
   hi LineNr ctermfg=NONE guibg=NONE
   hi SignColumn ctermfg=NONE guibg=NONE
-  " hi StatusLine guifg=#16252b guibg=#6699CC
-  " hi StatusLineNC guifg=#16252b guibg=#16252b
+  hi StatusLine guifg=#16252b guibg=#6699CC
+  hi StatusLineNC guifg=#16252b guibg=#16252b
 
   " Try to hide vertical spit and end of buffer symbol
   " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
@@ -183,13 +190,7 @@ function! s:custom_jarvis_colors()
 endfunction
 
 " autocmd! ColorScheme * call TrailingSpaceHighlights()
-autocmd! ColorScheme gruvbox call s:custom_jarvis_colors()
-" call s:custom_jarvis_colors()
+" autocmd! ColorScheme * call s:custom_jarvis_colors()
+call s:custom_jarvis_colors()
 
 " Editor theme
-set background=dark
-try
-  colorscheme gruvbox
-catch
-  colorscheme slate
-endtry

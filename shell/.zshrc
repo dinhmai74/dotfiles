@@ -13,19 +13,106 @@ COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(
-  brew common-aliases docker gitfast github node npm yarn osx web-search nvm zsh-syntax-highlighting
+  brew 
+  common-aliases 
+  docker 
+  gitfast 
+  github 
+  node 
+  npm 
+  yarn 
+  osx
+  web-search
+  nvm
+  zsh-syntax-highlighting
   zsh-better-npm-completion
-zsh-syntax-highlighting
-zsh-completions
+  zsh-syntax-highlighting
+  zsh-completions
   git
-zsh-autosuggestions
-alias-tips
+  zsh-autosuggestions
+  alias-tips
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+
+#------------------------------------------------------------------------------#
+#                                    general                                   #
+#------------------------------------------------------------------------------#
+# set local
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+
+export EDITOR=nvim
+
+# remove % sign
+unsetopt PROMPT_SP
+
+# export STARSHIP_CONFIG=~/.config/starship/starship.toml
+# eval "$(starship init zsh)"
+# start tmux
+# if [ "$TMUX" = "" ]; then tmux; fi
+
+# -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
+# export PATH="/usr/local/opt/node@10/bin:$PATH"
+# export PATH="/usr/local/opt/node@12/bin:$PATH"
+
+  # Set Spaceship ZSH as a prompt
+  # autoload -U promptinit; promptinit
+  # prompt spaceship
+
+  
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+# Change cursor shape for different vi modes.
+function zle-keymap-select {
+if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+echo -ne '\e[1 q'
+elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+echo -ne '\e[5 q'
+fi
+}
+zle -N zle-keymap-select
+zle-line-init() {
+    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+echo -ne "\e[5 q"
+}
+zle -N zle-line-init
+echo -ne '\e[5 q' # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+
+# Use lf to switch directories and bind it to ctrl-o
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+fi
+}
+bindkey -s '^o' 'lfcd\n'
+# Edit line in vim with ctrl-e:
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
+#------------------------------------------------------------------------------#
+#                                    themes                                    #
+#------------------------------------------------------------------------------#
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs_joined)
 POWERLEVEL9K_DIR_DEFAULT_BACKGROUND="clear"
@@ -82,12 +169,10 @@ zsh_wifi_signal(){
         fi
 }
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
+
+#------------------------------------------------------------------------------#
+#                                     alias                                    #
+#------------------------------------------------------------------------------#
 alias zshconfig="code ~/.zshrc"
 alias zshconfigv="vi ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
@@ -146,42 +231,36 @@ alias gss="gon screen "
 alias gsc="gon component "
 alias gsu="gon utils "
 alias oiterm="open -a /Applications/iTerm.app ."
-
-autoload -U compinit && compinit
-
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH=$PATH:$ANDROID_HOME/emulator
-export TOOLCHAINS=swift
+alias pip="pip3"
 
 alias emu="cd $ANDROID_HOME && cd tools && emulator -avd Nexus5X"
 alias devmenu="adb shell input keyevent 82"
 
-# set local
-LC_CTYPE=en_US.UTF-8
-LC_ALL=en_US.UTF-8
-source /Users/dinhmai/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+autoload -U compinit && compinit
+
+
+#------------------------------------------------------------------------------#
+#                                  export path                                 #
+#------------------------------------------------------------------------------#
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+PATH=$PATH:$ANDROID_HOME/tools
+PATH=$PATH:$ANDROID_HOME/tools/bin
+PATH=$PATH:$ANDROID_HOME/platform-tools
+PATH=$PATH:$ANDROID_HOME/emulator
+PATH="/usr/local/opt/ruby/bin:$PATH"
 PATH=$PATH:$(ruby -e 'puts Gem.bindir')
+PATH=$PATH:~/.npm-global/bin
+PATH=~/development/flutter/bin:$PATH
 export PATH
+export NPM_CONFIG_PREFIX=~/.npm-global
+export TOOLCHAINS=swift
+
+
+#------------------------------------------------------------------------------#
+#                                 source plugin                                #
+#------------------------------------------------------------------------------#
+source /Users/dinhmai/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $(dirname $(gem which colorls))/tab_complete.sh
 eval $(thefuck --alias)
-
-export PATH=$PATH:$HOME/.npm-global/bin
-export PATH=~/development/flutter/bin:$PATH
-
-export EDITOR=nvim
-
-# remove % sign
-unsetopt PROMPT_SP
-
-# export STARSHIP_CONFIG=~/.config/starship/starship.toml
-# eval "$(starship init zsh)"
-# start tmux
-# if [ "$TMUX" = "" ]; then tmux; fi
-
-# -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'
-export PATH="/usr/local/opt/node@10/bin:$PATH"

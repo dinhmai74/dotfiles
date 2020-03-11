@@ -1,11 +1,11 @@
-tsserver.goToProjectConfig
 explorer
-workspace.renameCurrentFile
 terminal.Toggle
+eslint.executeAutofix
+tslint.fixAllProblems
+tsserver.goToProjectConfig
+workspace.renameCurrentFile
 tabnine.openConfig
 prettier.formatFile
-tslint.fixAllProblems
-eslint.executeAutofix
 editor.action.organizeImport
 snippets.editSnippets
 tsserver.organizeImports

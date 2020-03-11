@@ -30,7 +30,7 @@ let g:closetag_regions = {
     \ }
 
 " rainbow
-au FileType c,cpp,objc,objcpp,tsx,js,ts call rainbow#load()
+" au FileType c,cpp,objc,objcpp,tsx,js,ts call rainbow#load()
 let g:rainbow_active = 1
 
 " #------------------------------------------------------------------------------#
