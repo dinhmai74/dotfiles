@@ -47,6 +47,12 @@ LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 
 export EDITOR=nvim
+# Basic auto/tab complete:
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
 
 # remove % sign
 unsetopt PROMPT_SP
