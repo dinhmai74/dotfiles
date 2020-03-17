@@ -84,6 +84,11 @@ nmap sv :vsplit<Return><C-w>w
 " python excue
 " nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
+"ZZ to :w, ZX to :wq
+noremap zz :w<CR>
+noremap zx :wq<CR>
+noremap XXX :q!<CR>
+nnoremap <space>t :!open -a /Applications/iTerm.app .<cr>
 
 
 " //****************************************************************************//
@@ -137,3 +142,8 @@ map  n <Plug>(easymotion-next)
 "hi Normal guibg=NONE ctermbg=NONE
 
 nmap <space>e :CocCommand explorer<CR>
+
+" frame command
+nmap <space>f :CommentFrameHashDash ""<Left>
+let g:multi_cursor_select_all_word_key = '<space>n'
+

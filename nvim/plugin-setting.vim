@@ -120,3 +120,12 @@ else
   let g:airline_symbols.linenr = ''
 endif
 
+
+"OTHER PLUGIN SETTINGS
+"better syntax in python 
+let python_highlight_all = 1
+"indentLine setting You can also use one of ¦, ┆, │, ⎸, or ▏
+" let g:indentLine_char = '┊⎸'
+let g:indentLine_char = '┊'
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+

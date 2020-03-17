@@ -1,6 +1,5 @@
 scriptencoding utf-8
 source ~/.config/nvim/plugins.vim
-source ~/.config/nvim/plugin-setting.vim
 source ~/.config/nvim/coc-settings.vim
 source ~/.config/nvim/key-mapping.vim
 let g:rainbow_active = 1
@@ -13,28 +12,32 @@ let g:rainbow_active = 1
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
-"" Fix backspace indent
+" "" Fix backspace indent
 set backspace=indent,eol,start
 set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
 set showcmd       " display incomplete commands
 set shell=zsh " Set bash as the prompt for Vim
-set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
-"" Tabs. May be overridden by autocmd rules
+" "" Tabs. May be overridden by autocmd rules
 set tabstop=2
 set softtabstop=0
 set shiftwidth=2
 set termguicolors
-" " always uses spaces instead of tab characters
+" " " always uses spaces instead of tab characters
 set expandtab
 
-"" Enable hidden buffers
+" "" Enable hidden buffers
 set hidden
-"" Fix backspace indent
-"" Searching
+" "" Fix backspace indent
+" "" Searching
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+" " Mouse in visual modes
+set mouse=v
+" " Blink cursor on error instead of beeping
+set visualbell
+
 
 " set fileformats=unix,dos,mac
 " Yank and paste with the system clipboard
@@ -44,7 +47,7 @@ autocmd BufEnter * silent! :lcd%:p:h
 "*****************************************************************************
 "" Visual Settings
 "*****************************************************************************
-syntax on
+" syntax on
 set ruler
 set relativenumber
 let no_buffers_menu=1
@@ -53,15 +56,15 @@ set mousemodel=popup
 set guifont=Fira\ Code-Light:h1
 set t_Co=256
 set guioptions=egmrti
-" set gfn=Monospace\ 10
-"" Disable the blinking cursor.
-" set gcr=a:blinkon0
+" " set gfn=Monospace\ 10
+" "" Disable the blinking cursor.
+" " set gcr=a:blinkon0
 set scrolloff=3
 
-"" Status bar
+" "" Status bar
 set laststatus=2
 
-"" Use modeline overrides
+" "" Use modeline overrides
 set modeline
 set modelines=10
 
@@ -84,6 +87,29 @@ let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
+
+" Whitespace
+set wrap
+set textwidth=0
+set wrapmargin=0
+set formatoptions=tcqrn1
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set breakindent
+set noshiftround
+
+" Cursor motion
+set scrolloff=3
+set backspace=indent,eol,start
+set matchpairs+=<:> " use % to jump between pairs
+
+" Rendering
+set ttyfast
+
+let python_highlight_all=1
+syntax on
 
 "*****************************************************************************
 "" Abbreviations
@@ -193,4 +219,3 @@ endfunction
 " autocmd! ColorScheme * call s:custom_jarvis_colors()
 call s:custom_jarvis_colors()
 
-" Editor theme

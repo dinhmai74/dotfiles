@@ -80,6 +80,9 @@
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Fuit%2Fwuwu": [
       "fix",
       "esli"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2FTests": [
+      "import"
     ]
   },
   "extensions": {
@@ -116,6 +119,9 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Fuit%2Fwuwu": [
       "loremis"
+    ],
+    "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Fpython-project%2Ftutorial%2Ftutorial%2Fspiders": [
+      "python"
     ]
   },
   "outline": {

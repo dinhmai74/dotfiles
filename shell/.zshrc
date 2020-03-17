@@ -292,7 +292,7 @@ alias pj='cd ~/Workplace/Project'
 alias st='cd ~/Workplace/Project/swift'
 alias uit='cd ~/Workplace/Project/uit'
 alias nf='cd ~/Workplace/Project/nextfunc'
-alias getAddress='ipconfig getifaddr en0'
+alias getAdress='ipconfig getifaddr en0'
 alias ipAd='ipconfig getifaddr en0'
 alias fun='cd ~/Workplace/Project/fun'
 alias ig='ignite'
@@ -308,6 +308,7 @@ alias gss="gon screen "
 alias gsc="gon component "
 alias gsu="gon utils "
 alias oiterm="open -a /Applications/iTerm.app ."
+alias oi="open -a /Applications/iTerm.app ."
 alias pip="pip3"
 
 alias emu="cd $ANDROID_HOME && cd tools && emulator -avd Nexus5X"
@@ -330,6 +331,7 @@ PATH="/usr/local/opt/ruby/bin:$PATH"
 PATH=$PATH:$(ruby -e 'puts Gem.bindir')
 PATH=$PATH:~/.npm-global/bin
 PATH=~/development/flutter/bin:$PATH
+PATH="$PATH:/Users/dinhmai/.dotnet/tools"
 export PATH
 export NPM_CONFIG_PREFIX=~/.npm-global
 export TOOLCHAINS=swift

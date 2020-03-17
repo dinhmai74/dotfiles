@@ -4,3 +4,8 @@ thefuck/
 configstore/
 gatsby/
 devcert/
+.mono/
+Microsoft\VisualStudio Services/
+NuGet/
+stetic/
+xbuild/
