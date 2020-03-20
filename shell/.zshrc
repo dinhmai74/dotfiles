@@ -26,7 +26,6 @@ plugins=(
   nvm
   zsh-syntax-highlighting
   zsh-better-npm-completion
-  zsh-syntax-highlighting
   zsh-completions
   git
   zsh-autosuggestions
@@ -340,7 +339,6 @@ export TOOLCHAINS=swift
 #------------------------------------------------------------------------------#
 #                                 source plugin                                #
 #------------------------------------------------------------------------------#
-source /Users/dinhmai/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $(dirname $(gem which colorls))/tab_complete.sh
 eval $(thefuck --alias)

@@ -3,7 +3,7 @@
     "coc-actions": ">=1.4.0",
     "coc-emmet": ">=1.1.4",
     "coc-eslint": ">=1.2.6",
-    "coc-explorer": ">=0.3.7",
+    "coc-explorer": ">=0.3.13",
     "coc-highlight": ">=1.2.5",
     "coc-json": ">=1.2.5",
     "coc-marketplace": ">=1.7.0",

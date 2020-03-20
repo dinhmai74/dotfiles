@@ -1,4 +1,6 @@
 #!/bin/sh
+
+
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: Greetings. Preparing to power up and begin diagnostics.$(tput sgr 0)"
 echo "---------------------------------------------------------"
@@ -37,6 +39,7 @@ packages=(
   "fzf"
   "z"
   "lf"
+  "thefuck"
 )
 
 for i in "${packages[@]}"
@@ -87,7 +90,7 @@ gemPackages=(
 
 for i in "${gemPackages[@]}"
 do
-  gem install $i
+  sudo gem install $i
   echo "---------------------------------------------------------"
 done
 
@@ -133,7 +136,36 @@ echo "---------------------------------------------------------"
 echo "$(tput setaf 2)insert .zshrc file into zshenv.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 # cp ./shell/.zshenv ~/.
-echo "ZDOTDIR=~/.config/shell" > ~/.zshenv
+echo "ZDOTDIR=~/.config/shell" >> ~/.zshenv
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)installing zsh powerdk.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)installing zsh highlighting.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)JARVIS: Installing zsh plugins...$(tput sgr 0)"
+echo "---------------------------------------------------------"
+
+cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
+zshplugins=(
+  "https://github.com/zsh-users/zsh-syntax-highlighting.git" 
+  "https://github.com/djui/alias-tips.git"
+  "https://github.com/lukechilds/zsh-better-npm-completion.git"
+  "https://github.com/zsh-users/zsh-completions.git"
+  "https://github.com/zsh-users/zsh-autosuggestions.git"
+)
+for i in "${zshplugins[@]}"
+do
+  git clone $i
+  echo "---------------------------------------------------------"
+done
+
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: Switching shell to zsh. You may need to logout.$(tput sgr 0)"

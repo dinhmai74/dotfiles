@@ -219,3 +219,5 @@ endfunction
 " autocmd! ColorScheme * call s:custom_jarvis_colors()
 call s:custom_jarvis_colors()
 
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
