@@ -30,6 +30,7 @@ echo "---------------------------------------------------------"
 packages=(
   "git"
   "node"
+  "watchman"
   "ruby"
   "tmux"
   "neovim"
@@ -49,10 +50,22 @@ do
 done
 
 echo "---------------------------------------------------------"
+echo "$(tput setaf 2)JARVIS: Installing adoptopenjdk8.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8
+
+echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: Installing Python NeoVim client.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
 pip3 install neovim
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)JARVIS: Installing yarn$(tput sgr 0)"
+echo "---------------------------------------------------------"
+
+npm install -g yarn
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: Installing node neovim package$(tput sgr 0)"
