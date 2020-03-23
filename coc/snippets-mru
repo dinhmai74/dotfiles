@@ -1,8 +1,11 @@
+us.e
+useState
+private
+useMemoOne
 exd
 exp
 clo
 impd
-useState
 rf
 tl
 imp
@@ -21,7 +24,6 @@ snippet
 rcreduxp
 style
 timeout
-useMemoOne
 cp
 ctl
 useCallback
@@ -32,7 +34,6 @@ pter
 title
 s
 us.s
-us.e
 set
 dp
 settimeout
@@ -65,7 +66,6 @@ snip
 dot
 e
 ref
-private
 datetime
 todo
 try

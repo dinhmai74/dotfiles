@@ -309,6 +309,7 @@ alias gsu="gon utils "
 alias oiterm="open -a /Applications/iTerm.app ."
 alias oi="open -a /Applications/iTerm.app ."
 alias pip="pip3"
+alias mongosv="mongod --dbpath ~/Documents/mongodb"
 
 alias emu="cd $ANDROID_HOME && cd tools && emulator -avd Nexus5X"
 alias devmenu="adb shell input keyevent 82"

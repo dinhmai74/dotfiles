@@ -100,6 +100,7 @@ gemPackages=(
   "neovim"
   "environment"
   "cocoapods"
+  "iStats"
 )
 
 for i in "${gemPackages[@]}"
