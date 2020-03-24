@@ -58,12 +58,6 @@ Plug 'jelera/vim-javascript-syntax'
 " Snippet support
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
-Plug 'SirVer/ultisnips'
-" React code snippets
-Plug 'epilande/vim-react-snippets'
-" ES2015 code snippets (Optional)
-Plug 'epilande/vim-es2015-snippets'
-
 
 " util
 Plug 'terryma/vim-multiple-cursors'

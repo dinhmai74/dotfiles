@@ -217,7 +217,9 @@ endfunction
 
 " autocmd! ColorScheme * call TrailingSpaceHighlights()
 " autocmd! ColorScheme * call s:custom_jarvis_colors()
-call s:custom_jarvis_colors()
-
+" call s:custom_jarvis_colors()
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+colorscheme gruvbox
+
 

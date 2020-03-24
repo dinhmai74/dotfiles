@@ -148,3 +148,6 @@ nmap <space>f :CommentFrameHashDash ""<Left>
 let g:multi_cursor_select_all_word_key = '<space>n'
 
 nmap <leader>c :let @/=""<CR>
+nmap <leader>s :sort<CR>
+nmap <leader>su :%sort u<CR>
+nmap <leader>sr :%sort!<CR>

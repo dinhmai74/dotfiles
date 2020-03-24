@@ -6,6 +6,13 @@ import { Screen, Text, Header, View } from "components"
 import { color, spacing } from "theme"
 import { NavigationScreenProp } from "react-navigation"
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingHorizontal: spacing[6]
+  }
+})
+
 export interface <%= props.pascalName %>Props {
   navigation: NavigationScreenProp<any, any>
 }
@@ -20,11 +27,4 @@ export const <%= props.pascalName %>: React.FunctionComponent<<%= props.pascalNa
       </View>
     </Screen>
   )
-})
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingHorizontal: spacing[6]
-  }
 })

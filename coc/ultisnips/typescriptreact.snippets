@@ -263,3 +263,53 @@ endsnippet
 snippet eslint "Description" b
 // eslint-disable-next-line
 endsnippet
+snippet uss "useState" w
+const [$1, set$2] = useState(${3:''})${0:;}
+endsnippet
+
+snippet use "useEffect" w
+useEffect(() => {
+  $1
+})${0:;}
+endsnippet
+
+snippet user "useEffect with return" w
+useEffect(() => {
+  $1
+	return () => {
+    $2
+	};
+})${0:;}
+endsnippet
+
+snippet usc "useContext" w
+const $1 = useContext($2)${0:;}
+endsnippet
+
+snippet uscb "useCallback" w
+useCallback(
+	() => {
+		$1
+	},
+	[$2],
+)${0:;}
+endsnippet
+
+snippet usm "useMemo" w
+const $1 = useMemo(() => {
+	$2
+}, [$3])${0:;}
+endsnippet
+
+snippet usrf "useRef" w
+const $1 = useRef($2)${0:;}
+endsnippet
+
+
+snippet useThemes "Description" 
+const { color } = useThemes()
+endsnippet
+
+snippet cl "Description" 
+console.log("$1", $1)
+endsnippet

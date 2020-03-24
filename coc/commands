@@ -1,5 +1,6 @@
-explorer
+tsserver.organizeImports
 snippets.editSnippets
+explorer
 terminal.Toggle
 eslint.executeAutofix
 tslint.fixAllProblems
@@ -8,7 +9,6 @@ workspace.renameCurrentFile
 tabnine.openConfig
 prettier.formatFile
 editor.action.organizeImport
-tsserver.organizeImports
 tsserver.restart
 tsserver.executeAutofix
 eslint.createConfig
