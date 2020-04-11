@@ -4,9 +4,6 @@
 inoremap jk <ESC>
 
 "" Split
-noremap <Leader>h :<C-u>split<CR>
-noremap <Leader>v :<C-u>vsplit<CR>
-
 nnoremap th  :tabfirst<CR>
 nnoremap tj  :tabnext<CR>
 nnoremap tk  :tabprev<CR>
@@ -68,7 +65,7 @@ endif
 " endif
 
 nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>e :FZF -m<CR
+nnoremap <silent> <leader>e :GFiles<CR>
 nmap ev :tabedit $MYVIMRC<CR>
 
 if has('macunix')

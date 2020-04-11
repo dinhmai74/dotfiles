@@ -128,3 +128,7 @@ ecb46007f99539d3913332ae978751c6|file:///Users/dinhmai/workplace/project/uit/bow
 d5c01f73a32c57b11b77f7c8a5f95098|file:///Users/dinhmai/.config/nvim/coc-settings.vim|17|1|V|vim
 	  \ 'coc-yank', 
 	  \ 'coc-omnisharp', 
+69d3abdfe32d75cfa927f9c95edecca9|file:///Users/dinhmai/.config/nvim/key-mapping.vim|7|1|V|vim
+	noremap <Leader>h :<C-u>split<CR>
+ce4c4686b0becd2a21d133a07c99e8a8|file:///Users/dinhmai/.config/nvim/key-mapping.vim|7|1|V|vim
+	noremap <Leader>v :<C-u>vsplit<CR>
