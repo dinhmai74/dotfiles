@@ -7,6 +7,7 @@
     "coc-highlight": ">=1.2.5",
     "coc-json": ">=1.2.5",
     "coc-marketplace": ">=1.7.0",
+    "coc-omnisharp": ">=0.0.25",
     "coc-pairs": ">=1.2.21",
     "coc-prettier": ">=1.1.11",
     "coc-project": ">=0.0.9",
@@ -18,6 +19,7 @@
     "coc-tslint": ">=1.0.17",
     "coc-tslint-plugin": ">=1.1.1",
     "coc-tsserver": ">=1.4.12",
-    "coc-word": ">=1.2.2"
+    "coc-word": ">=1.2.2",
+    "coc-yank": ">=1.1.4"
   }
 }

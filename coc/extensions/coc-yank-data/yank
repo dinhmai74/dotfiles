@@ -1,0 +1,127 @@
+ff2364a0be3d20e46cc69efb36afe9a5|file:///Users/dinhmai/.config/nvim/key-mapping.vim|150|20|v|vim
+	space
+26be38f413fb8bfec2c7b478fae42cad|file:///Users/dinhmai/.config/nvim/key-mapping.vim|111|25|V|vim
+	"Recovery commands from history through FZF
+	nmap <space>y :History:<CR>
+60e63331ce5baf0763bd48831a6e7be3|file:///Users/dinhmai/.config/nvim/key-mapping.vim|140|1|V|vim
+	nmap <space>e :CocCommand explorer<CR>
+	" frame command
+	nmap <space>f :CommentFrameHashDash ""<Left>
+	let g:multi_cursor_select_all_word_key = '<space>n'
+41e230a44df4b131461d69ca842834df|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|33|1|V|cs
+	            var user = _accountService.Authenticate(model.Email, model.Password);
+c579b29733ea0890d406043aa46c0058|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|131|18|V|cs
+	                { 
+	
+	                }
+0cf31b2c283ce3431794586df7b0996d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|128|13|v|cs
+	    
+1dc5a7232e294d16ba8a8a050ce0c615|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|131|17|V|cs
+	                return Ba
+11d46cf4b49ac43e2af2ebe1d9021f23|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|129|17|V|cs
+	                .apiRep
+52edf377474f501b193c08921a380ae7|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|129|17|V|cs
+	                apiRep.Data
+d6c3114b6b15be17f050323b2bbf55e7|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|129|17|V|cs
+	                apiRep.
+4a1a1cbf7fcb515818b5f569aedb9642|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|130|19|V|cs
+	                  .
+630f571e14b3a7c5fd4f6ca501524448|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|129|17|V|cs
+	                AppException
+0ee637117fdb29c6d7ebc2be67361dd1|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|129|17|V|cs
+	                AppException.
+bc95dfc14146aa23e43f2ea7af04d310|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|190|1|v|cs
+	            
+ea6ea234b15f86bc27e1e26c6f1a95b5|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|6|1|V|cs
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
+b17f6b580cf9c76cad39e95f53e592b9|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|6|1|V|cs
+	using System.Threading.Tasks;
+0a2853ac4ed48b2cea346c888a25241a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|191|11|V|cs
+	          fsa
+8f0d7d0b80610e50ec0a69f3a064bc78|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|201|20|V|cs
+	            if( hello ){
+	              fdasjf
+	            }
+6464a0442f74cb63c68704222b4fa6bb|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|201|13|V|cs
+	            if(dfasf)
+688cb479519256e816cc85e936d1bf7f|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|200|13|V|cs
+	            Ok()
+3e45161ac2b68b42a7c957de00e9b903|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|200|13|V|cs
+	            Ok
+dd998020d0babd396ab84049e48c929e|file:///Users/dinhmai/.SpaceVim.d/init.toml|32|1|V|conf
+	[[layers]]
+293cccc644962c03dacb38a2bfdf5370|file:///Users/dinhmai/.SpaceVim.d/init.toml|32|1|V|conf
+	name = "denite"
+01a61c31980741b4fdd18f71a54d6005|file:///Users/dinhmai/.SpaceVim.d/init.toml|35|1|V|conf
+	name = 'shell'
+4229d691b07b13341da53f17ab9f2416|untitled:3|1|1|V|
+	hell
+d3b2dd209706f5d37f4a95440c895a68|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/App.js|16|1|V|javascript
+	const Should
+b5ae266d2595adb98755e07f33ca6f2f|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/App.js|19|3|V|javascript
+	  =>
+ee7876cc940301acf4f78ea10221d2dd|file:///Users/dinhmai/.SpaceVim.d/init.toml|44|11|v|conf
+	denite
+0e5567ab4ba8ae1b3e0aebdc3196859b|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|108|1|V|typescriptreact
+	denitedenitedenite
+32230c2268e31aa721dcde0d8a6aebb8|untitled:3|2|1|V|
+	fsdafds
+f0899c34bde1583b28a436ff0041cd70|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|86|5|V|typescriptreact
+	    fsa
+3d8bdb3dd643ccabc2ad963d5900357a|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|86|5|V|typescriptreact
+	    df
+e7557324ff7c9cefde4165646f001d13|file:///Users/dinhmai/.SpaceVim.d/init.toml|56|1|V|conf
+	    'dart'
+8306a18e5a1cd5162bdb6ff92aab1286|file:///Users/dinhmai/.SpaceVim.d/init.toml|49|1|v|conf
+	# The lsp layer has to be enabled too. SpaceVim converts the configuration in the lsp layer and then passes it to coc.
+	# You can put your language servers here.
+	[[layers]] 
+	  name = 'lsp'
+	  filetypes = [
+	    'c',
+	    'cpp',
+	  ]
+	  [layers.override_cmd]
+	    c = ['ccls', '--log-file=/tmp/ccls.log']
+	    cpp = ['ccls', '--log-file=/tmp/ccls.log']
+	
+	
+7bb0edd98f22430a03b67f853e83c2ca|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/app.tsx|132|8|V|typescriptreact
+	        
+43689afcf14e7661e35efe739a30199c|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/app.tsx|131|7|V|typescriptreact
+	      set () {
+e82f3e56d2a6718da3f068e5e6f91343|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/app.tsx|131|7|V|typescriptreact
+	      }
+e1266b294c2e40821e79bda2f56cc9a7|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/app.tsx|131|7|V|typescriptreact
+	      set () {
+	      }
+32039ce38eda62ab4df5557757866361|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/app.tsx|131|7|V|typescriptreact
+	      spyOn(object, '<`2:method`>')<|0|>;
+0a7b6349180fd5764acd34bb98602fe1|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/app.tsx|131|20|V|typescriptreact
+	      on('event_name', function(<`2:stream`>) {
+	        <`3`>
+	      });
+20ad74a3b36e98305d36c7fbe3634f85|file:///Users/dinhmai/.SpaceVim.d/init.toml|26|16|v|conf
+	SourceCodePro 
+55b832ec80f9e53306578c577d22cdff|file:///Users/dinhmai/.SpaceVim.d/init.toml|26|16|v|conf
+	Nerd 
+6b147a8fb0cddd3996e40b6ea4baf7c0|file:///Users/dinhmai/.SpaceVim.d/init.toml|26|16|v|conf
+	Font 
+5d9b47bd3b65072e0d5daf55f01da086|file:///Users/dinhmai/.SpaceVim.d/init.toml|26|16|v|conf
+	Mono
+0544ed93c22d5e1c869010c4515a7401|untitled:9|1|1|V|
+	fdsaf
+0663613e225dc45b9ee601d3cd6b0fef|untitled:3|1|1|V|
+	fdadf
+a2a4072f2006541152e924a81f3bf1ac|file:///Users/dinhmai/.SpaceVim.d/init.toml|26|5|V|conf
+	    guifont = "Fira Code:h15"
+ecb46007f99539d3913332ae978751c6|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app.json|4|1|v|json
+	    "slug": "bowie",
+	    "pla
+50e233152a792de076ee9c6abce47f70|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/ProductsController.cs|21|13|V|cs
+	            _p
+7c7cb46ad3209f3039cf6622cdba30a7|file:///Users/dinhmai/.config/nvim/coc-settings.json|12|5|V|jsonc
+	    "c#",

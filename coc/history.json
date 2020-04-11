@@ -126,7 +126,13 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Fpython-project%2Ftutorial%2Ftutorial%2Fspiders": [
       "python"
-    ]
+    ],
+    "%2FUsers%2Fdinhmai%2F": {
+      "config": [
+        "coc-yank",
+        "omni"
+      ]
+    }
   },
   "outline": {
     "%2FUsers%2Fdinhmai%2F": {

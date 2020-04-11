@@ -8,7 +8,9 @@
     "javascriptreact",
     "typescript.tsx",
     "graphql",
-    "python"
+    "python",
+    "cs",
+    "csharp"
   ],
 	"diagnostic.errorSign": "•",
   "diagnostic.warningSign": "•",

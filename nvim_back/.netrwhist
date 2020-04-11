@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/Users/dinhmai/workplace/project/uit/bowie'
+let g:netrw_dirhist_4='/Users/dinhmai/workplace/project/bowie'
+let g:netrw_dirhist_3='/Users/dinhmai/Workplace/Project/python-project/olx/olx'
+let g:netrw_dirhist_2='/Users/dinhmai/.config'
+let g:netrw_dirhist_1='/Users/dinhmai/.doom.d'

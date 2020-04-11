@@ -20,7 +20,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion' 
@@ -31,15 +30,19 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'lilydjwg/colorizer' "colorize all text 
-Plug 'KabbAmine/vCoolor.vim' "color picker
+" Plug 'KabbAmine/vCoolor.vim' "color picker
 " Plug 'luochen1990/rainbow'
 Plug 'frazrepo/vim-rainbow'
 
 " Themes
-Plug 'drewtempelmeyer/palenight.vim'
+" Plug 'drewtempelmeyer/palenight.vim'
 Plug 'morhetz/gruvbox'
-Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
-Plug 'sainnhe/vim-color-forest-night'
+" Plug 'joshdick/onedark.vim'
+" Plug 'arcticicestudio/nord-vim'
+" Plug 'wadackel/vim-dogrun'
+" Plug 'mhartington/oceanic-next'
+" Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+" Plug 'sainnhe/vim-color-forest-night'
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -69,6 +72,7 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'christoomey/vim-system-copy'
 Plug 'christoomey/vim-sort-motion'
 Plug 'cometsong/commentframe.vim'
+Plug 'doums/coBra'
 " #------------------------------------------------------------------------------#
 " #                                  crs, crc...                                 #
 " #------------------------------------------------------------------------------#
@@ -77,7 +81,7 @@ Plug 'nicwest/vim-camelsnek' "turn case
 " Print function signatures in echo area
 Plug 'Shougo/echodoc.vim'
 " Generate JSDoc commands based on function signature
-Plug 'heavenshell/vim-jsdoc'
+" Plug 'heavenshell/vim-jsdoc'
 
 " Improved motion in Vim
 Plug 'easymotion/vim-easymotion'
@@ -86,11 +90,6 @@ Plug 'easymotion/vim-easymotion'
 "session
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
-"colorscheme
-Plug 'joshdick/onedark.vim'
-" Plug 'arcticicestudio/nord-vim'
-" Plug 'wadackel/vim-dogrun'
-" Plug 'mhartington/oceanic-next'
 
 "coc
 " Plug 'neoclide/coc-yank'
@@ -242,4 +241,6 @@ let python_highlight_all = 1
 " let g:indentLine_char = '┊⎸'
 let g:indentLine_char = '┊'
 " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+filetype indent plugin on
 
