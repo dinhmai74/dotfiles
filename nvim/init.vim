@@ -2,7 +2,7 @@ scriptencoding utf-8
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/coc-settings.vim
 source ~/.config/nvim/key-mapping.vim
-let g:rainbow_active = 1
+" let g:rainbow_active = 1
 
 "*****************************************************************************
 "" Basic Settings
@@ -51,11 +51,11 @@ autocmd BufEnter * silent! :lcd%:p:h
 set ruler
 set relativenumber
 let no_buffers_menu=1
-silent! colorscheme gruvbox
-set mousemodel=popup
+colorscheme gruvbox
+" set mousemodel=popup
 set guifont=Fira\ Code-Light:h1
 set t_Co=256
-set guioptions=egmrti
+" set guioptions=egmrti
 " " set gfn=Monospace\ 10
 " "" Disable the blinking cursor.
 " " set gcr=a:blinkon0
@@ -79,14 +79,6 @@ nnoremap N Nzzzv
 if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
-
-
-" vim-airline
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#ale#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tagbar#enabled = 1
-let g:airline_skip_empty_sections = 1
 
 " Whitespace
 set wrap
@@ -185,41 +177,39 @@ set autoread
 "
 " Add custom highlights in method that is executed every time a colorscheme is sourced
 " See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
-function! s:custom_jarvis_colors()
-  " coc.nvim color changes
-  colorscheme gruvbox
-  hi link CocErrorSign WarningMsg
-  hi link CocWarningSign Number
-  hi link CocInfoSign Type
+" function! s:custom_jarvis_colors()
+  " " coc.nvim color changes
+  " colorscheme gruvbox
+  " hi link CocErrorSign WarningMsg
+  " hi link CocWarningSign Number
+  " hi link CocInfoSign Type
 
-  " Make background transparent for many things
-  hi Normal ctermbg=NONE guibg=NONE
-  " hi NonText ctermbg=NONE guibg=NONE
-  hi LineNr ctermfg=NONE guibg=NONE
-  hi SignColumn ctermfg=NONE guibg=NONE
-  hi StatusLine guifg=#16252b guibg=#6699CC
-  hi StatusLineNC guifg=#16252b guibg=#16252b
+  " " Make background transparent for many things
+  " hi Normal ctermbg=NONE guibg=NONE
+  " " hi NonText ctermbg=NONE guibg=NONE
+  " hi LineNr ctermfg=NONE guibg=NONE
+  " hi SignColumn ctermfg=NONE guibg=NONE
+  " hi StatusLine guifg=#16252b guibg=#6699CC
+  " hi StatusLineNC guifg=#16252b guibg=#16252b
 
-  " Try to hide vertical spit and end of buffer symbol
-  " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
-  " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+  " " Try to hide vertical spit and end of buffer symbol
+  " " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+  " " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
 
-  " Make background color transparent for git changes
-  hi SignifySignAdd guibg=NONE
-  hi SignifySignDelete guibg=NONE
-  hi SignifySignChange guibg=NONE
+  " " Make background color transparent for git changes
+  " hi SignifySignAdd guibg=NONE
+  " hi SignifySignDelete guibg=NONE
+  " hi SignifySignChange guibg=NONE
 
-  " Highlight git change signs
-  hi SignifySignAdd guifg=#99c794
-  hi SignifySignDelete guifg=#ec5f67
-  hi SignifySignChange guifg=#c594c5
-endfunction
+  " " Highlight git change signs
+  " hi SignifySignAdd guifg=#99c794
+  " hi SignifySignDelete guifg=#ec5f67
+  " hi SignifySignChange guifg=#c594c5
+" endfunction
 
 " autocmd! ColorScheme * call TrailingSpaceHighlights()
 " autocmd! ColorScheme * call s:custom_jarvis_colors()
 " call s:custom_jarvis_colors()
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-colorscheme gruvbox
-
-
+" colorscheme gruvbox

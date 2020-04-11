@@ -132,3 +132,1175 @@ d5c01f73a32c57b11b77f7c8a5f95098|file:///Users/dinhmai/.config/nvim/coc-settings
 	noremap <Leader>h :<C-u>split<CR>
 ce4c4686b0becd2a21d133a07c99e8a8|file:///Users/dinhmai/.config/nvim/key-mapping.vim|7|1|V|vim
 	noremap <Leader>v :<C-u>vsplit<CR>
+937715d9f228690a912539b85874c9df|file:///Users/dinhmai/.config/nvim/init.vim|6|1|V|vim
+	
+	"*****************************************************************************
+	"" Basic Settings
+	"*****************************************************************************
+	" general
+	"" Encoding
+	set encoding=utf-8
+	set fileencoding=utf-8
+	set fileencodings=utf-8
+	" "" Fix backspace indent
+	set backspace=indent,eol,start
+	set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
+	set showcmd       " display incomplete commands
+	set shell=zsh " Set bash as the prompt for Vim
+	" "" Tabs. May be overridden by autocmd rules
+	set tabstop=2
+	set softtabstop=0
+	set shiftwidth=2
+	set termguicolors
+	" " " always uses spaces instead of tab characters
+	set expandtab
+	
+	" "" Enable hidden buffers
+	set hidden
+	" "" Fix backspace indent
+	" "" Searching
+	set hlsearch
+	set incsearch
+	set ignorecase
+	set smartcase
+	" " Mouse in visual modes
+	set mouse=v
+	" " Blink cursor on error instead of beeping
+	set visualbell
+	
+	
+	" set fileformats=unix,dos,mac
+	" Yank and paste with the system clipboard
+	" set clipboard=unnamed
+	
+	autocmd BufEnter * silent! :lcd%:p:h
+	"*****************************************************************************
+	"" Visual Settings
+	"*****************************************************************************
+	" syntax on
+	set ruler
+	set relativenumber
+	let no_buffers_menu=1
+	silent! colorscheme gruvbox
+	set mousemodel=popup
+	set guifont=Fira\ Code-Light:h1
+	set t_Co=256
+	set guioptions=egmrti
+	" " set gfn=Monospace\ 10
+	" "" Disable the blinking cursor.
+	" " set gcr=a:blinkon0
+	set scrolloff=3
+	
+	" "" Status bar
+	set laststatus=2
+	
+	" "" Use modeline overrides
+	set modeline
+	set modelines=10
+	
+	set title
+	set titleold="Terminal"
+	set titlestring=%F
+	set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+	" Search mappings: These will make it so that going to the next one in a
+	" search will center on the line it's found in.
+	nnoremap n nzzzv
+	nnoremap N Nzzzv
+	if exists("*fugitive#statusline")
+	  set statusline+=%{fugitive#statusline()}
+	endif
+	
+	
+	" vim-airline
+	let g:airline#extensions#branch#enabled = 1
+	let g:airline#extensions#ale#enabled = 1
+	let g:airline#extensions#tabline#enabled = 1
+	let g:airline#extensions#tagbar#enabled = 1
+	let g:airline_skip_empty_sections = 1
+	
+	" Whitespace
+	set wrap
+	set textwidth=0
+	set wrapmargin=0
+	set formatoptions=tcqrn1
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set expandtab
+	set breakindent
+	set noshiftround
+	
+	" Cursor motion
+	set scrolloff=3
+	set backspace=indent,eol,start
+	set matchpairs+=<:> " use % to jump between pairs
+	
+	" Rendering
+	set ttyfast
+	
+	let python_highlight_all=1
+	syntax on
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	function! s:custom_jarvis_colors()
+	  " coc.nvim color changes
+	  colorscheme gruvbox
+	  hi link CocErrorSign WarningMsg
+	  hi link CocWarningSign Number
+	  hi link CocInfoSign Type
+	
+	  " Make background transparent for many things
+	  hi Normal ctermbg=NONE guibg=NONE
+	  " hi NonText ctermbg=NONE guibg=NONE
+	  hi LineNr ctermfg=NONE guibg=NONE
+	  hi SignColumn ctermfg=NONE guibg=NONE
+	  hi StatusLine guifg=#16252b guibg=#6699CC
+	  hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " Try to hide vertical spit and end of buffer symbol
+	  " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " Make background color transparent for git changes
+	  hi SignifySignAdd guibg=NONE
+	  hi SignifySignDelete guibg=NONE
+	  hi SignifySignChange guibg=NONE
+	
+	  " Highlight git change signs
+	  hi SignifySignAdd guifg=#99c794
+	  hi SignifySignDelete guifg=#ec5f67
+	  hi SignifySignChange guifg=#c594c5
+	endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	colorscheme gruvbox
+	
+	
+287095b8f1154ed234c250f0ed4ff55a|file:///Users/dinhmai/.config/nvim/plugins.vim|58|33|V|vim
+	Plug 'leafgarland/typescript-vim'
+	Plug 'peitalin/vim-jsx-typescript'
+e0d94232e0dc88e7b5830c2ca911d8d9|file:///Users/dinhmai/.config/nvim/init.vim|102|1|V|vim
+	
+	" Cursor motion
+	set scrolloff=3
+	set backspace=indent,eol,start
+	set matchpairs+=<:> " use % to jump between pairs
+	
+	" Rendering
+	set ttyfast
+	
+	let python_highlight_all=1
+	syntax on
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	" function! s:custom_jarvis_colors()
+	  " " coc.nvim color changes
+	  " colorscheme gruvbox
+	  " hi link CocErrorSign WarningMsg
+	  " hi link CocWarningSign Number
+	  " hi link CocInfoSign Type
+	
+	  " " Make background transparent for many things
+	  " hi Normal ctermbg=NONE guibg=NONE
+	  " " hi NonText ctermbg=NONE guibg=NONE
+	  " hi LineNr ctermfg=NONE guibg=NONE
+	  " hi SignColumn ctermfg=NONE guibg=NONE
+	  " hi StatusLine guifg=#16252b guibg=#6699CC
+	  " hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " " Try to hide vertical spit and end of buffer symbol
+	  " " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " " Make background color transparent for git changes
+	  " hi SignifySignAdd guibg=NONE
+	  " hi SignifySignDelete guibg=NONE
+	  " hi SignifySignChange guibg=NONE
+	
+	  " " Highlight git change signs
+	  " hi SignifySignAdd guifg=#99c794
+	  " hi SignifySignDelete guifg=#ec5f67
+	  " hi SignifySignChange guifg=#c594c5
+	" endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	" colorscheme gruvbox
+72a2d81eba19fa68e29f68f9b5163658|untitled:1|2|1|V|
+	Ppplug 'leafgarland/typescript-vim'
+d38b24ef60f8bb96a3c49161ad9d8797|untitled:1|2|1|V|
+	Plug 'peitalin/vim-jsx-typescript'
+b642cce5263bd361843272837fb99a78|file:///Users/dinhmai/.config/nvim/init.vim|91|1|V|vim
+	" Whitespace
+	set wrap
+	set textwidth=0
+	set wrapmargin=0
+	set formatoptions=tcqrn1
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set expandtab
+	set breakindent
+	set noshiftround
+	
+	" Cursor motion
+	set scrolloff=3
+	set backspace=indent,eol,start
+	set matchpairs+=<:> " use % to jump between pairs
+	
+	" Rendering
+	set ttyfast
+	
+	let python_highlight_all=1
+	syntax on
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	" function! s:custom_jarvis_colors()
+	  " " coc.nvim color changes
+	  " colorscheme gruvbox
+	  " hi link CocErrorSign WarningMsg
+	  " hi link CocWarningSign Number
+	  " hi link CocInfoSign Type
+	
+	  " " Make background transparent for many things
+	  " hi Normal ctermbg=NONE guibg=NONE
+	  " " hi NonText ctermbg=NONE guibg=NONE
+	  " hi LineNr ctermfg=NONE guibg=NONE
+	  " hi SignColumn ctermfg=NONE guibg=NONE
+	  " hi StatusLine guifg=#16252b guibg=#6699CC
+	  " hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " " Try to hide vertical spit and end of buffer symbol
+	  " " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " " Make background color transparent for git changes
+	  " hi SignifySignAdd guibg=NONE
+	  " hi SignifySignDelete guibg=NONE
+	  " hi SignifySignChange guibg=NONE
+	
+	  " " Highlight git change signs
+	  " hi SignifySignAdd guifg=#99c794
+	  " hi SignifySignDelete guifg=#ec5f67
+	  " hi SignifySignChange guifg=#c594c5
+	" endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	" colorscheme gruvbox
+aa57ffa52401068fa5eb16be353ee284|file:///Users/dinhmai/.config/nvim/init.vim|82|1|V|vim
+	
+	
+	" vim-airline
+	let g:airline#extensions#branch#enabled = 1
+	let g:airline#extensions#ale#enabled = 1
+	let g:airline#extensions#tabline#enabled = 1
+	let g:airline#extensions#tagbar#enabled = 1
+	let g:airline_skip_empty_sections = 1
+	
+	" Whitespace
+	set wrap
+	set textwidth=0
+	set wrapmargin=0
+	set formatoptions=tcqrn1
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set expandtab
+	set breakindent
+	set noshiftround
+	
+	" Cursor motion
+	set scrolloff=3
+	set backspace=indent,eol,start
+	set matchpairs+=<:> " use % to jump between pairs
+	
+	" Rendering
+	set ttyfast
+	
+	let python_highlight_all=1
+	syntax on
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	" function! s:custom_jarvis_colors()
+	  " " coc.nvim color changes
+	  " colorscheme gruvbox
+	  " hi link CocErrorSign WarningMsg
+	  " hi link CocWarningSign Number
+	  " hi link CocInfoSign Type
+	
+	  " " Make background transparent for many things
+	  " hi Normal ctermbg=NONE guibg=NONE
+	  " " hi NonText ctermbg=NONE guibg=NONE
+	  " hi LineNr ctermfg=NONE guibg=NONE
+	  " hi SignColumn ctermfg=NONE guibg=NONE
+	  " hi StatusLine guifg=#16252b guibg=#6699CC
+	  " hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " " Try to hide vertical spit and end of buffer symbol
+	  " " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " " Make background color transparent for git changes
+	  " hi SignifySignAdd guibg=NONE
+	  " hi SignifySignDelete guibg=NONE
+	  " hi SignifySignChange guibg=NONE
+	
+	  " " Highlight git change signs
+	  " hi SignifySignAdd guifg=#99c794
+	  " hi SignifySignDelete guifg=#ec5f67
+	  " hi SignifySignChange guifg=#c594c5
+	" endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	" colorscheme gruvbox
+fbb8c923faed7ce686d32767c85d2667|file:///Users/dinhmai/.config/nvim/init.vim|83|1|v|vim
+	
+	" vim-airline
+	let g:airline#extensions#branch#enabled = 1
+	let g:airline#extensions#ale#enabled = 1
+	let g:airline#extensions#tabline#enabled = 1
+	let g:airline#extensions#tagbar#enabled = 1
+	let g:airline_skip_empty_sections = 1
+	
+	
+db5c5f56deb55655154ce64b2eedeabe|file:///Users/dinhmai/.config/nvim/init.vim|45|1|V|vim
+	
+	autocmd BufEnter * silent! :lcd%:p:h
+	"*****************************************************************************
+	"" Visual Settings
+	"*****************************************************************************
+	" syntax on
+	set ruler
+	set relativenumber
+	let no_buffers_menu=1
+	silent! colorscheme gruvbox
+	set mousemodel=popup
+	set guifont=Fira\ Code-Light:h1
+	set t_Co=256
+	" set guioptions=egmrti
+	" " set gfn=Monospace\ 10
+	" "" Disable the blinking cursor.
+	" " set gcr=a:blinkon0
+	set scrolloff=3
+	
+	" "" Status bar
+	set laststatus=2
+	
+	" "" Use modeline overrides
+	set modeline
+	set modelines=10
+	
+	set title
+	set titleold="Terminal"
+	set titlestring=%F
+	set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+	" Search mappings: These will make it so that going to the next one in a
+	" search will center on the line it's found in.
+	nnoremap n nzzzv
+	nnoremap N Nzzzv
+	if exists("*fugitive#statusline")
+	  set statusline+=%{fugitive#statusline()}
+	endif
+	
+	" Whitespace
+	set wrap
+	set textwidth=0
+	set wrapmargin=0
+	set formatoptions=tcqrn1
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set expandtab
+	set breakindent
+	set noshiftround
+	
+	" Cursor motion
+	set scrolloff=3
+	set backspace=indent,eol,start
+	set matchpairs+=<:> " use % to jump between pairs
+	
+	" Rendering
+	set ttyfast
+	
+	let python_highlight_all=1
+	syntax on
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	" function! s:custom_jarvis_colors()
+	  " " coc.nvim color changes
+	  " colorscheme gruvbox
+	  " hi link CocErrorSign WarningMsg
+	  " hi link CocWarningSign Number
+	  " hi link CocInfoSign Type
+	
+	  " " Make background transparent for many things
+	  " hi Normal ctermbg=NONE guibg=NONE
+	  " " hi NonText ctermbg=NONE guibg=NONE
+	  " hi LineNr ctermfg=NONE guibg=NONE
+	  " hi SignColumn ctermfg=NONE guibg=NONE
+	  " hi StatusLine guifg=#16252b guibg=#6699CC
+	  " hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " " Try to hide vertical spit and end of buffer symbol
+	  " " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " " Make background color transparent for git changes
+	  " hi SignifySignAdd guibg=NONE
+	  " hi SignifySignDelete guibg=NONE
+	  " hi SignifySignChange guibg=NONE
+	
+	  " " Highlight git change signs
+	  " hi SignifySignAdd guifg=#99c794
+	  " hi SignifySignDelete guifg=#ec5f67
+	  " hi SignifySignChange guifg=#c594c5
+	" endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	" colorscheme gruvbox
+f0747ffef483515a4304f377ea406655|file:///Users/dinhmai/.config/nvim/init.vim|57|1|V|vim
+	set t_Co=256
+	" set guioptions=egmrti
+	" " set gfn=Monospace\ 10
+	" "" Disable the blinking cursor.
+	" " set gcr=a:blinkon0
+	set scrolloff=3
+	
+	" "" Status bar
+	set laststatus=2
+	
+	" "" Use modeline overrides
+	set modeline
+	set modelines=10
+	
+	set title
+	set titleold="Terminal"
+	set titlestring=%F
+	set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+	" Search mappings: These will make it so that going to the next one in a
+	" search will center on the line it's found in.
+	nnoremap n nzzzv
+	nnoremap N Nzzzv
+	if exists("*fugitive#statusline")
+	  set statusline+=%{fugitive#statusline()}
+	endif
+	
+	" Whitespace
+	set wrap
+	set textwidth=0
+	set wrapmargin=0
+	set formatoptions=tcqrn1
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set expandtab
+	set breakindent
+	set noshiftround
+	
+	" Cursor motion
+	set scrolloff=3
+	set backspace=indent,eol,start
+	set matchpairs+=<:> " use % to jump between pairs
+	
+	" Rendering
+	set ttyfast
+	
+	let python_highlight_all=1
+	syntax on
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	" function! s:custom_jarvis_colors()
+	  " " coc.nvim color changes
+	  " colorscheme gruvbox
+	  " hi link CocErrorSign WarningMsg
+	  " hi link CocWarningSign Number
+	  " hi link CocInfoSign Type
+	
+	  " " Make background transparent for many things
+	  " hi Normal ctermbg=NONE guibg=NONE
+	  " " hi NonText ctermbg=NONE guibg=NONE
+	  " hi LineNr ctermfg=NONE guibg=NONE
+	  " hi SignColumn ctermfg=NONE guibg=NONE
+	  " hi StatusLine guifg=#16252b guibg=#6699CC
+	  " hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " " Try to hide vertical spit and end of buffer symbol
+	  " " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " " Make background color transparent for git changes
+	  " hi SignifySignAdd guibg=NONE
+	  " hi SignifySignDelete guibg=NONE
+	  " hi SignifySignChange guibg=NONE
+	
+	  " " Highlight git change signs
+	  " hi SignifySignAdd guifg=#99c794
+	  " hi SignifySignDelete guifg=#ec5f67
+	  " hi SignifySignChange guifg=#c594c5
+	" endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	" colorscheme gruvbox
+73be252ca82217b1458a25e6b4e99f15|file:///Users/dinhmai/.config/nvim/init.vim|54|1|v|vim
+	silent
+6daa64c60bfde7da2069929aa18933dc|file:///Users/dinhmai/.config/nvim/init.vim|55|1|V|vim
+	" set mousemodel=popup
+	set guifont=Fira\ Code-Light:h1
+	set t_Co=256
+	" set guioptions=egmrti
+	" " set gfn=Monospace\ 10
+	" "" Disable the blinking cursor.
+	" " set gcr=a:blinkon0
+	set scrolloff=3
+	
+	" "" Status bar
+	set laststatus=2
+	
+	" "" Use modeline overrides
+	set modeline
+	set modelines=10
+	
+	set title
+	set titleold="Terminal"
+	set titlestring=%F
+	set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+	" Search mappings: These will make it so that going to the next one in a
+	" search will center on the line it's found in.
+	nnoremap n nzzzv
+	nnoremap N Nzzzv
+	if exists("*fugitive#statusline")
+	  set statusline+=%{fugitive#statusline()}
+	endif
+	
+	" Whitespace
+	set wrap
+	set textwidth=0
+	set wrapmargin=0
+	set formatoptions=tcqrn1
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set expandtab
+	set breakindent
+	set noshiftround
+	
+	" Cursor motion
+	set scrolloff=3
+	set backspace=indent,eol,start
+	set matchpairs+=<:> " use % to jump between pairs
+	
+	" Rendering
+	set ttyfast
+	
+	let python_highlight_all=1
+	syntax on
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	" function! s:custom_jarvis_colors()
+	  " " coc.nvim color changes
+	  " colorscheme gruvbox
+	  " hi link CocErrorSign WarningMsg
+	  " hi link CocWarningSign Number
+	  " hi link CocInfoSign Type
+	
+	  " " Make background transparent for many things
+	  " hi Normal ctermbg=NONE guibg=NONE
+	  " " hi NonText ctermbg=NONE guibg=NONE
+	  " hi LineNr ctermfg=NONE guibg=NONE
+	  " hi SignColumn ctermfg=NONE guibg=NONE
+	  " hi StatusLine guifg=#16252b guibg=#6699CC
+	  " hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " " Try to hide vertical spit and end of buffer symbol
+	  " " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " " Make background color transparent for git changes
+	  " hi SignifySignAdd guibg=NONE
+	  " hi SignifySignDelete guibg=NONE
+	  " hi SignifySignChange guibg=NONE
+	
+	  " " Highlight git change signs
+	  " hi SignifySignAdd guifg=#99c794
+	  " hi SignifySignDelete guifg=#ec5f67
+	  " hi SignifySignChange guifg=#c594c5
+	" endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	" colorscheme gruvbox
+cb04fee2673ee8ed2c86c0805b037219|file:///Users/dinhmai/.config/nvim/init.vim|5|1|v|vim
+	let g:rainbow_active = 1
+	
+	"*****************************************************************************
+	"" Basic Settings
+	"*****************************************************************************
+	" general
+	"" Encoding
+	set encoding=utf-8
+	set fileencoding=utf-8
+	set fileencodings=utf-8
+	" "" Fix backspace indent
+	set backspace=indent,eol,start
+	set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
+	set showcmd       " display incomplete commands
+	set shell=zsh " Set bash as the prompt for Vim
+	" "" Tabs. May be overridden by autocmd rules
+	set tabstop=2
+	set softtabstop=0
+	set shiftwidth=2
+	set termguicolors
+	" " " always uses spaces instead of tab characters
+	set expandtab
+	
+	" "" Enable hidden buffers
+	set hidden
+	" "" Fix backspace indent
+	" "" Searching
+	set hlsearch
+	set incsearch
+	set ignorecase
+	set smartcase
+	" " Mouse in visual modes
+	set mouse=v
+	" " Blink cursor on error instead of beeping
+	s
+6c7998c7d2a5b108f758009143791bf9|file:///Users/dinhmai/.config/nvim/init.vim|5|1|V|vim
+	et visualbell

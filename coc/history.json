@@ -132,7 +132,10 @@
         "coc-yank",
         "omni"
       ]
-    }
+    },
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
+      "syntax"
+    ]
   },
   "outline": {
     "%2FUsers%2Fdinhmai%2F": {
