@@ -14,6 +14,8 @@ let g:coc_global_extensions = [
   \ 'coc-prettier', 
   \ 'coc-json', 
   \ 'coc-emmet', 
+  \ 'coc-yank', 
+  \ 'coc-omnisharp', 
   \ 'coc-highlight']
   "\ 'coc-spell-checker', 
   "\ 'coc-styled-components', 

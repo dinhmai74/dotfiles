@@ -125,3 +125,6 @@ ecb46007f99539d3913332ae978751c6|file:///Users/dinhmai/workplace/project/uit/bow
 	            _p
 7c7cb46ad3209f3039cf6622cdba30a7|file:///Users/dinhmai/.config/nvim/coc-settings.json|12|5|V|jsonc
 	    "c#",
+d5c01f73a32c57b11b77f7c8a5f95098|file:///Users/dinhmai/.config/nvim/coc-settings.vim|17|1|V|vim
+	  \ 'coc-yank', 
+	  \ 'coc-omnisharp', 
