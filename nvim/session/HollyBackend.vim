@@ -1,6 +1,6 @@
-" ~/.config/nvim/session/hr.vim:
+" ~/.config/nvim/session/HollyBackend.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 27 February 2020 at 05:33:43.
+" Created by session.vim 2.13.1 on 12 April 2020 at 08:02:09.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -10,13 +10,13 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'gruvbox' | colorscheme gruvbox | endif
+if !exists('g:colors_name') || g:colors_name != 'neodark' | colorscheme neodark | endif
 call setqflist([])
 let SessionLoad = 1
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/Workplace/Project/fun/hackrank
+cd ~/workplace/project/dotnet/HollypocketBackend/HollypocketBackend
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -24,6 +24,7 @@ set shortmess=aoO
 argglobal
 %argdel
 set splitbelow splitright
+set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=0
@@ -40,7 +41,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-lcd ~/Workplace/Project/fun/hackrank
+lcd ~/workplace/project/dotnet/HollypocketBackend
 tabnext 1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
 "   silent exe 'bwipe ' . s:wipebuf

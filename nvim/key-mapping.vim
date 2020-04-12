@@ -64,8 +64,6 @@ endif
   " set clipboard=unnamed,unnamedplus
 " endif
 
-nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>e :GFiles<CR>
 nmap ev :tabedit $MYVIMRC<CR>
 
 if has('macunix')
@@ -112,6 +110,9 @@ nnoremap <leader>sc :CloseSession<CR>
 nmap <leader>y :History:<CR>
 "" Open current line on GitHub
 nnoremap <Leader>o :.Gbrowse<CR>
+nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <silent> <leader>e :GFiles<CR>
+" nnoremap <silent> <C-e> :GFiles<CR>
 " Allows you to save files you opened without write permissions via sudo
 cmap w!! w !sudo tee %
 
@@ -119,7 +120,7 @@ cmap w!! w !sudo tee %
 " Generate jsdoc for function under cursor
 nmap <leader>z :JsDoc<CR>
 
-let g:vcoolor_map = '<C-c>'
+" let g:vcoolor_map = '<C-c>'
 let g:user_emmet_expandabbr_key='<C-z>'
 
 " easymotion
@@ -132,8 +133,8 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 map  N <Plug>(easymotion-prev)
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
+map  <Leader>/ <Plug>(easymotion-sn)
+omap <Leader>/ <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 " transprent bg
 "hi Normal guibg=NONE ctermbg=NONE

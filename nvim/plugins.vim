@@ -37,7 +37,9 @@ Plug 'frazrepo/vim-rainbow'
 " Themes
 " Plug 'drewtempelmeyer/palenight.vim'
 Plug 'morhetz/gruvbox'
-" Plug 'joshdick/onedark.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'mhartington/oceanic-next'
 " Plug 'arcticicestudio/nord-vim'
 " Plug 'wadackel/vim-dogrun'
 " Plug 'mhartington/oceanic-next'
@@ -49,6 +51,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 
+" Syntax highlighting for javascript libraries
+Plug 'othree/javascript-libraries-syntax.vim'
 " all syntax
 Plug 'sheerun/vim-polyglot'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax

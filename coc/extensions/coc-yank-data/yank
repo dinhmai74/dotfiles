@@ -1304,3 +1304,794 @@ cb04fee2673ee8ed2c86c0805b037219|file:///Users/dinhmai/.config/nvim/init.vim|5|1
 	s
 6c7998c7d2a5b108f758009143791bf9|file:///Users/dinhmai/.config/nvim/init.vim|5|1|V|vim
 	et visualbell
+b79b517ce8cd6cf7c4ed8238ae4a3821|untitled:1|1|1|V|
+	fasf
+bad5558dfbcd75fec80385bab712ea58|file:///Users/dinhmai/.config/nvim/key-mapping.vim|67|30|V|vim
+	nnoremap <silent> <leader>b :Buffers<CR>
+	nnoremap <silent> <leader>e :GFiles<CR>
+4a4bf58b9ede32ef80dd815cc2fbaefd|file:///Users/dinhmai/.config/nvim/key-mapping.vim|114|1|V|vim
+	nnoremap <silent> <leader>e :GFiles<CR>
+c444858e0aaeb727da73d2eae62321ad|file:///Users/dinhmai/.config/nvim/key-mapping.vim|115|20|v|vim
+	leader
+40fd0682f2ab407e29ae966e22a0cf97|file:///Users/dinhmai/.config/nvim/init.vim|215|1|V|vim
+	colorscheme onedark
+dfa56bb7a067df9cd0484599320f71f1|file:///Users/dinhmai/.config/nvim/init.vim|217|22|v|vim
+	onehalfdark
+c6baf234a7b845634d8458b4f8be50de|file:///Users/dinhmai/.config/nvim/init.vim|217|1|V|vim
+	let g:airline_theme='one'
+01c79e21890bdc97b45d78fe90b91b93|file:///Users/dinhmai/.config/nvim/init.vim|216|1|V|vim
+	colorscheme onehalfdark
+a23df0e09456dab2ee1a8c2723a7b3d5|file:///Users/dinhmai/.config/nvim/plugins.vim|41|1|V|vim
+	Plug 'sonph/onehalf'
+2ac43aa43bf473f9a9c09b4b608619d3|file:///Users/dinhmai/.config/nvim/init.vim|217|20|v|vim
+	light
+6f159a445b1c75c5ef501e96d65aff9a|file:///Users/dinhmai/.config/nvim/plugins.vim|41|1|V|vim
+	Plug 'sonph/onehalf', {'rtp': 'vim/'}
+1e7082f20e6a3d6336a4444845b24d9c|file:///Users/dinhmai/.config/nvim/plugins.vim|41|7|v|vim
+	sonph/onehalf
+d34f464cd8334e19775bb09b6a6d1046|file:///Users/dinhmai/.config/nvim/init.vim|217|1|V|vim
+	" colorscheme onehalfdark
+c6532f4a664df4209dfcd0c7a5a4b038|file:///Users/dinhmai/.config/nvim/init.vim|217|16|v|vim
+	halfdark
+6f30a87d28e54d72e9d3c593474125a0|file:///Users/dinhmai/.config/nvim/plugins.vim|41|1|V|vim
+	Plug 'rakr/vim-one'
+b57dcf1acb84d2cfa1b7dfd88c8a461d|file:///Users/dinhmai/.config/nvim/init.vim|218|1|V|vim
+	let g:airline_theme='onedark'
+194534de1912ade9191dd98f33823475|file:///Users/dinhmai/.config/nvim/init.vim|217|1|V|vim
+	colorscheme neodark
+23b6c207a9d9c28165cd02e7916db8d0|file:///Users/dinhmai/.config/nvim/plugins.vim|54|1|V|vim
+	" Syntax highlighting for javascript libraries
+	Plug 'othree/javascript-libraries-syntax.vim'
+116ea14758bd08047179b4ac2093e289|file:///Users/dinhmai/.config/nvim/init.vim|12|1|V|vim
+	set encoding=utf-8
+	set fileencoding=utf-8
+	set fileencodings=utf-8
+	" "" Fix backspace indent
+	set backspace=indent,eol,start
+	set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
+	set showcmd       " display incomplete commands
+	set shell=zsh " Set bash as the prompt for Vim
+	" "" Tabs. May be overridden by autocmd rules
+	set tabstop=2
+	set softtabstop=0
+	set shiftwidth=2
+	set termguicolors
+	" " " always uses spaces instead of tab characters
+	set expandtab
+	
+	" "" Enable hidden buffers
+	set hidden
+	" "" Fix backspace indent
+	" "" Searching
+	set hlsearch
+	set incsearch
+	set ignorecase
+	set smartcase
+	" " Mouse in visual modes
+	set mouse=v
+	" " Blink cursor on error instead of beeping
+	set visualbell
+	
+	
+	" set fileformats=unix,dos,mac
+	" Yank and paste with the system clipboard
+	" set clipboard=unnamed
+	
+	autocmd BufEnter * silent! :lcd%:p:h
+	"*****************************************************************************
+	"" Visual Settings
+	"*****************************************************************************
+	" syntax on
+	set ruler
+	set relativenumber
+	let no_buffers_menu=1
+	colorscheme gruvbox
+	" colorscheme onedark
+	" set mousemodel=popup
+	set guifont=Fira\ Code-Light:h1
+	set t_Co=256
+	" set guioptions=egmrti
+	" " set gfn=Monospace\ 10
+	" "" Disable the blinking cursor.
+	" " set gcr=a:blinkon0
+	set scrolloff=3
+	
+	" "" Status bar
+	set laststatus=2
+	
+	" "" Use modeline overrides
+	set modeline
+	set modelines=10
+	
+	set title
+	set titleold="Terminal"
+	set titlestring=%F
+	set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+	" Search mappings: These will make it so that going to the next one in a
+	" search will center on the line it's found in.
+	nnoremap n nzzzv
+	nnoremap N Nzzzv
+	if exists("*fugitive#statusline")
+	  set statusline+=%{fugitive#statusline()}
+	endif
+	
+	" Whitespace
+	set wrap
+	set textwidth=0
+	set wrapmargin=0
+	set formatoptions=tcqrn1
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set expandtab
+	set breakindent
+	set noshiftround
+	
+	" Cursor motion
+	set scrolloff=3
+	set backspace=indent,eol,start
+	set matchpairs+=<:> " use % to jump between pairs
+	
+	" Rendering
+	set ttyfast
+	
+	let python_highlight_all=1
+	syntax on
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	colorscheme neodark
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	" function! s:custom_jarvis_colors()
+	  " " coc.nvim color changes
+	  " colorscheme gruvbox
+	  " hi link CocErrorSign WarningMsg
+	  " hi link CocWarningSign Number
+	  " hi link CocInfoSign Type
+	
+	  " " Make background transparent for many things
+	  " hi Normal ctermbg=NONE guibg=NONE
+	  " " hi NonText ctermbg=NONE guibg=NONE
+	  " hi LineNr ctermfg=NONE guibg=NONE
+	  " hi SignColumn ctermfg=NONE guibg=NONE
+	  " hi StatusLine guifg=#16252b guibg=#6699CC
+	  " hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " " Try to hide vertical spit and end of buffer symbol
+	  " " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " " Make background color transparent for git changes
+	  " hi SignifySignAdd guibg=NONE
+	  " hi SignifySignDelete guibg=NONE
+	  " hi SignifySignChange guibg=NONE
+	
+	  " " Highlight git change signs
+	  " hi SignifySignAdd guifg=#99c794
+	  " hi SignifySignDelete guifg=#ec5f67
+	  " hi SignifySignChange guifg=#c594c5
+	" endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	
+5f9b6b8f52b9013f9deaa879f1a31b46|file:///Users/dinhmai/.config/nvim/key-mapping.vim|18|1|V|vim
+	
+	"" Tabs
+	nnoremap <Tab> gt
+	nnoremap <S-Tab> gT
+	nnoremap <silent> <S-t> :tabnew<CR>
+	
+	" map dir
+	nnoremap <leader>. :lcd %:p:h<CR>
+	"" Opens a tab edit command with the path of the currently edited file filled
+	noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+	" Delete current visual selection and dump in black hole buffer before pasting
+	" Used when you want to paste over something without it getting copied to
+	" Vim's default buffer
+	vnoremap <leader>p "_dP
+	noremap YY "+y<CR>
+	" noremap <leader>p "+gP<CR>
+	noremap XX "+x<CR>
+	
+	"" Buffer nav
+	noremap <leader>z :bp<CR>
+	noremap <leader>q :bp<CR>
+	noremap <leader>x :bn<CR>
+	noremap <leader>w :bn<CR>
+	
+	"" Close buffer
+	noremap <leader>c :bd<CR>
+	
+	"" Clean search (highlight)
+	nnoremap <silent> <leader><space> :noh<cr>
+	"" Vmap for maintain Visual Mode after shifting > and <
+	vmap < <gv
+	vmap > >gv
+	
+	"" Move visual block
+	vnoremap J :m '>+1<CR>gv=gv
+	vnoremap K :m '<-2<CR>gv=gv
+	
+	
+	" Disable visualbell
+	set noerrorbells visualbell t_vb=
+	if has('autocmd')
+	  autocmd GUIEnter * set visualbell t_vb=
+	endif
+	
+	" Copy/Paste/Cut
+	" if has('unnamedplus')
+	  " set clipboard=unnamed,unnamedplus
+	" endif
+	
+	nmap ev :tabedit $MYVIMRC<CR>
+	
+	if has('macunix')
+	  " pbcopy for OSX copy/paste
+	  vmap <C-x> :!pbcopy<CR>
+	  vmap <C-c> :w !pbcopy<CR><CR>
+	endif
+	
+	" Split window
+	nmap ss :split<Return><C-w>w
+	nmap sv :vsplit<Return><C-w>w
+	
+	" python excue
+	" nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+	nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
+	"ZZ to :w, ZX to :wq
+	noremap zz :w<CR>
+	noremap zx :wq<CR>
+	noremap XXX :q!<CR>
+	nnoremap <space>t :!open -a /Applications/iTerm.app .<cr>
+	
+	
+	" //****************************************************************************//
+	" //                               Plugin settings                              //
+	" //****************************************************************************//
+	
+	"" Git
+	noremap <Leader>ga :Gwrite<CR>
+	noremap <Leader>gc :Gcommit<CR>
+	noremap <Leader>gsh :Gpush<CR>
+	noremap <Leader>glhl :Gpull<CR>
+	noremap <Leader>gs :Gstatus<CR>
+	noremap <Leader>gb :Gblame<CR>
+	noremap <Leader>gd :Gvdiff<CR>
+	noremap <Leader>gr :Gremove<CR>
+	" session management
+	nnoremap <leader>so :OpenSession<Space>
+	nnoremap <leader>ss :SaveSession<Space>
+	nnoremap <leader>sd :DeleteSession<CR>
+	nnoremap <leader>sc :CloseSession<CR>
+	"" Set working directory
+	
+	"Recovery commands from history through FZF
+	nmap <leader>y :History:<CR>
+	"" Open current line on GitHub
+	nnoremap <Leader>o :.Gbrowse<CR>
+	nnoremap <silent> <leader>b :Buffers<CR>
+	nnoremap <silent> <leader>e :GFiles<CR>
+	" nnoremap <silent> <C-e> :GFiles<CR>
+	" Allows you to save files you opened without write permissions via sudo
+	cmap w!! w !sudo tee %
+	
+	" === vim-jsdoc shortcuts ==="
+	" Generate jsdoc for function under cursor
+	nmap <leader>z :JsDoc<CR>
+	
+	let g:vcoolor_map = '<C-c>'
+	let g:user_emmet_expandabbr_key='<C-z>'
+	
+	" easymotion
+	map <Leader> <Plug>(easymotion-prefix)
+	nmap s <Plug>(easymotion-overwin-f2)
+	" Move to line
+	map <Leader>L <Plug>(easymotion-bd-jk)
+	nmap <Leader>L <Plug>(easymotion-overwin-line)
+	" Move to word
+	map  <Leader>w <Plug>(easymotion-bd-w)
+	nmap <Leader>w <Plug>(easymotion-overwin-w)
+	map  N <Plug>(easymotion-prev)
+	map  / <Plug>(easymotion-sn)
+	omap / <Plug>(easymotion-tn)
+	map  n <Plug>(easymotion-next)
+	" transprent bg
+	"hi Normal guibg=NONE ctermbg=NONE
+	
+	nmap <space>e :CocCommand explorer<CR>
+	
+	" frame command
+	nmap <space>f :CommentFrameHashDash ""<Left>
+	let g:multi_cursor_select_all_word_key = '<space>n'
+	
+	map <leader>s :sort<CR>
+	map <leader>su :%sort u<CR>
+	map <leader>sr :%sort!<CR>
+	
+	nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+9f318d2b16d37f1ba75f938631e8d2ef|file:///Users/dinhmai/.config/nvim/key-mapping.vim|45|1|V|vim
+	"" Clean search (highlight)
+	nnoremap <silent> <leader><space> :noh<cr>
+	"" Vmap for maintain Visual Mode after shifting > and <
+	vmap < <gv
+	vmap > >gv
+	
+	"" Move visual block
+	vnoremap J :m '>+1<CR>gv=gv
+	vnoremap K :m '<-2<CR>gv=gv
+	
+	
+	" Disable visualbell
+	set noerrorbells visualbell t_vb=
+	if has('autocmd')
+	  autocmd GUIEnter * set visualbell t_vb=
+	endif
+	
+	" Copy/Paste/Cut
+	" if has('unnamedplus')
+	  " set clipboard=unnamed,unnamedplus
+	" endif
+	
+	nmap ev :tabedit $MYVIMRC<CR>
+	
+	if has('macunix')
+	  " pbcopy for OSX copy/paste
+	  vmap <C-x> :!pbcopy<CR>
+	  vmap <C-c> :w !pbcopy<CR><CR>
+	endif
+	
+	" Split window
+	nmap ss :split<Return><C-w>w
+	nmap sv :vsplit<Return><C-w>w
+	
+	" python excue
+	" nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+	nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
+	"ZZ to :w, ZX to :wq
+	noremap zz :w<CR>
+	noremap zx :wq<CR>
+	noremap XXX :q!<CR>
+	nnoremap <space>t :!open -a /Applications/iTerm.app .<cr>
+	
+	
+	" //****************************************************************************//
+	" //                               Plugin settings                              //
+	" //****************************************************************************//
+	
+	"" Git
+	noremap <Leader>ga :Gwrite<CR>
+	noremap <Leader>gc :Gcommit<CR>
+	noremap <Leader>gsh :Gpush<CR>
+	noremap <Leader>glhl :Gpull<CR>
+	noremap <Leader>gs :Gstatus<CR>
+	noremap <Leader>gb :Gblame<CR>
+	noremap <Leader>gd :Gvdiff<CR>
+	noremap <Leader>gr :Gremove<CR>
+	" session management
+	nnoremap <leader>so :OpenSession<Space>
+	nnoremap <leader>ss :SaveSession<Space>
+	nnoremap <leader>sd :DeleteSession<CR>
+	nnoremap <leader>sc :CloseSession<CR>
+	"" Set working directory
+	
+	"Recovery commands from history through FZF
+	nmap <leader>y :History:<CR>
+	"" Open current line on GitHub
+	nnoremap <Leader>o :.Gbrowse<CR>
+	nnoremap <silent> <leader>b :Buffers<CR>
+	nnoremap <silent> <leader>e :GFiles<CR>
+	" nnoremap <silent> <C-e> :GFiles<CR>
+	" Allows you to save files you opened without write permissions via sudo
+	cmap w!! w !sudo tee %
+	
+	" === vim-jsdoc shortcuts ==="
+	" Generate jsdoc for function under cursor
+	nmap <leader>z :JsDoc<CR>
+	
+	let g:vcoolor_map = '<C-c>'
+	let g:user_emmet_expandabbr_key='<C-z>'
+	
+	" easymotion
+	map <Leader> <Plug>(easymotion-prefix)
+	nmap s <Plug>(easymotion-overwin-f2)
+	" Move to line
+	map <Leader>L <Plug>(easymotion-bd-jk)
+	nmap <Leader>L <Plug>(easymotion-overwin-line)
+	" Move to word
+	map  <Leader>w <Plug>(easymotion-bd-w)
+	nmap <Leader>w <Plug>(easymotion-overwin-w)
+	map  N <Plug>(easymotion-prev)
+	map  / <Plug>(easymotion-sn)
+	omap / <Plug>(easymotion-tn)
+	map  n <Plug>(easymotion-next)
+	" transprent bg
+	"hi Normal guibg=NONE ctermbg=NONE
+	
+	nmap <space>e :CocCommand explorer<CR>
+	
+	" frame command
+	nmap <space>f :CommentFrameHashDash ""<Left>
+	let g:multi_cursor_select_all_word_key = '<space>n'
+	
+	map <leader>s :sort<CR>
+	map <leader>su :%sort u<CR>
+	map <leader>sr :%sort!<CR>
+	
+	nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+cd6cac388a5992bf343be15150ef8155|file:///Users/dinhmai/.config/nvim/key-mapping.vim|48|1|V|vim
+	vmap < <gv
+	vmap > >gv
+	
+	"" Move visual block
+	vnoremap J :m '>+1<CR>gv=gv
+	vnoremap K :m '<-2<CR>gv=gv
+	
+	
+	" Disable visualbell
+	set noerrorbells visualbell t_vb=
+	if has('autocmd')
+	  autocmd GUIEnter * set visualbell t_vb=
+	endif
+	
+	" Copy/Paste/Cut
+	" if has('unnamedplus')
+	  " set clipboard=unnamed,unnamedplus
+	" endif
+	
+	nmap ev :tabedit $MYVIMRC<CR>
+	
+	if has('macunix')
+	  " pbcopy for OSX copy/paste
+	  vmap <C-x> :!pbcopy<CR>
+	  vmap <C-c> :w !pbcopy<CR><CR>
+	endif
+	
+	" Split window
+	nmap ss :split<Return><C-w>w
+	nmap sv :vsplit<Return><C-w>w
+	
+	" python excue
+	" nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+	nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
+	"ZZ to :w, ZX to :wq
+	noremap zz :w<CR>
+	noremap zx :wq<CR>
+	noremap XXX :q!<CR>
+	nnoremap <space>t :!open -a /Applications/iTerm.app .<cr>
+	
+	
+	" //****************************************************************************//
+	" //                               Plugin settings                              //
+	" //****************************************************************************//
+	
+	"" Git
+	noremap <Leader>ga :Gwrite<CR>
+	noremap <Leader>gc :Gcommit<CR>
+	noremap <Leader>gsh :Gpush<CR>
+	noremap <Leader>glhl :Gpull<CR>
+	noremap <Leader>gs :Gstatus<CR>
+	noremap <Leader>gb :Gblame<CR>
+	noremap <Leader>gd :Gvdiff<CR>
+	noremap <Leader>gr :Gremove<CR>
+	" session management
+	nnoremap <leader>so :OpenSession<Space>
+	nnoremap <leader>ss :SaveSession<Space>
+	nnoremap <leader>sd :DeleteSession<CR>
+	nnoremap <leader>sc :CloseSession<CR>
+	"" Set working directory
+	
+	"Recovery commands from history through FZF
+	nmap <leader>y :History:<CR>
+	"" Open current line on GitHub
+	nnoremap <Leader>o :.Gbrowse<CR>
+	nnoremap <silent> <leader>b :Buffers<CR>
+	nnoremap <silent> <leader>e :GFiles<CR>
+	" nnoremap <silent> <C-e> :GFiles<CR>
+	" Allows you to save files you opened without write permissions via sudo
+	cmap w!! w !sudo tee %
+	
+	" === vim-jsdoc shortcuts ==="
+	" Generate jsdoc for function under cursor
+	nmap <leader>z :JsDoc<CR>
+	
+	let g:vcoolor_map = '<C-c>'
+	let g:user_emmet_expandabbr_key='<C-z>'
+	
+	" easymotion
+	map <Leader> <Plug>(easymotion-prefix)
+	nmap s <Plug>(easymotion-overwin-f2)
+	" Move to line
+	map <Leader>L <Plug>(easymotion-bd-jk)
+	nmap <Leader>L <Plug>(easymotion-overwin-line)
+	" Move to word
+	map  <Leader>w <Plug>(easymotion-bd-w)
+	nmap <Leader>w <Plug>(easymotion-overwin-w)
+	map  N <Plug>(easymotion-prev)
+	map  / <Plug>(easymotion-sn)
+	omap / <Plug>(easymotion-tn)
+	map  n <Plug>(easymotion-next)
+	" transprent bg
+	"hi Normal guibg=NONE ctermbg=NONE
+	
+	nmap <space>e :CocCommand explorer<CR>
+	
+	" frame command
+	nmap <space>f :CommentFrameHashDash ""<Left>
+	let g:multi_cursor_select_all_word_key = '<space>n'
+	
+	map <leader>s :sort<CR>
+	map <leader>su :%sort u<CR>
+	map <leader>sr :%sort!<CR>
+	
+	nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+9a7fa324c2f061ce4d0be780e54737b2|file:///Users/dinhmai/.config/nvim/key-mapping.vim|51|1|V|vim
+	"" Move visual block
+	vnoremap J :m '>+1<CR>gv=gv
+	vnoremap K :m '<-2<CR>gv=gv
+	
+	
+	" Disable visualbell
+	set noerrorbells visualbell t_vb=
+	if has('autocmd')
+	  autocmd GUIEnter * set visualbell t_vb=
+	endif
+	
+	" Copy/Paste/Cut
+	" if has('unnamedplus')
+	  " set clipboard=unnamed,unnamedplus
+	" endif
+	
+	nmap ev :tabedit $MYVIMRC<CR>
+	
+	if has('macunix')
+	  " pbcopy for OSX copy/paste
+	  vmap <C-x> :!pbcopy<CR>
+	  vmap <C-c> :w !pbcopy<CR><CR>
+	endif
+	
+	" Split window
+	nmap ss :split<Return><C-w>w
+	nmap sv :vsplit<Return><C-w>w
+	
+	" python excue
+	" nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+	nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
+	"ZZ to :w, ZX to :wq
+	noremap zz :w<CR>
+	noremap zx :wq<CR>
+	noremap XXX :q!<CR>
+	nnoremap <space>t :!open -a /Applications/iTerm.app .<cr>
+	
+	
+	" //****************************************************************************//
+	" //                               Plugin settings                              //
+	" //****************************************************************************//
+	
+	"" Git
+	noremap <Leader>ga :Gwrite<CR>
+	noremap <Leader>gc :Gcommit<CR>
+	noremap <Leader>gsh :Gpush<CR>
+	noremap <Leader>glhl :Gpull<CR>
+	noremap <Leader>gs :Gstatus<CR>
+	noremap <Leader>gb :Gblame<CR>
+	noremap <Leader>gd :Gvdiff<CR>
+	noremap <Leader>gr :Gremove<CR>
+	" session management
+	nnoremap <leader>so :OpenSession<Space>
+	nnoremap <leader>ss :SaveSession<Space>
+	nnoremap <leader>sd :DeleteSession<CR>
+	nnoremap <leader>sc :CloseSession<CR>
+	"" Set working directory
+	
+	"Recovery commands from history through FZF
+	nmap <leader>y :History:<CR>
+	"" Open current line on GitHub
+	nnoremap <Leader>o :.Gbrowse<CR>
+	nnoremap <silent> <leader>b :Buffers<CR>
+	nnoremap <silent> <leader>e :GFiles<CR>
+	" nnoremap <silent> <C-e> :GFiles<CR>
+	" Allows you to save files you opened without write permissions via sudo
+	cmap w!! w !sudo tee %
+	
+	" === vim-jsdoc shortcuts ==="
+	" Generate jsdoc for function under cursor
+	nmap <leader>z :JsDoc<CR>
+	
+	let g:vcoolor_map = '<C-c>'
+	let g:user_emmet_expandabbr_key='<C-z>'
+	
+	" easymotion
+	map <Leader> <Plug>(easymotion-prefix)
+	nmap s <Plug>(easymotion-overwin-f2)
+	" Move to line
+	map <Leader>L <Plug>(easymotion-bd-jk)
+	nmap <Leader>L <Plug>(easymotion-overwin-line)
+	" Move to word
+	map  <Leader>w <Plug>(easymotion-bd-w)
+	nmap <Leader>w <Plug>(easymotion-overwin-w)
+	map  N <Plug>(easymotion-prev)
+	map  / <Plug>(easymotion-sn)
+	omap / <Plug>(easymotion-tn)
+	map  n <Plug>(easymotion-next)
+	" transprent bg
+	"hi Normal guibg=NONE ctermbg=NONE
+	
+	nmap <space>e :CocCommand explorer<CR>
+	
+	" frame command
+	nmap <space>f :CommentFrameHashDash ""<Left>
+	let g:multi_cursor_select_all_word_key = '<space>n'
+	
+	map <leader>s :sort<CR>
+	map <leader>su :%sort u<CR>
+	map <leader>sr :%sort!<CR>
+	
+	nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+49bd12b515c15f0e90449c4759768f4a|file:///Users/dinhmai/.config/nvim/key-mapping.vim|135|1|V|vim
+	map  N <Plug>(easymotion-prev)
+	map  / <Plug>(easymotion-sn)
+	omap / <Plug>(easymotion-tn)
+	map  n <Plug>(easymotion-next)
+	" transprent bg
+	"hi Normal guibg=NONE ctermbg=NONE
+	
+	nmap <space>e :CocCommand explorer<CR>
+	
+	" frame command
+	nmap <space>f :CommentFrameHashDash ""<Left>
+	let g:multi_cursor_select_all_word_key = '<space>n'
+	
+	map <leader>s :sort<CR>
+	map <leader>su :%sort u<CR>
+	map <leader>sr :%sort!<CR>
+	
+	nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+cdd90d48d898568b775588f7d2cae703|untitled:1|1|1|V|
+	map  / <Plug>(easymotion-sn)
+5cea65a778c6935817904f839e589271|untitled:1|1|1|V|
+	omap / <Plug>(easymotion-tn)
+9741968c92d88e596bcb39c2d18726c1|untitled:1|1|1|V|
+	" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
+bae243204ca58270a9ac4979a5581bd9|untitled:1|1|1|V|
+	" Without these mappings, `n` & `N` works fine. (These mappings just provide
+6b65830890f4a5c6d9b4fb3300eda70e|untitled:1|1|1|V|
+	" different highlight method and have some other features )
+ef7885c559e0543d021b63a2c618b01e|untitled:1|1|1|V|
+	map  n <Plug>(easymotion-next)
+1cbf0766c5d4c2f589284ccd549db57d|untitled:1|1|1|V|
+	map  N <Plug>(easymotion-prev)
+3cc62c5674af3f3913ec9e472179fc8e|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|106|15|v|typescriptreact
+	setRegion
+244deaadc66e8b6f76d69b8042b8d27d|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|88|1|V|typescriptreact
+	  return (
+	    <Screen preset="scroll">
+	      <Header
+	        headerTx="homeScreen.header"
+	        onLeftPress={() => props.navigation.navigate("authStack")}
+	      />
+	      <View style={styles.container}>
+	        {location !== null && (
+	          <AppMapView
+	            // region={{
+	            // latitude: location.coords.latitude,
+	            // longitude: location.coords.longitude,
+	            // latitudeDelta: 0.003,
+	            // longitudeDelta: 0.003,
+	            // }}
+	            markers={markers}
+	            region={region}
+	            onRegionChangeComplete={r => {
+	              setRegion(r)
+	            }}
+	          />
+	        )}
+	      </View>
+	    </Screen>
+	  )
+	})
+3e01a9c0954b4e37216d2267a0d85927|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|106|15|v|typescriptreact
+	setRegion(
+69167133cbab9fd8e204057818ad90c3|file:///Users/dinhmai/.config/nvim/init.vim|179|13|v|vim
+	neodark
+cd99ae605183e88ccaf6c32002e09b6a|file:///Users/dinhmai/.config/nvim/init.vim|179|13|v|vim
+	oceanicnext 
+3356685ead6b0ffc5297fee354e2a904|file:///Users/dinhmai/.config/nvim/init.vim|179|13|v|vim
+	OceanicNext
+44aec5c90998c729635347147dce882e|untitled:1|1|1|V|
+	dfasd
+3bb181520e39a9052b7fb380cd157a3d|file:///Users/dinhmai/.config/nvim/init.vim|215|22|v|vim
+	OceanicNext 
+877380302278c852bc2fe4728ee1d878|file:///Users/dinhmai/.config/nvim/init.vim|184|3|V|vim
+	  colorscheme gruvbox
+b73376fee7c807dd97b1569be9e5b841|file:///Users/dinhmai/.config/nvim/init.vim|183|3|V|vim
+	  " coc.nvim color changes
+7a8040f99fcd61ce51b3cf8e3ef78f0b|file:///Users/dinhmai/.config/nvim/init.vim|189|3|V|vim
+	  let g:neodark#background = '#202020'
+933a3cde50f232f9f2eb3ef106a7b2d4|untitled:1|1|1|V|
+	asfda
+28e09f90c74a91140ea4949355783f7c|file:///Users/dinhmai/.config/nvim/init.vim|220|1|V|vim
+	let g:lightline.colorscheme = 'neodark'
+5d41402abc4b2a76b9719d911017c592|untitled:1|1|1|V|
+	hello
+fcf0b94e8ff0a18cf983384d97f4ac72|file:///Users/dinhmai/.config/nvim/init.vim|222|1|V|vim
+	highlight Normal ctermbg=none
+454b517a467da88fc7dd8e2f1bb806bc|file:///Users/dinhmai/.config/nvim/init.vim|222|1|V|vim
+	highlight NonText ctermbg=none
+dc80ab92f1a2a4909e5bf76faea02d19|file:///Users/dinhmai/.config/nvim/init.vim|222|1|V|vim
+	au ColorScheme * hi Normal ctermbg=none guibg=none

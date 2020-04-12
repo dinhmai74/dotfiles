@@ -51,7 +51,8 @@ autocmd BufEnter * silent! :lcd%:p:h
 set ruler
 set relativenumber
 let no_buffers_menu=1
-colorscheme gruvbox
+" colorscheme gruvbox
+" colorscheme onedark
 " set mousemodel=popup
 set guifont=Fira\ Code-Light:h1
 set t_Co=256
@@ -175,41 +176,45 @@ set autoread
 " ===                      CUSTOM COLORSCHEME CHANGES                      === "
 " ============================================================================ "
 "
+colorscheme neodark
+let g:neodark#background = '#202020'
+let g:neodark#terminal_transparent = 1 " default: 0
+
 " Add custom highlights in method that is executed every time a colorscheme is sourced
 " See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
-" function! s:custom_jarvis_colors()
-  " " coc.nvim color changes
-  " colorscheme gruvbox
-  " hi link CocErrorSign WarningMsg
-  " hi link CocWarningSign Number
-  " hi link CocInfoSign Type
+function! s:custom_jarvis_colors()
+  hi link CocErrorSign WarningMsg
+  hi link CocWarningSign Number
+  hi link CocInfoSign Type
 
-  " " Make background transparent for many things
-  " hi Normal ctermbg=NONE guibg=NONE
-  " " hi NonText ctermbg=NONE guibg=NONE
+  " Make background transparent for many things
+  hi Normal ctermbg=NONE guibg=NONE
+  " hi NonText ctermbg=NONE guibg=NONE
   " hi LineNr ctermfg=NONE guibg=NONE
-  " hi SignColumn ctermfg=NONE guibg=NONE
-  " hi StatusLine guifg=#16252b guibg=#6699CC
-  " hi StatusLineNC guifg=#16252b guibg=#16252b
+  hi SignColumn ctermfg=NONE guibg=NONE
+  hi StatusLine guifg=#16252b guibg=#6699CC
+  hi StatusLineNC guifg=#16252b guibg=#16252b
 
-  " " Try to hide vertical spit and end of buffer symbol
-  " " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
-  " " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+  " Try to hide vertical spit and end of buffer symbol
+  " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+  " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
 
-  " " Make background color transparent for git changes
-  " hi SignifySignAdd guibg=NONE
-  " hi SignifySignDelete guibg=NONE
-  " hi SignifySignChange guibg=NONE
+  " Make background color transparent for git changes
+  hi SignifySignAdd guibg=NONE
+  hi SignifySignDelete guibg=NONE
+  hi SignifySignChange guibg=NONE
 
-  " " Highlight git change signs
-  " hi SignifySignAdd guifg=#99c794
-  " hi SignifySignDelete guifg=#ec5f67
-  " hi SignifySignChange guifg=#c594c5
-" endfunction
+  " Highlight git change signs
+  hi SignifySignAdd guifg=#99c794
+  hi SignifySignDelete guifg=#ec5f67
+  hi SignifySignChange guifg=#c594c5
+endfunction
 
 " autocmd! ColorScheme * call TrailingSpaceHighlights()
 " autocmd! ColorScheme * call s:custom_jarvis_colors()
 " call s:custom_jarvis_colors()
+" autocmd! ColorScheme neodark call s:custom_jarvis_colors()
+
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-" colorscheme gruvbox
+let g:neodark#use_custom_terminal_theme = 1 " default: 0
