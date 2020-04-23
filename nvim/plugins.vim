@@ -70,7 +70,7 @@ Plug 'Shougo/neosnippet-snippets'
 
 " util
 Plug 'terryma/vim-multiple-cursors'
-Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
+" Plug 'jiangmiao/auto-pairs' "easy enter new line in bracket
 Plug 'alvan/vim-closetag' "auto close tags
 Plug 'tmhedberg/SimpylFold' "fold code
 Plug 'christoomey/vim-tmux-navigator' "navigate screen
@@ -78,7 +78,9 @@ Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'christoomey/vim-system-copy'
 Plug 'christoomey/vim-sort-motion'
 Plug 'cometsong/commentframe.vim'
-Plug 'doums/coBra'
+Plug 'tpope/vim-repeat'
+" Plug 'doums/coBra'
+
 " #------------------------------------------------------------------------------#
 " #                                  crs, crc...                                 #
 " #------------------------------------------------------------------------------#
@@ -256,4 +258,3 @@ let g:indentLine_char = '┊'
 " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 filetype indent plugin on
-

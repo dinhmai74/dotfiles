@@ -26,7 +26,7 @@
         "dependencies": {
           "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
           "Microsoft.SourceLink.GitHub": "1.0.0",
-          "OmniSharp.Stdio": "1.34.15",
+          "OmniSharp.Stdio": "1.35.0",
           "Microsoft.CSharp.Reference": "4.0.0.0",
           "System.ComponentModel.Composition.Reference": "4.0.0.0",
           "System.ComponentModel.DataAnnotations": "4.0.0.0",
@@ -825,7 +825,22 @@
           "lib/netstandard2.0/Dotnet.Script.DependencyModel.NuGet.dll": {}
         }
       },
-      "Humanizer.Core/2.2.0": {},
+      "Humanizer.Core/2.2.0": {
+        "compile": {
+          "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "ICSharpCode.Decompiler/5.0.2.5153": {
+        "dependencies": {
+          "Humanizer.Core": "2.2.0",
+          "System.Collections.Immutable": "1.5.0",
+          "System.Reflection.Metadata": "1.6.0",
+          "System.ValueTuple": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/ICSharpCode.Decompiler.dll": {}
+        }
+      },
       "McMaster.Extensions.CommandLineUtils/2.2.4": {
         "dependencies": {
           "System.ValueTuple": "4.4.0"
@@ -1529,7 +1544,7 @@
       },
       "System.Xml.ReaderWriter/4.0.11": {},
       "System.Xml.XDocument/4.0.11": {},
-      "OmniSharp.Abstractions/1.34.15": {
+      "OmniSharp.Abstractions/1.35.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
@@ -1543,31 +1558,31 @@
           "OmniSharp.Abstractions.dll": {}
         }
       },
-      "OmniSharp.Cake/1.34.15": {
+      "OmniSharp.Cake/1.35.0": {
         "dependencies": {
           "Cake.Scripting.Transport": "0.3.0",
           "Microsoft.CodeAnalysis.CSharp": "3.6.0-2.20167.2",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "3.6.0-2.20167.2",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn": "1.34.15",
-          "OmniSharp.Shared": "1.34.15"
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn": "1.35.0",
+          "OmniSharp.Shared": "1.35.0"
         },
         "compile": {
           "OmniSharp.Cake.dll": {}
         }
       },
-      "OmniSharp.DotNetTest/1.34.15": {
+      "OmniSharp.DotNetTest/1.35.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "3.6.0-2.20167.2",
           "Microsoft.TestPlatform.TranslationLayer": "15.7.2",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn": "1.34.15"
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn": "1.35.0"
         },
         "compile": {
           "OmniSharp.DotNetTest.dll": {}
         }
       },
-      "OmniSharp.Host/1.34.15": {
+      "OmniSharp.Host/1.35.0": {
         "dependencies": {
           "McMaster.Extensions.CommandLineUtils": "2.2.4",
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
@@ -1580,49 +1595,49 @@
           "Microsoft.Extensions.Logging.Console": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn": "1.34.15",
-          "OmniSharp.Shared": "1.34.15"
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn": "1.35.0",
+          "OmniSharp.Shared": "1.35.0"
         },
         "compile": {
           "OmniSharp.Host.dll": {}
         }
       },
-      "OmniSharp.LanguageServerProtocol/1.34.15": {
+      "OmniSharp.LanguageServerProtocol/1.35.0": {
         "dependencies": {
-          "OmniSharp.DotNetTest": "1.34.15",
+          "OmniSharp.DotNetTest": "1.35.0",
           "OmniSharp.Extensions.LanguageServer": "0.13.1",
-          "OmniSharp.Host": "1.34.15",
-          "OmniSharp.MSBuild": "1.34.15",
-          "OmniSharp.Roslyn.CSharp": "1.34.15",
-          "OmniSharp.Script": "1.34.15"
+          "OmniSharp.Host": "1.35.0",
+          "OmniSharp.MSBuild": "1.35.0",
+          "OmniSharp.Roslyn.CSharp": "1.35.0",
+          "OmniSharp.Script": "1.35.0"
         },
         "compile": {
           "OmniSharp.LanguageServerProtocol.dll": {}
         }
       },
-      "OmniSharp.MSBuild/1.34.15": {
+      "OmniSharp.MSBuild/1.35.0": {
         "dependencies": {
           "Microsoft.Extensions.Options": "2.1.1",
           "Newtonsoft.Json": "11.0.2",
           "NuGet.Packaging.Core": "5.2.0",
           "NuGet.ProjectModel": "5.2.0",
           "NuGet.Versioning": "5.2.0",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn.CSharp": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn.CSharp": "1.35.0",
           "System.Threading.Tasks.Dataflow": "4.9.0"
         },
         "compile": {
           "OmniSharp.MSBuild.dll": {}
         }
       },
-      "OmniSharp.Roslyn/1.34.15": {
+      "OmniSharp.Roslyn/1.35.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Common": "3.6.0-2.20167.2",
           "Microsoft.CodeAnalysis.Workspaces.Common": "3.6.0-2.20167.2",
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Shared": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Shared": "1.35.0",
           "System.ComponentModel.Composition": "4.5.0",
           "System.Reflection.DispatchProxy": "4.5.1"
         },
@@ -1630,42 +1645,44 @@
           "OmniSharp.Roslyn.dll": {}
         }
       },
-      "OmniSharp.Roslyn.CSharp/1.34.15": {
+      "OmniSharp.Roslyn.CSharp/1.35.0": {
         "dependencies": {
+          "ICSharpCode.Decompiler": "5.0.2.5153",
           "Microsoft.CodeAnalysis.CSharp": "3.6.0-2.20167.2",
           "Microsoft.CodeAnalysis.CSharp.Features": "3.6.0-2.20167.2",
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.6.0-2.20167.2",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.6.0-2.20167.2",
           "Microsoft.VisualStudio.CodingConventions": "1.1.20180503.2",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn": "1.34.15",
-          "OmniSharp.Shared": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn": "1.35.0",
+          "OmniSharp.Shared": "1.35.0",
           "System.Reactive": "4.1.2"
         },
         "compile": {
           "OmniSharp.Roslyn.CSharp.dll": {}
         }
       },
-      "OmniSharp.Script/1.34.15": {
+      "OmniSharp.Script/1.35.0": {
         "dependencies": {
           "Dotnet.Script.DependencyModel": "0.51.0",
           "Dotnet.Script.DependencyModel.NuGet": "0.51.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "3.6.0-2.20167.2",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn.CSharp": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn.CSharp": "1.35.0",
           "System.ValueTuple": "4.4.0"
         },
         "compile": {
           "OmniSharp.Script.dll": {}
         }
       },
-      "OmniSharp.Shared/1.34.15": {
+      "OmniSharp.Shared/1.35.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
           "Microsoft.Extensions.FileProviders.Physical": "2.1.1",
           "Microsoft.Extensions.FileSystemGlobbing": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "OmniSharp.Abstractions": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
           "System.Collections.Immutable": "1.5.0",
           "System.Composition": "1.0.31"
         },
@@ -1673,15 +1690,15 @@
           "OmniSharp.Shared.dll": {}
         }
       },
-      "OmniSharp.Stdio/1.34.15": {
+      "OmniSharp.Stdio/1.35.0": {
         "dependencies": {
-          "OmniSharp.Cake": "1.34.15",
-          "OmniSharp.DotNetTest": "1.34.15",
-          "OmniSharp.Host": "1.34.15",
-          "OmniSharp.LanguageServerProtocol": "1.34.15",
-          "OmniSharp.MSBuild": "1.34.15",
-          "OmniSharp.Roslyn.CSharp": "1.34.15",
-          "OmniSharp.Script": "1.34.15"
+          "OmniSharp.Cake": "1.35.0",
+          "OmniSharp.DotNetTest": "1.35.0",
+          "OmniSharp.Host": "1.35.0",
+          "OmniSharp.LanguageServerProtocol": "1.35.0",
+          "OmniSharp.MSBuild": "1.35.0",
+          "OmniSharp.Roslyn.CSharp": "1.35.0",
+          "OmniSharp.Script": "1.35.0"
         },
         "compile": {
           "OmniSharp.Stdio.dll": {}
@@ -1693,7 +1710,7 @@
         "dependencies": {
           "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
           "Microsoft.SourceLink.GitHub": "1.0.0",
-          "OmniSharp.Stdio": "1.34.15",
+          "OmniSharp.Stdio": "1.35.0",
           "Microsoft.CSharp.Reference": "4.0.0.0",
           "System.ComponentModel.Composition.Reference": "4.0.0.0",
           "System.ComponentModel.DataAnnotations": "4.0.0.0",
@@ -1860,6 +1877,17 @@
       "Humanizer.Core/2.2.0": {
         "runtime": {
           "lib/netstandard1.0/Humanizer.dll": {}
+        }
+      },
+      "ICSharpCode.Decompiler/5.0.2.5153": {
+        "dependencies": {
+          "Humanizer.Core": "2.2.0",
+          "System.Collections.Immutable": "1.5.0",
+          "System.Reflection.Metadata": "1.6.0",
+          "System.ValueTuple": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ICSharpCode.Decompiler.dll": {}
         }
       },
       "McMaster.Extensions.CommandLineUtils/2.2.4": {
@@ -3094,7 +3122,7 @@
       },
       "System.Xml.ReaderWriter/4.0.11": {},
       "System.Xml.XDocument/4.0.11": {},
-      "OmniSharp.Abstractions/1.34.15": {
+      "OmniSharp.Abstractions/1.35.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
@@ -3108,31 +3136,31 @@
           "OmniSharp.Abstractions.dll": {}
         }
       },
-      "OmniSharp.Cake/1.34.15": {
+      "OmniSharp.Cake/1.35.0": {
         "dependencies": {
           "Cake.Scripting.Transport": "0.3.0",
           "Microsoft.CodeAnalysis.CSharp": "3.6.0-2.20167.2",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "3.6.0-2.20167.2",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn": "1.34.15",
-          "OmniSharp.Shared": "1.34.15"
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn": "1.35.0",
+          "OmniSharp.Shared": "1.35.0"
         },
         "runtime": {
           "OmniSharp.Cake.dll": {}
         }
       },
-      "OmniSharp.DotNetTest/1.34.15": {
+      "OmniSharp.DotNetTest/1.35.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "3.6.0-2.20167.2",
           "Microsoft.TestPlatform.TranslationLayer": "15.7.2",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn": "1.34.15"
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn": "1.35.0"
         },
         "runtime": {
           "OmniSharp.DotNetTest.dll": {}
         }
       },
-      "OmniSharp.Host/1.34.15": {
+      "OmniSharp.Host/1.35.0": {
         "dependencies": {
           "McMaster.Extensions.CommandLineUtils": "2.2.4",
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
@@ -3145,49 +3173,49 @@
           "Microsoft.Extensions.Logging.Console": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn": "1.34.15",
-          "OmniSharp.Shared": "1.34.15"
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn": "1.35.0",
+          "OmniSharp.Shared": "1.35.0"
         },
         "runtime": {
           "OmniSharp.Host.dll": {}
         }
       },
-      "OmniSharp.LanguageServerProtocol/1.34.15": {
+      "OmniSharp.LanguageServerProtocol/1.35.0": {
         "dependencies": {
-          "OmniSharp.DotNetTest": "1.34.15",
+          "OmniSharp.DotNetTest": "1.35.0",
           "OmniSharp.Extensions.LanguageServer": "0.13.1",
-          "OmniSharp.Host": "1.34.15",
-          "OmniSharp.MSBuild": "1.34.15",
-          "OmniSharp.Roslyn.CSharp": "1.34.15",
-          "OmniSharp.Script": "1.34.15"
+          "OmniSharp.Host": "1.35.0",
+          "OmniSharp.MSBuild": "1.35.0",
+          "OmniSharp.Roslyn.CSharp": "1.35.0",
+          "OmniSharp.Script": "1.35.0"
         },
         "runtime": {
           "OmniSharp.LanguageServerProtocol.dll": {}
         }
       },
-      "OmniSharp.MSBuild/1.34.15": {
+      "OmniSharp.MSBuild/1.35.0": {
         "dependencies": {
           "Microsoft.Extensions.Options": "2.1.1",
           "Newtonsoft.Json": "11.0.2",
           "NuGet.Packaging.Core": "5.2.0",
           "NuGet.ProjectModel": "5.2.0",
           "NuGet.Versioning": "5.2.0",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn.CSharp": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn.CSharp": "1.35.0",
           "System.Threading.Tasks.Dataflow": "4.9.0"
         },
         "runtime": {
           "OmniSharp.MSBuild.dll": {}
         }
       },
-      "OmniSharp.Roslyn/1.34.15": {
+      "OmniSharp.Roslyn/1.35.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Common": "3.6.0-2.20167.2",
           "Microsoft.CodeAnalysis.Workspaces.Common": "3.6.0-2.20167.2",
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Shared": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Shared": "1.35.0",
           "System.ComponentModel.Composition": "4.5.0",
           "System.Reflection.DispatchProxy": "4.5.1"
         },
@@ -3195,42 +3223,44 @@
           "OmniSharp.Roslyn.dll": {}
         }
       },
-      "OmniSharp.Roslyn.CSharp/1.34.15": {
+      "OmniSharp.Roslyn.CSharp/1.35.0": {
         "dependencies": {
+          "ICSharpCode.Decompiler": "5.0.2.5153",
           "Microsoft.CodeAnalysis.CSharp": "3.6.0-2.20167.2",
           "Microsoft.CodeAnalysis.CSharp.Features": "3.6.0-2.20167.2",
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.6.0-2.20167.2",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.6.0-2.20167.2",
           "Microsoft.VisualStudio.CodingConventions": "1.1.20180503.2",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn": "1.34.15",
-          "OmniSharp.Shared": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn": "1.35.0",
+          "OmniSharp.Shared": "1.35.0",
           "System.Reactive": "4.1.2"
         },
         "runtime": {
           "OmniSharp.Roslyn.CSharp.dll": {}
         }
       },
-      "OmniSharp.Script/1.34.15": {
+      "OmniSharp.Script/1.35.0": {
         "dependencies": {
           "Dotnet.Script.DependencyModel": "0.51.0",
           "Dotnet.Script.DependencyModel.NuGet": "0.51.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "3.6.0-2.20167.2",
-          "OmniSharp.Abstractions": "1.34.15",
-          "OmniSharp.Roslyn.CSharp": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
+          "OmniSharp.Roslyn.CSharp": "1.35.0",
           "System.ValueTuple": "4.4.0"
         },
         "runtime": {
           "OmniSharp.Script.dll": {}
         }
       },
-      "OmniSharp.Shared/1.34.15": {
+      "OmniSharp.Shared/1.35.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
           "Microsoft.Extensions.FileProviders.Physical": "2.1.1",
           "Microsoft.Extensions.FileSystemGlobbing": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "OmniSharp.Abstractions": "1.34.15",
+          "OmniSharp.Abstractions": "1.35.0",
           "System.Collections.Immutable": "1.5.0",
           "System.Composition": "1.0.31"
         },
@@ -3238,15 +3268,15 @@
           "OmniSharp.Shared.dll": {}
         }
       },
-      "OmniSharp.Stdio/1.34.15": {
+      "OmniSharp.Stdio/1.35.0": {
         "dependencies": {
-          "OmniSharp.Cake": "1.34.15",
-          "OmniSharp.DotNetTest": "1.34.15",
-          "OmniSharp.Host": "1.34.15",
-          "OmniSharp.LanguageServerProtocol": "1.34.15",
-          "OmniSharp.MSBuild": "1.34.15",
-          "OmniSharp.Roslyn.CSharp": "1.34.15",
-          "OmniSharp.Script": "1.34.15"
+          "OmniSharp.Cake": "1.35.0",
+          "OmniSharp.DotNetTest": "1.35.0",
+          "OmniSharp.Host": "1.35.0",
+          "OmniSharp.LanguageServerProtocol": "1.35.0",
+          "OmniSharp.MSBuild": "1.35.0",
+          "OmniSharp.Roslyn.CSharp": "1.35.0",
+          "OmniSharp.Script": "1.35.0"
         },
         "runtime": {
           "OmniSharp.Stdio.dll": {}
@@ -3294,6 +3324,13 @@
       "sha512": "sha512-rsYXB7+iUPP8AHgQ8JP2UZI2xK2KhjcdGr9E6zX3CsZaTLCaw8M35vaAJRo1rfxeaZEVMuXeaquLVCkZ7JcZ5Q==",
       "path": "humanizer.core/2.2.0",
       "hashPath": "humanizer.core.2.2.0.nupkg.sha512"
+    },
+    "ICSharpCode.Decompiler/5.0.2.5153": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sNVvNcIqRX+T6ccAyxyeXQKyRRKfeTKPUmA6t/8qokrHBLGKYwfR7nUHfMhocZxp5QsNVXLQGEx8Wa9rNL5Wvw==",
+      "path": "icsharpcode.decompiler/5.0.2.5153",
+      "hashPath": "icsharpcode.decompiler.5.0.2.5153.nupkg.sha512"
     },
     "McMaster.Extensions.CommandLineUtils/2.2.4": {
       "type": "package",
@@ -4163,57 +4200,57 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "OmniSharp.Abstractions/1.34.15": {
+    "OmniSharp.Abstractions/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Cake/1.34.15": {
+    "OmniSharp.Cake/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.DotNetTest/1.34.15": {
+    "OmniSharp.DotNetTest/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Host/1.34.15": {
+    "OmniSharp.Host/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.LanguageServerProtocol/1.34.15": {
+    "OmniSharp.LanguageServerProtocol/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.MSBuild/1.34.15": {
+    "OmniSharp.MSBuild/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Roslyn/1.34.15": {
+    "OmniSharp.Roslyn/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Roslyn.CSharp/1.34.15": {
+    "OmniSharp.Roslyn.CSharp/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Script/1.34.15": {
+    "OmniSharp.Script/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Shared/1.34.15": {
+    "OmniSharp.Shared/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Stdio/1.34.15": {
+    "OmniSharp.Stdio/1.35.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -10,9 +10,11 @@
     "graphql",
     "python",
     "cs",
-    "csharp"
+    "csharp",
   ],
-	"diagnostic.errorSign": "•",
-  "diagnostic.warningSign": "•",
-  "diagnostic.infoSign": "•"
+	"diagnostic.errorSign": "✖",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.infoSign": "",
+  "tailwindCSS.emmetCompletions": true,
+  "typescript.showUnused": false
 }

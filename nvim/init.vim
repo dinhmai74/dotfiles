@@ -54,7 +54,7 @@ let no_buffers_menu=1
 " colorscheme gruvbox
 " colorscheme onedark
 " set mousemodel=popup
-set guifont=Fira\ Code-Light:h1
+set guifont=Fira\ Code-Light:20
 set t_Co=256
 " set guioptions=egmrti
 " " set gfn=Monospace\ 10
@@ -218,3 +218,26 @@ endfunction
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:neodark#use_custom_terminal_theme = 1 " default: 0
+
+
+" /* ------------- cocsettings vs ------------- */
+" TextEdit might fail if hidden is not set.
+set hidden
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+set signcolumn=yes

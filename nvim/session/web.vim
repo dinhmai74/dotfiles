@@ -1,6 +1,6 @@
-" ~/.config/nvim/session/HollyBackend.vim:
+" ~/.config/nvim/session/web.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 12 April 2020 at 08:02:09.
+" Created by session.vim 2.13.1 on 19 April 2020 at 22:50:38.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -16,7 +16,7 @@ let SessionLoad = 1
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/workplace/project/dotnet/HollypocketBackend/HollypocketBackend
+cd ~/workplace/project/dotnet/HollyPocketWeb
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -41,7 +41,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-lcd ~/workplace/project/dotnet/HollypocketBackend
+lcd ~/workplace/project/dotnet/HollyPocketWeb
 tabnext 1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
 "   silent exe 'bwipe ' . s:wipebuf

@@ -12,6 +12,9 @@
     ],
     "%2FUsers%2Fdinhmai": [
       "pick"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollyPocketWeb": [
+      " t"
     ]
   },
   "symbols": {
@@ -87,6 +90,14 @@
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fbowie": [
       "edit",
       "snip"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollypocketBackend": [
+      "import"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollyPocketWeb": [
+      "fix",
+      "editsn",
+      "eslit"
     ]
   },
   "extensions": {
@@ -138,6 +149,14 @@
     },
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
       "syntax"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollyPocketWeb": [
+      "tail",
+      "styled",
+      "scss",
+      "css",
+      "taiw",
+      "taiwind"
     ]
   },
   "outline": {

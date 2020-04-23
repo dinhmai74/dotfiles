@@ -172,7 +172,7 @@ interface  ${1:`!v expand('%:t:r')`}Props{
 	
 }
 
-export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = ({}) => {
+export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = (props) => {
 		return (
 			<${3:div}>
 			</$3>
@@ -264,17 +264,17 @@ snippet eslint "Description" b
 // eslint-disable-next-line
 endsnippet
 snippet uss "useState" w
-const [$1, set$2] = useState(${3:''})${0:;}
+const [$1, set$2] = React.useState(${3:''})${0:;}
 endsnippet
 
 snippet use "useEffect" w
-useEffect(() => {
+React.useEffect(() => {
   $1
 })${0:;}
 endsnippet
 
 snippet user "useEffect with return" w
-useEffect(() => {
+React.useEffect(() => {
   $1
 	return () => {
     $2
@@ -283,11 +283,11 @@ useEffect(() => {
 endsnippet
 
 snippet usc "useContext" w
-const $1 = useContext($2)${0:;}
+const $1 = React.useContext($2)${0:;}
 endsnippet
 
 snippet uscb "useCallback" w
-useCallback(
+React.useCallback(
 	() => {
 		$1
 	},
@@ -296,13 +296,13 @@ useCallback(
 endsnippet
 
 snippet usm "useMemo" w
-const $1 = useMemo(() => {
+const $1 = React.useMemo(() => {
 	$2
 }, [$3])${0:;}
 endsnippet
 
 snippet usrf "useRef" w
-const $1 = useRef($2)${0:;}
+const $1 = React.useRef($2)${0:;}
 endsnippet
 
 
@@ -312,4 +312,73 @@ endsnippet
 
 snippet cl "Description" 
 console.log("$1", $1)
+endsnippet
+
+
+snippet useHistory "Description" 
+const history = useHistory()
+endsnippet
+
+
+snippet v4 "v4" 
+import { v4 } from 'uuid'
+endsnippet
+
+snippet process "Description" b
+process.env.PUBLIC_URL
+endsnippet
+
+snippet icx "import classnames" 
+import cx from "classnames"
+endsnippet
+
+snippet cx "class name" b
+cx($1)
+endsnippet
+
+snippet fragment "fragment" 
+<>
+	$1
+</>
+endsnippet
+
+snippet muiBtn "mui button contained primary" b
+<Button variant="contained" color="primary">$1</Button>
+endsnippet
+
+snippet muiUseStyles "create useStyle mui" b
+import { makeStyles, createStyles } from "@material-ui/core"
+
+const useStyles = makeStyles((theme: Theme) =>
+	createStyles({
+		$1	
+	}),
+)
+
+endsnippet
+
+snippet constfc "const fc" b
+const $1 = () => {
+	return null
+}
+
+endsnippet
+
+snippet piscsum "photo piscsum" b
+https://picsum.photos/350/350
+endsnippet
+
+
+snippet zustand "create zustand" 
+interface $1State{
+
+}
+
+export const [$1] = create<$1State>(
+	persist("$2")(
+		immer((set: any,get: any)=>({
+			$3
+		}))
+	)
+)
 endsnippet

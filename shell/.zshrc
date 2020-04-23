@@ -314,6 +314,8 @@ alias mongosv="mongod --dbpath ~/Documents/mongodb"
 alias emu="cd $ANDROID_HOME && cd tools && emulator -avd Nexus5X"
 alias devmenu="adb shell input keyevent 82"
 alias top="vtop --theme=wizard"
+alias ystory= "yarn storybook"
+alias py= "py3"
 
 autoload -U compinit && compinit
 

@@ -9,8 +9,8 @@ nnoremap tj  :tabnext<CR>
 nnoremap tk  :tabprev<CR>
 nnoremap tl  :tablast<CR>
 nnoremap te  :tabe <C-R>=expand("%:p:h") . "/" <CR>
+nnoremap tm  :!mkdir <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap tn  :tabnext<Space>
-nnoremap tm  :tabm<Space>
 nnoremap td  :tabclose<CR>
 nnoremap tb  :e#<CR>
 nnoremap gb :e#<CR>
@@ -79,6 +79,7 @@ nmap sv :vsplit<Return><C-w>w
 " python excue
 " nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
+nnoremap <F5> :w<CR>:exec '!dotnet run' shellescape(@%, 1)<cr>
 "ZZ to :w, ZX to :wq
 noremap zz :w<CR>
 noremap zx :wq<CR>
@@ -133,8 +134,8 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 map  N <Plug>(easymotion-prev)
-map  <Leader>/ <Plug>(easymotion-sn)
-omap <Leader>/ <Plug>(easymotion-tn)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 " transprent bg
 "hi Normal guibg=NONE ctermbg=NONE
@@ -150,3 +151,12 @@ map <leader>su :%sort u<CR>
 map <leader>sr :%sort!<CR>
 
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+
+" inoremap " ""<left>
+" inoremap ' ''<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
+" inoremap { {}<left>
+" inoremap {<CR> {<CR>}<ESC>O
+" inoremap {;<CR> {<CR>};<ESC>O
+
