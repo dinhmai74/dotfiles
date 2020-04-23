@@ -11688,3 +11688,470 @@ c9aa10b21bc611b05b1d8e0c01e5d397|file:///Users/dinhmai/workplace/project/dotnet/
 	pb-1 focus:border-primary
 514d27a1ae323a5780f92090f278366b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|102|35|v|typescriptreact
 	"Please "
+9ca59f4b3ac37cd509fcaff4002cb9ba|file:///Users/dinhmai/.config/shell/.zshrc|20|1|V|zsh
+	  github 
+10177e71fac91a8d7e5a71cd72e0ad28|file:///Users/dinhmai/.config/shell/.zshrc|17|3|V|zsh
+	  common-aliases 
+975c2dcf5a0a72e79444f15146e90c89|file:///Users/dinhmai/.config/shell/.zshrc|17|3|V|zsh
+	  docker 
+62a92a2689fa2f274d9cd75ff25fed98|file:///Users/dinhmai/.config/shell/.zshrc|17|3|V|zsh
+	  gitfast 
+447048612342ba1fe97ed7afbac0cd6b|file:///Users/dinhmai/.config/shell/.zshrc|18|3|V|zsh
+	  node 
+66181a51dbca6a951bac87a1b4108274|file:///Users/dinhmai/.config/nvim/init.vim|106|1|V|vim
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	colorscheme neodark
+	let g:neodark#background = '#202020'
+	let g:neodark#terminal_transparent = 1 " default: 0
+	
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	function! s:custom_jarvis_colors()
+	  hi link CocErrorSign WarningMsg
+	  hi link CocWarningSign Number
+	  hi link CocInfoSign Type
+	
+	  " Make background transparent for many things
+	  hi Normal ctermbg=NONE guibg=NONE
+	  " hi NonText ctermbg=NONE guibg=NONE
+	  " hi LineNr ctermfg=NONE guibg=NONE
+	  hi SignColumn ctermfg=NONE guibg=NONE
+	  hi StatusLine guifg=#16252b guibg=#6699CC
+	  hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " Try to hide vertical spit and end of buffer symbol
+	  " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " Make background color transparent for git changes
+	  hi SignifySignAdd guibg=NONE
+	  hi SignifySignDelete guibg=NONE
+	  hi SignifySignChange guibg=NONE
+	
+	  " Highlight git change signs
+	  hi SignifySignAdd guifg=#99c794
+	  hi SignifySignDelete guifg=#ec5f67
+	  hi SignifySignChange guifg=#c594c5
+	endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	" autocmd! ColorScheme neodark call s:custom_jarvis_colors()
+	
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	let g:neodark#use_custom_terminal_theme = 1 " default: 0
+	
+	
+	" /* ------------- cocsettings vs ------------- */
+	" TextEdit might fail if hidden is not set.
+	set hidden
+	
+	" Some servers have issues with backup files, see #649.
+	set nobackup
+	set nowritebackup
+	
+	" Give more space for displaying messages.
+	set cmdheight=2
+	
+	" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+	" delays and poor user experience.
+	set updatetime=300
+	
+	" Don't pass messages to |ins-completion-menu|.
+	set shortmess+=c
+	
+	" Always show the signcolumn, otherwise it would shift the text each time
+	" diagnostics appear/become resolved.
+	set signcolumn=yes
+7b603f31b93184e2fa89c289de0defee|file:///Users/dinhmai/.config/nvim/init.vim|1|1|V|vim
+	scriptencoding utf-8
+	source ~/.config/nvim/plugins.vim
+	source ~/.config/nvim/coc-settings.vim
+	source ~/.config/nvim/key-mapping.vim
+	" let g:rainbow_active = 1
+	
+	"*****************************************************************************
+	"" Basic Settings
+	"*****************************************************************************
+	" general
+	"" Encoding
+	set encoding=utf-8
+	set fileencoding=utf-8
+	set fileencodings=utf-8
+	" "" Fix backspace indent
+	set backspace=indent,eol,start
+	set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
+	set showcmd       " display incomplete commands
+	set shell=zsh " Set bash as the prompt for Vim
+	" "" Tabs. May be overridden by autocmd rules
+	set tabstop=2
+	set softtabstop=0
+	set shiftwidth=2
+	set termguicolors
+	" " " always uses spaces instead of tab characters
+	set expandtab
+	
+	" "" Enable hidden buffers
+	set hidden
+	" "" Fix backspace indent
+	" "" Searching
+	set hlsearch
+	set incsearch
+	set ignorecase
+	set smartcase
+	" " Mouse in visual modes
+	set mouse=v
+	" " Blink cursor on error instead of beeping
+	set visualbell
+	
+	
+	" set fileformats=unix,dos,mac
+	" Yank and paste with the system clipboard
+	" set clipboard=unnamed
+	
+	autocmd BufEnter * silent! :lcd%:p:h
+	"*****************************************************************************
+	"" Visual Settings
+	"*****************************************************************************
+	" syntax on
+	set ruler
+	set relativenumber
+	let no_buffers_menu=1
+	" colorscheme gruvbox
+	" colorscheme onedark
+	" set mousemodel=popup
+	set guifont=Fira\ Code-Light:20
+	set t_Co=256
+	" set guioptions=egmrti
+	" " set gfn=Monospace\ 10
+	" "" Disable the blinking cursor.
+	" " set gcr=a:blinkon0
+	set scrolloff=3
+	
+	" "" Status bar
+	set laststatus=2
+	
+	" "" Use modeline overrides
+	set modeline
+	set modelines=10
+	
+	set title
+	set titleold="Terminal"
+	set titlestring=%F
+	set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+	" Search mappings: These will make it so that going to the next one in a
+	" search will center on the line it's found in.
+	" nnoremap n nzzzv
+	" nnoremap N Nzzzv
+	if exists("*fugitive#statusline")
+	  set statusline+=%{fugitive#statusline()}
+	endif
+	
+	" Whitespace
+	set wrap
+	set textwidth=0
+	set wrapmargin=0
+	set formatoptions=tcqrn1
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set expandtab
+	set breakindent
+	set noshiftround
+	
+	" Cursor motion
+	set scrolloff=3
+	set backspace=indent,eol,start
+	set matchpairs+=<:> " use % to jump between pairs
+	
+	" Rendering
+	set ttyfast
+	
+	let python_highlight_all=1
+	syntax on
+	
+	"*****************************************************************************
+	"" Abbreviations
+	"*****************************************************************************
+	"" no one is really happy until you have this shortcuts
+	cnoreabbrev W! w!
+	cnoreabbrev Q! q!
+	cnoreabbrev q1 q!
+	cnoreabbrev w1 w!
+	cnoreabbrev Qall! qall!
+	cnoreabbrev Wq wq
+	cnoreabbrev Wa wa
+	cnoreabbrev wQ wq
+	cnoreabbrev WQ wq
+	cnoreabbrev W w
+	cnoreabbrev Q q
+	cnoreabbrev Qall qall
+	cabbrev t tabnew
+	nnoremap ; :
+	vnoremap ; :
+	
+	
+	"*****************************************************************************
+	"" Commands
+	"*****************************************************************************
+	" remove trailing whitespaces
+	command! FixWhitespace :%s/\s\+$//e
+	
+	"*****************************************************************************
+	"" Convenience variables
+	"*****************************************************************************
+	
+	" Reload icons after init source
+	if exists('g:loaded_webdevicons')
+	  call webdevicons#refresh()
+	endif
+	
+	
+	"*****************************************************************************
+	"" Autocmd Rules
+	"*****************************************************************************
+	"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+	augroup vimrc-sync-fromstart
+	  autocmd!
+	  autocmd BufEnter * :syntax sync maxlines=200
+	augroup END
+	
+	"" Remember cursor position
+	augroup vimrc-remember-cursor-position
+	  autocmd!
+	  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+	augroup END
+	
+	"" txt
+	augroup vimrc-wrapping
+	  autocmd!
+	  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+	augroup END
+	
+	"" make/cmake
+	augroup vimrc-make-cmake
+	  autocmd!
+	  autocmd FileType make setlocal noexpandtab
+	  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+	augroup END
+	
+	set autoread
+	
+	
+	" ============================================================================ "
+	" ===                      CUSTOM COLORSCHEME CHANGES                      === "
+	" ============================================================================ "
+	"
+	colorscheme neodark
+	let g:neodark#background = '#202020'
+	let g:neodark#terminal_transparent = 1 " default: 0
+	
+	" Add custom highlights in method that is executed every time a colorscheme is sourced
+	" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
+	function! s:custom_jarvis_colors()
+	  hi link CocErrorSign WarningMsg
+	  hi link CocWarningSign Number
+	  hi link CocInfoSign Type
+	
+	  " Make background transparent for many things
+	  hi Normal ctermbg=NONE guibg=NONE
+	  " hi NonText ctermbg=NONE guibg=NONE
+	  " hi LineNr ctermfg=NONE guibg=NONE
+	  hi SignColumn ctermfg=NONE guibg=NONE
+	  hi StatusLine guifg=#16252b guibg=#6699CC
+	  hi StatusLineNC guifg=#16252b guibg=#16252b
+	
+	  " Try to hide vertical spit and end of buffer symbol
+	  " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
+	  " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+	
+	  " Make background color transparent for git changes
+	  hi SignifySignAdd guibg=NONE
+	  hi SignifySignDelete guibg=NONE
+	  hi SignifySignChange guibg=NONE
+	
+	  " Highlight git change signs
+	  hi SignifySignAdd guifg=#99c794
+	  hi SignifySignDelete guifg=#ec5f67
+	  hi SignifySignChange guifg=#c594c5
+	endfunction
+	
+	" autocmd! ColorScheme * call TrailingSpaceHighlights()
+	" autocmd! ColorScheme * call s:custom_jarvis_colors()
+	" call s:custom_jarvis_colors()
+	" autocmd! ColorScheme neodark call s:custom_jarvis_colors()
+	
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+	let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+	let g:neodark#use_custom_terminal_theme = 1 " default: 0
+	
+	
+	" /* ------------- cocsettings vs ------------- */
+	" TextEdit might fail if hidden is not set.
+	set hidden
+	
+	" Some servers have issues with backup files, see #649.
+	set nobackup
+	set nowritebackup
+	
+	" Give more space for displaying messages.
+	set cmdheight=2
+	
+	" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+	" delays and poor user experience.
+	set updatetime=300
+	
+	" Don't pass messages to |ins-completion-menu|.
+	set shortmess+=c
+	
+	" Always show the signcolumn, otherwise it would shift the text each time
+	" diagnostics appear/become resolved.
+	set signcolumn=yes
+8da45073a62f7a271e78201b865f53af|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.tsx|52|3|V|typescriptreact
+	  // const
+fcae8bec081a865541326330f885480b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.tsx|53|3|V|typescriptreact
+	  cosnt
+ec94458063d21f433b4a01d69187ffa4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.tsx|27|6|V|typescriptreact
+	    React.useEffect(() => {
+	      
+	    });
+34c07b85be7164467566b52507fb92a8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.tsx|26|5|V|typescriptreact
+	    useLocation
+fbf74d6f7aaa8ccc8169fbc49d147d53|file:///Users/dinhmai/.config/nvim/init.vim|77|1|v|vim
+	
+	" sync open file with NERDTree
+	" " Check if NERDTree is open or active
+	function! IsNERDTreeOpen()        
+	  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+	endfunction
+	
+	" Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
+	" file, and we're not in vimdiff
+	function! SyncTree()
+	  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+	    NERDTreeFind
+	    wincmd p
+	  endif
+	endfunction
+	
+	
+80addf97ac958ec6f3d8f54ee51a1cf6|file:///Users/dinhmai/.config/nvim/init.vim|78|1|V|vim
+	autocmd BufEnter * call SyncTree()
+ce9b2bc437ce3aacedf2bcec66474d29|file:///Users/dinhmai/.config/nvim/init.vim|77|1|V|vim
+	" Highlight currently open buffer in NERDTree
+70830bb58e95b48b3a107ff4626c76fa|file:///Users/dinhmai/.config/nvim/init.vim|48|1|V|vim
+	let g:NERDTreeIgnore = ['^node_modules$']
+9b4919eb624d2812828257fd2203b332|file:///Users/dinhmai/.config/nvim/init.vim|33|1|V|vim
+	let g:NERDTreeGitStatusWithFlags = 1
+b930caf5ecab57cc23e35e97ddf1ab12|file:///Users/dinhmai/.config/nvim/init.vim|33|1|V|vim
+	"let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+d61c51ab4a0d62a991ab913fcbf63987|file:///Users/dinhmai/.config/nvim/init.vim|33|1|V|vim
+	"let g:NERDTreeGitStatusNodeColorization = 1
+8c9c8706a30e507f6a24d93a4a5d8d63|file:///Users/dinhmai/.config/nvim/init.vim|33|1|V|vim
+	"let g:NERDTreeColorMapCustom = {
+f8682d8e693e600544911c2c08a644d6|file:///Users/dinhmai/.config/nvim/init.vim|33|5|V|vim
+	    "\ "Staged"    : "#0ee375",  
+9f73baa0b2859e52c8a9650e2bc7e216|file:///Users/dinhmai/.config/nvim/init.vim|33|5|V|vim
+	    "\ "Modified"  : "#d9bf91",  
+488b7f1fd64ec35aac07570919478a9a|file:///Users/dinhmai/.config/nvim/init.vim|33|5|V|vim
+	    "\ "Renamed"   : "#51C9FC",  
+b7611096e0fc59bc688f637f26795a1e|file:///Users/dinhmai/.config/nvim/init.vim|33|5|V|vim
+	    "\ "Untracked" : "#FCE77C",  
+89cc8d438ce4ce3f37de387ebc9d7269|file:///Users/dinhmai/.config/nvim/init.vim|33|5|V|vim
+	    "\ "Unmerged"  : "#FC51E6",  
+7cc384e74bad756cb74cddfd0b183134|file:///Users/dinhmai/.config/nvim/init.vim|33|5|V|vim
+	    "\ "Dirty"     : "#FFBD61",  
+bc633497f0a43fa15d1c298790a62489|file:///Users/dinhmai/.config/nvim/init.vim|33|5|V|vim
+	    "\ "Clean"     : "#87939A",   
+692a05740ad861bbcd9cc6a391363eb4|file:///Users/dinhmai/.config/nvim/init.vim|33|5|V|vim
+	    "\ "Ignored"   : "#808080"   
+ec8d50973fb52073594730e40351c22e|file:///Users/dinhmai/.config/nvim/init.vim|33|5|V|vim
+	    "\ }                         
+53fb8d95658b8d4e1609f7aa01e95a31|file:///Users/dinhmai/.config/nvim/init.vim|25|1|V|vim
+	nmap <C-n> :NERDTreeToggle<CR>
+22298524c7fcfe8a3ec73d28304a6a00|file:///Users/dinhmai/.config/nvim/init.vim|5|1|V|vim
+	Plug 'scrooloose/nerdtree'
+5e094860702171f7f9d86c6749e2f240|file:///Users/dinhmai/.config/nvim/init.vim|201|14|v|vim
+	autocmd BufEnter * silent! :lcd%:p:h
+319971eb0996c61e0c5c7bfedd720c47|file:///Users/dinhmai/.config/nvim/init.vim|21|1|V|vim
+	Plug 'easymotion/vim-easymotion' 
+86a73eab733874a29d7f4ba436734ab2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.tsx|29|5|V|typescriptreact
+	    <header></header>
+cea964ac6a233b51fe5a28f7f4a40895|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.tsx|29|1|V|typescriptreact
+	<header>
+606708915416dd8d9832faceda3df025|file:///Users/dinhmai/.config/nvim/init.vim|30|1|V|vim
+	Plug 'tmhedberg/SimpylFold' "fold code

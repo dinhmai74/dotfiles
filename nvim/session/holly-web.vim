@@ -1,6 +1,6 @@
-" ~/.config/nvim/session/web.vim:
+" ~/.config/nvim/session/holly-web.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 19 April 2020 at 22:50:38.
+" Created by session.vim 2.13.1 on 23 April 2020 at 13:27:14.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif

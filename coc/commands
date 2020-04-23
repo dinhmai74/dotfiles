@@ -1,5 +1,5 @@
-tsserver.organizeImports
 explorer
+tsserver.organizeImports
 eslint.executeAutofix
 snippets.editSnippets
 editor.action.organizeImport

@@ -125,18 +125,18 @@ nmap <leader>z :JsDoc<CR>
 let g:user_emmet_expandabbr_key='<C-z>'
 
 " easymotion
-map <Leader> <Plug>(easymotion-prefix)
-nmap s <Plug>(easymotion-overwin-f2)
-" Move to line
-map <Leader>L <Plug>(easymotion-bd-jk)
-nmap <Leader>L <Plug>(easymotion-overwin-line)
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
-map  N <Plug>(easymotion-prev)
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
+" map <Leader> <Plug>(easymotion-prefix)
+" nmap s <Plug>(easymotion-overwin-f2)
+" " Move to line
+" map <Leader>L <Plug>(easymotion-bd-jk)
+" nmap <Leader>L <Plug>(easymotion-overwin-line)
+" " Move to word
+" map  <Leader>w <Plug>(easymotion-bd-w)
+" nmap <Leader>w <Plug>(easymotion-overwin-w)
+" map  N <Plug>(easymotion-prev)
+" map  / <Plug>(easymotion-sn)
+" omap / <Plug>(easymotion-tn)
+" map  n <Plug>(easymotion-next)
 " transprent bg
 "hi Normal guibg=NONE ctermbg=NONE
 

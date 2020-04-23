@@ -1,108 +1,244 @@
-scriptencoding utf-8
-source ~/.config/nvim/plugins.vim
-source ~/.config/nvim/coc-settings.vim
-source ~/.config/nvim/key-mapping.vim
-" let g:rainbow_active = 1
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'tsony-tsonev/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
+Plug 'scrooloose/nerdcommenter'
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+Plug 'christoomey/vim-tmux-navigator'
+
+Plug 'morhetz/gruvbox'
+
+Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+
+Plug 'tpope/vim-surround'
+Plug 'easymotion/vim-easymotion' 
+Plug 'lilydjwg/colorizer' "colorize all text 
+" git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+" util
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tmhedberg/SimpylFold' "fold code
+Plug 'alvan/vim-closetag' "auto close tags
+Plug 'christoomey/vim-system-copy'
+Plug 'christoomey/vim-sort-motion'
+Plug 'cometsong/commentframe.vim'
+Plug 'tpope/vim-repeat'
+" #------------------------------------------------------------------------------#
+" #                                  crs, crc...                                 #
+" #------------------------------------------------------------------------------#
+Plug 'tpope/vim-abolish' "turn case
+Plug 'nicwest/vim-camelsnek' "turn case
+
+"session
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
+
+Plug 'junegunn/fzf', { 'do': './install --bin' }
+Plug 'junegunn/fzf.vim'
+
+Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
+
+" Initialize plugin system
+call plug#end()
+
+inoremap jk <ESC>
+
+vmap ++ <plug>NERDCommenterToggle
+nmap ++ <plug>NERDCommenterToggle
+
+" open NERDTree automatically
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * NERDTree
+
+
+
+" vim-prettier
+"let g:prettier#quickfix_enabled = 0
+"let g:prettier#quickfix_auto_focus = 0
+" prettier command for coc
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+" run prettier on save
+"let g:prettier#autoformat = 0
+"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
+" ctrlp
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" j/k will move virtual lines (lines that wrap)
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
+set relativenumber
+
+set smarttab
+set cindent
+set tabstop=2
+set shiftwidth=2
+" always uses spaces instead of tab characters
+set expandtab
+
+colorscheme gruvbox
+
+" coc config
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-eslint', 
+  \ 'coc-prettier', 
+  \ 'coc-json', 
+  \ 'coc-tailwindcss',
+  \ 'coc-yank', 
+  \ 'coc-highlight',
+  \ 'coc-marketplace', 
+  \ ]
+" from readme
+" if hidden is not set, TextEdit might fail.
+set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
+set updatetime=300
+
+" don't give |ins-completion-menu| messages.
+set shortmess+=c
+
+" always show signcolumns
+set signcolumn=yes
+
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" Or use `complete_info` if your vim support it, like:
+" inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+"
+
+" Use `[g` and `]g` to navigate diagnostics
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Highlight symbol under cursor on CursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Remap for rename current word
+nmap <F2> <Plug>(coc-rename)
+
+" Remap for format selected region
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap for do codeAction of current line
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Fix autofix problem of current line
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Create mappings for function text object, requires document symbols feature of languageserver.
+xmap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap if <Plug>(coc-funcobj-i)
+omap af <Plug>(coc-funcobj-a)
+
+" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+nmap <silent> <C-d> <Plug>(coc-range-select)
+xmap <silent> <C-d> <Plug>(coc-range-select)
+
+" Use `:Format` to format current buffer
+command! -nargs=0 Format :call CocAction('format')
+
+" Use `:Fold` to fold current buffer
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+" use `:OR` for organize import of current buffer
+command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+" Add status line support, for integration with other plugin, checkout `:h coc-status`
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+" Using CocList
+" Show all diagnostics
+nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+" Manage extensions
+nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+" Show commands
+nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+" Find symbol of current document
+nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+" Search workspace symbols
+nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+" Do default action for next item.
+nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+" Do default action for previous item.
+nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+" Resume latest coc list
+nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 "*****************************************************************************
 "" Basic Settings
 "*****************************************************************************
-" general
-"" Encoding
-set encoding=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8
-" "" Fix backspace indent
-set backspace=indent,eol,start
-set listchars=tab:▸\ ,trail:· " Display extra whitespace characters
-set showcmd       " display incomplete commands
-set shell=zsh " Set bash as the prompt for Vim
-" "" Tabs. May be overridden by autocmd rules
-set tabstop=2
-set softtabstop=0
-set shiftwidth=2
-set termguicolors
-" " " always uses spaces instead of tab characters
-set expandtab
-
-" "" Enable hidden buffers
-set hidden
-" "" Fix backspace indent
+"
+set mouse=v
 " "" Searching
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-" " Mouse in visual modes
-set mouse=v
-" " Blink cursor on error instead of beeping
-set visualbell
-
-
-" set fileformats=unix,dos,mac
-" Yank and paste with the system clipboard
-" set clipboard=unnamed
-
 autocmd BufEnter * silent! :lcd%:p:h
-"*****************************************************************************
-"" Visual Settings
-"*****************************************************************************
-" syntax on
-set ruler
-set relativenumber
-let no_buffers_menu=1
-" colorscheme gruvbox
-" colorscheme onedark
-" set mousemodel=popup
-set guifont=Fira\ Code-Light:20
-set t_Co=256
-" set guioptions=egmrti
-" " set gfn=Monospace\ 10
-" "" Disable the blinking cursor.
-" " set gcr=a:blinkon0
-set scrolloff=3
+au FileType * set fo-=c fo-=r fo-=o "disable auto comment new line
 
-" "" Status bar
-set laststatus=2
-
-" "" Use modeline overrides
-set modeline
-set modelines=10
-
-set title
-set titleold="Terminal"
-set titlestring=%F
-set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
-" Search mappings: These will make it so that going to the next one in a
-" search will center on the line it's found in.
-nnoremap n nzzzv
-nnoremap N Nzzzv
 if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
-
-" Whitespace
-set wrap
-set textwidth=0
-set wrapmargin=0
-set formatoptions=tcqrn1
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set breakindent
-set noshiftround
-
-" Cursor motion
-set scrolloff=3
-set backspace=indent,eol,start
-set matchpairs+=<:> " use % to jump between pairs
-
-" Rendering
-set ttyfast
-
-let python_highlight_all=1
-syntax on
 
 "*****************************************************************************
 "" Abbreviations
@@ -123,8 +259,6 @@ cnoreabbrev Qall qall
 cabbrev t tabnew
 nnoremap ; :
 vnoremap ; :
-
-
 "*****************************************************************************
 "" Commands
 "*****************************************************************************
@@ -139,7 +273,6 @@ command! FixWhitespace :%s/\s\+$//e
 if exists('g:loaded_webdevicons')
   call webdevicons#refresh()
 endif
-
 
 "*****************************************************************************
 "" Autocmd Rules
@@ -163,81 +296,36 @@ augroup vimrc-wrapping
 augroup END
 
 "" make/cmake
-augroup vimrc-make-cmake
-  autocmd!
-  autocmd FileType make setlocal noexpandtab
-  autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
-augroup END
+"augroup vimrc-make-cmake
+  "autocmd!
+  "autocmd FileType make setlocal noexpandtab
+  "autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
+"augroup END
 
 set autoread
 
 
-" ============================================================================ "
-" ===                      CUSTOM COLORSCHEME CHANGES                      === "
-" ============================================================================ "
-"
-colorscheme neodark
-let g:neodark#background = '#202020'
-let g:neodark#terminal_transparent = 1 " default: 0
+source ~/.config/nvim/key-mapping.vim
 
-" Add custom highlights in method that is executed every time a colorscheme is sourced
-" See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
-function! s:custom_jarvis_colors()
-  hi link CocErrorSign WarningMsg
-  hi link CocWarningSign Number
-  hi link CocInfoSign Type
 
-  " Make background transparent for many things
-  hi Normal ctermbg=NONE guibg=NONE
-  " hi NonText ctermbg=NONE guibg=NONE
-  " hi LineNr ctermfg=NONE guibg=NONE
-  hi SignColumn ctermfg=NONE guibg=NONE
-  hi StatusLine guifg=#16252b guibg=#6699CC
-  hi StatusLineNC guifg=#16252b guibg=#16252b
-
-  " Try to hide vertical spit and end of buffer symbol
-  " hi VertSplit gui=NONE guifg=#17252c guibg=#17252c
-  " hi EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
-
-  " Make background color transparent for git changes
-  hi SignifySignAdd guibg=NONE
-  hi SignifySignDelete guibg=NONE
-  hi SignifySignChange guibg=NONE
-
-  " Highlight git change signs
-  hi SignifySignAdd guifg=#99c794
-  hi SignifySignDelete guifg=#ec5f67
-  hi SignifySignChange guifg=#c594c5
-endfunction
-
-" autocmd! ColorScheme * call TrailingSpaceHighlights()
-" autocmd! ColorScheme * call s:custom_jarvis_colors()
-" call s:custom_jarvis_colors()
-" autocmd! ColorScheme neodark call s:custom_jarvis_colors()
-
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" #------------------------------------------------------------------------------#
+" #                                plugin settings                               #
+" #------------------------------------------------------------------------------#
+let g:indentLine_char = '┊'
+"" fzf.vim
+set wildmode=list:longest,list:full
+set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
+let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
+" ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:neodark#use_custom_terminal_theme = 1 " default: 0
+let g:airline_theme='deus'
+let g:NERDSpaceDelims = 1
+let g:vim_jsx_pretty_colorful_config = 1 
+au FileType * set fo-=c fo-=r fo-=o
+" session management
+let g:session_directory = "~/.config/nvim/session"
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+let g:session_command_aliases = 1
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-
-" /* ------------- cocsettings vs ------------- */
-" TextEdit might fail if hidden is not set.
-set hidden
-
-" Some servers have issues with backup files, see #649.
-set nobackup
-set nowritebackup
-
-" Give more space for displaying messages.
-set cmdheight=2
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=300
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
-
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-set signcolumn=yes
