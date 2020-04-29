@@ -48,6 +48,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
 
 " Initialize plugin system
+Plug 'mattn/emmet-vim'
+
 call plug#end()
 
 inoremap jk <ESC>

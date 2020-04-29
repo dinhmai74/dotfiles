@@ -80,7 +80,7 @@ export * from './$1'
 endsnippet
 
 snippet dp "default props"
-d${1:`!v expand('%:t:r')`}.defaultProps={
+${1:`!v expand('%:t:r')`}.defaultProps={
 	$1
 }
 endsnippet
@@ -182,11 +182,11 @@ export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props>
 endsnippet
 
 snippet fc "function component" 
-interface $2 {
+interface $1Props {
 	$3
 }
 
-const $1: React.FC<$2> = () => {
+const $1: React.FC<$1Props> = () => {
 	$4
 }
 
@@ -332,10 +332,6 @@ snippet icx "import classnames"
 import cx from "classnames"
 endsnippet
 
-snippet cx "class name" b
-cx($1)
-endsnippet
-
 snippet fragment "fragment" 
 <>
 	$1
@@ -382,3 +378,29 @@ export const [$1] = create<$1State>(
 	)
 )
 endsnippet
+
+snippet cx "className with cx" 
+className={cx("$1")}
+endsnippet
+
+snippet class "className with cx" 
+className={cx("$1")}
+endsnippet
+
+snippet className  "className with cx" 
+className={cx("$1")}
+endsnippet
+
+snippet fca "function arrow without any param" 
+() => { $1 }
+endsnippet
+
+snippet afc "function arrow without any param" 
+() => { $1 }
+endsnippet
+
+snippet ()=> "function arrow without any param" 
+() => { $1 }
+endsnippet
+
+

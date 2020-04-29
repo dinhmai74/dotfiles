@@ -1,6 +1,6 @@
 explorer
-tsserver.organizeImports
 eslint.executeAutofix
+tsserver.organizeImports
 snippets.editSnippets
 editor.action.organizeImport
 terminal.Toggle

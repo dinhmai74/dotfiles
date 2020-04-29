@@ -62,14 +62,10 @@ export const run = async function(toolbox: GluegunToolbox) {
   const props = { name, pascalName, camelCaseName }
 
   const jobs = [
-    // {
-    //   template: 'component.story.tsx.ejs',
-    //   target: `src/components/${name}/${name}.story.tsx`
-    // },
-    // {
-    // template: 'styles.ts.ejs',
-    // target: `src/components/${name}/${name}.styles.ts`
-    // }
+    {
+      template: 'component.story.tsx.ejs',
+      target: `src/stories/${name}.stories.js`
+    }
   ]
 
   if (
@@ -78,7 +74,7 @@ export const run = async function(toolbox: GluegunToolbox) {
   ) {
     jobs.push({
       template: 'function-component.tsx.ejs',
-      target: `src/components/${name}/${name}.tsx`
+      target: `src/components/${name}/${pascalName}.tsx`
     })
   } else if (
     componentType === 'statelessFunction' ||
@@ -86,12 +82,12 @@ export const run = async function(toolbox: GluegunToolbox) {
   ) {
     jobs.push({
       template: 'component.tsx.ejs',
-      target: `src/components/${name}/${name}.tsx`
+      target: `src/components/${name}/${pascalName}.tsx`
     })
   } else {
     jobs.push({
       template: 'class-component.tsx.ejs',
-      target: `src/components/${name}/${name}.tsx`
+      target: `src/components/${name}/${pascalName}.tsx`
     })
   }
 
@@ -108,7 +104,7 @@ export const run = async function(toolbox: GluegunToolbox) {
 
   // patch the barrel export file
   const barrelExportPath = `${process.cwd()}/src/components/index.ts`
-  const exportToAdd = `export * from "./${name}/${name}"\n`
+  const exportToAdd = `export * from "./${name}/${pascalName}"\n`
 
   if (!filesystem.exists(barrelExportPath)) {
     const msg =

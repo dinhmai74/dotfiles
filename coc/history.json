@@ -35,6 +35,10 @@
     ],
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fcaipu": [
       "useStyleSheet"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollyPocketWeb": [
+      "logout",
+      "signOut"
     ]
   },
   "commands": {
@@ -98,6 +102,9 @@
       "fix",
       "editsn",
       "eslit"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Feng-web": [
+      "eslint"
     ]
   },
   "extensions": {
@@ -156,7 +163,9 @@
       "scss",
       "css",
       "taiw",
-      "taiwind"
+      "taiwind",
+      "em",
+      "emm"
     ]
   },
   "outline": {

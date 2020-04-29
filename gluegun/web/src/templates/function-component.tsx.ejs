@@ -1,12 +1,14 @@
 import React from 'react'
+import cx from "classnames"
 
 interface <%= props.pascalName %>Props{
-  
+  className?: string  
 }
 
-export const <%= props.pascalName %>: React.FC<<%= props.pascalName %>Props> = (props) => {
+export const <%= props.pascalName %>: React.FC<<%= props.pascalName %>Props> = ({ className }) => {
     return (
-      <div>
+      <div className={cx("",className)}>
+        <%= props.pascalName %>
       </div>
     );
 }

@@ -12155,3 +12155,3010 @@ cea964ac6a233b51fe5a28f7f4a40895|file:///Users/dinhmai/workplace/project/dotnet/
 	<header>
 606708915416dd8d9832faceda3df025|file:///Users/dinhmai/.config/nvim/init.vim|30|1|V|vim
 	Plug 'tmhedberg/SimpylFold' "fold code
+98a0f3c5e1b63c96bd40eb1570c064c7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/router/root-router.ts|11|1|V|typescript
+	  orderGeneral: "/order",
+53c1db2c40b6513f1652b510fa163cc4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/router/root-router.ts|12|3|v|typescript
+	orderGeneral
+88b9cb667fcc47dea9b14bd190d57712|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/router/root-router.ts|12|19|v|typescript
+	rder
+f320d99bc6b1996a1a3515e6fca42588|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/router/root-router.ts|25|1|V|typescript
+	  {
+	    Component: OrderGeneralScreen,
+	    path: Paths.orderGeneral,
+	  },
+82038c3af25973f7b70b390ccc0add1a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/header/header.tsx|100|62|v|typescriptreact
+	() => setEditReceiver(p=>!p)
+a99c69f4c41546d5a9dcc03fe1c105a2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/header/header.tsx|100|27|v|typescriptreact
+	onClick={handleCloseMenu} 
+777bb36e5e0dc183443b4bb62074202d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/header/header.tsx|100|42|v|typescriptreact
+	history.push(Paths.userProfile)
+629d10695c90c41b1e42050aac178e86|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/profile-screen.tsx|11|9|V|typescriptreact
+	        ProfileScreen
+cb8b6fef588dfbd9361f76dfcd767ff8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|6|10|v|typescriptreact
+	<div className="flex inline-block"></div>
+e527a08f55d41c9ac5cd3c7b3b57469f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|8|7|V|typescriptreact
+	      <p className=""></p>
+54183fb8b06bf23ade25c3a5c5698133|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|7|35|v|typescriptreact
+	items-center
+32bd1a0bdf1a4c882410c345e93e23ad|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|7|68|v|typescriptreact
+	border-r border-gray-300
+b8aadf9a7e05dc888d58a9066eb4efb1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|7|57|v|typescriptreact
+	bg-red-100 
+bff8ab4ec5bafe0a8b720fc3d5a512e8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|38|23|v|typescriptreact
+	"block p-4 font-bold border-r-4 text-grey-darker border-purple hover:bg-grey-lighter"
+7f67a9fa2863df24a8202ef518842a1c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|38|23|v|typescriptreact
+	"block p-4 font-bold border-r-4 text-grey-darker border-grey-lighter hover:border-purple-light hover:bg-grey-lighter"
+7f67a9fa2863df24a8202ef518842a1c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|38|23|v|typescriptreact
+	"block p-4 font-bold border-r-4 text-grey-darker border-grey-lighter hover:border-purple-light hover:bg-grey-lighter"
+3eebba935c90d73dd450b03685ed5407|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|38|23|v|typescriptreact
+	"block p-4 text-grey-darker font-bold border-grey-lighter hover:border-purple-light hover:bg-grey-lighter border-r-4"
+bb6eb34be13346655fcc8459d7d14d59|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|8|3|V|typescriptreact
+	  const normalBorder
+83e3550f9de77c73e456b3b058388fbd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|8|3|V|typescriptreact
+	  const nor
+d9841bdf1f3b55072794e82d175e270a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|23|27|v|typescriptreact
+	block p-4 font-bold border-r-4 text-grey-darker border-grey-lighter hover:border-purple-light hover:bg-grey-lighter
+96d3b260e057ac1809dc0941c5d8c35a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|15|76|v|typescriptreact
+	border-purple
+6a19bbb52d8327f9149be17eaf420c01|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|39|118|v|typescriptreact
+	lighter
+6a19bbb52d8327f9149be17eaf420c01|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|39|118|v|typescriptreact
+	lighter
+6a19bbb52d8327f9149be17eaf420c01|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|39|118|v|typescriptreact
+	lighter
+6a19bbb52d8327f9149be17eaf420c01|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|39|118|v|typescriptreact
+	lighter
+6a19bbb52d8327f9149be17eaf420c01|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|39|118|v|typescriptreact
+	lighter
+6a19bbb52d8327f9149be17eaf420c01|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|39|118|v|typescriptreact
+	lighter
+6a19bbb52d8327f9149be17eaf420c01|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|39|118|v|typescriptreact
+	lighter
+ca50000a180a293de0b27acb67a695cb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|34|67|v|typescriptreact
+	grey
+ca50000a180a293de0b27acb67a695cb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|34|67|v|typescriptreact
+	grey
+4db3426a7711c7703b6490dc0b444786|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|27|12|v|typescriptreact
+	
+	            About us
+	          
+cadf3397de8395355f6df3797666775b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|25|16|v|typescriptreact
+	block p-4 font-bold border-r-4 text-gray-darker border-gray-200 hover:border-purple-light hover:bg-gray-300
+bb7aedfa61007447dd6efaf9f37641e3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|8|97|v|typescriptreact
+	purple
+ddcc5bfae81979b0ae65a0ac56a5b17b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|8|97|v|typescriptreact
+	light 
+6f52adee03889bf6212a66f81e186cc6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|16|13|V|typescriptreact
+	            className={cx("block p-4 font-bold border-r-4 text-gray-darker  hover:bg-gray-200")}
+e290aaf2b9543e66d70d938eaa97ce52|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|335|9|V|snippets
+	snippet cx "class name" b
+	cx($1)
+	endsnippet
+f74dbf38cb4b29eefd9fe2adb5db1556|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|20|1|V|typescriptreact
+	          <a href="#" className={cx(itemClass)}>
+fc0c221205be515e3b89d9a8c3a2edac|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|25|11|v|typescriptreact
+	<a
+	            href="#"
+	            className={cx(
+	              "block p-4 font-bold border-r-4 text-gray-darker border-gray-200 hover:border-purple-light hover:bg-gray-300",
+	            )}
+	          >
+7c8ebe8728c0e519f8aa2c91c2e08e52|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|31|10|V|typescriptreact
+	          <a
+	            href="#"
+	            className={cx(
+	              "block p-4 text-gray-darker font-bold border-gray-200 hover:border-purple-light hover:bg-gray-200 border-r-4",
+	            )}
+c90ef1de0d5ae078c5fe504629d28021|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|31|11|V|typescriptreact
+	          >
+02a5f298188f57bddad9269388467ad6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|9|47|v|typescriptreact
+	darker 
+f3ce6cabeba84ba642427927cab4746e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|6|6|V|typescriptreact
+	interface NavItem{
+	  path: string
+	}
+044483ceb2a758acc4aee03469abba46|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|7|1|V|typescriptreact
+	  "home",
+3c9f7861db231a0c7019da31d6e6ef85|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|8|4|v|typescriptreact
+	About 
+038b5e1e36c6173bb703eebcc8d3679b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|28|1|V|typescriptreact
+	        <li>
+	          <a href="#" className={cx(itemClass)}>
+	            About us
+	          </a>
+	        </li>
+	        <li>
+	          <a href="#" className={cx(itemClass)}>
+	            Services
+	          </a>
+	        </li>
+	        <li>
+	          <a href="#" className={cx(itemClass)}>
+	            Contact us
+	          </a>
+c3253d9f8075455cc9314d483d86019f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|28|9|V|typescriptreact
+	        </li>
+3e4728be7a2dcb2b15dd26e5202a8b87|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|23|7|V|typescriptreact
+	        <li>
+	          <a href="#" className={cx(itemClass)}>
+	            Home
+	          </a>
+61ed6ac617fe1a474f48469ef99abc10|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|23|7|V|typescriptreact
+	        <li>
+	          <a href="#" className={cx(itemClass)}>
+	            Home
+	          </a>
+	        </li>
+9939befadb7e259061da86c5f5036ca6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|26|18|v|typescriptreact
+	href="#"
+741f90bbabf0747d246a865dd2fe4092|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|22|1|V|typescriptreact
+	  s 
+a490d5a94734aae0a9dd1f907e9382f0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|24|1|v|typescriptreact
+	                                                    
+ddeb92bdae7f4446b0e241231ae3c8ac|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|25|18|v|typescriptreact
+	state.selectedItem=value
+77c8c7365b11bd8a00a7772cbe26c18d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|43|18|v|typescriptreact
+	onClick={()=>} 
+88c443e02eeb63a13fa2e22f5371e16b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|37|3|V|typescriptreact
+	  const [currentView, set] = React.useState("")
+5deaee1c1332199e5b5bc7c5e4f7f0c2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|44|45|v|typescriptreact
+	"hello"
+6c4768eec13a707a7b88b3364b19fd60|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|40|53|v|typescriptreact
+	my-30 mx-30
+9339803cc7ae9cac8552c06941bcf36f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|49|38|v|typescriptreact
+	selectedItem === i
+425ef7afa16d6a44ad7e891039a7848b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|48|19|v|typescriptreact
+	{
+	                    "text-gray-700": !!(selectedItem === i),
+	                  }
+a69e4002d4617d0566c62b34c0cc8379|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|51|1|V|typescriptreact
+	                     ),
+6aa454f7cc6e2ef5a7488fe2a7b0968b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|36|49|v|typescriptreact
+	border-gray-200 
+64492e8025e10801d0dcbd36e50dd15e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|36|26|v|typescriptreact
+	border-r
+1e821fe8f7d3357d9b8af6570325b05a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|10|3|V|typescriptreact
+	  <title></title> 
+cd1365075657ef890c6333799f8a3ccd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|14|3|V|typescriptreact
+	  "User info",
+14cb83a32a554f0d9287a0a04e2c3679|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|14|3|v|typescriptreact
+	"Favorite products"
+11a4c2087d7f0e451a4d60c1c602562d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|15|30|v|typescriptreact
+	"
+	    <title></title
+bb6e97fb811fa0293cd2ae55d048b7ec|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|15|2|v|typescriptreact
+	 {
+	    title: "Favorite products",
+	    icon: Heart
+	  },
+08233f5a18bb179416c652a1dc39164a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|20|13|v|typescriptreact
+	Favorite products
+f4a6ceffc0054a855f31f42083328df9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|21|11|v|typescriptreact
+	Heart
+5ef86e9b14faecf7aee80312a84f38f2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|19|1|v|typescriptreact
+	 {
+	    title: "",
+	    icon: 
+	  },
+8db15ad8ec5dd55a395b42952053ce36|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|39|12|V|typescriptreact
+	  "Setting",
+	  "Order management",
+	  "My reviews",
+	  "My purchased products",
+12c817a40d1b2c029f9cf8a9d02923ac|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|15|1|V|typescriptreact
+	  {
+	    title: "Favorite products",
+	    icon: Heart
+	  },
+a40ae872cebc70128e348fa8bc74606c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|73|17|V|typescriptreact
+	                {v.icon}
+ad208a5d5d0235d5871afe3a96895413|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|68|15|V|typescriptreact
+	              {v.icon}
+d046e073f60c062a4118e28da52801f5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|68|15|V|typescriptreact
+	              <v.icon />
+526a1c51d0af8a9cd289348acca4e6bc|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|73|17|V|typescriptreact
+	                <v.icon />
+9b0db20282c2dc8d23943c66e26f1139|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|70|17|V|typescriptreact
+	                </div>
+086b133e97d4df9cd2a391efdc222dee|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|60|12|v|typescriptreact
+	p-4 
+9991d9a3f7f7288290cb768c2be6aeb9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|60|97|v|typescriptreact
+	my-4
+7f811e00797282adb8c7e80ebbc14d0d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|74|17|V|typescriptreact
+	                <v.icon className={cx("mr-4")} />
+8c8182a0b9ac349da20308e80af13440|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|71|63|v|typescriptreact
+	leading-none
+b31a1793ba77cf0a28ddf64a855173c7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|73|15|V|typescriptreact
+	                style={{ lineHeight: 0.1 }}
+836b4df1c4c5d2d58b022c7a038068d2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|69|1|v|typescriptreact
+	              <v.icon />
+	              <a
+	                className={cx(itemClass, {
+	                  "text-gray-700 border-r-2 border-orange-500 ": !!(selectedItem === i),
+	                })}
+	                style={{ lineHeight: 0.1 }}
+	              >
+	                {v.title}
+	              </a>
+	 
+0beccf65e74403e4e15294bcd781c1ff|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|69|15|V|typescriptreact
+	              <div className="flex w-full block">
+535163232cb1a94ca0d340239f3a23a6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|71|63|v|typescriptreact
+	self-center
+72fef2cd7dafd4423c8232f881f51851|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/profile-screen.tsx|9|1|V|typescriptreact
+	  UserInfoScreen,
+ed69c3f7dccb7fa3ee399cfb21dd6f51|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|6|10|v|typescriptreact
+	<div>user info</div>
+7fc5fa04648e93cbd671afae4d284247|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/profile-screen.tsx|23|7|V|typescriptreact
+	      <UserInfoScreen />
+d9a58a003173079890463f31c03c2701|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/app-input/AppInput.tsx|7|19|v|typescriptreact
+	InputProps
+36b58eb0bb27362dc22cdc98722a0dc4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/app-input/AppInput.tsx|13|9|V|typescriptreact
+	        AppInput
+cd9e073a15e81d21f79764e607a7422a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/app-input/AppInput.tsx|8|12|v|typescriptreact
+	{register}
+d304ba20e96d87411588eeabac850e34|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/app-input/AppInput.tsx|16|67|v|typescriptreact
+	label
+e17769f20f36200364a6896d4066d8b9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/app-input/AppInput.tsx|18|3|V|typescriptreact
+	  name,
+87dc72654ec68075da2ee775c7cdff0a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/app-input/AppInput.tsx|23|62|v|typescriptreact
+	name={name} 
+4cc101bd23d3ef1c959591b4ed552135|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|390|1|V|snippets
+	snippet c "Description" b
+40c29792f121f3035c16b145f4bf9e7f|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|382|9|v|snippets
+	className 
+a1118f93d67f35211048746ff3b668d8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/app-input/AppInput.tsx|7|3|V|typescriptreact
+	  [rest: string]: any
+68860bd98d12356284e642fbd4cd5dad|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|21|7|V|javascript
+	      "white"
+29f286d1148ff28891834032b4327028|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|12|7|V|typescriptreact
+	      username: account.name,
+8d89b64172aaeddad7bb6c7cd73f8086|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|12|7|V|typescriptreact
+	      address: account.address,
+6075db8fbf4aff9f8e751aa5d48e6df4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|11|1|V|typescriptreact
+	    defaultValues: {
+0c91c8ecb3a5f7e8efb576344ca73bb2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|17|1|V|typescriptreact
+	      <AppInput register={register} registerOption={{}} label="User name" name="name" />
+fc5b8c8a297c88e7b99a8564a68e9300|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|18|64|v|typescriptreact
+	User 
+4e0868b482dbfcc71867961386e926c8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|21|64|V|typescriptreact
+	      <AppInput register={register} registerOption={{}} label="User name" name="name" />
+	      <AppInput register={register} registerOption={{}} label="User name" name="name" />
+060b85eac8d32e587f2ddf0e1068ba48|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|20|5|V|typescriptreact
+	      <AppInput register={register} registerOption={{}} label="Password:" name="password" />
+f7a32ddc40f81e2b88b79c2f5c2c3e7d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|29|9|V|typescriptreact
+	        className="my-8"
+83a6c78d9269d09c117645e8ff4992c6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|24|1|v|typescriptreact
+	      <AppInput
+	        className="my-8"
+	        register={register}
+	        registerOption={{}}
+	        label="Email: "
+	        name="email"
+	      />
+	      <AppInput
+	        className="my-8"
+	        register={register}
+	        registerOption={{}}
+	        label="Phone number"
+	        name="phoneNumber"
+	      />
+	 
+e075da77412a350911daea29546ba828|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|17|7|v|typescriptreact
+	<AppInput
+	        className="m-8"
+	        register={register}
+	        registerOption={{}}
+	        label="User name: "
+	        name="name"
+	      />
+	
+	      <div className="flex">
+	        <AppInput
+	          className="m-8"
+	          register={register}
+	          registerOption={{}}
+	          label="Email: "
+	          name="email"
+	        />
+	        <AppInput
+	          className="m-8"
+	          register={register}
+	          registerOption={{}}
+	          label="Phone number"
+	          name="phoneNumber"
+	        />
+	      </div>
+885ecb19e79b59cbcaf836e8c0d7418a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|46|11|V|typescriptreact
+	          Discard{" "}
+71144850f4fb4cc55fc0ee6935badddf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|48|26|v|typescriptreact
+	ghost
+455e09271d4f2f66c481a7b0d3d8672e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|48|59|v|typescriptreact
+	btnClass
+334f93ed4305f12568ba3167e2a358dd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|33|24|v|typescriptreact
+	my-8 
+6b3bb35a26ba3e1b9579ea7e0268a8ff|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|40|13|V|typescriptreact
+	            className="my-8"
+da787e09e06a8900f6f3f6735a6568b2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|24|11|V|typescriptreact
+	          className="my-8"
+23f9c1b08ef269ebf4b403ed833a5b03|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/theme/images/images.ts|7|3|v|typescript
+	though
+5792922e1b7a31bac4329025cc29072a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|145|1|v|scss
+	  &__movie {
+	    &--poster {
+	      width: 320px;
+	      height: 30rem;
+	    }
+	
+	    &--normal {
+	      width: 220px;
+	      height: 300px;
+	    }
+	  }
+	
+	
+97a13424b68bb5dd87ca7032dc68512d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|49|9|V|typescriptreact
+	        <img src={images.profileThought} alt="saved" className="img-sm" />
+e7623cae6f0fd066ee1a9d4414406644|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|43|43|v|typescriptreact
+	h-12
+5c9bf2957fc5c463da610063b7edf92d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|51|13|V|typescriptreact
+	        <div>
+	          <img src={images.profileThought} alt="saved" className="img-sm" />
+	        </div>
+93e5a9ded9cd14dc7c2e883fa957926c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|42|7|V|typescriptreact
+	      <div className="flex items-end justify-between">
+6fcd3a2f1c31e6b40cc5034884cec0b5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|42|30|v|typescriptreact
+	inline-block h-12
+e0c91439cbbb4e8a31659abda9fdb172|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|45|24|v|typescriptreact
+	checkedB
+26082655d9d5837044f3c2a35d18161d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|45|24|v|typescriptreact
+	showChangePass
+50575620b035a09429c7cf5b25d0ace4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|48|25|v|typescriptreact
+	handleChange
+06f0997d4d787326fcbd5b75085b1022|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|48|25|v|snippets
+	g"
+	console.log('${2:$1: }', ${1});
+	endsnippet
+	
+	
+	snippet style " create styel file"
+	import { StyleSheet } from 'react-native'
+	
+	export default StyleSheet.create({
+		container:{}
+	})
+	endsnippet
+	
+	snippet ims "import styled-components"
+	import styled from 'styled-components'
+	endsnippet
+	
+	snippet dop " destructoring props"
+	const { $1 } = props;
+	endsnippet
+	
+	
+	snippet dos " destructoring states"
+	const { $1 } = state;
+	endsnippet
+	
+	snippet dob " destructoring states"
+	const { $2 } = $1 ;
+	endsnippet
+	
+	snippet exd "export * from"
+	export * from './$1'
+	endsnippet
+	
+	snippet dp "default props"
+	d${1:`!v expand('%:t:r')`}.defaultProps={
+		$1
+	}
+	endsnippet
+	
+	snippet ctls "tron log string"
+	console.tron.log('$1')
+	endsnippet
+	
+	snippet ctl "tron log"
+	console.tron.log('$1', $1)
+	endsnippet
+	
+	snippet tl "tron log"
+	console.tlog('$1', $1)
+	endsnippet
+	
+	snippet rnce "create react native full component snip"
+	import React, { Component } from 'react'
+	import { Text, View } from 'react-native'
+	import { I$1, I$1State } from './$1.presets.tsx'
+	import {  } from './$1.props.tsx'
+	
+	export class ${1:`!v expand('%:t:r')`} extends Component <I$1,I$1State>{
+		render() {
+			return (
+				<${3:View}>
+					<Text>123 </Text>
+				</$3>
+			);
+		}
+	}
+	
+	export default $1;
+	endsnippet
+	
+	snippet int "interface"
+	export interface $1 {
+		$1
+	}
+	endsnippet
+	
+	snippet story "story book default story"
+	import * as React from "react"
+	import { storiesOf } from "@storybook/react-native"
+	import { StoryScreen, Story, UseCase } from "../../../../../storybook/views"
+	import TradingItem from "./TradingItem"
+	
+	declare var module
+	
+	storiesOf("Trading history card", module)
+	  .addDecorator((fn) => <StoryScreen>{fn()}</StoryScreen>)
+	  .add("normal item", () => (
+	    <Story>
+	      <UseCase text="default" usage="default">
+	        <TradingItem />
+	      </UseCase>
+	    </Story>
+	  ))
+	
+	endsnippet
+	
+	
+	snippet rnf "create react native stateless"
+	import React, { useState } from 'react'
+	import { Text, View, StyleSheet } from 'react-native'
+	
+	interface  ${1:`!v expand('%:t:r')`}Props{
+		
+	}
+	
+	export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = ({})=>{
+			return (
+				<${3:View}>
+					<Text>123 </Text>
+				</$3>
+			);
+	}
+	
+	const styles= StyleSheet.create({
+		container:{}
+	})
+	
+	endsnippet
+	
+	snippet rf "create react FunctionComponent"
+	import React from 'react'
+	
+	interface  ${1:`!v expand('%:t:r')`}Props{
+		
+	}
+	
+	export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = (props) => {
+			return (
+				<${3:div}>
+				</$3>
+			);
+	}
+	
+	endsnippet
+	
+	snippet fc "function component" 
+	interface $2 {
+		$3
+	}
+	
+	const $1: React.FC<$2> = () => {
+		$4
+	}
+	
+	endsnippet
+	
+	snippet cstyles " const style"
+	import { StyleSheet } from 'react-native'
+	
+	const styles= StyleSheet.create({
+		container:{}
+	})
+	
+	endsnippet
+	
+	
+	snippet dp " destructoring props"
+	const { $1 } = props;
+	endsnippet
+	
+	
+	snippet ds " destructoring states"
+	const { $1 } = state;
+	endsnippet
+	
+	snippet dob " destructoring "
+	const { $2 } = $1;
+	endsnippet
+	
+	snippet cmt "cmt"
+	/* ------------- $1 ------------- */
+	endsnippet
+	
+	snippet clc "tronlog"
+	console.tron.log(" $1 ", $1)
+	endsnippet
+	
+	snippet rdf "render formik form" 
+	render$1 = ({} : FormikProps<FormValues>) => {}
+	endsnippet
+	
+	snippet styled "styled component" 
+	const Styled$1= styled($2)`$3`
+	endsnippet
+	
+	snippet exp "export * from" 
+	export * from './$1'
+	endsnippet
+	
+	snippet exp "export * from" 
+	export * from "./$1"
+	endsnippet
+	
+	snippet styles "styles" 
+	const styles= StyleSheet.create({
+		$1
+	})
+	endsnippet
+	
+	snippet lodash "lodash" 
+	import "_" from "lodash"
+	endsnippet
+	
+	snippet func "func const" 
+	const $1 = ( $2 ) => { $3 }
+	endsnippet
+	
+	
+	snippet useMemoOne "useMemoOne" 
+	const {} = useMemoOne(() => ({
+		$1		
+	}),[])
+	endsnippet
+	
+	snippet eslint "Description" b
+	// eslint-disable-next-line
+	endsnippet
+	snippet uss "useState" w
+	const [$1, set$2] = React.useState(${3:''})${0:;}
+	endsnippet
+	
+	snippet use "useEffect" w
+	React.useEffect(() => {
+	  $1
+	})${0:;}
+	endsnippet
+	
+	snippet user "useEffect with return" w
+	React.useEffect(() => {
+	  $1
+		return () => {
+	    $2
+		};
+	})${0:;}
+	endsnippet
+	
+	snippet usc "useContext" w
+	const $1 = React.useContext($2)${0:;}
+	endsnippet
+	
+	snippet uscb "useCallback" w
+	React.useCallback(
+		() => {
+			$1
+		},
+		[$2],
+	)${0:;}
+	endsnippet
+	
+	snippet usm "useMemo" w
+	const $1 = React.useMemo(() => {
+		$2
+	}, [$3])${0:;}
+	endsnippet
+	
+	snippet usrf "useRef" w
+	const $1 = React.useRef($2)${0:;}
+	endsnippet
+	
+	
+	snippet useThemes "Description" 
+	const { color } = useThemes()
+	endsnippet
+	
+	snippet cl "Description" 
+	console.log("$1", $1)
+	endsnippet
+	
+	
+	snippet useHistory "Description" 
+	const history = useHistory()
+	endsnippet
+	
+	
+	snippet v4 "v4" 
+	import { v4 } from 'uuid'
+	endsnippet
+	
+	snippet process "Description" b
+	process.env.PUBLIC_URL
+	endsnippet
+	
+	snippet cx "import classnames" 
+	import cx from "classnames"
+	endsnippet
+	
+	snippet fragment "fragment" 
+	<>
+		$1
+	</>
+	endsnippet
+	
+	snippet muiBtn "mui button contained primary" b
+	<Button variant="contained" color="primary">$1</Button>
+	endsnippet
+	
+	snippet muiUseStyles "create useStyle mui" b
+	import { makeStyles, createStyles } from "@material-ui/core"
+	
+	const useStyles = makeStyles((theme: Theme) =>
+		createStyles({
+			$1	
+		}),
+	)
+	
+	endsnippet
+	
+	snippet constfc "const fc" b
+	const $1 = () => {
+		return null
+	}
+	
+	endsnippet
+	
+	snippet piscsum "photo piscsum" b
+	https://picsum.photos/350/350
+	endsnippet
+	
+	
+	snippet zustand "create zustand" 
+	interface $1State{
+	
+	}
+	
+	export const [$1] = create<$1State>(
+		persist("$2")(
+			immer((set: any,get: any)=>({
+				$3
+			}))
+		)
+	)
+	endsnippet
+	
+	snippet (className|cl|class) "className with cx" 
+	className={cx("$1")}
+	endsnippet
+	
+	snippet fca "function arrow without any param" 
+	() => $1
+	endsnippet
+	
+84c91b9b23a653a1996cb9b1328aa28c|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|390|1|V|snippets
+	snippet Tab_trigger "Description" b
+	()=>{  }
+	endsnippet
+fe19fa263832c249c3f3fdf3861de988|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|386|9|v|snippets
+	fca 
+f21244a78addd0fc85c04222825c484e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|48|25|v|typescriptreact
+	() => {}
+7008903ad3f6df72ebc2f3d34b585ab8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|68|1|V|typescriptreact
+	()=>
+05781b9f0f471530f9e5a80391e318b6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|68|1|V|typescriptreact
+	(className|cl|class)
+085ac280699c6f289567e03204e7d6ef|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|391|1|V|snippets
+	snippet dd "Description" b
+f38d0b1dde8825aad7bf1db4c110f472|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|386|9|v|snippets
+	(fca|()=>) 
+d99b758ac5fa1f656e47afbdcfe2b5ab|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|390|19|V|snippets
+	snippet Tab_trigger "Description" b
+	</div>
+			</div>
+a31d009a3c9cb9fde824782fdea7c8d6|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|386|9|v|snippets
+	"(fca|()=>)"
+44da7d8a7eaee047941b24620f13446d|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|386|1|v|snippets
+	snippet fca "function arrow without any param" 
+	() => $1
+	endsnippet
+84726ba3f5c2417a116f83445f8cd100|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|382|1|V|snippets
+	snippet "(className|cl|class)" "className with cx" 
+	className={cx("$1")}
+	endsnippet
+6efec03f9d5e496fc42479ffee2f4506|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|382|1|V|snippets
+	snippet  "className with cx" 
+	className={cx("$1")}
+	endsnippet
+c43b271a81ad428d5dd566afd1886c79|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|394|1|V|snippets
+	snippet "function arrow without any param" 
+	() => $1
+	endsnippet
+b8b5a1b2f6c17a4606c865610ab36405|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|68|1|V|typescriptreact
+	() => {  }
+ec4ac1b486b03620a146bdb2061754ab|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|48|25|v|typescriptreact
+	AiFillCreditCard
+099477878d1d524de3ff5c47fedbcd0e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|56|15|V|typescriptreact
+	              labelS
+074de7e7c226d5c60f8af14c20725352|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|55|18|v|typescriptreact
+	Primary
+bd7acbc80a311ce960b5366df9651c3d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|52|14|V|typescriptreact
+	              color="primary"
+2b88448343dc146de14c365969a8e2e1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|36|7|v|typescriptreact
+	    <AppInput
+	            register={register}
+	            registerOption={{}}
+	            label="Phone number"
+	            name="phoneNumber"
+	          />
+	       
+4261b4c76b58774acd07fc17b21fa44d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|36|1|v|typescriptreact
+	          <AppInput
+	            register={register}
+	            registerOption={{}}
+	            label="Phone number"
+	            name="phoneNumber"
+	          />
+	 
+4b0807e9850d4db56620fa14db8e60f8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|85|20|v|typescriptreact
+	Phone 
+b7f97367e4e7cedeec333e9b578d15b6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|82|11|v|typescriptreact
+	<AppInput
+	            register={register}
+	            registerOption={{}}
+	            label="Old password"
+	            name="oldpassword"
+	            className="my-4"
+	          />
+d5b5fffc89f961903fb3c9a173f1b667|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|93|19|v|typescriptreact
+	oldpassword
+d4d482f5804a2838ed1895b9fd38e6a2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|92|20|v|typescriptreact
+	Old 
+7c1fec3c9925942b64763263e85cb120|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|86|1|V|typescriptreact
+	        textClass="text-left"
+f32ca8ea4ec68e7e5b462b1d6daf8cae|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|2|1|V|javascript
+	  important: true,
+1624afabf0b37ced22b4ce7b908e9f7f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|1|1|V|javascript
+	// eslint
+182870f1043f2943dea571991835a271|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|1|1|V|javascript
+	eslint
+48818f3da3d36ad762480b319b56f588|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|94|20|v|typescriptreact
+	important
+acb3096fbdcf240893d1293d6c12332c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|669|43|v|javascript
+	'important'
+c4ccb32a83238fa00728d1c1e83b1c3c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|94|1|V|typescriptreact
+	        textClass="!text-left px-4"
+6ecf332639fed31c795191fcdb059337|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|87|1|V|typescriptreact
+	        type="password"
+29b342e2fd1df3d115614b1fe111f86d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/app-input/AppInput.tsx|40|3|v|typescriptreact
+	AppInput
+80cbbb71dde130820ae0a90140efa54f|file:///Users/dinhmai/.config/coc/ultisnips/typescriptreact.snippets|406|19|V|snippets
+	snippet Tab_trigger "Description" b
+	AppInput.defaultProps = {
+	
+	endsnippet
+213053853966d9209a3cb3f908a2a37e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|45|37|v|typescriptreact
+	align-text-bottom
+0c459d6b0704ad0924db2194a94c9349|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|45|1|V|typescriptreact
+	          <p className={cx("text-xl font-semibold text-gray-600")}>Addresses:</p>
+284b47b0bb63ae2df3b29f0e691d6fcf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|26|68|v|typescriptreact
+	Addresses
+f590c7b874799a77c078068b913f28f7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|60|12|v|typescriptreact
+	t-bold 
+9bc92983b4146ffa88a226b79fb7a715|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|45|13|V|typescriptreact
+	        <div>
+	          <p className={cx("text-xl font-semibold text-gray-600 mb-8")}>Addresses:</p>
+	        </div>
+1a13f1a583b48cf8f488b087430680ca|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|56|1|v|typescriptreact
+	            <FormControlLabel
+	              value="disabled"
+	              disabled
+	              control={<Radio />}
+	              label="(Disabled option)"
+	            />
+	 
+b49eb7e8970420b9d82b4b3e69c14e55|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|53|57|v|typescriptreact
+	value={value} onChange={handleChange} 
+606939a5e54e264a760265558d498b06|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|56|38|v|typescriptreact
+	gender  
+0ed9001094ce512dd5b837038e6bbf2f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|58|15|V|typescriptreact
+	              ref={register()}
+e6cf1d24be0a54783c78290b96ebf60e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|55|1|v|typescriptreact
+	          <RadioGroup aria-label="gender" name="gender" value={value} onChange={handleChange} row>
+	            <FormControlLabel
+	              name="gender"
+	              value="female"
+	              control={<Radio />}
+	              label="Female"
+	            />
+	            <FormControlLabel
+	              name="gender"
+	              value="male"
+	              control={<Radio />}
+	              label="Male"
+	            />
+	            <FormControlLabel
+	              name="gender"
+	              value="other"
+	              control={<Radio />}
+	              label="Other"
+	            />
+	          </RadioGroup>
+	 
+3aecdf7a97abf47b88b7d51d33f8cfb9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|55|11|V|typescriptreact
+	          <RadioGroup aria-label="gender" name="gender" value={value} onChange={handleChange} row>
+d57742e0bd78185601391e61d174d42f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|76|11|V|typescriptreact
+	          </RadioGroup>
+5cda80c1247d5998f4a6b3855cf4f887|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|61|15|V|typescriptreact
+	              ref={register}
+9bacf450cb543648c854ffedf885daba|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|57|13|V|typescriptreact
+	              name="gender"
+10bf562de31554693b6fb87692b161dd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|70|15|V|typescriptreact
+	              label="Other"
+54fabe3fcd4afc2554658d937176ab41|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|15|1|V|typescriptreact
+	  {
+	    title: "User info",
+	    icon: User,
+	  },
+caf9b6b99962bf5c2264824231d7a40c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/components/ProfileNavbar.tsx|20|13|v|typescriptreact
+	info
+b9362cb41ee1e1103918d4e4e3e16fb4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|6|10|v|typescriptreact
+	<div>address</div>
+f012293458c645a549d23b4a54da4886|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|22|9|V|typescriptreact
+	        <AppInput register={register} registerOption={{}} name="" />
+c7da6e41d3bc73d8fbf6f49f58fda9e1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|34|9|V|typescriptreact
+	        <p className={cx("text-xl font-semibold text-gray-600 mb-8")}>Info:</p>
+5c0674b27849b76ce6f6b232ad162685|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|12|3|v|typescriptreact
+	{
+	    name: "Mai anh dinh",
+	    address: "480A W. Depot Ave. Chippewa Falls, WI 54729",
+	    phoneNumber: "0987654742"
+	  }
+	
+7105a19a906e21954fe279194931835e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|19|15|v|typescriptreact
+	480A W. Depot Ave. Chippewa Falls, WI 54729
+d929bca02219666ba0fb67a9ac11d596|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|41|46|v|typescriptreact
+	ManagementScreenProps
+3e515c6dececdc9fa12d70be4369af15|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|48|7|V|typescriptreact
+	      <p>{name}</p>
+ca005662211433884dcfd2df0ba27ed6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|49|31|v|typescriptreact
+	text-gray-600 
+ddb379b276bc900611a89cb8f1cb2ba1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|57|1|V|typescriptreact
+	const TextWithIcon=
+e9e2ebb63df31d83b2d4c811ed63a294|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|51|7|V|typescriptreact
+	      <p className="text-gray-600">{address}</p>
+1791a97a8403730ee0760489a2aeb992|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|66|24|v|typescriptreact
+	cursor
+ccac8a66d468e2522611be86933cc0d9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|66|24|v|typescriptreact
+	pointer
+ae3be3b93ae7e293ece4600e0f59777f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|51|36|v|typescriptreact
+	mx-6
+6861615ba173471c7aa0c21560c7b165|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|51|1|V|typescriptreact
+	      <p className={"font-semibold "}>{name}</p>
+	      <TextWithIcon text={address} Icon={MapPin} />
+	      <p>{phoneNumber}</p>
+e8b152bb157cb0207e8a5b1cf464868d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|57|32|v|typescriptreact
+	color="primary"
+9a019c24f192d044c98bc4e77f2183bc|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|58|9|V|typescriptreact
+	        {" "}
+6d898d1a40b890dfa6eb3a6a9440c01f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|54|3|V|typescriptreact
+	  const {  } = se ;u
+9276535269bebbfc1618d5bec5a3c433|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|35|1|V|typescriptreact
+	  const onSubmit = (data) => {
+	    console.log("data", data)
+	  }
+38456fd0e77218564ff1f4451da27f06|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|60|3|V|typescriptreact
+	  const {  } =  ;
+36326ec116830ce5c8d257e48433379d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|74|9|V|typescriptreact
+	        Edit
+d14ce54acacd188b7a189c394f15def5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|69|42|v|typescriptreact
+	min-w-full
+cd85259ac7d2c666ce56675d5373b047|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|69|90|v|typescriptreact
+	w-96"
+a0d1a93fab6ce8df734c864f6e0691a2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|69|42|v|typescriptreact
+	max-w-6xl
+fef389e30c502cf827efd851b5f43ddf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|77|11|V|typescriptreact
+	          if()
+f829e87e3db7a9d0b37d6415a2cda6a3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|77|43|v|typescriptreact
+	!px-8
+d55b812ea10116d8c7110b288e036eaa|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|79|11|v|typescriptreact
+	if (editting) 
+df7e8a14a83a5f8e9ed113675e1dbb6b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|79|11|V|typescriptreact
+	          handleSubmit(onSubmit)
+4c4e12dca6dec617d081da9e7bc541d4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|79|38|v|typescriptreact
+	clickllllll
+78e026bd5ab9253932a4ea00c52a0d3c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|79|11|V|typescriptreact
+	          console.log("", )
+7adbae86eb5c723a49ebce44ff15b96f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|64|5|V|typescriptreact
+	    alert("1")
+854837baf9b7624bbc33bc55d0401035|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|107|9|V|typescriptreact
+	        disabled={!edit}
+25dfb6d8a40155b83061f1ee5fd02660|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|105|59|v|typescriptreact
+	cursor-not-allowed
+fd16656741429bd97f2c07244a5c7392|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|105|20|v|typescriptreact
+	!text-gray-600 
+f9a6f91d032182801f715c3d063600ad|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|105|19|v|typescriptreact
+	"text-gray-700 ml-4 outline-none w-96 "
+5c97d5499948ca25c8458e8d8866453a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|105|9|V|typescriptreact
+	        className=
+a88270a67e0151e38fb87050ffd90ed3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|105|20|v|typescriptreact
+	text-gray-700 ml-4 outline-none w-96 
+fa0e6e812aadba3f4e796089c5ff11e9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|105|9|V|typescriptreact
+	        className="jw"
+c8b0e614f3f1bb2acc591dc0f535dfb1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|74|11|V|typescriptreact
+	          <p className={"font-semibold "}>{name}</p>
+9de4a97425678c5b1288aa70c1669a64|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|74|56|v|typescriptreact
+	register
+a48bf5d0d61df1116ee83ebe6b723e6b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|74|1|v|typescriptreact
+	          <input
+	            className="font-semibold"
+	            name="name"
+	            ref={register({ required: true })}
+	            disabled={!editting}
+	          />
+	 
+4e76130d59f4878734db4c8b280656da|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|81|1|V|typescriptreact
+	          <p>{phoneNumber}</p>
+0c598f89e75f8626906d0eb5570d74ea|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|82|13|V|typescriptreact
+	            className="font-semibold"
+82301982ade9ae2fcfea9f9e24a9f17e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|113|11|V|typescriptreact
+	          ""
+e2c7f8f7dec458eeb4e92eb9fb405728|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|48|34|v|typescriptreact
+	className="!text-orange-500"
+f25404736232437bc4614f15f97599cd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|33|1|v|typescriptreact
+	  // const { register, handleSubmit } = useForm()
+	
+	  // const onSubmit = (data) => {
+	  // console.log("data", data)
+	  // }
+	
+	
+5331758d170df93c2542337c8d1c3c55|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|45|9|V|typescriptreact
+	        Add new
+ef61fb324d729c341ea8ab9901e23566|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|45|9|v|typescriptreact
+	Add new
+168aa8a70b7fb2485c19b2c0b052f515|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|43|6|V|typescriptreact
+	      Add new
+52cbc345d8286b29652029ebd3fd9563|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|47|14|V|typescriptreact
+	      <Button variant="outlined" color="secondary">
+	       Add new 
+	      </Button>
+715424962a9332b9cfaa464d1b50056a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|43|9|V|typescriptreact
+	        {
+ee239d73ec37f296e30606a726ce883d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|43|11|V|typescriptreact
+	          showAddNew?
+47735a8b50246bca85d500fa017c7fcc|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|46|7|V|typescriptreact
+	        :
+aea9f7baeebf30edcb5b25159af569ac|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|44|8|v|typescriptreact
+	Add new 
+c2f89aa4f35afacb4d71a65c35c8ef12|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|45|15|V|typescriptreact
+	            <div>
+	
+	            </div>
+4beea4edc49906acd020cd183f25d660|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|45|19|v|typescriptreact
+	action=""
+8c156c80190cc9d6bfb7409be258f8c6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|53|1|V|typescriptreact
+	              <AppInput {...{ register}} registerOption={{}} name="name" label="Name: "  />
+8b30810edf99b9663d710d6088ad1dbc|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|52|86|v|typescriptreact
+	textClass="!text-left" 
+3bdf5a48096546bd589a69166d7112b0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|72|13|v|typescriptreact
+	textClas
+5e9c5697a0ca92ca1fcbd2e613d5d224|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|70|13|V|typescriptreact
+	            s="!text-left ml-4"
+2295a12c2a8d931e16f858280ff7526f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|70|13|V|typescriptreact
+	            s="!text-left"
+2295a12c2a8d931e16f858280ff7526f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|70|13|V|typescriptreact
+	            s="!text-left"
+67de0e7b11244e4baa954c3b968f79c8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|58|1|V|typescriptreact
+	            textClass={appInputClass}
+504bdc01234e570dbdc55158f531d1d3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|41|37|v|typescriptreact
+	!ml-4 
+818230af02e2b17e9d15aebe6ff3059b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|60|1|V|typescriptreact
+	            className={appInputContainerClass}
+1f0745d1439948c29e8be96c59d71652|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|45|1|v|typescriptreact
+	      <p className="text-2xl text-gray-700">Your address:</p>
+	
+	      <div className="pb-4">
+	        {addresses.map((v, i) => (
+	          <AddressDisplay {...v} key={i} />
+	        ))}
+	      </div>
+	 
+b4441d32a7da495a814d9c2ce1800626|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|54|1|V|typescriptreact
+	      {showAddNew && (
+5c9e4977f8c6b56f105c88d2af7e67b1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|81|1|v|typescriptreact
+	      <Button
+	        variant="outlined"
+	        color="secondary"
+	        onClick={() => {
+	          setShowAddNew((p) => !p)
+	        }}
+	      >
+	        {!showAddNew ? "Add new " : "Done"}
+	      </Button>
+	 
+aba994e2389c46e1e3f88923c799dc79|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|79|1|V|typescriptreact
+	      </form>
+e90a72d9d7f5677f5b51cb1b7011a5c3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|86|11|v|typescriptreact
+	{!showAddNew ? 
+f92490ba47984cdc1e8a0f8e70ea510e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|86|19|v|typescriptreact
+	 " : "Done"}
+df6766da4dd3c1e0418ce56e149bcc7c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|79|1|v|typescriptreact
+	        <Button
+	          variant="outlined"
+	          color="secondary"
+	          onClick={() => {
+	            setShowAddNew((p) => !p)
+	          }}
+	        >
+	          Add new
+	        </Button>
+	 
+cd7517e26ac97430da702b98c4ffb9b5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|46|1|V|typescriptreact
+	        <p className="text-2xl text-gray-700">Your address:</p>
+0375c5b0ee7565cf55257555c0d7dadf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|55|47|v|typescriptreact
+	Your 
+b8923281bed2a517f8fe774467f654b2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|60|1|v|typescriptreact
+	        <AppInput
+	          {...{ register }}
+	          registerOption={{}}
+	          name="name"
+	          label="Name: "
+	          textClass={appInputClass}
+	          className={appInputContainerClass}
+	        />
+	        <AppInput
+	          {...{ register }}
+	          registerOption={{}}
+	          name="address"
+	          label="Address: "
+	          textClass={appInputClass}
+	          className={appInputContainerClass}
+	        />
+	        <AppInput
+	          {...{ register }}
+	          registerOption={{}}
+	          name="phoneNumber"
+	          label="Phone number: "
+	          textClass={appInputClass}
+	          className={appInputContainerClass}
+	        />
+	 
+540bca9b6ff68ff4f4bd713d0aeaae6b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|44|39|v|typescriptreact
+	bg-yellow-300
+cded3a9a6b5a76a91ff1e66b52592e51|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|57|59|v|typescriptreact
+	bg-red-200
+cbf658eadb18a45c7e8e53bb46829b47|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|57|54|v|typescriptreact
+	py-8
+ad8d631c89a440f179351981680d9489|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|30|21|v|cs
+	MyProperty 
+2feb40ad50c42746cf99129de7be201b|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|30|1|V|cs
+	      public string name { get; set; }
+8cfdf17d5afef6834265f5778999baa2|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|31|1|V|cs
+	      public string Address { get; set; }
+aa5db07c4bda9a489f6602dbbfa602a1|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|32|21|v|cs
+	Address 
+20cdd879f4dcfb6fb4d7de18d7e464ff|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|19|16|v|cs
+	string 
+c4e36b257b53bf72507a56e41e4985d7|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/ExtensionMethods.cs|19|1|v|cs
+	        public static AccountDto WithoutPassword(this AccountDto acc)
+	        {
+	            acc.Password = null;
+	            return acc;
+	        }
+	 
+dab050ca209b558035e16ca5c1008f01|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|175|12|V|cs
+	            Account.Email = AccountIn.Email;
+b2ae2050cf21b30623c7938577dd24b8|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|17|9|V|cs
+	        [Required]
+22558a5cfee513fa85501b14bf7745e4|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|162|9|V|cs
+	        [H]
+f2bbdf9f72c085adc4d0404e370f0f4c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|162|18|v|cs
+	Attribute
+1bce6ca543f2b5c9fb5da0bde18915a4|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|191|1|V|cs
+	            var apiRep = new APIResponse();
+	            var userId = string.Empty;
+	            if (HttpContext.User.Identity is ClaimsIdentity identity)
+	                userId = identity.FindFirst(ClaimTypes.Name).Value;
+	
+	            if (userId == null) return BadRequest(new { Error = true, Message = "Invalid token!" });
+	            var Account = _accountService.Get(userId);
+	            if (Account == null) return BadRequest(new { Error = true, Message = "Invalid token!" });
+	
+	            var result = _accountService.CheckValidPassword(Account.Email, model.OldPassword);
+	
+	            if (!result) return Ok(new { Error = true, Message = "Your old password isn't correct!" });
+	
+	            Account.Password = model.NewPassword;
+	            _accountService.Update(userId, Account);
+	            apiRep.Data = "";
+	            apiRep.Message = "Update successfull!";
+	
+	            return Ok(apiRep);
+f9db3b32c32515944a5123c85a388b83|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|173|82|v|cs
+	OldPassword
+2f443ae8174a313da7987e55e84f191d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|177|1|V|cs
+	            Account.Password = model.NewPassword;
+30f789d337b1ab17100382a95d1a01ac|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|178|21|v|cs
+	Password 
+70c04e53f3216a44d9b4f3e517f9b45c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|178|33|v|cs
+	NewPassword
+50498f9e6d85de39b67e6e2ab66629b2|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|178|1|V|cs
+	            Account.Name= model.Name;
+e562b827662e91ba6fc1b06cc2957f69|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|180|13|V|cs
+	            Account.Email = model.Email;
+819c732e01ed078d670397bbc47e169f|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|206|27|v|cs
+	AccountIn
+038b06e56a189860fabbd3a7d7b6e66d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|207|15|V|cs
+	              api
+c256c7c36f4a8a78aa55140f8c79341b|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|207|1|V|cs
+	              Gender= Account.Gender,
+019ec3132cdf8ee0f2e2a75cf5d3e459|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|208|15|v|cs
+	Gender
+bedabe995cd4c3c26c3facaadabf24a9|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|209|29|v|cs
+	dto.PhoneNumber
+6911a32d81c26bac5cd0167fb882b3d2|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|206|1|v|cs
+	            apiRep.Data = new
+	            {
+	                Gender = Account.Gender,
+	                Name = Account.Name,
+	                PhoneNumber = Account.PhoneNumber,
+	            };
+	
+	
+bd2dbbca2d003796537887183ded0a30|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|191|2|V|cs
+	           apiRep.Data = "";
+c00c266dfdc61e93bf08da4bb9560e79|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|191|1|V|cs
+	            apiRep.Message = "Update successfull!";
+3dbde79bbdd73a8de13994c9393e5d79|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|85|5|V|cs
+	    "isDeleted": false
+7d6648eb6d562d86a1e73ce8008f1355|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|77|1|v|cs
+	               "email": "tes12t@gmail.com",
+	    "addresses": null,
+	    "phoneNumber": "0987654742",
+	    "name": "dinh mai",
+	    "gender": "male",
+	    "password": "password",
+	    "token": null,
+	    "accountType": 0,
+	    "isDeleted": false
+	 
+37f91a10810c37a0f946c88eecf0bb86|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|78|5|v|cs
+	           
+89a1f167643872e7068d1c97fd5bf078|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|78|5|^v|cs
+	public strin
+	public objec
+	public strin
+	public strin
+	public strin
+	public strin
+	public objec
+	public long 
+	public bool 
+e7a9dcb4ae1c58c2745e49d48f4d0da5|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|78|5|^v|cs
+	g
+	t
+	g
+	g
+	g
+	g
+	t
+1d315dfcbd185d12d6d0fe90e70e7abb|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|78|11|v|cs
+	 { get; set; }
+3d57ff2d15c94b9d19dd46b9ccbcecf2|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|79|10|v|cs
+	esses { get; set; }
+48b2051f2d0f04579d117db9b4a40d4b|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|85|4|v|cs
+	neNumber { get; set; }
+cf5d29632b6806bc374ec2132cef1c6d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|85|4|v|cs
+	me { get; set; }
+cacb8172ec8c078d7219cc99f90af3d5|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|85|4|v|cs
+	Password { get; set; }
+6cf1baa2c0c9bccbe2431827b70fa10c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|85|4|v|cs
+	 Token { get; set; }
+77cbce6efe9375a42fec3ef7a546f9b0|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|85|4|v|cs
+	 AccountType { get; set; }
+e1ea25acacc973d01e370071de7e60d3|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|85|4|v|cs
+	ender { get; set; }
+6fb0ef17e3bf743d38d4994a49bb144c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|11|v|cs
+	{ get; set; }
+6fc2ecfa2f9ffa027a6c78c3fc578609|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|83|6|V|cs
+	     Password
+d1555c0a2c44c5da4f2285ed678673ae|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|83|6|V|cs
+	     Token 
+73e2e34f0292d7471a9e40f4b1bb434c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|84|5|V|cs
+	    IsDeleted 
+09d31b3c5f2580ffd8516931e58fc3ec|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|23|1|V|cs
+	        public string NewPassword { get; set; }
+b8c83346f3d9ed944b2ca05948bb8f2f|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|24|23|v|cs
+	NewPassword 
+7278ef023bc55d6a7ca481f92a3a62fb|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|24|9|V|cs
+	        public string o{ get; set; }
+317d9942e33d543e389d7f9957c666dd|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|22|5|V|cs
+	        public string Password { get; set; }
+	        public string NewPassword { get; set; }
+83750056397fafc2a024c8bb00293b4a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|77|27|v|cs
+	new
+	            {
+	                Email = user.Email,
+	                Addrresses = user.Addresses,
+	                PhoneNumber = user.PhoneNumber,
+	                Name = user.Name,
+	                Gender = user.Gender,
+	                AccountType = user.AccountType
+	            };
+	
+057b82e6943bbfbb29bb9353bdf1e252|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|77|47|v|cs
+	Account acc
+3b9bfcf2a32e572e7f97939cc4336931|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountPasswordDTO.cs|1|1|v|cs
+	using System.ComponentModel.DataAnnotations;
+	
+	namespace HollypocketBackend.Models
+	{
+	    public class AccoutPasswordDTO
+	    {
+	        [Required]
+	        public string OldPassword { get; set; }
+	
+	        [Required]
+	        public string NewPassword { get; set; }
+	    }
+	}
+0748d0e8428946f6a859c9588d4b79e8|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/EditUserInfoModel.cs|5|18|v|cs
+	AccoutPasswordDTO
+49bc459fa612f1223e55c9598e7262b6|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|16|1|V|cs
+	        public string Id { get; set; }
+	        public string Email { get; set; }
+	        public Address[] Addresses { get; set; }
+	        public string PhoneNumber { get; set; }
+	        public string Name { get; set; }
+be090a986ece1b8c1625878b55a06721|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|16|1|V|cs
+	        public string Id { get; set; }
+	        public string Email { get; set; }
+	        public Address[] Addresses { get; set; }
+	        public string PhoneNumber { get; set; }
+	        public string Name { get; set; }
+	        public string Gender { get; set; }
+75da639d3508be8a2ed2ff4770153392|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/EditUserInfoModel.cs|7|9|V|cs
+	        public string OldPassword { get; set; }
+	        public string NewPassword { get; set; }
+56c91b40bcaf3039be13d49012fabbf8|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|165|40|v|cs
+	AccountDto 
+dc647eb65e6711e155375218212b3964|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|176|93|v|cs
+	Password
+f30a79ab76cbf450ee77c91af3203872|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        // [HttpGet("get/{id}", Name = "GetAccount")]
+a96f4f92d98176250ac856174cd4fb6c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        // public IActionResult Get(string id)
+1a7b22bc22e33370f998c1e77a70e4a5|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        // {
+e4c4ee7f582a3db984fc1c1be5aff7d5|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //     var apiRep = new APIResponse();
+b8ddbc39990beb41ed5e3a38684fb10f|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //     if (id.Length < 24)
+fe46f588e88d0b0d015c7dea691933ea|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //     {
+03aa481f59595f91900849ab1c1368d6|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //         apiRep.Error = true;
+6f1f7424b2085d24c778d01362d4ee08|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //         apiRep.Message = "Id not found!";
+79ebb7eb6cfcdd2667b15553f9dbf78e|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //         return BadRequest(apiRep);
+e4f0e6e6de66ee0896e51225b55b0fe1|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //     }
+2f0a27d810ae1dcf5c06933c17850e6d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //     var Account = _accountService.Get(id);
+63e2787f3171852c1d3aae8fa3c33751|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //     if (Account == null || (Account != null && Account.IsDeleted))
+f1327d64af81e30805394b6655926492|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //     apiRep.Data = Account;
+bc523dc07030cd8457ea9e5675a16b1d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //     return Ok(apiRep);
+da4ea7c7a1084eb371a712ca1d6b06c0|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        // }
+450cfa9f03a757fa0b9219afc699ee47|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        // [HttpGet("get-users", Name = "GetUsers")]
+212dbae44031d1a1919f75da80fbd790|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        // public IActionResult GetUser()
+174e519a803e288a835ee30fcf5ca91d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|81|9|V|cs
+	        //     apiRep.Data = _accountService.Get().Where(a => a.AccountType == AccountType.Normal).Select(x => ConvertAccountToDTO(x)).ToList();
+be2905f603d2f6f03b772318ee09a92d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|84|11|V|cs
+	          retu
+e402c74fba7c70a5cadb1635c64ab31c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|85|1|V|cs
+	          OK($1);
+8f9a83fea3b69305ce2462636d0af3ea|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|84|11|V|cs
+	          ok
+4f2fbf2e55136fae7a172c6dae0d13be|file:///Users/dinhmai/.config/coc/ultisnips/cs.snippets|39|1|v|snippets
+					
+5078d500ad4eabc5d28aae5109a98e5c|file:///Users/dinhmai/.config/coc/ultisnips/cs.snippets|40|1|v|snippets
+							
+21a361d96e3e13f5f109748c2a9d2434|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|93|29|v|cs
+	push
+dd7bf230fde8d4836917806aff6a6b27|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|19|16|v|cs
+	Address
+ede5c2a629981c800e4cc16120297979|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|121|33|v|cs
+	Address[0]
+5b1d6d94d8e802c95b729041c56e1e5d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|33|23|v|cs
+	AddressDetail 
+bbfcda76036ebbe3d36caf7af80b260c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|96|36|v|cs
+	string id
+575ca9ce709c016be26c89bd7588fcb0|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|96|44|v|cs
+	Account 
+8bef565c5e87fae229e1669b22efad64|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|21|19|v|cs
+	MyProperty { get; set; }
+12592cd1312b6ad1522d9ac2a9c5fe78|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|21|5|V|cs
+	    public string UpdateS
+b2bacdeef0c157a699660c9d066a6c2c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|98|30|v|cs
+	"Update successfull"
+8bcf6629759bd278a5c6266bd9c054f8|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|98|30|v|cs
+	strings
+a76c055f727bf3ad02f96712f3b24c72|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|21|1|V|cs
+	        public string APIUpdateSuccess { get { return "Update successfully!"; } }
+49b8fa3824456c71d0096e095245d9aa|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|22|26|v|cs
+	UpdateSuccess 
+217932dd896e58f85e2cdd08a4bf7a37|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|22|56|v|cs
+	Update successfully
+edb0ea3d54d7be5d4d00b6df231a00bf|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|22|1|V|cs
+	        public string APICreateSuccess { get { return "Create successfully!"; } }
+fb8519157a9cd548c4c079615ed931f8|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|23|26|v|cs
+	CreateSuccess 
+fb8e567d9b10447761969e1e08eebc2b|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|23|55|v|cs
+	Create 
+80daafad083d0a8c4966206d85215360|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|23|55|v|cs
+	successfully
+64a666f5df4782c774b9e0eb5cc1df4d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|91|81|v|cs
+	"Invalid token!
+f0d7d08876a0a025ccbd645ab199e483|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|91|81|v|cs
+	StringHelper.Instance.APIInvalidToken 
+8f229c41df3d74c8de941b0a984c9e75|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|93|82|v|cs
+	"Invalid token!" 
+7d102281d19a1693ed5f5dc0a81156e9|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|81|v|cs
+	 "Invalid token!" 
+1bcd421d491b7b67c84612a5b0e63423|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|60|27|v|cs
+	"Invalid token!"
+7e829ac586b0a39e62524ba118a1e520|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|82|1|v|cs
+	        [HttpPost("add-address")]
+	        public IActionResult AddAddress([FromBody]Address model)
+	        {
+	            var apiRep = new APIResponse();
+	
+	            var userId = string.Empty;
+	            if (HttpContext.User.Identity is ClaimsIdentity identity)
+	                userId = identity.FindFirst(ClaimTypes.Name).Value;
+	
+	            if (userId == null) return BadRequest(new { Error = true, Message = StringHelper.Instance.APIInvalidToken });
+	            var Account = _accountService.Get(userId);
+	            if (Account == null) return BadRequest(new { Error = true, Message = StringHelper.Instance.APIInvalidToken });
+	
+	            Account.Addresses.Add(model);
+	            _accountService.Update(userId, Account);
+	
+	            apiRep.Message = StringHelper.Instance.APIUpdateSuccess;
+	            apiRep.Data = ConvertAccountToDTO(Account);
+	
+	            return Ok(apiRep);
+	        }
+	
+	
+3375e6ad2cc6e117da090bb1b265e16e|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|112|1|v|cs
+	            if (userId == null) return BadRequest(new { Error = true, Message = StringHelper.Instance.APIInvalidToken });
+	            var Account = _accountService.Get(userId);
+	            if (Account == null) return BadRequest(new { Error = true, Message = StringHelper.Instance.APIInvalidToken });
+	
+	
+5034c7e9083de3c61a3120a8b8d19174|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|293|1|V|cs
+	          StringHelper.Instance.APIInvalidToken
+8079147de329cca73bab5da6ea8ff08a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|117|49|v|cs
+	Predicate<Address> match
+5655927c847f652f24805e17bec44653|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|118|31|v|cs
+	return Ok(new { Error=true, Message = "There is a unknown problems here, please try later!"});
+5c789c02de67b2f801fc76c4ad3ba0c5|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|120|1|v|cs
+	return Ok(new { Error=true, 
+18811c47cafd4a08782720dbf3fb0202|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|126|1|v|cs
+	            Account.Addresses.Add(model);
+	            _accountService.Update(userId, Account);
+	
+	            apiRep.Message = StringHelper.Instance.APIUpdateSuccess;
+	            apiRep.Data = ConvertAccountToDTO(Account);
+	
+	
+5fe074a0f67f92fc512e9f1c8f7e72d2|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|129|1|V|cs
+	                apiRep.Data = ConvertAccountToDTO(Account);
+ccafc6326ed44de85d441fee667f0623|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|125|17|V|cs
+	                Account.Addresses.Add(model);
+cd23aa9c2aefbc7ce28e2fa1edab95b2|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|125|17|V|cs
+	                _accountService.Update(userId, Account);
+4da4029bf3315d4cb3417fcfc2deb17d|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|117|17|v|cs
+	address 
+8876c28d3f509b7747cbfb45327c7814|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|120|36|V|cs
+	                apiRep.Error = true;
+	                apiRep.Message = "There is a unknown problems here, please try later!";
+8274781129a8b83f9ebe06be8e16b257|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|125|17|V|cs
+	                Account.Addresses[index] = model;
+	                apiRep.Message = StringHelper.Instance.APIUpdateSuccess;
+	                apiRep.Data = ConvertAccountToDTO(Account);
+d09ac75fed342ca7905c3b80a7261060|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|104|1|v|cs
+	        [HttpPost("edit-address")]
+	        public IActionResult EditAddress([FromBody]Address model)
+	        {
+	            var apiRep = new APIResponse();
+	
+	            var userId = string.Empty;
+	            if (HttpContext.User.Identity is ClaimsIdentity identity)
+	                userId = identity.FindFirst(ClaimTypes.Name).Value;
+	
+	            if (userId == null) return BadRequest(new { Error = true, Message = StringHelper.Instance.APIInvalidToken });
+	            var Account = _accountService.Get(userId);
+	            if (Account == null) return BadRequest(new { Error = true, Message = StringHelper.Instance.APIInvalidToken });
+	
+	            var index = Account.Addresses.FindIndex(x => x.Id == model.Id);
+	            if (index != -1)
+	            {
+	                Account.Addresses[index] = model;
+	                apiRep.Message = StringHelper.Instance.APIUpdateSuccess;
+	                apiRep.Data = ConvertAccountToDTO(Account);
+	            }
+	            else
+	            {
+	                apiRep.Error = true;
+	                apiRep.Message = "There is a unknown problems here, please try later!";
+	            }
+	
+	            return Ok(apiRep);
+	        }
+	
+	
+de95b43bceeb4b998aed4aed5cef1ae7|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|133|20|v|cs
+	edit
+30fe807b8a29ab3306ef37b0984fd106|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|134|30|v|cs
+	EditAddress
+b2c9df7efdfe3bf2eb217f40e78aeb0c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|150|17|V|cs
+	                Account.Addresses[index] = model;
+5ce2ce0088039ffb1870df351749d0d4|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Utils/strings.cs|21|56|v|cs
+	Update 
+3ef027f31e3e496dae88bf4a908a4ca6|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|1|V|cs
+	            var index = Account.Addresses.FindIndex(x => x.Id == model.Id);
+55c597c708fb341ac73bcd691bd795b2|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|17|v|cs
+	index 
+86f33c1d55e1e691952e2553dd6cc5b4|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|149|13|V|cs
+	            var filter= 
+88311680a95f1ff805a4a43a30a88afe|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|13|V|cs
+	            var listAddr = Account.Addresses;
+c86fe22254719c5c1b279b7fc0f9b3f6|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|13|V|cs
+	            var result = listAddr.RemoveAll(item => item.Id == model.Id);
+4c321bebd95c040547fa06ff5704d799|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|148|13|V|cs
+	            if (result > 0)
+ed6bd473be2c33182169dd26b76780ac|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|148|13|V|cs
+	            {
+1a950a8f76f1703c7c15b80f5eac64f3|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|153|13|V|cs
+	            else
+3b14fdaed054606f19076fc4a00c9aae|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|153|17|V|cs
+	                apiRep.Error = true;
+a4bc2a9dffd7667d64a6b6fcb2a261fa|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|153|17|V|cs
+	                apiRep.Message = "There is a unknown problems here, please try later!";
+7ddd5a90fd0f28f15e9b9a264dc394f8|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|153|13|V|cs
+	            }
+271eb02fc4cb55a5a810aea0ace8d7a6|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|13|V|cs
+	            var listAddr= Account.Addresses.W
+2b08c8cd3847075726f3c6264d50ae6e|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|13|V|cs
+	            var i
+f042603fc1b5fcbcf82849604ce27f3a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|32|v|cs
+	resultlist
+27f8ccf6b02bd17766867a8240446c65|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|50|v|cs
+	SingleOrDefault
+19ee0137824e533dca6378678d377689|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|13|V|cs
+	            var itemToRemove = Account.Addresses.Remove(r => r.Id == 2);
+dc8be378685f8ef1e4edc2687072abc5|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|17|V|cs
+	                Account.Addresses = listAddr;
+c6bcccdb11d4b644e8998641c1693769|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|147|17|V|cs
+	                apiRep.Message = StringHelper.Instance.APIUpdateSuccess;
+8a42f5a7358623b7166f39297dabac75|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|117|12|v|cs
+	 var index = Account.Addresses.FindIndex(x => x.Id == model.Id);
+	            if (index != -1)
+	            {
+	                Account.Addresses[index] = model;
+	                _accountService.Update(userId, Account);
+	                apiRep.Message = StringHelper.Instance.APIUpdateSuccess;
+	                apiRep.Data = ConvertAccountToDTO(Account);
+	            }
+	            else
+	            {
+	                apiRep.Error = true;
+	                apiRep.Message = "There is a unknown problems here, please try later!";
+	            }
+	
+	
+569f2c4b43ddbf1348e588e47ffd49bd|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|128|35|v|cs
+	There 
+e6063857c71351a393b6dbd74abb5db0|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|128|35|v|cs
+	unknown 
+2e91fc8fe90ebbe7657b8b5e93c89404|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|128|35|v|cs
+	problems 
+6c92285fa6d3e827b198d120ea3ac674|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|128|35|v|cs
+	here
+4343ef2bfb021a1a4e72040e739e078a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|128|35|v|cs
+	please 
+ee441ee432345d95c8d842144d37efeb|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|128|35|v|cs
+	try 
+c18788c2f274c779da72d9854ea4bfbf|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|128|35|v|cs
+	later
+a877006a67f6b250bd4eb6c45c000ce6|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|128|1|V|cs
+	                apiRep.Message = "Can't find the address, please try again later!";
+617136f3b2435515b702d754f1caa218|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|150|34|v|cs
+	[index] = model;
+e341db51a0e1d79d0bb4ffde7b95a20a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|150|42|v|cs
+	Address item
+0016ed70c571f0a49805aa8d3b604d0a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|154|17|V|cs
+	                ap
+26ccbbd54bb3c8f73ad4de716da30c47|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|153|31|v|cs
+	ConvertAccountToDTO(Account);
+7b5eb8945c5206b3242dbb46f8d75c9f|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|87|1|v|cs
+	            var userId = string.Empty;
+	            if (HttpContext.User.Identity is ClaimsIdentity identity)
+	                userId = identity.FindFirst(ClaimTypes.Name).Value;
+	
+	            if (userId == null) return BadRequest(new { Error = true, Message = StringHelper.Instance.APIInvalidToken });
+	            var Account = _accountService.Get(userId);
+	            if (Account == null) return BadRequest(new { Error = true, Message = StringHelper.Instance.APIInvalidToken });
+	
+	 
+e8ac5d411689ce80f16aa86c3b9929d7|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|104|9|V|cs
+	        private GetUserByToken 
+8ec24c84339857cd0dec17bf3cf78ff4|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|14|1|V|cs
+	        [BsonId]
+	        [BsonRepresentation(BsonType.ObjectId)]
+b64af545ad093217678103ae17347721|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|32|9|V|cs
+	        [BsonRepresentation(BsonType.ObjectId)]
+ccbf55d9f26176469df224fb8cd913d6|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|8|1|V|cs
+	using System.Runtime;
+610c4bb116cd0a5b17dcc2933fbf34c6|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|8|1|V|cs
+	using System.G
+ef7f13e591bbd332aaf75561792c1e5c|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|9|1|V|cs
+	using System.Runtime.InteropServices;
+6924d29647f224b267cedede8677b310|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|87|13|V|cs
+	            if(mo)
+c1771d5cda681a505f026b48d1ab4498|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|87|13|v|cs
+	Guid 
+eaa41da1a2dacd6337b2027a68a093f5|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|87|13|V|cs
+	            var guid = Guid.NewGuid();
+0c888a6923afb099230d98bad88cbd8f|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Models/Account.cs|31|9|V|cs
+	        [BsonId]
+12c6fe8999dfb2151fc0a87fcd71cfc9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|49|1|v|typescriptreact
+	        get().setLoading(true)
+	        const rs = await apiWorker.signUp(data)
+	        set((state: AccountState) => {
+	          state.account = rs
+	        })
+	        get().setLoading(false)
+	
+	        return rs
+	 
+5f4dcc3b5aa765d61d8327deb882cf99|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|24|36|v|typescript
+	password
+2d16eb1def0d66ac190984a8ef028b14|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|23|1|v|typescript
+	
+	export const updateInfo = async ({ name, phoneNumber, gender }) => {
+	  return await API.post(BASE_END_POINT + "update-info", {
+	    name,
+	    phoneNumber,
+	    gender,
+	  })
+	}
+	
+	
+2e288eace6512fc4cca149d322f99e75|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|222|20|v|cs
+	update-info-with-password
+014d565fdb81a1902b295b9b3cf09938|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|70|36|v|typescriptreact
+	updateInfo
+a8962ebbb026575f9e868d7d7e15f12c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|43|21|v|typescriptreact
+	={true}
+2bc7a5f8fe5789acce1437cd17c0f73c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|43|13|V|typescriptreact
+	            disabled
+f2f65b5a781ee075e501b49a9061e891|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|30|17|v|typescriptreact
+	(event.target as HTMLInputElement).value
+9148921badaeb66395cb54756b4e2bfe|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|30|5|V|typescriptreact
+	    // setValue((event.target as HTMLInputElement).value)
+6bdc10419a29de0a53ec28163ce1e3a5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|69|13|V|typescriptreact
+	            <FormControlLabel value="female" control={<Radio />} label="Female" />
+cc90f1913b83d255b95be0e0fea6d576|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|64|32|v|typescriptreact
+	gender
+87446516f6cb5b69eea3835434cede5e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|20|30|v|typescriptreact
+	console.log(data)
+6ad4aa4d88ab7805b530dd988d4bdf19|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|21|5|V|typescriptreact
+	    if
+f9b25a3046b9166be0d237410f66330d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|12|20|v|typescriptreact
+	loadingb 
+aa95680fc7bfa652541fcd15ab9d0d51|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|21|1|V|typescriptreact
+	  login: (data: object) => Promise<AccountInfo>
+	  signUp: (data: object) => Promise<AccountInfo>
+d16cb1440d52ff1e278bea4c465341cf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|12|20|v|typescriptreact
+	setLoading
+926f32694b6e69b4d1146f4a91320d0a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|20|19|V|typescriptreact
+	  const onSubmit = (data) => {
+	    let apiMethod= 
+	  }
+777eb5f1fb3e62e4d006ac97b171a1c5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|27|3|V|typescriptreact
+	  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+	    setValue("gender", (event.target as HTMLInputElement).value)
+	  }
+d4d53636af4e044e53155b1a2508547c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|43|1|V|typescriptreact
+	          registerOption={{ required: true}}
+a242cc7f51c6dec93ca30eb23a724a86|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|53|11|V|typescriptreact
+	            registerOption={{}}
+39827264a92cb0a048fa4c6317e6b66b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|53|11|v|typescriptreact
+	registerOption={{ required: true}}
+	
+b08947ff5fa8cbffb96fbcbe791c5be9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|128|1|V|typescriptreact
+	        registerOption={{}}
+4cb24f4572e4dd74213eac797d9c4909|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|28|1|v|typescriptreact
+	    const apiMethod = showChangePass ? updateAllInfo : updateInfo
+	    const rs= await apiMethod(data)
+	    if(rs){
+	    }
+	    console.log("data", data)
+	 
+88b8451d43c9af501b0f511ea12f5814|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/header/LoginModal.tsx|43|1|V|typescriptreact
+	      if (rs) {
+22924a80463ecb57f2626a861d6a691a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/header/LoginModal.tsx|44|9|v|typescriptreact
+	if (rs) 
+9338ae3d341dc39d569029def87af44a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/api-config.ts|55|1|v|typescript
+	  const idToken =
+	    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjVlOTk4N2NjNzNiMjE3NDc5ZGE1ZGE2YiIsIm5iZiI6MTU4NzEyMDA3OSwiZXhwIjoxNTg3NzI0ODc5LCJpYXQiOjE1ODcxMjAwNzl9.yDMkEFADkiOR60JXgNMovD23PEVeJKJJqdU4t9Bf0NI"
+	 
+80e5622fb291b1d8cbf2367025f66469|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|13|3|V|typescriptreact
+	  <className></className>
+f53d1a10693ffcfdbaab1a8f24574e8e|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|16|9|V|cs
+	        public string Id { get; set; }
+f25078cbd8515b60241e0df11f66fa9e|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|4|1|V|cs
+	using System.Linq;
+64c09da2fd6d90334aee3abce68365fe|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|4|1|V|cs
+	using System.Text;
+acef469e1f7c9064e23a1ee4a45ed8b9|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|4|1|V|cs
+	using MongoDB.Bson;
+ca41df2dc65ae30b85b6cbfd061fe904|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|4|1|V|cs
+	using MongoDB.Bson.Serialization.Attributes;
+0f43e98a07fc55c02bd742437ba29d1a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/DTO/AccountDto.cs|1|1|V|cs
+	using System.ComponentModel.DataAnnotations;
+	using System;
+6c559a831c391510e952d0bd3d5af0a0|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|329|1|V|cs
+	                      Id = acc.Id,
+c2167433e72171dfd1653baf7a6a27ae|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|65|1|V|typescriptreact
+	          state.account = { ...state.account, ...rs }
+e027eb06d192b07643b7adc695275373|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|55|11|V|typescriptreact
+	          state.account = rs
+3e1764fd849b533a00e7db8fa9c807c4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/header/header.tsx|56|1|V|typescriptreact
+	  const token = localStorage.getItem(strings.token)
+ff41a04b2cc0567b7c6d88a8a59a6648|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|41|13|V|cs
+	            apiRep.Data.Token = user.Token;
+ebed83fa15715d43e963283af08726d3|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|40|13|v|cs
+	apiRep.Data.Token
+73d84fd35ded628014e22c85042ce23b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|45|1|V|typescriptreact
+	          state.account = rs.info
+	          state.account.token= rs.token
+ca8ad876f1387fdbe9e7ed459d0dc0eb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|13|3|V|typescriptreact
+	  token: string
+cef372e6a7707027d630753bc5a9031c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|45|1|V|typescriptreact
+	          state.account.token = rs.token
+b71df99b2790a0631685f0fc3e618edc|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|42|14|V|typescript
+	export const getUserInfo= async()=>{
+	  return await
+	}
+580280cd900a254391478ada262c545e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|27|5|V|typescriptreact
+	    apiWorker.getUserInfo()
+8bd285086790e520d7e095b147169e96|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|23|1|V|typescriptreact
+	  updateInfo: (data: object) => Promise<AccountInfo>
+a8cfde6331bd59eb2ac96f8911c4b666|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|23|11|v|typescriptreact
+	object
+6e23ef5735429897bd1716de70ceb6ce|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|75|1|v|typescriptreact
+	        get().setLoading(true)
+	        const rs = await apiWorker.updateAllInfo(data)
+	        set((state: AccountState) => {
+	          state.account = rs
+	        })
+	        get().setLoading(false)
+	        return rs
+	 
+f4a6844373e87e547a16663f3689eec8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|85|36|v|typescriptreact
+	updateAllInfo
+fe3d3c2b41789074109d6992e5c7ec19|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|26|1|v|typescriptreact
+	  React.useEffect(() => {
+	    fetchNew()
+	  })
+	
+	
+65b7514f3714c827ff4b83ff5b5f9ab1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|13|11|v|typescriptreact
+	fetchNew
+b6a42cea0136f9c3ee6c15280191358f|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|47|9|^v|cs
+	// // // 
+	// // // 
+	// // // 
+	// // // 
+	// // // 
+	// // // 
+	// // // 
+00714ebc5b043f9d7fd0d8be99cbd329|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|53|17|V|cs
+	                var apiRep = new APIResponse();
+	            apiRep.Data = _accountService.Get().Where(a => a.AccountType == AccountType.Normal).Select(x => ConvertAccountToDTO(x)).ToList();
+	
+645cd21a5dde01150a29a8226351eb76|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|53|13|V|cs
+	            return Ok(apiRep);
+c00e0a1e048fd712861df60ce6752827|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|51|49|v|cs
+	Where(x => x.IsDeleted == false).Select(x => ConvertAccountToDTO(x)).ToList();
+a7c57a6a837f6164facb7a0ac249b149|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|51|54|v|cs
+	Predicate<Account> match
+540a766784f11138519f11c2fa69dd3a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|51|79|v|cs
+	GetHashCod
+037f5f3d6d7dfce5d914624e61ae212a|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|51|79|v|cs
+	GetHashCode
+5679948d580fdb8a2c089c6524eefe15|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|51|53|v|cs
+	(x => x.IsDeleted == false);
+523a626bfb0aa5313bc67d58ac10a7bd|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Services/AccountService.cs|63|67|v|cs
+	Expression<Func<Account, bool>> filter
+af3793525b3e3a58289d6e1e3e711584|file:///Users/dinhmai/.config/coc/ultisnips/cs.snippets|33|21|V|snippets
+	snippet OK "create ok" b
+	OK($1);
+	endsnippet
+cbba6d57536106f93cdeb6e426c2750e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|37|5|v|typescript
+	oldPassword
+8ecd2976fb40901fc3e9b962344d79e2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/api-config.ts|52|29|v|typescript
+	params.body
+94f413b2afd7bd1768f075d9027b9435|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|37|7|V|typescriptreact
+	      console.log("data", data)
+60adf7b7b799ac14839a19564e66fc29|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|36|3|V|typescriptreact
+	  cdob
+4af1062baf02526eb82655c451bbee0c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|38|22|v|typescriptreact
+	addresses 
+8cc372d66eae4c92d4b0fb03a9776a6d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|39|3|V|typescriptreact
+	  console.log("account", account)
+13d13e76e057e11decc914afe262c698|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|16|1|v|typescriptreact
+	
+	const addresses: AddressModel[] = [
+	  {
+	    id: v4(),
+	    name: "Mai anh dinh",
+	    address: "480A W. Depot Ave. Chippewa Falls, WI 54729",
+	    phoneNumber: "0987654742",
+	  },
+	  {
+	    id: v4(),
+	    name: "Mai anh dinh",
+	    address: "6 Lees Creek Street Harrison Township, MI 48045",
+	    phoneNumber: "0987654742",
+	  },
+	]
+963e3a2fe559e393bad631f3dc686f69|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|94|58|v|typescriptreact
+	addresses
+e35efb59d7773ab5ef640dbf6f175471|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|147|17|V|typescriptreact
+	                ++
+ff151f374032e1232b675d2e6c031eac|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|152|1|v|typescriptreact
+	            <TextInputWithIcon
+	              disabled={!editReceiverInfo}
+	              Icon={MapPin}
+	              text={account.addresses || "Please add your address"}
+	              register={register}
+	              formName="address"
+	            />
+	 
+b0f50e7245d07eefe347875f241a88e3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/theme/images/images.ts|7|1|V|typescript
+	  profileThought: require("./raw/though.svg"),
+59f1c792ad209c9bdbecacb91e0b46b0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/theme/images/images.ts|8|3|v|typescript
+	profileThought
+a9976094942929eca05bd13abe3722fa|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|44|11|V|typescriptreact
+	          di
+e1834a5239f2843ba0ff110222e94405|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|38|1|v|typescriptreact
+	        <div className="pb-4">
+	          {addresses.map((v, i) => (
+	            <AddressDisplay {...v} key={i} />
+	          ))}
+	        </div>
+	
+	
+11776833b4b6133871a0167d6f3420f5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|47|30|v|typescriptreact
+	no_item
+6af718801bc05cd77f0fa9bfa601009a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/theme/color/_colors.scss|21|15|V|scss
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+6705dce5201d44cf8c6199eb095ef21c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|774|1|v|javascript
+	        '.rotate-0': {
+	          transform: 'rotate(0deg)',
+	        },
+	        '.rotate-90': {
+	          transform: 'rotate(90deg)',
+	        },
+	        '.rotate-180': {
+	          transform: 'rotate(180deg)',
+	        },
+	        '.rotate-270': {
+	          transform: 'rotate(270deg)',
+	        },
+	 
+2493bab1729b0dfccbbd923854d119e9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|777|32|v|javascript
+	, ['responsive', 'hover']
+60776bef5e56338bf2815e68655f8894|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|773|23|v|javascript
+	{
+	        '.img-'
+	     }
+	
+6f8c8a49f740bca52653317a42933f8c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|776|19|v|javascript
+	rotate
+22213dd147a4978a7f20b158143d29ce|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|48|13|V|typescriptreact
+	            />
+9fd97c93c2b53e877254b10a5768e2b0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|782|7|v|javascript
+	imgSize.logo={
+	        cursor: pointer;
+	        width: 15rem;
+	        height: 
+	      }
+	
+	
+11f813d8dda25cc68505ccead357253f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|779|11|V|javascript
+	          "img-"
+b6ad040aec4936c19a161bd2f44fef48|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|782|1|v|javascript
+	      imgSize={...imgSize, {
+	        ".img-log": {
+	        }
+	      }}
+	
+	
+9e546dfac5a60ea39f833dd230573568|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|131|1|V|scss
+	    cursor: pointer;
+	    width: 250;
+	    height: 50px;
+a5f2f9cd1ced5f32d4c74c6a29c67fbb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|782|1|v|javascript
+	      imgSize[".img-logo"] = {
+	        cursor: "pointer",
+	        width: "250px",
+	        height: "50px",
+	      }
+	
+	
+82688af4e982c9b2c2408ca8c14e7b84|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|43|17|V|typescriptreact
+	                ad
+0f3c6cd90814456ac9ff6913a3063d67|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|1|1|V|javascript
+	// eslint-disable-next-line
+223e676867c4ce241c6a8dd5f708cb38|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|775|1|v|javascript
+	    plugin(function ({ addUtilities, config, e }) {
+	      const imgSize = _.map(config("theme.spacing"), (value, key) => {
+	        return {
+	          [`.${e(`img-${key}`)}`]: {
+	            width: `${value}`,
+	          },
+	        }
+	      })
+	
+	      addUtilities(imgSize)
+	    }),
+	 
+4ac7cba9362de315361ba5c2fe09fdc6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|474|7|V|javascript
+	      "img-sm": ""
+3236cd27a66d6f2b02f599562c7458b6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|4|1|V|scss
+	@tailwind utilities;
+49c4de3eba53fddcef6e64290f575766|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|5|11|v|scss
+	utilities
+6543f90366067c244084c5bd6bc15811|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|1|V|scss
+	  &__decorate {
+c80d345d8c9fbfcabeaf21364ce299a6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    width: 500px;
+a3e34de1a4c561a5f5fa49e93c196c32|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    &--mobile-card {
+715e7ad342706d4c1a2ed2d6693cebe3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|7|V|scss
+	      width: 480px;
+ea5a1cbe764918679997181a3ea281d3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    }
+e7cec74a43be20db2bb151fcf4895a54|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    &--side {
+dead5116f3a145261437f5a57fae8bad|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|7|V|scss
+	      width: 300px;
+16360ea10bca66302b45360877839965|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|7|V|scss
+	      height: 170px;
+0db74228bbe9a923eebbd6cec60fd0f4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|3|V|scss
+	  &__logo {
+637517f0022c3b3ce4e5037260513d0c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    cursor: pointer;
+171dc802010b959b15c23af1977b8204|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    width: theme('spacing.12');
+26da3b7fd8b52fd9ae521496de4ec0d5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    height: 50px;
+c97ebba049fe26b89efb7f694a20a748|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|3|V|scss
+	  &__icon {
+fe206be35c7287c5035fd55946f6702d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    width: 32px;
+1e47a7783d0275c465be54e9d658c94a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    &--md {
+95ed477c92086df64022f07fb78565f0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|7|V|scss
+	      width: 64px;
+3bf2e98c6984a247dd69416705763f36|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|7|V|scss
+	      height: 64px;
+2f970f8105e32742a05a4e4ac4cfef5e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|3|V|scss
+	  &-sm {
+8de58c434e30359ead272b8f43e758e1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    width: 150px;
+1adab9cba209b0405d8e0b17333d6506|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    height: auto;
+3803425e369c7cc4b340bc5ea7b0b08c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|3|V|scss
+	  &-md {
+e5547f7772fe14ee1a293f1025639acd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    width: 250px;
+f0c3e9cc10817ac8494181a621941c8a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|1|V|scss
+	.icon {
+0d2593af2e1348859f3908e7cd3ba622|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|3|V|scss
+	  width: 32px;
+e8ca07bc6515bf6122987c44d3762956|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|3|V|scss
+	  height: 32px;
+22baf5a0ee718ab7703750660b423f32|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|3|V|scss
+	  &--tiny {
+0000b589a86bc1078ce17d3a5706ea6d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    width: 16px;
+7a80329bf63161ad645af732a0b3483c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    height: 16px;
+ff1d416de4583da3f78cea3116d963ac|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|3|V|scss
+	  &--sm {
+7351029f5bde6b569d73f9bbf6f3a61c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    width: 24px;
+191a3cedb8271d66cd1653bdf7ba5f04|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|5|V|scss
+	    height: 24px;
+94e66778d7403802a5b59ec3c915232c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|121|3|V|scss
+	  &--md {
+75d83d085be6e836b5ca83f102633a2a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|120|1|v|scss
+	.img {
+	  &__decorate {
+	    width: 500px;
+	
+	    &--mobile-card {
+	      width: 480px;
+	    }
+	
+	    &--side {
+	      width: 300px;
+	      height: 170px;
+	    }
+	  }
+	
+	  &__logo {
+	    cursor: pointer;
+	    width: theme('spacing.12');
+	    height: 50px;
+	  }
+	
+	  &__icon {
+	    width: 32px;
+	
+	    &--md {
+	      width: 64px;
+	      height: 64px;
+	    }
+	  }
+	
+	  &-sm {
+	    width: 150px;
+	    height: auto;
+	  }
+	
+	  &-md {
+	    width: 250px;
+	    height: auto;
+	  }
+	}
+	
+	
+b03282ccffeb72f7370816f2027d0c06|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|133|13|v|scss
+	50px
+0ae080c2a4c8c1a39aa0b6f5e4f7fc25|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|132|12|v|scss
+	16rem
+58c75a032cfc87ca15dafd59339cf5dd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|132|12|v|scss
+	62rem
+18c4da6b557b43b1ec3e7c7aecd1d375|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/App.scss|133|5|V|scss
+	    height: 9rem;
+12dc4b797ffc502ed5e2d691d4649617|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|51|15|V|typescriptreact
+	              style={{ width: "16rem" }}
+fea087517c26fadd409bd4b9dc642555|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|50|27|v|typescriptreact
+	normal
+edc0d15adf161cb8c47b4759096cc148|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|48|62|V|typescriptreact
+	            <p className={cx("w-full text-gray-600 text-center", typography.h6)}>
+	              There is no address add yet!
+	            </p>
+645f36ceaa063f440d83847bde71df27|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|475|1|V|javascript
+	      "img-lg": "30rem",
+a73d2772a8e8ee4f07caab7ad994eb60|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|476|18|v|javascript
+	30rem
+a19ce3b99ef2a42ccd05ae9dd3bdd754|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|476|1|V|javascript
+	      "img-xl": "38",
+f0c5919ab4dcb91bd5ffa425243734c7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|477|1|V|javascript
+	      "img-2xl": "40",
+f1b20cca985406fb31fca8497824d34a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|476|18|v|javascript
+	32rem
+75bb1e2e1d831896a2824aa2a246f78b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|477|19|v|javascript
+	40rem
+4d17c980a04ee8a34fb07c578f979987|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|478|19|v|javascript
+	48rem
+c01be784e8ae68a6584a727ac6605c2f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|374|1|v|javascript
+	      xs: "20rem",
+	      sm: "24rem",
+	      md: "28rem",
+	      lg: "32rem",
+	      xl: "36rem",
+	      "2xl": "42rem",
+	      "3xl": "48rem",
+	      "4xl": "56rem",
+	      "5xl": "64rem",
+	      "6xl": "72rem",
+	 
+1d9301625cbefe54307ce4a843210256|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|485|7|V|javascript
+	      "img-md": "24rem",
+7b1d01e048fb1c92680fa867bc0f686d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|485|7|V|javascript
+	      "img-lg": "26rem",
+54c69d5a5f5b1852b5535b85642c558a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|485|7|V|javascript
+	      "img-xl": "27.5rem",
+6a882a99db165ef8785bdd7f7ad02cde|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|485|7|V|javascript
+	      "img-2xl": "29.5rem",
+47cdf4d9a7e1bacb5a44fc9d5b156910|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|485|7|V|javascript
+	      "img-3xl": "31.5rem",
+fb6a6e34f8a096d738a0e44212662e4c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|50|17|V|typescriptreact
+	                There is no address add yet!
+c85c38a14c3dd47bdea69d2ddd695acf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|11|1|v|typescriptreact
+	interface AddressModel {
+	  id: string
+	  name: string
+	  value: string
+	  phoneNumber: string
+	}
+12d3dbfa31ca2c8777cde32d27b92132|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|4|1|V|typescript
+	export const
+27792947ed5d5da7c0d1f43327ed9dab|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|4|7|v|typescript
+	details
+6ccad2fd3e08f9c73ac3326e41aef385|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|9|24|v|typescript
+	BASE_END_POINT + "get-user-info"
+b10c3de74a3b1cb5300b18a165459730|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|6|29|v|typescript
+	get-user-info
+0cd0aadc6d6cfed86896d2c1fb261b9c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|6|1|V|typescript
+	  signIn: BASE_END_POINT + "sign-in",
+7e30380a2664c77f11408b60c3bd8d96|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|7|1|V|typescript
+	  signUp: BASE_END_POINT + "sign-up",
+04b29480233f4def5c875875b6bdc3b1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|8|37|v|typescript
+	sign
+30fa9d814c95cf67cb62c109c3695037|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|8|1|V|typescript
+	  updateUserInfo: BASE_END_POINT + "update-info",
+df07865c8d9c30cc6c1ba56e61fd494f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|18|25|v|typescript
+	BASE_END_POINT + "sign-in"
+cf85107d14bde4d411077eb31675ed9e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|25|25|v|typescript
+	BASE_END_POINT + "sign-up"
+e83f867939e7eed8d8abbe7fdc2d3cc0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|33|25|v|typescript
+	BASE_END_POINT + "update-info"
+e90df33080765b006fd1586a9f511532|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|47|25|v|typescript
+	BASE_END_POINT + "update-info-with-password"
+77bdd0cf5610e313b87bff7f4b1be208|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|5|1|v|typescriptreact
+	interface AccountInfo {
+	  id: string
+	  email: string
+	  addresses?: any
+	  phoneNumber?: any
+	  name?: string
+	  password?: any
+	  gender?: string
+	  token: string
+	}
+8f9c8ab9f5a16aef3020b611ebdb970f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|32|1|v|typescript
+	interface AccountInfo {
+	  id: string
+	  email: string
+	  addresses?: any
+	  phoneNumber?: any
+	  name?: string
+	  password?: any
+	  gender?: string
+	  token?: string
+	}
+492fdba219e22c374f4bdd1372c0f005|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|4|1|V|typescriptreact
+	import { AccountInfo } from "services/apis"
+9f1aeb9ee484920e2fffdbac22466e4e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|64|25|v|typescript
+	BASE_END_POINT + "addres"
+52f56ba83401c52f4cc5110e32e1224e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|93|1|V|typescriptreact
+	      addAddress: async(),
+f2d9dfdbb1383730627ebdf4b4449da3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|104|1|V|typescriptreact
+	        return rs
+af3ad146c82546e09b17fea80d16c228|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|87|15|V|typescriptreact
+	              setShowAddNew((p) => !p)
+a7f6af57171a212b5f47369c68657d75|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|86|13|V|typescriptreact
+	            onClick={() => {
+	            }}
+e5783fc1a0a3ded24043fa01bf92cfbd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|27|5|V|typescriptreact
+	    console.log("new form data", data)
+583118e01e4401505ae96bc3c6fbbe2f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|29|7|V|typescriptreact
+	      acc 
+18ef2f3843d17894463a2e398c586b9b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|105|7|V|typescriptreact
+	      remove
+a7a0694c4b2173995da6282e0f0600f6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|63|1|V|typescript
+	export const addAddress = async ({ value, phoneNumber, name }: AddressModel) => {
+	  return await API.post(detailUrl.addUserAddress, { value, phoneNumber, name })
+	}
+821b8df3fb4c8d2105be30022bdd37de|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|67|14|v|typescript
+	addAddress 
+b478489a9acda46d63615475438a58c8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|68|35|v|typescript
+	addUserAddress
+7863203c6da3c1098eeb70e8dbd2a552|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|10|1|V|typescript
+	  addUserAddress: BASE_END_POINT + "add-address",
+3646b4ced176e79d2281f65bd525e371|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|69|41|v|typescript
+	{ value, phoneNumber, name }: AddressModel
+ab139382ce4d1f016cdfe1f80ac40b63|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|73|39|v|typescript
+	 value, phoneNumber, name 
+62dab894ac3b27f7e45a4881d42577e6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|94|1|v|typescriptreact
+	
+	      addAddress: async (data: AddressModel) => {
+	        get().setLoading(true)
+	        const rs = await apiWorker.addUserAddress(data)
+	        set((state: AccountState) => {
+	          state.account = { ...state.account, ...rs }
+	        })
+	        get().setLoading(false)
+	        return rs
+	      },
+17ec1fd2e98dcf21a2b8a0a6fae7f683|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|105|7|v|typescriptreact
+	addAddress
+ee8a2dbd6ed8be01997c5c73ae91e45e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|105|7|v|typescriptreact
+	deleteAddress
+3cd2befcad80603ddad64566463062ae|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|105|7|v|typescriptreact
+	removeAddress: async (data: AddressModel) => {
+	        get().setLoading(true)
+	        const rs = await apiWorker.removeUserAddress(data)
+	        set((state: AccountState) => {
+	          state.account = { ...state.account, ...rs }
+	        })
+	        get().setLoading(false)
+	        return rs
+	      },
+3f91ed8fc37f705044f75e0e1670325e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|114|1|v|typescriptreact
+	removeAddress
+5c5c6228d717f23aafb25ca14c0151a6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|116|36|v|typescriptreact
+	removeUserAddress
+70b508942600ef3b7a6d351205b85f9b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|105|35|v|typescriptreact
+	AddressModel
+b7cd32f9d0c0732fdc1951017bb40de8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|27|1|V|typescriptreact
+	  addAddress: (data: AddressModel) => Promise<AccountInfo>
+0620ae091c13e6324a492a82c12fed3f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|134|1|v|typescriptreact
+	        <Button
+	          variant="text"
+	          className="!text-orange-500 !ml-4 w-24 !hover:bg-orange-200"
+	          onClick={() => {
+	            if (editting) formRef!.current!.dispatchEvent(new Event("submit", { cancelable: true }))
+	            setEditting((p) => !p)
+	          }}
+	        >
+	          {editting ? "Done" : "Edit"}
+	        </Button>
+	 
+16d33764953e23714dc9cd645dbca95e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|154|11|V|typescriptreact
+	          {editting ? "Done" : "Edit"}
+b8d4eaac0db2fb68534ccfa410770172|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|146|21|v|typescriptreact
+	? "Done" : "Edit"
+52a7e7af6e1b68dd9bc762d8ece683dd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|152|17|V|typescriptreact
+	                formRef!.current!.dispatchEvent(new Event("submit", { cancelable: true }))
+c5bd001f3ee7787e4e7a185d06418e25|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|152|15|V|typescriptreact
+	              setEditting((p) => !p)
+c444f5f317f1785eae2ebe941e71b8dc|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|151|13|V|typescriptreact
+	              if (editting)
+590de4121affd401aae078fd9c1b944d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|151|15|V|typescriptreact
+	              removeAddress()
+faf1c2443e9f47a0f113927aa898de5d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|149|13|V|typescriptreact
+	            className="!text-orange-500 !ml-4 w-24 !hover:bg-orange-200"
+c611823b55d15faacf08c8087de8a2eb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|105|24|v|typescriptreact
+	deleteAddress 
+0e93a10c63c3e7297d0d6d5d3d576148|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|147|1|v|typescriptreact
+	          <Button
+	            variant="contained"
+	            color="primary"
+	            onClick={() => {
+	              removeAddress({ id })
+	            }}
+	          >
+	            Remove
+	          </Button>
+f48bf1b77a1c9ec20224304e9d3d9290|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|146|22|v|typescriptreact
+	<Trash2 onClick={() => removeAddress({ id })} />
+34f04294a74e22c80acc3e8dad2e321d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|148|9|v|typescriptreact
+	onClick={() => removeAddress({ id })}  
+2a0a0322c4a0f7e5183943fca9cd4700|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|154|23|v|cs
+	!= -1
+43aa5abcf9980bf955c111e0f1151aae|file:///Users/dinhmai/workplace/project/dotnet/HollypocketBackend/HollypocketBackend/Controllers/AccountsController.cs|160|17|v|cs
+	{
+	                    account = ConvertAccountToDTO(Account),
+	                    index = index
+	                };
+	
+ea86747a9b4aeabe99798902be8bd24a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|29|41|v|typescriptreact
+	nfo 
+af869b99d9f06e8a8d5a065f1dbe0e37|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|29|33|v|typescriptreact
+	seridata
+620bf9c5c352603fab3caa482bfcc513|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/services/apis/account.ts|5|34|v|typescript
+	getUserInfo
+88ed2637babd8ce922c81a84d56355cd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|29|7|V|typescriptreact
+	      console.log("useridata", data)
+eb3e9239234ed51745e63a8e89b17911|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|31|9|V|typescriptreact
+	        setL
+a7665535411541f346dcd79f95a40ed4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|28|5|V|typescriptreact
+	    setLoading(true)
+9a20c7e5060220107354d82a19b067b4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|37|23|v|typescriptreact
+	initFonts
+8cce9a9d7940341a9c72061564807872|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|28|1|v|typescriptreact
+	    apiWorker
+	      .getUserInfo()
+	      .then((data) => {
+	        setAccount(data)
+	      })
+	      .catch((e) => alert(e))
+	
+	
+be2bdfd51a94a2fedee1f93ba4a2ece8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|31|4|V|typescriptreact
+	      setupRootStore().then(setRootStore)
+	      i18n.locale = await loadString(strings.lang)
+0c2f24929e0706e84e15000e9f7d36de|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|29|5|V|typescriptreact
+	    setLoading(true)
+	      const rs= await apiWorker.getUserInfo()
+a62ab8b86f92aeac62cdb7dcb35b9473|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|14|1|v|typescriptreact
+	  const { register, handleSubmit, getValues, setValue } = useForm({
+	    defaultValues: {
+	      ...account,
+	      gender: account.gender || "male",
+	    },
+	  })
+	
+	
+b90aa56ee1cef9fa7854c10e3215d5a9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|15|3|V|typescriptreact
+	  useState(initialState)
+b29c083e232808f3a71f8ae95b626bef|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|18|5|V|typescriptreact
+	    :
+eb51c0204953e18b69076355fbdff3ed|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|31|3|V|typescriptreact
+	        setLocalAccount(rs)
+865e4b600d47fdcfbbb47d740bd11502|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|31|25|V|typescriptreact
+	  React.useEffect(() => {
+	    setAccount(storeAccount)
+	  }, [storeAccount])
+f24210c50913b62abc0997b596e959d1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|37|9|V|typescriptreact
+	        setLoading(false)
+3e93fed1127e4e3f45a445b2d0dbd716|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|34|7|V|typescriptreact
+	        setLoading(true)
+54cc80ca9f0c5b2a58abc9605798acdf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|39|9|V|typescriptreact
+	        const rs = await apiWorker.getUserInfo()
+1f5dd2cc488e040c9228b93e500c085e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|33|7|V|typescriptreact
+	      const result = await axios("https://hn.algolia.com/api/v1/search?query=redux")
+9eef1f61bbb930ffa8142ab76a93d3fe|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|35|7|V|typescriptreact
+	      setData(result.data)
+4778837c9f11b3c4444037aab215ba24|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|36|5|V|typescriptreact
+	    fetchData()
+3a6712e2f0d8b4801b798ef37b980060|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|36|5|V|typescriptreact
+	    ;(async () => {
+648218e1d20bc5a3b1719d32784c4fe9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|36|7|V|typescriptreact
+	      try {
+9f981309ebfa751131300ec7d83dbef6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|36|7|V|typescriptreact
+	        console.log("rs fetch", rs)
+04aa4cd11efbea5eed4f532207df6227|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|36|7|V|typescriptreact
+	      } catch (error) {
+463e5ddc02e4ec1f77e693fddfb1b4e4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|36|9|V|typescriptreact
+	        alert(error)
+0d54fc9be0a2b234c550db015bb2e470|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|36|5|V|typescriptreact
+	    })()
+5ef6c5822e7b6fef33934c586f62d8ef|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|48|5|V|typescriptreact
+	    [account],
+7e74c130c1674dd168981b01f4464b60|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|28|1|v|typescriptreact
+	    defaultValues: {
+	      ...account,
+	      gender: account.gender || "male",
+	    },
+	 
+3fbc9970522eeaa01d46616acd774177|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|45|1|V|typescriptreact
+	          name: rs.email,
+dd1874575f53ed74b3a61ce38f97fade|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|47|11|V|typescriptreact
+	          : rs.,
+6ce6e02d14486b5076f33451db7df8b7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|46|10|V|typescriptreact
+	          name: rs.name,
+28aa3fe534428dc9b2ab6e102f9e33d3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|44|11|V|typescriptreact
+	          email: rs.email,
+4e1ddba1c31545ee09fb38ae1fd79346|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|44|9|V|typescriptreact
+	        }
+bc4ff85e077447b39e5125906919c0c3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|43|7|V|typescriptreact
+	      setValue([
+	      ])
+88e197188765dbd8403838bca1ecfde7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|44|26|v|typescriptreact
+	{ ...rs, gender: rs.gender || "male" }
+dfa0f4218459b92e648a644d3dba42a1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|45|7|V|typescriptreact
+	      setValue("email", rs.email)
+9d1ad93aa04604f5a77b398a0156d474|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|44|7|V|typescriptreact
+	      setValue("object", { ...rs, gender: rs.gender || "male" })
+7c2a1b0b1b1ee24fa778614e6aadd795|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|42|7|V|typescriptreact
+	      setLocalAccount(rs)
+f2742f79b04ef4b1c392022f473321fa|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|41|7|V|typescriptreact
+	      console.log("rs fetch data", rs)
+c348497d0078d46032116b4d30911429|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|15|12|v|typescriptreact
+	: storeAccount
+e29599fa3ba53f83a12bce06548e0c0c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|34|7|V|typescriptreact
+	      const rs: AccountInfo = await apiWorker.getUserInfo()
+32c23474b1d557d01a337dfedc12a279|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|34|1|V|typescriptreact
+	      setAccount(rs)
+2d055235262bba12cda156a1e32084bf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|34|7|V|typescriptreact
+	      account.
+f516909ab6497cfc703dbdeddd85dcbe|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|93|39|v|typescriptreact
+	fetch 
+570eaf1cafe4fb6a29774f76a0704aff|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/zustands/account-store/AccountStore.tsx|93|9|V|typescriptreact
+	        console.log("rs fetch new", rs)
+c51d67782dea7aa76dbbcd104d36c626|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/UserInfoScreen.tsx|34|5|V|typescriptreact
+	      fetchNew()
+0667d252b9abd1aa0efa711c082660da|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|126|5|V|typescriptreact
+	    console.log("data in address card", data)
+30274b2d9f1930f46e52d58d25ad754d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/AddressManagementScreen.tsx|131|1|V|typescriptreact
+	      setValue("value",value)
+8e455679a8d898d0aa53712a0eb54732|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|109|14|v|typescriptreact
+	top100Films
+fe01ce2a7fbac8fafaed7c982a04e229|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|109|27|v|typescriptreact
+	demo
+86a921f110f1fbd132139d48a84568ba|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|168|19|v|typescriptreact
+	className={classes.listbox}
+cb5bce2ad85e2d66aecaa231408d8b52|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|165|22|v|typescriptreact
+	className={classes.input}
+893854a20dea84b75ece2872ee9bd94e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|162|22|v|typescriptreact
+	className={classes.label}
+d30a19847d800c26d9fe137922e8bceb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/search-bar/search-bar.tsx|68|1|V|typescriptreact
+	          className="flex items-center px-4 py-3 rounded-l-lg bg__white-smoke"
+38aa39c0619d9c32deb01f6cb8e42e9d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|164|15|V|typescriptreact
+	              <label {...getInputLabelProps()}>useAutocomplete</label>
+2cc697054f2ccff7e0d4197f19f4d700|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|270|1|V|typescriptreact
+	      <p className={typography.h5}>{title}</p>
+	      <Icon className="!text-gray-600 cursor-pointer" onClick={onClick} />
+48fae4502cdcddef6244e125fc7f5596|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|269|1|V|typescriptreact
+	    <div className="flex justify-between">
+	      <p className={typography.h5}>{title}</p>
+	      <Icon className="!text-gray-600 cursor-pointer" onClick={onClick} />
+2a6a7adf6bc0f4a01b663ef486c132ae|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|269|1|V|typescriptreact
+	    <div className="flex justify-between">
+	      <p className={typography.h5}>{title}</p>
+	      <Icon className="!text-gray-600 cursor-pointer" onClick={onClick} />
+	    </div>
+e47611d88f3c937760203a30a883787a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|166|5|V|typescriptreact
+	    <div className="flex justify-between">
+603979a602a5969f57735e1d9ac5fc6a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/components/text-input-with-icon/TextInputWithIcon.tsx|32|1|v|typescriptreact
+	      <Icon className={cx("text-purple-500 mr-3", iconClass)} />
+	      <input
+	        disabled={disabled}
+	        name={formName}
+	        className={cx("bg-transparent outline-none ", {
+	          "border-b border-gray-300 pb-1 focus:border-primary": !disabled,
+	        })}
+	        ref={register({ required, ...registerOption })}
+	      />
+	 
+2f1975647ba0fe4617deaac30c5ff9cf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|164|1|V|typescriptreact
+	              <input {...getInputProps()} />
+73a675fe8a30b9e15aa2af14cf4dd949|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|167|15|v|typescriptreact
+	formName
+075ae3d2fc31640504f814f60e5ef713|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|166|19|v|typescriptreact
+	disabled
+621a9284ae189bee4e949a14ece7eecc|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|171|35|v|typescriptreact
+	...registerOption 
+aada84313aa9600d7946f911d6a7cf85|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|164|51|v|typescriptreact
+	iconClass
+f002de7a7b46fb852a3cf307a9b5ca23|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|162|67|v|typescriptreact
+	bg__white-smoke
+b4cd1c7cde467aa4f8ade42e0ede9472|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|161|34|v|typescriptreact
+	items-center px-4 py-3 rounded-l-lg 
+1818d506396d77b3d035f719885c4cd1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|179|78|v|typescriptreact
+	focus
+6ea77947ca1d10a4b82050c077a4771d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|120|16|v|typescriptreact
+	addresses || notHaveTx
+7eac4ba6b5b0cc35847ae2a815cc51aa|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|120|16|v|typescriptreact
+	firstAddress
+c65c9cba5f2f67aa1e66047cb66163eb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|117|3|V|typescriptreact
+	  const firstAddress = addresses.length > 0 ? addresses[0].value : notHaveTx
+1696b93ee407ba3cdcc57a5746c1b530|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|116|20|v|typescriptreact
+	231379
+dcebd90fb3d50e4aeb46cbd88561ae38|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|116|19|v|typescriptreact
+	{
+	      value: "32123",
+	      name: 
+	    }
+d586ac7c6b5f6f3fcf4e25ae46bd216a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|135|3|V|typescriptreact
+	  console.log("firstAddress", firstAddress)
+868310894e345197a3b88a9b9fe2ecc7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/order-general-screen/order-general-screen.tsx|106|5|V|typescriptreact
+	    getInputLabelProps,
+2404bf6f99a34959ec49e14927202eb4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/profile-screen.tsx|14|17|v|typescriptreact
+	,
+	  UserInfoScreen
+9d85c7d66d880571c232a1eaf5a5de8b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/OrderMangagementScreen.tsx|77|3|V|typescriptreact
+	  </div>)
+e50f59bc8f82afd44ba2b4e5a8cf1ad8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/OrderMangagementScreen.tsx|8|5|V|typescriptreact
+	    <dvi></dvi>
+cd9ebc677aa0e99a3ad4fe49cc8de156|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|5|V|javascript
+	    backgroundColor: (theme) => theme("colors"),
+63b94efb540b53159e316022df2c7fed|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      bottom: "bottom",
+9be7397e6e427d22c00d2c9f6d6d78a2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      center: "center",
+0d814c3c7c2516bb08c191e0f70413f1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	    backgroundPosition: {
+fa8759ac1ab3fab9e166a55d41530ad0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      left: "left",
+66cfcdf73c62622450e7a14128d09fca|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      "left-bottom": "left bottom",
+473ad6f15c563c64a794babf4fb48f45|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      "left-top": "left top",
+087aef91a9413013cf8ad2f62988811b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      right: "right",
+ddcbe8e17cc7c787f568cb3741e4f3d1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      "right-bottom": "right bottom",
+a9ef60ccfea92b379785e77596f1281c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      "right-top": "right top",
+328c196be09b8a6f1ba94d41e46e3a98|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      top: "top",
+d0129879ecfc06c72533315c948f07ef|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|5|V|javascript
+	    backgroundSize: {
+1327b6ebc87013c3f4b3d0683f20a2b5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      cover: "cover",
+b7dfb8d91b4185a284a139527c34c70d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      auto: "auto",
+4852dc6b4c483b0557ec68e5155a614b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      contain: "contain",
+c641381f771e8fffaaa70672933aaa5e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	    borderColor: (theme) => ({
+f2651a3ba1d789cd997eba0d9f9ece98|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      ...theme("colors"),
+ab86d31267ea8ec30785efc7633979dc|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      default: theme("colors.gray.300", "currentColor"),
+6e232dd09288a49b387ea8ecaad50e5b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|5|V|javascript
+	    }),
+1de90cbb301564d8aaf9648b53ea885e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|5|V|javascript
+	    borderRadius: {
+ab662e5c41092aa600442032e0f71ae6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      none: "0",
+217509c45a7887226e1e785de0b99afb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      sm: "0.125rem",
+0e7d69a5fddb73e811f8872e64664da3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      default: "0.25rem",
+50c50681bbdd5d0d569f4c71a5d48afa|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      md: "0.375rem",
+d86a83f950587f9ccc103b7064bbb1d4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      lg: "0.5rem",
+bdec509da8175225713f314835ef16c4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      xl: "0.75rem",
+8d581d7946811142299d306de93106ee|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|194|7|V|javascript
+	      "4xl": "3rem",
+48e6604a97231b8334b39b0915e938d1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|206|5|V|javascript
+	    borderWidth: {
+ff24102dcd84104bca682bbedeed760f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|206|7|V|javascript
+	      default: "1px",
+680c9fc48a0d548cb7c5d70cb2f9cf9a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|206|7|V|javascript
+	      "0": "0",
+edc81167fb492f7bd45d1c1c9ece93d2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|206|7|V|javascript
+	      "4": "4px",
+c3b8bb7f7e7a14ad1572b1c05c85adbe|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|206|7|V|javascript
+	      "2": "2px",
+8aa5e60d7e5ca0a70c136f6283856741|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|206|7|V|javascript
+	      "8": "8px",
+1c908b33f7f6b8971ec06839e16dedb4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|206|5|v|javascript
+	boxShadow: {
+	    
+ee61d3cde0f5cd02ed86354ad31104d7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|5|V|javascript
+	    container: {},
+4af40c5b0314f38c8896bd8e1bca54a5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|5|V|javascript
+	    cursor: {
+5c10e3e641e793c3b1633e94b6bb9d0d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      default: "default",
+c2b556d060047d17a0fdffd515230874|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      pointer: "pointer",
+9865599b5c408f9327a570c1e23bbee4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      wait: "wait",
+c81d46f9a150c7d19820e14a3ea9a72b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      text: "text",
+100e812253018576a04f0bbd0d851ac7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      move: "move",
+bc8c19b9eea91d9278e7d9a3f3a2532d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      "not-allowed": "not-allowed",
+7fdf777e715f67c8cdb0d40c048e55e0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|5|V|javascript
+	    fill: {
+eb4515ed6c12d35b5f1258a0e110b6b1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      current: "currentColor",
+9419bafd6c9b7b8a3536780d122cc1d9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|5|V|javascript
+	    flex: {
+2065189e9e3f69b1ff5605512486ae20|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      "1": "1 1 0%",
+4b3129f7b779b1f87cafd7abb7e53f02|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      auto: "1 1 auto",
+3230cd0a736ae388b2a58e4dfb8a605f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      initial: "0 1 auto",
+b9da3ae60ce69aafca313e42300a233f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	      none: "none",
+339739fa06ef4d98a254a080ec63ad50|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|5|V|javascript
+	    flexGrow: {
+6bcf809c2ca8caed514b3f84ff278156|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|5|V|javascript
+	      default: "1",
+304935f271fd4c76f03e79a7e799666d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|219|7|V|javascript
+	    flexShrink: {
+5dfb8fa1aa3d2de6b8130fbfcba805ff|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|5|V|javascript
+	    fontWeight: {
+d6efeae8ceb0a09c671f31c2e81edd57|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      hairline: "100",
+6e2e433c9a6bca8d4836546dd37464a5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      thin: "200",
+58db21fb9a8f32c12bd11aad368b0064|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      light: "300",
+c30fe1ed190bf11bc8928a0eb76a0fa9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      normal: "400",
+717e916432e0c4f37430b76d94e4b012|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      medium: "500",
+cd655a25e81fee5d1b0f853f8ae06b39|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      semibold: "600",
+ebb4a0685c7f3cc85b53044d206b5bcc|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      bold: "700",
+5671c7220c44637d3ec810dc79c59112|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      extrabold: "800",
+14f636175e9e344bf24ddf71d7a28f4f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      black: "900",
+a32cb1e4668703680fd852bae51cb514|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|5|V|javascript
+	    height: (theme) => ({
+d3e84ddd63fdcd8195ff7d9ad8d8cb30|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      ...theme("spacing"),
+19c4f4f6796dfd5af1593f4fadba6177|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      full: "100%",
+8139080750d18602f243790391395ed9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|259|7|V|javascript
+	      screen: "100vh",
+cc3b2d55efd8a397fc00665cdc4d37c9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|5|V|javascript
+	    letterSpacing: {
+470193fe6ef65167f3f2cba8580e7789|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      tighter: "-0.05em",
+18e928b18a9288f7cb31780d065fb9be|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      tight: "-0.025em",
+b1406b2045b77dbba823a3a750e836c2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      normal: "0",
+b6a0599df79e23d7f6af2805cb088d9e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      wide: "0.025em",
+b678b0d066f1b38e18a89abc85cc1ece|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      wider: "0.05em",
+a4be6c14f390af13e21c57ae2684d347|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      widest: "0.1em",
+cfda96e4542eccf38c34ec4e14c78431|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|5|V|javascript
+	    lineHeight: {
+5d2fbd0ac781abbd061d26c42db60aaf|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      none: "1",
+36645e04bd2f62ef78a7449cebcc889f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      tight: "1.25",
+cee6a76abcac39201589076ae375eb60|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      snug: "1.375",
+3e8cd5964148aea44394fdaffba9163c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      normal: "1.5",
+f7db4af98ad736e714d40563689fdade|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      relaxed: "1.625",
+293757beef57a1541f39ba51e5c92005|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      loose: "2",
+7918fd823af47a83caa971c0d28e733f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      "3": ".75rem",
+f24ae5ccee9f9efc2670d946e190303a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      "4": "1rem",
+eadfa37ca0c84e67f88be8bc8d6e3895|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      "5": "1.25rem",
+8a11a724fd42e1b69a3ea6bd90d3d3c5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      "6": "1.5rem",
+733408a4ee5faa6874a9b04ed5129e78|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      "7": "1.75rem",
+d97509789543f4fe0bbad7a2c37e2801|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      "8": "2rem",
+a2192daba2fad89bba536f3281d1c656|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      "9": "2.25rem",
+993150fd8da9bc845dfad69f26c373e5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      "10": "2.5rem",
+42e1f7e7cbda2a9765fb0acecdeffdd3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|5|V|javascript
+	    listStyleType: {
+59eef3ac99375c327587e216a9d98d9d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      disc: "disc",
+be9d848b6d202cfd651977c2534930ad|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      decimal: "decimal",
+95693373483f73e3008abc4d50f92471|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|5|V|javascript
+	    margin: (theme, { negative }) => ({
+8e29982f40cce4100b1b4f0d912018ef|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|7|V|javascript
+	      ...negative(theme("spacing")),
+a3f95c7e386bc96edf771dbc94fed951|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|265|5|V|javascript
+	    maxHeight: {
+372a1ecc4d8ab92aabe274c75d6a570d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|281|5|V|javascript
+	    minHeight: {
+80cf53908b51f87da1ea741eababe6f7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|281|5|V|javascript
+	    minWidth: {
+bb6edaadb112c480e4f007a7424d1d0a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|281|5|V|javascript
+	    objectPosition: {
+0bf248ac912342a8270998938143fce8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|5|V|javascript
+	    order: {
+afe11f9cfbba89e6f3e521a5e6518e42|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      first: "-9999",
+ae7ee0404e0097e08638fbbacd3144ae|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      last: "9999",
+1b77193f2e0f6a70b9b186b01c3423e2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "1": "1",
+7411b28b986adf406ed443af350a0b78|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "2": "2",
+50bd4bebed3433ba9e1e22ee33f1777a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "3": "3",
+cbda810a8bf99c2b4214cf450eda5cff|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "4": "4",
+5b9cfd943c579cce504c54bc6a8278fb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "5": "5",
+35d615983c6526e072963e09698034c1|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "6": "6",
+21e8e5afbe5bba49a4fd721b6ce109c8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "7": "7",
+fce0f3c286338df2b8dab9edaa96331e|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "8": "8",
+7c7b3f5358358111c62f3b82266f6f08|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "9": "9",
+2427730452aedb97556d669ec5978926|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "10": "10",
+fa1eb53bb7db21d810d4b03534b2c833|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "11": "11",
+e6a83fdc08709fb8eedd183e075fad0b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	      "12": "12",
+457976ca9428991cc2e1b23ec62aa6ee|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|5|V|javascript
+	    padding: (theme) => theme("spacing"),
+e7b465fffc8425bcf92feeb3d6ef1cce|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|5|V|javascript
+	    placeholderColor: (theme) => theme("colors"),
+e0e131278b06f9f492a9b0b28f87fdf6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|5|V|javascript
+	    stroke: {
+00715e422ebbc16baecab39ccd61ef8d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|7|V|javascript
+	    strokeWidth: {
+d73c7cab45c56ff266b5975ef1e58b86|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|288|5|V|javascript
+	    textColor: (theme) => theme("colors"),
+be6ab3dc683178081f30068cec721f5b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|5|V|javascript
+	    zIndex: {
+5cf03cce36d42a374881a0f1c3e5710f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "20": "20",
+31c13675a8249ff649cf6ad818a2aa9c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "30": "30",
+f215f1707ebd9ae007f3adc5669f6dc7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "40": "40",
+66fe75544dd9bca23c0ab41175c51225|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "50": "50",
+9159c3877dfb12e6f175f19d84c6d767|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|5|V|javascript
+	    gap: (theme) => theme("spacing"),
+56e529dbddb5a9c781ec7b6c9efd799a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|5|V|javascript
+	    gridTemplateColumns: {
+8911373dacca1edd4c6f345a4e256780|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "1": "repeat(1, minmax(0, 1fr))",
+320a7d7d1e9bde35b378f8d5beea6c79|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "2": "repeat(2, minmax(0, 1fr))",
+311e96933008872998726a70e673ae07|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "3": "repeat(3, minmax(0, 1fr))",
+351f63564f38eb63cb4321175bd54bf5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "4": "repeat(4, minmax(0, 1fr))",
+7f33ba4308ae2851afa30669d0e73420|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "5": "repeat(5, minmax(0, 1fr))",
+ec72b4e432c0a17d10d470fcb1b670a9|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "6": "repeat(6, minmax(0, 1fr))",
+2ed6d25eb9a01f67181c09d4287f92a4|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "7": "repeat(7, minmax(0, 1fr))",
+fe38181a4fad8cd6a20975cb165a1aa2|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "8": "repeat(8, minmax(0, 1fr))",
+645c8ecadab5ca3958f61a7e176848fd|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "9": "repeat(9, minmax(0, 1fr))",
+c6a5cfc6935ec66227e99051ff70c8f0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "10": "repeat(10, minmax(0, 1fr))",
+05bc8d30aefc49670de8fc0c69aeab3d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "11": "repeat(11, minmax(0, 1fr))",
+f6f1143ff315edb731a49aa64cd791ca|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "12": "repeat(12, minmax(0, 1fr))",
+ce8b93988703ef2dd11c88fe7ff63265|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	    gridColumn: {
+2b30e2657afacda2e7c88aa9add4ca09|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-1": "span 1 / span 1",
+84b4ea33331b63eddd1290ed7ed153a5|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-2": "span 2 / span 2",
+1d7bc80c8904261698beab89911aa358|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-3": "span 3 / span 3",
+07da97983dcadc3da94bb5a7b9db5d7c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-4": "span 4 / span 4",
+93c86e375fd01bfd64b8666112a94a39|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-5": "span 5 / span 5",
+4dc3144b67b5c5e568a97486206652ff|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-6": "span 6 / span 6",
+e6ecfd272ce12f66dbc8c3ec884480c6|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-7": "span 7 / span 7",
+939787fcf0e8f6aec5e076c1ad9eb90b|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-8": "span 8 / span 8",
+055599f204c64761c8a0b8ddd8b25ca0|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-9": "span 9 / span 9",
+d7a0fc5afca82caa459ebbf5b96e36d8|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-10": "span 10 / span 10",
+4e530286f97eb07f0837b73ddf1cb3ad|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-11": "span 11 / span 11",
+5187a6d5d40ab9e6ec263bbb3d99424c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "span-12": "span 12 / span 12",
+4fbea7c73b33ebd055148ccadb2124d7|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	    gridColumnStart: {
+4841ae027c577a1c7346e3ae7465b130|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	      "13": "13",
+f00b37312860edf32b0e75d35c33003d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|5|V|javascript
+	    gridColumnEnd: {
+ba99c2d36e3f253664ba7c3ec4b3af91|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|7|V|javascript
+	    gridTemplateRows: {
+234e7526409153e9e91312376d67912c|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|5|V|javascript
+	    gridRow: {
+b6cbc6fc1967cb3aabe609471ccaad7a|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|5|V|javascript
+	    gridRowStart: {
+6629bb4ab84a61272c3cbfdf53bdb3c3|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|330|5|V|javascript
+	    gridRowEnd: {
+1025e032964f6ee1267c3867b9eae8bb|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|27|1|v|javascript
+	      // gigas: {
+	      // 100: "#EEECF5",
+	      // 200: "#D3CFE7",
+	      // 300: "#B9B2D8",
+	      // 400: "#8578BA",
+	      // 500: "#503E9D",
+	      // 600: "#48388D",
+	      // 700: "#30255E",
+	      // 800: "#241C47",
+	      // 900: "#18132F",
+	      // },
+	 
+a13f6663fa059650749a4a69fe54319d|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|42|1|v|javascript
+	        // 200: "#cccccc",
+	        // 300: "#B2B2B2",
+	        // 400: "#999999",
+	        // 500: "#7F7F7F",
+	        // 600: "#666666",
+	        // 700: "#4C4C4C",
+	        // 800: "#333333",
+	        // 900: "#191919",
+	        // 200: "#edf2f7",
+	        // 300: "#e2e8f0",
+	        // 400: "#cbd5e0",
+	        // 500: "#a0aec0",
+	        // 600: "#718096",
+	        // 700: "#4a5568",
+	        // 800: "#2d3748",
+	        // 900: "#1a202c",
+	 
+d086e8b8e9847d79f0999a2341591b22|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/tailwind.config.js|167|7|V|javascript
+	      full: "9999px",
+3de39a7cba9389f640578fed6280032f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/OrderMangagementScreen.tsx|9|1|v|typescriptreact
+	      <p className="font-sans text-2xl text-gray-800">Your orders:</p>
+	      <table className="table-fixed">
+	        <thead>
+	          <tr>
+	            <th className="w-1/2 px-4 py-2">Title</th>
+	            <th className="w-1/4 px-4 py-2">Author</th>
+	            <th className="w-1/4 px-4 py-2">Views</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <tr>
+	            <td className="px-4 py-2 border">Intro to CSS</td>
+	            <td className="px-4 py-2 border">Adam</td>
+	            <td className="px-4 py-2 border">858</td>
+	          </tr>
+	          <tr className="bg-gray-100">
+	            <td className="px-4 py-2 border">
+	              A Long and Winding Tour of the History of UI Frameworks and Tools and the Impact on
+	              Design
+	            </td>
+	            <td className="px-4 py-2 border">Adam</td>
+	            <td className="px-4 py-2 border">112</td>
+	          </tr>
+	          <tr>
+	            <td className="px-4 py-2 border">Intro to JavaScript</td>
+	            <td className="px-4 py-2 border">Chris</td>
+	            <td className="border px-4 py-2">1,280</td>
+	          </tr>
+	        </tbody>
+	      </table>
+	 
+45fa2ee14424badebc7956d2fa36970f|file:///Users/dinhmai/workplace/project/dotnet/HollyPocketWeb/src/screens/profile-screen/OrderMangagementScreen.tsx|8|21|v|typescriptreact
+	w-full px-24
+e729e6bd0e585470f8d17349d39ea369|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|94|5|V|json
+	    "babel-loader": "^8.0.5",
+0e385af1d2cf52a2a709ed295877d873|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/themes/colors.ts|4|11|v|typescript
+	f03f37
+88eb60614bb67782bd8c18afb4438329|file:///Users/dinhmai/workplace/project/uit/eng-web/project/tailwind.config.js|5|8|v|javascript
+	sunset
+fe01d67a002dfa0f3ac084298142eccd|file:///Users/dinhmai/workplace/project/uit/eng-web/project/tailwind.config.js|5|8|v|javascript
+	orange
+8a091a742b24a273ec262fc053eef9c1|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/App.css|1|1|V|css
+	@import "tailwindcss/base";
+	
+	@import "tailwindcss/components";
+	
+121bfb36eafb925fd9ad0e6e85d950d2|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/App.css|1|1|V|css
+	@import "tailwindcss/utilities";
+4ff65d969b3e8eb4c1850df28048c76e|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/App.tsx|14|1|V|typescriptreact
+	import "./"
+8596711de236c901155958f3677c2a32|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/App.tsx|8|1|V|typescriptreact
+	import Countdown from "react-countdown-now";
+c75d05a25c387078340fa9b7ccadbe18|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|68|5|V|json
+	    "tslint": "tslint './src/**/*.{ts,tsx}'",
+843744d8cb4c6713f7337b7a22323aab|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|68|5|V|json
+	    "tslint:fix": "npm run tslint -- --fix",
+2ea8911706308fda04aa487ece35d8ee|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|68|5|V|json
+	    "tslint:check": "tslint-config-prettier-check ./tslint.json",
+e7bb3f7e2ba372a0405c689eaeb65f5b|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|97|5|V|json
+	    "tslint": "^5.20.1",
+ad39c9297bc662502c29adba2fc6ce13|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|97|5|V|json
+	    "tslint-config-prettier": "^1.18.0",
+71f9e2827e247b786e7170e2eb6e083e|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|97|5|V|json
+	    "tslint-plugin-prettier": "^2.0.1",
+7600cbc96d2c675b511153c5df6a3ce3|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|97|5|V|json
+	    "tslint-react": "^4.1.0",
+031bad29588e60dde4f3dbbc93d867e2|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|97|5|V|json
+	    "typescript": "^3.4.1",
+21c3427d94276b2429c1b262ca7da051|file:///Users/dinhmai/workplace/project/uit/eng-web/project/.eslintrc.js|1|1|v|javascript
+	module.exports = {
+7f8f92bb138588250300c9534f53dff4|file:///Users/dinhmai/workplace/project/uit/eng-web/project/.eslintrc.js|1|1|V|javascript
+	
+	    "env": {
+	        "browser": true,
+	        "es6": true
+	    },
+	    "extends": [
+	        "eslint:recommended",
+	        "plugin:react/recommended",
+	        "plugin:@typescript-eslint/eslint-recommended"
+	    ],
+	    "globals": {
+	        "Atomics": "readonly",
+	        "SharedArrayBuffer": "readonly"
+	    },
+	    "parser": "@typescript-eslint/parser",
+	    "parserOptions": {
+	        "ecmaFeatures": {
+	            "jsx": true
+	        },
+	        "ecmaVersion": 2018,
+	        "sourceType": "module"
+	    },
+	    "plugins": [
+	        "react",
+	        "@typescript-eslint"
+	    ],
+	    "rules": {
+	        "indent": [
+	            "error",
+	            4
+	        ],
+	        "linebreak-style": [
+	            "error",
+	            "unix"
+	        ],
+	        "quotes": [
+	            "error",
+	            "single"
+	        ],
+	        "semi": [
+	            "error",
+	            "never"
+	        ]
+	    }
+	};
+1047203aed6c0fe75d3bcfdc5c50c67f|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/App.tsx|48|3|V|typescriptreact
+	  fdasdf
+c36a7eed0cdbb6eec54c9e782f887e98|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|100|4|V|json
+	    "eslint": "^6.8.0",
+5877d3c09f988b9581ad1c50aa5da08a|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/tools/routes.tsx|58|1|V|typescriptreact
+	export norm
+061f91abe5dafff8c9b8c42b4e78429c|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/components/ResponsiveNav/index.tsx|2|1|V|typescriptreact
+	import "bootstrap"
+70abec00d164ad8ec06c5d210567f2ca|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/components/InformationForm/CustomInput.tsx|76|45|v|typescriptreact
+	JSX.IntrinsicElements.input
+25f0fc5f5cbcd20e71e4fac7c9111fd3|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/components/InformationForm/CustomInput.tsx|76|61|v|typescriptreact
+	HTMLButtonElement
+8cadebaf275b7f60384599ffc76431f5|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/components/InformationForm/CustomInput.tsx|76|43|v|typescriptreact
+	& React.HTMLProps<HTMLInputElement>
+9135dc24f08408718f1bde086d830d41|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/home-screen/components/Introduction.tsx|64|1|V|typescriptreact
+	                <Icon name="arrow right"/>
+fa3877d5ab8029e0b8aca00af0a13bfe|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|10|1|V|json
+	      "themes/*": ["src/"],
+fe021943dcda87150f590b3475afaded|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|11|8|v|json
+	themes
+b4c5cb0289244fa51b6a81890bd675f6|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|10|7|V|json
+	      "themes/*": ["src/themes/*"],
+b2e222ffa9e2d1d8c8b2b087ef669fc6|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|10|7|V|json
+	      "utils/*": ["src/"],
+625435d215d9c0243cdade0de03b4e30|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|7|1|V|json
+	      "screens": ["screens"],
+	      "screens/*": ["screens/*"],
+bf1bac83fb72069c93b3e1f63d41251c|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|9|8|v|json
+	screens
+9897f87d3ce162d713b1bc60b8e4532e|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|19|7|V|json
+	      "@colors": ["theme/color/_colors.scss"],
+01f2f7089bef7124133554bd810e3bf8|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|21|7|V|json
+	      "stores/*": ["stores/*"],
+b27cd3be8d00126581b916f05becaf7b|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|21|7|V|json
+	      "mock-data/*": ["mock-data/*"],
+34aa82c468b81529a7976d144b03ffb2|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|21|7|V|json
+	      "icons/*": ["../public/asset/images/Icons/*"],
+1f14d2552b85cc5f2523d2f52d88f43a|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|21|7|V|json
+	      "images/*": ["../public/asset/images/*"]
+25b0aae5bd8fcbd2644c7c807106c213|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|19|1|V|json
+	      "utils": ["src/utils"],
+	      "utils/*": ["src/utils/*"]
+47ace752eecca393b126fd7d13ddbbd0|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|19|1|V|json
+	      "tools": ["src/tools"],
+	      "tools/*": ["src/tools/*"]
+0662a73e1733968abaea58a21d0e7d99|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/home-screen/components/Introduction.tsx|6|23|v|typescriptreact
+	localization
+4a931512ce65bdc9ca6808adf92d8783|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|22|20|v|json
+	tools
+662f707d5491e9bce8238a6c0be92190|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/home-screen/components/Introduction.tsx|62|31|v|typescriptreact
+	hidden
+46cf0e59759c9b7f1112ca4b174343ef|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/home-screen/components/Introduction.tsx|61|31|v|typescriptreact
+	visible
+2a22688921ea5bef85edcf5dd6720f2b|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/home-screen/components/Introduction.tsx|56|15|v|typescriptreact
+	<Button.Content visible>
+5ec31a187e3ce55a92e43b87b315a536|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/home-screen/components/Introduction.tsx|56|32|v|typescriptreact
+	</Button.Content>
+b027bd8bc4abde78999840c0eff1b49a|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/home-screen/components/Introduction.tsx|57|1|v|typescriptreact
+	              <Button.Content hidden>
+	                <StyledText>{tran("explore")}</StyledText>
+	                <Icon name="arrow right" />
+	              </Button.Content>
+	 
+c5697f7b2dd0d000d66ee0eaf89e5bff|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/components/ResponsiveNav/index.tsx|205|11|V|typescriptreact
+	          // {(!isTop || path !== "/" || isToggled) && <Background />}
+b4c449d9f026ccd0b2f97aa2b8b4b0e6|file:///Users/dinhmai/workplace/project/uit/eng-web/project/.gitignore|26|1|V|conf
+	/semantic/**/*
+dc5f680a13f20a3b7c0a58beed36dfef|file:///Users/dinhmai/workplace/project/uit/eng-web/project/.gitignore|25|1|V|conf
+	/semantic
+28643d76496863dc53e2f9fa16bde5c9|file:///Users/dinhmai/workplace/project/uit/eng-web/project/package.json|58|6|v|json
+	build-semantic
+57f08a98681392266af39d886b737102|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/App.tsx|4|1|V|typescriptreact
+	import "bootstrap/dist/css/bootstrap.min.css"
+57bcbf1d2df6010d41816c012905835d|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/App.tsx|27|9|v|typescriptreact
+	containers
+b6a9e597162c2a9b5cc154022df8c5a6|file:///Users/dinhmai/workplace/project/uit/eng-web/project/paths.json|10|7|V|json
+	      "containers": 
+2528edc569f67c584dc31634661496ae|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|34|1|V|typescriptreact
+	        <Wrapper>
+433f8b325c9ffb683e1269b8bf987b72|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|34|11|V|typescriptreact
+	          <Overview />
+4b5181b4e23cd02abb307149c41c4a3c|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|34|11|V|typescriptreact
+	          <Levels />
+c68613912c999913b851f8eff7c85590|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|34|11|V|typescriptreact
+	          <Preparation />
+c3bf6c6003655adcc8b07e1bc1bca440|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|34|11|V|typescriptreact
+	          <ReasonStudy />
+18c5a0fe9933a70a7f565bd7eb845a30|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|34|9|V|typescriptreact
+	        </Wrapper>
+17a9aed2467636aea4aca460a3830606|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|33|13|V|typescriptreact
+	      <Container>
+	      </Container>
+cb7a478a30617387dd71960e6d21df4f|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|22|36|v|typescriptreact
+	extends React.Component<
+	  IGeneralCourseProps,
+	  IGeneralCourseState
+	> {
+	  constructor(props: IGeneralCourseProps) {
+	    super(props)
+	
+	    this.state = {}
+	  }
+	  render() {
+	    return (
+	      <div>
+	
+	    )
+	  }
+	}
+e9dd8f9d2a4993c6ff6f6a7f43aaea15|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|22|16|v|typescriptreact
+	class 
+7382f9c0ac37e9ab7826ab8f39b7dd9d|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/general-course-screen/GeneralCourse.tsx|22|1|v|typescriptreact
+	default 

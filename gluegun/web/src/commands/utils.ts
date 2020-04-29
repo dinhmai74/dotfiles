@@ -1,6 +1,7 @@
 import { GluegunToolbox } from 'gluegun'
 
 export const description = 'Generates utils'
+export const alias = 'u'
 export const run = async function(toolbox: GluegunToolbox) {
   // grab some features
   const {
@@ -26,18 +27,18 @@ export const run = async function(toolbox: GluegunToolbox) {
   const props = { name, pascalName }
   await generate({
     template: `utils.tsx.ejs`,
-    target: `app/utils/${name}/${name}.tsx`,
+    target: `src/utils/${name}/${name}.tsx`,
     props: props
   })
 
   await generate({
     template: `ultis.index.ts.ejs`,
-    target: `app/utils/${name}/index.ts`,
+    target: `src/utils/${name}/index.ts`,
     props: props
   })
 
   // patch the barrel export file
-  const barrelExportPath = `${process.cwd()}/app/utils/index.ts`
+  const barrelExportPath = `${process.cwd()}/src/utils/index.ts`
   const exportToAdd = `export * from "./${name}/${name}"\n`
 
   if (!filesystem.exists(barrelExportPath)) {

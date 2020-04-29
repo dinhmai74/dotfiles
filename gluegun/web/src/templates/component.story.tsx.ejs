@@ -1,16 +1,15 @@
-import * as React from "react"
-import { storiesOf } from "@storybook/react-native"
-import { StoryScreen, Story, UseCase } from "../../../storybook/views"
-import { <%= props.pascalName %> } from "./<%= props.name %>"
+import React from "react"
+import { <%= props.pascalName %> } from "components"
+import cx from "classnames"
 
-declare var module
 
-storiesOf("<%= props.pascalName %>", module)
-  .addDecorator(fn => <StoryScreen>{fn()}</StoryScreen>)
-  .add("Style Presets", () => (
-    <Story>
-      <UseCase text="Primary" usage="The primary.">
-        <<%= props.pascalName %> text="<%= props.pascalName %>" />
-      </UseCase>
-    </Story>
-  ))
+export default {
+  title: "<%= props.pascalName %>",
+  component: <%= props.pascalName %>,
+}
+
+export const Normal = () => (
+  <div className="p-8">
+    <<%= props.pascalName %> />
+  </div>
+)

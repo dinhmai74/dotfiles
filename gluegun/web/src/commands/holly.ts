@@ -3,7 +3,7 @@ import { GluegunCommand } from 'gluegun'
 
 
 const command: GluegunCommand = {
-  name: 'web',
+  name: 'holly',
   run: async toolbox => {
     const { print } = toolbox
 
