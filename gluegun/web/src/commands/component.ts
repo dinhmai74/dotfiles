@@ -62,10 +62,10 @@ export const run = async function(toolbox: GluegunToolbox) {
   const props = { name, pascalName, camelCaseName }
 
   const jobs = [
-    {
-      template: 'component.story.tsx.ejs',
-      target: `src/stories/${name}.stories.js`
-    }
+    // {
+    // template: 'component.story.tsx.ejs',
+    // target: `src/stories/${name}.stories.js`
+    // }
   ]
 
   if (

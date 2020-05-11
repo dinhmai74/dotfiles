@@ -2,7 +2,7 @@
   "dependencies": {
     "coc-actions": ">=1.4.0",
     "coc-eslint": ">=1.2.6",
-    "coc-explorer": ">=0.5.0",
+    "coc-explorer": ">=0.6.2",
     "coc-highlight": ">=1.2.5",
     "coc-json": ">=1.2.5",
     "coc-marketplace": ">=1.7.0",
@@ -11,6 +11,7 @@
     "coc-prettier": ">=1.1.11",
     "coc-project": ">=0.0.9",
     "coc-python": ">=1.2.12",
+    "coc-scssmodules": ">=0.2.0",
     "coc-snippets": ">=2.1.26",
     "coc-styled-components": ">=0.3.0",
     "coc-tailwindcss": ">=0.6.0",

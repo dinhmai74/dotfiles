@@ -41,19 +41,20 @@ module.exports = {
     // get permutations of the given model name
     const pascalName = pascalCase(screenName)
     const camelName = camelCase(screenName)
+    const screenFolder = 'containers'
 
     const props = { name: screenName, pascalName, camelName }
 
     await generate({
       template: `screen.tsx.ejs`,
-      target: `src/screens/${screenName}/${screenName}.tsx`,
+      target: `src/${screenFolder}/${screenName}/${pascalName}.tsx`,
       props: props
     })
 
     // make the templates
     // patch the barrel export file
-    const barrelExportPath = `${process.cwd()}/src/screens/index.ts`
-    const exportToAdd = `export * from "./${screenName}/${screenName}"\n`
+    const barrelExportPath = `${process.cwd()}/src/${screenFolder}/index.ts`
+    const exportToAdd = `export * from "./${screenName}/${pascalName}"\n`
 
     if (!filesystem.exists(barrelExportPath)) {
       const msg =

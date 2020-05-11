@@ -11,6 +11,7 @@
     "python",
     "cs",
     "csharp",
+    "scss"
   ],
 	"diagnostic.errorSign": "✖",
   "diagnostic.warningSign": "⚠",

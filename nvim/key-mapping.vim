@@ -160,3 +160,5 @@ nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 " inoremap {<CR> {<CR>}<ESC>O
 " inoremap {;<CR> {<CR>};<ESC>O
 
+" make J, K, L, and H move the cursor MORE.
+

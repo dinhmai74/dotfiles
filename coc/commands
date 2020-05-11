@@ -1,8 +1,8 @@
 explorer
-eslint.executeAutofix
-tsserver.organizeImports
-snippets.editSnippets
 editor.action.organizeImport
+tsserver.organizeImports
+eslint.executeAutofix
+snippets.editSnippets
 terminal.Toggle
 tslint.fixAllProblems
 tsserver.goToProjectConfig

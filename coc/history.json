@@ -15,6 +15,9 @@
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollyPocketWeb": [
       " t"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Feng-web": [
+      " "
     ]
   },
   "symbols": {
@@ -127,6 +130,12 @@
     },
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
       "nin"
+    ],
+    "%2FUsers%2Fdinhmai%2FDocuments%2Feng": [
+      " e"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Feng-web": [
+      "word e"
     ]
   },
   "marketplace": {
@@ -151,7 +160,8 @@
     "%2FUsers%2Fdinhmai%2F": {
       "config": [
         "coc-yank",
-        "omni"
+        "omni",
+        "css"
       ]
     },
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
@@ -165,7 +175,11 @@
       "taiw",
       "taiwind",
       "em",
-      "emm"
+      "emm",
+      "cs"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Feng-web": [
+      "json"
     ]
   },
   "outline": {

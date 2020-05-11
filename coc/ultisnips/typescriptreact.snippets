@@ -227,9 +227,9 @@ snippet rdf "render formik form"
 render$1 = ({} : FormikProps<FormValues>) => {}
 endsnippet
 
-snippet styled "styled component" 
-const Styled$1= styled($2)`$3`
-endsnippet
+# snippet styled "styled component" 
+# const Styled$1= styled($2)`$3`
+# endsnippet
 
 snippet exp "export * from" 
 export * from './$1'
@@ -384,11 +384,11 @@ className={cx("$1")}
 endsnippet
 
 snippet class "className with cx" 
-className={cx("$1")}
+className={("$1")}
 endsnippet
 
 snippet className  "className with cx" 
-className={cx("$1")}
+className={("$1")}
 endsnippet
 
 snippet fca "function arrow without any param" 
@@ -404,3 +404,21 @@ snippet ()=> "function arrow without any param"
 endsnippet
 
 
+
+snippet Styled "Styled component with tailwind" 
+const Styled$1= styled.main.attrs({
+	className: "",
+})``
+endsnippet
+
+snippet lorem "loremedium" 
+"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,"
+endsnippet
+
+snippet loremshort "short" 
+"Lorem Ipsum is simply dummy text of the printing"
+endsnippet
+
+snippet loremlong "lorem long" 
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+endsnippet
