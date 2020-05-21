@@ -1,10 +1,11 @@
 {
   "dependencies": {
     "coc-actions": ">=1.4.0",
+    "coc-deno": ">=0.7.0",
     "coc-eslint": ">=1.2.6",
-    "coc-explorer": ">=0.6.2",
+    "coc-explorer": ">=0.7.4",
     "coc-highlight": ">=1.2.5",
-    "coc-json": ">=1.2.5",
+    "coc-json": ">=1.2.6",
     "coc-marketplace": ">=1.7.0",
     "coc-omnisharp": ">=0.0.26",
     "coc-pairs": ">=1.2.21",

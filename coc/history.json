@@ -42,6 +42,12 @@
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollyPocketWeb": [
       "logout",
       "signOut"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
+      "homeScreen",
+      "console.log",
+      "tlog",
+      "balooda"
     ]
   },
   "commands": {
@@ -108,6 +114,12 @@
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Feng-web": [
       "eslint"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Ffun%2Fnode-playground%2Fbowie-backend": [
+      "esli"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
+      "eslint"
     ]
   },
   "extensions": {
@@ -129,13 +141,21 @@
       ]
     },
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
-      "nin"
+      "nin",
+      "deno ",
+      "deno"
     ],
     "%2FUsers%2Fdinhmai%2FDocuments%2Feng": [
       " e"
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Feng-web": [
       "word e"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie-backend": [
+      "deno "
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Ffun%2Fdeno-playground": [
+      "deno e"
     ]
   },
   "marketplace": {
@@ -180,6 +200,9 @@
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Feng-web": [
       "json"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie-backend": [
+      "deno"
     ]
   },
   "outline": {

@@ -55,6 +55,9 @@ Plug 'elzr/vim-json' " display indents (for yam) :IndentLineToggle
 " Initialize plugin system
 Plug 'mattn/emmet-vim'
 
+"graphql
+Plug 'jparise/vim-graphql'
+
 call plug#end()
 
 inoremap jk <ESC>
@@ -265,6 +268,7 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
+cnoreabbrev qa1 qa! 
 cabbrev t tabnew
 nnoremap ; :
 vnoremap ; :
@@ -390,4 +394,7 @@ autocmd InsertEnter *.json setlocal concealcursor=
 autocmd InsertLeave *.json setlocal concealcursor=inc
 
 autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
+
+" for jsx comment
+let g:NERDCustomDelimiters = { 'javascript.js': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }, 'typescript.jsx': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }}
 

@@ -33,3 +33,108 @@ endsnippet
 snippet process "Description" 
 process.env.PUBLIC_URL
 endsnippet
+
+snippet imp "import " 
+import { $2 } from '$1'
+endsnippet
+
+snippet impd "import default" 
+import * as $2 from '$1'
+endsnippet
+
+
+#------------------------------------------------------------------------------#
+#                                    graphql                                   #
+#------------------------------------------------------------------------------#
+snippet entity "Create entity" 
+import { Field, ObjectType } from 'type-graphql'
+import { BaseEntity, Column, Entity, ObjectID, ObjectIdColumn } from 'typeorm'
+
+@ObjectType()
+@Entity()
+export class $1 extends BaseEntity {
+	@ObjectIdColumn()
+	id: ObjectID
+
+	@Field()
+	@Column('text', { unique: true })
+	email: string
+}
+endsnippet
+
+snippet resolver "create resolvers"
+import { Query, Resolver, UseMiddleware } from 'type-graphql'
+import { isAuth } from '../middleware/isAuth'
+
+@Resolver()
+export class $1 {
+	@Query(() => String)
+	@UseMiddleware(isAuth)
+	book() {
+		return 'The Republic'
+	}
+}
+endsnippet
+
+snippet input "Input" 
+import { InputType, Field } from 'type-graphql'
+
+@InputType()
+export class $1{
+	@Field()
+	name: string
+}
+endsnippet
+
+snippet manager "dob mongoManager" 
+const manager = getMongoManager() 
+endsnippet
+
+snippet gmu "graphql mutation" 
+@Mutation(() => $1)
+async createPhoto(
+	@Arg('input') { }: $2,
+): Promise<$1> {
+	const manager = DI.em.getRepository() 
+
+	return { }
+}
+endsnippet
+
+
+snippet mutation "graphql mutation" 
+@Mutation(() => $1)
+async createPhoto(
+	@Arg('input') { }: $2,
+): Promise<$1> {
+	const manager = DI.em.getRepository() 
+
+	return { }
+}
+endsnippet
+
+snippet query "graphql query" 
+@Query(() => $1)
+async createPhoto(
+	@Arg('input') { }: $2,
+): Promise<$1> {
+	const manager = DI.em.getRepository() 
+
+	return { }
+}
+endsnippet
+
+
+
+snippet field "create field" 
+@Field()
+@Property()
+$1
+endsnippet
+
+snippet tfield "create field without column" 
+@Field()
+$1
+endsnippet
+
+

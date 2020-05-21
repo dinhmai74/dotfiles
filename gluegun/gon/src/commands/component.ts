@@ -27,82 +27,99 @@ export const run = async function(toolbox: GluegunToolbox) {
   }
 
   let componentType
-  if (!parameters.options["function-component"] && !parameters.options["stateless-function"]) {
+  if (
+    !parameters.options['function-component'] &&
+    !parameters.options['stateless-function']
+  ) {
     const componentTypes = [
       {
-        name: "functionComponent",
-        message: "React.FunctionComponent, aka \"hooks component\"",
+        name: 'functionComponent',
+        message: 'React.FunctionComponent, aka "hooks component"'
       },
       {
-        name: "statelessFunction",
-        message: "Stateless function, aka the \"classic\" ignite-bowser component",
+        name: 'statelessFunction',
+        message: 'Stateless function, aka the "classic" ignite-bowser component'
       },
       {
-        name: "classComponent",
-        message: "Classic class component"
+        name: 'classComponent',
+        message: 'Classic class component'
       }
     ]
 
     const { component } = await prompt.ask([
       {
-        name: "component",
-        message: "Which type of component do you want to generate?",
-        type: "select",
-        choices: componentTypes,
-      },
+        name: 'component',
+        message: 'Which type of component do you want to generate?',
+        type: 'select',
+        choices: componentTypes
+      }
     ])
     componentType = component
   }
 
- 
+  const { storybook } = await prompt.ask([
+    {
+      name: 'storybook',
+      message: 'Do you want add storybook file?',
+      type: 'select',
+      choices: [
+        { name: 'yes', message: 'Sure' },
+        { name: 'no', message: 'Nope, leave it empty' }
+      ]
+    }
+  ])
 
   const name = parameters.first
   const pascalName = pascalCase(name)
   const camelCaseName = camelCase(name)
-  const props = { name, pascalName,camelCaseName}
+  const props = { name, pascalName, camelCaseName }
 
   const jobs = [
-    // {
-    //   template: 'component.story.tsx.ejs',
-    //   target: `app/components/${name}/${name}.story.tsx`
-    // },
     {
       template: 'styles.ts.ejs',
       target: `app/components/${name}/${name}.styles.ts`
-    },
+    }
   ]
 
-
-  if (componentType === "functionComponent" || parameters.options["function-component"]) {
-    jobs.push(
-      {
-        template: 'function-component.tsx.ejs',
-        target: `app/components/${name}/${name}.tsx`
-      }
-    )
-  } else if (componentType === "statelessFunction" || parameters.options["stateless-function"]) {
-    jobs.push(
-      {
-        template: 'component.tsx.ejs',
-        target: `app/components/${name}/${name}.tsx`
-      }
-    )
-  } else {
+  if (storybook === 'yes') {
     jobs.push({
-      template: 'class-component.tsx.ejs',
-      target: `app/components/${name}/${name}.tsx` 
+      template: 'component.story.tsx.ejs',
+      target: `app/components/${name}/${name}.story.tsx`
     })
   }
 
-  for(let i =0 ; i < jobs.length; i++){
-    let e= jobs[i]
+  if (
+    componentType === 'functionComponent' ||
+    parameters.options['function-component']
+  ) {
+    jobs.push({
+      template: 'function-component.tsx.ejs',
+      target: `app/components/${name}/${name}.tsx`
+    })
+  } else if (
+    componentType === 'statelessFunction' ||
+    parameters.options['stateless-function']
+  ) {
+    jobs.push({
+      template: 'component.tsx.ejs',
+      target: `app/components/${name}/${name}.tsx`
+    })
+  } else {
+    jobs.push({
+      template: 'class-component.tsx.ejs',
+      target: `app/components/${name}/${name}.tsx`
+    })
+  }
+
+  for (let i = 0; i < jobs.length; i++) {
+    let e = jobs[i]
     await generate({
       template: e.template,
       target: e.target,
       props: props
-    }) 
+    })
 
-    print.info("Created file " + e.target)
+    print.info('Created file ' + e.target)
   }
 
   // patch the barrel export file
@@ -118,9 +135,10 @@ export const run = async function(toolbox: GluegunToolbox) {
   }
   await patching.append(barrelExportPath, exportToAdd)
 
-  // wire up example
-  // await patching.prepend(
-  //   './storybook/storybook-registry.ts',
-  //   `require("../app/components/${name}/${name}.story")\n`
-  // )
+  if (storybook === 'yes') {
+    await patching.prepend(
+      './storybook/storybook-registry.ts',
+      `require("../app/components/${name}/${name}.story")\n`
+    )
+  }
 }
