@@ -138,3 +138,15 @@ $1
 endsnippet
 
 
+snippet cl "console" 
+console.log("$1", $1);
+endsnippet
+
+snippet @ctx "ctx" 
+@Ctx() ctx: MyContext,
+endsnippet
+
+snippet throwErrorTrycatch "throw apollo error" 
+const mess = e!.message || JSON.stringify(e)
+throw new ApolloError(mess)
+endsnippet

@@ -1,5 +1,5 @@
 {
-  "lastUpdate": 1590015658403,
+  "lastUpdate": 1591741200230,
   "extension": {
     "coc-tabnine": {
       "disabled": true
@@ -9,6 +9,9 @@
     },
     "coc-deno": {
       "disabled": true
+    },
+    "coc-yank": {
+      "disabled": false
     }
   }
 }

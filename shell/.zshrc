@@ -115,7 +115,6 @@ bindkey -s '^o' 'lfcd\n'
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
-
 # Setting rg as the default source for fzf
 export FZF_DEFAULT_COMMAND='rg --files'
 
@@ -245,6 +244,15 @@ zsh_wifi_signal(){
         fi
 }
 
+twf-widget() {
+  local selected=$(twf --height=0.5)
+  BUFFER="$BUFFER$selected"
+  zle reset-prompt
+  zle end-of-line
+  return $ret
+}
+zle -N twf-widget
+bindkey '^T' twf-widget
 
 #------------------------------------------------------------------------------#
 #                                     alias                                    #
@@ -334,9 +342,13 @@ PATH=$PATH:$(ruby -e 'puts Gem.bindir')
 PATH=$PATH:~/.npm-global/bin
 PATH=~/development/flutter/bin:$PATH
 PATH="$PATH:/Users/dinhmai/.dotnet/tools"
+PATH="/Users/dinhmai/.deno/bin:$PATH"
+export GOPATH="$HOME/go"
+PATH="$PATH:$HOME/bin:$GOPATH/bin"
 export PATH
 export NPM_CONFIG_PREFIX=~/.npm-global
 export TOOLCHAINS=swift
+. <(denon --completion)
 
 
 #------------------------------------------------------------------------------#
@@ -346,4 +358,3 @@ export TOOLCHAINS=swift
 source $(dirname $(gem which colorls))/tab_complete.sh
 eval $(thefuck --alias)
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
-

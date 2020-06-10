@@ -18,6 +18,9 @@
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Feng-web": [
       " "
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fhackkerrank": [
+      " ="
     ]
   },
   "symbols": {
@@ -47,7 +50,8 @@
       "homeScreen",
       "console.log",
       "tlog",
-      "balooda"
+      "balooda",
+      "param"
     ]
   },
   "commands": {
@@ -119,7 +123,13 @@
       "esli"
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
+      "deno",
+      "toggle",
+      "esli",
       "eslint"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Ffun%2Fdeno-playground": [
+      "d"
     ]
   },
   "extensions": {
@@ -137,7 +147,8 @@
     ],
     "%2FUsers%2Fdinhmai%2F": {
       "config": [
-        " e"
+        " e",
+        "ya"
       ]
     },
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
@@ -155,7 +166,17 @@
       "deno "
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Ffun%2Fdeno-playground": [
-      "deno e"
+      "deno e",
+      "deno"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollypocket": [
+      "csh"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fhackkerrank": [
+      "deno"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Ffun%2FReanimatedPlayground": [
+      "deno"
     ]
   },
   "marketplace": {
@@ -185,7 +206,8 @@
       ]
     },
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
-      "syntax"
+      "syntax",
+      "styled"
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollyPocketWeb": [
       "tail",
@@ -213,6 +235,11 @@
     },
     "%2FUsers%2Fdinhmai%2FWorkplace%2FProject%2Ffun%2Fhackrank%2Fchallenges": [
       "non"
+    ]
+  },
+  "explorerActions": {
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
+      "open"
     ]
   }
 }

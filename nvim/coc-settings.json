@@ -17,5 +17,8 @@
   "diagnostic.warningSign": "⚠",
   "diagnostic.infoSign": "",
   "tailwindCSS.emmetCompletions": true,
-  "typescript.showUnused": false
+  "typescript.showUnused": false,
+  "yank.enableCompletion": false,
+  "coc.preferences.formatOnType": true,
+  "tsserver.log": "verbose"
 }

@@ -1,11 +1,13 @@
+prettier.formatFile
 editor.action.organizeImport
+tsserver.openTsServerLog
+yank.clean
 eslint.executeAutofix
 explorer
+terminal.Toggle
 tsserver.restart
-prettier.formatFile
 tsserver.organizeImports
 snippets.editSnippets
-terminal.Toggle
 tslint.fixAllProblems
 tsserver.goToProjectConfig
 workspace.renameCurrentFile

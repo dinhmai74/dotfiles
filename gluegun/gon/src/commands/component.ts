@@ -29,16 +29,12 @@ export const run = async function(toolbox: GluegunToolbox) {
   let componentType
   if (
     !parameters.options['function-component'] &&
-    !parameters.options['stateless-function']
+    !parameters.options['class-component']
   ) {
     const componentTypes = [
       {
         name: 'functionComponent',
         message: 'React.FunctionComponent, aka "hooks component"'
-      },
-      {
-        name: 'statelessFunction',
-        message: 'Stateless function, aka the "classic" ignite-bowser component'
       },
       {
         name: 'classComponent',
@@ -57,7 +53,7 @@ export const run = async function(toolbox: GluegunToolbox) {
     componentType = component
   }
 
-  const { storybook } = await prompt.ask([
+  const { storybook, style } = await prompt.ask([
     {
       name: 'storybook',
       message: 'Do you want add storybook file?',
@@ -66,20 +62,33 @@ export const run = async function(toolbox: GluegunToolbox) {
         { name: 'yes', message: 'Sure' },
         { name: 'no', message: 'Nope, leave it empty' }
       ]
+    },
+    {
+      name: 'haveStyle',
+      message: 'Do you want add style file?',
+      type: 'select',
+      choices: [
+        { name: 'yes', message: 'Sure' },
+        { name: 'no', message: 'Nope, leave it empty' }
+      ]
     }
   ])
+
+  let haveStyle = style === 'yes' ? true : false
 
   const name = parameters.first
   const pascalName = pascalCase(name)
   const camelCaseName = camelCase(name)
-  const props = { name, pascalName, camelCaseName }
+  const props = { name, pascalName, camelCaseName, haveStyle }
 
-  const jobs = [
-    {
+  const jobs = []
+
+  if (haveStyle) {
+    jobs.push({
       template: 'styles.ts.ejs',
       target: `app/components/${name}/${name}.styles.ts`
-    }
-  ]
+    })
+  }
 
   if (storybook === 'yes') {
     jobs.push({

@@ -1,11 +1,11 @@
 import { GluegunToolbox } from 'gluegun'
 
-enum Patterns {
-  NAV_IMPORTS_SCREENS = '} from "../screens',
-  NAV_IMPORTS_NAVIGATORS = 'import[\\s\\S]*from\\s+"react-navigation";?',
-  ROOT_NAV_ROUTES = 'export const PrimaryNavigator.+[\\s\\S]\\s+{',
-  NAV_ROUTES = 'export const [a-zA-Z0-9]+ = create[a-zA-Z]+[(][{]'
-}
+// enum Patterns {
+// NAV_IMPORTS_SCREENS = '} from "../screens',
+// NAV_IMPORTS_NAVIGATORS = 'import[\\s\\S]*from\\s+"react-navigation";?',
+// ROOT_NAV_ROUTES = 'export const PrimaryNavigator.+[\\s\\S]\\s+{',
+// NAV_ROUTES = 'export const [a-zA-Z0-9]+ = create[a-zA-Z]+[(][{]'
+// }
 
 module.exports = {
   name: 'screen',
@@ -21,7 +21,7 @@ module.exports = {
       patching
     } = toolbox
 
-    const { pascalCase, isBlank, camelCase } = strings
+    const { pascalCase, isBlank, camelCase, kebabCase } = strings
 
     // validation
     if (isBlank(parameters.first)) {
@@ -31,7 +31,9 @@ module.exports = {
     }
 
     const name = parameters.first
-    const screenName = name.endsWith('-screen') ? name : `${name}-screen`
+    const screenName = name.endsWith('-screen')
+      ? kebabCase(name)
+      : `${kebabCase(name)}-screen`
     // prettier-ignore
     if (name.endsWith('-screen')) {
     print.info(`Note: For future reference, the \`-screen\` suffix is automatically added for you.`)
@@ -46,14 +48,18 @@ module.exports = {
 
     await generate({
       template: `screen.tsx.ejs`,
-      target: `app/screens/${screenName}/${screenName}.tsx`,
+      target: `app/screens/${screenName}/${pascalName}.tsx`,
       props: props
     })
+
+    print.info(
+      'Created file at ' + `app/screens/${screenName}/${pascalName}.tsx`
+    )
 
     // make the templates
     // patch the barrel export file
     const barrelExportPath = `${process.cwd()}/app/screens/index.ts`
-    const exportToAdd = `export * from "./${screenName}/${screenName}"\n`
+    const exportToAdd = `export * from "./${screenName}/${pascalName}"\n`
 
     if (!filesystem.exists(barrelExportPath)) {
       const msg =
@@ -62,44 +68,45 @@ module.exports = {
       print.warning(msg)
       process.exit(1)
     }
+
     await patching.append(barrelExportPath, exportToAdd)
-    // if using `react-navigation` go the extra step
-    // and insert the screen into the nav router
-    let rootNavigator = parameters.second
-      ? parameters.second
-      : 'primary-navigator'
-    rootNavigator = rootNavigator.endsWith('-navigator')
-      ? rootNavigator
-      : `${rootNavigator}-navigator`
+    // // if using `react-navigation` go the extra step
+    // // and insert the screen into the nav router
+    // let rootNavigator = parameters.second
+    // ? parameters.second
+    // : 'primary-navigator'
+    // rootNavigator = rootNavigator.endsWith('-navigator')
+    // ? rootNavigator
+    // : `${rootNavigator}-navigator`
 
-    const appNavFilePath = `${process.cwd()}/app/navigation/${rootNavigator}.ts`
-    const importToAdd = `  ${pascalName},\n`
-    const routeToAdd = `\n    ${camelName}: { screen: ${pascalName} },`
+    // const appNavFilePath = `${process.cwd()}/app/navigation/${rootNavigator}.ts`
+    // const importToAdd = `  ${pascalName},\n`
+    // const routeToAdd = `\n    ${camelName}: { screen: ${pascalName} },`
 
-    if (!filesystem.exists(appNavFilePath)) {
-      const msg =
-        `No '${appNavFilePath}' file found.  Can't insert screen.` +
-        `Add your new screen manually to your navigation.`
-      print.error(msg)
-      process.exit(1)
-    }
+    // if (!filesystem.exists(appNavFilePath)) {
+    // const msg =
+    // `No '${appNavFilePath}' file found.  Can't insert screen.` +
+    // `Add your new screen manually to your navigation.`
+    // print.error(msg)
+    // process.exit(1)
+    // }
 
-    // insert screen import
-    await patching.patch(appNavFilePath, {
-      before: new RegExp(Patterns.NAV_IMPORTS_SCREENS),
-      insert: importToAdd
-    })
+    // // insert screen import
+    // await patching.patch(appNavFilePath, {
+    // before: new RegExp(Patterns.NAV_IMPORTS_SCREENS),
+    // insert: importToAdd
+    // })
 
-    const ROOT_NAV_ROUTES = `export const ${pascalCase(
-      rootNavigator
-    )}.+[\\s\\S]\\s+{`
-    print.info('root nav ' + ROOT_NAV_ROUTES)
-    // insert screen route
-    await patching.patch(appNavFilePath, {
-      after: new RegExp(ROOT_NAV_ROUTES),
-      insert: routeToAdd
-    })
+    // const ROOT_NAV_ROUTES = `export const ${pascalCase(
+    // rootNavigator
+    // )}.+[\\s\\S]\\s+{`
+    // print.info('root nav ' + ROOT_NAV_ROUTES)
+    // // insert screen route
+    // await patching.patch(appNavFilePath, {
+    // after: new RegExp(ROOT_NAV_ROUTES),
+    // insert: routeToAdd
+    // })
 
-    print.info(`imported nav to ${rootNavigator}`)
+    // print.info(`imported nav to ${rootNavigator}`)
   }
 }

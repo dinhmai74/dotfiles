@@ -84,7 +84,7 @@ nnoremap <F5> :w<CR>:exec '!dotnet run' shellescape(@%, 1)<cr>
 noremap zz :w<CR>
 noremap zx :wq<CR>
 noremap XXX :q!<CR>
-nnoremap <space>t :!open -a /Applications/iTerm.app .<cr>
+nnoremap <leader>t :!open -a /Applications/iTerm.app .<cr>
 
 
 " //****************************************************************************//
@@ -125,22 +125,22 @@ nmap <leader>z :JsDoc<CR>
 let g:user_emmet_expandabbr_key='<C-z>'
 
 " easymotion
-" map <Leader> <Plug>(easymotion-prefix)
-" nmap s <Plug>(easymotion-overwin-f2)
-" " Move to line
-" map <Leader>L <Plug>(easymotion-bd-jk)
-" nmap <Leader>L <Plug>(easymotion-overwin-line)
-" " Move to word
-" map  <Leader>w <Plug>(easymotion-bd-w)
-" nmap <Leader>w <Plug>(easymotion-overwin-w)
-" map  N <Plug>(easymotion-prev)
-" map  / <Plug>(easymotion-sn)
-" omap / <Plug>(easymotion-tn)
-" map  n <Plug>(easymotion-next)
+map <Leader> <Plug>(easymotion-prefix)
+nmap s <Plug>(easymotion-overwin-f2)
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+map  N <Plug>(easymotion-prev)
+map  <Leader>/ <Plug>(easymotion-sn)
+omap <Leader>/ <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
 " transprent bg
 "hi Normal guibg=NONE ctermbg=NONE
 
-nmap <space>e :CocCommand explorer<CR>
+nmap <space>z :CocCommand explorer<CR>
 
 " frame command
 nmap <space>f :CommentFrameHashDash ""<Left>
@@ -162,3 +162,26 @@ nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 
 " make J, K, L, and H move the cursor MORE.
 
+function! TwfExit(path)                                                                                                                                       
+  function! TwfExitClosure(job_id, data, event) closure                                                                                                       
+    bd!                                                                                                                                                       
+    try                                                                                                                                                       
+      let out = filereadable(a:path) ? readfile(a:path) : []                                                                                                  
+    finally                                                                                                                                                   
+      silent! call delete(a:path)                                                                                                                             
+    endtry                                                                                                                                                    
+    if !empty(out)                                                                                                                                            
+      execute 'edit! ' . out[0]                                                                                                                               
+    endif                                                                                                                                                     
+  endfunction                                                                                                                                                 
+  return funcref('TwfExitClosure')                                                                                                                            
+endfunction                                                                                                                                                   
+                                                                                                                                                              
+function! Twf()                                                                                                                                               
+  let temp = tempname()                                                                                                                                       
+  call termopen('twf ' . @% . ' > ' . temp, { 'on_exit': TwfExit(temp) })                                                                                     
+  startinsert                                                                                                                                                 
+endfunction                                                                                                                                                   
+                                                                                                                                                              
+nnoremap <silent> <Space>e :call Twf()<CR>
+map <space>t <Plug>(coc-terminal-toggle)

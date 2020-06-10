@@ -41,6 +41,7 @@ packages=(
   "z"
   "lf"
   "thefuck"
+  "go"
 )
 
 for i in "${packages[@]}"

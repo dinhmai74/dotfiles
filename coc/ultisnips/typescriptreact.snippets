@@ -23,17 +23,17 @@
 #		endsnippet
 #
 # Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
-snippet cmstp "const map state to props"
-const mapStateToProps=state=>state;
-endsnippet
+# snippet cmstp "const map state to props"
+# const mapStateToProps=state=>state;
+# endsnippet
 
-snippet mstp "map state to props"
-const mapStateToProps=(state)=>{
-	return {
-		$1: $2
-	}
-}
-endsnippet
+# snippet mstp "map state to props"
+# const mapStateToProps=(state)=>{
+	# return {
+		# $1: $2
+	# }
+# }
+# endsnippet
 
 snippet imp "import default file"
 import ${2: $1 } from '${1}'
@@ -62,17 +62,14 @@ snippet ims "import styled-components"
 import styled from 'styled-components'
 endsnippet
 
-snippet dop " destructoring props"
-const { $1 } = props;
-endsnippet
-
-
-snippet dos " destructoring states"
-const { $1 } = state;
-endsnippet
-
-snippet dob " destructoring states"
+snippet dob " destructoring object"
 const { $2 } = $1 ;
+endsnippet
+snippet dop " destructoring props"
+const { $2 } = props;
+endsnippet
+snippet dop " destructoring state"
+const { $2 } = state ;
 endsnippet
 
 snippet exd "export * from"
@@ -81,7 +78,7 @@ endsnippet
 
 snippet dp "default props"
 ${1:`!v expand('%:t:r')`}.defaultProps={
-	$1
+	$2
 }
 endsnippet
 
@@ -116,52 +113,49 @@ export class ${1:`!v expand('%:t:r')`} extends Component <I$1,I$1State>{
 export default $1;
 endsnippet
 
-snippet int "interface"
-export interface $1 {
-	$1
-}
-endsnippet
+# snippet int "interface"
+# export interface $1 {
+	# $1
+# }
+# endsnippet
 
-snippet story "story book default story"
-import * as React from "react"
-import { storiesOf } from "@storybook/react-native"
-import { StoryScreen, Story, UseCase } from "../../../../../storybook/views"
-import TradingItem from "./TradingItem"
+# snippet story "story book default story"
+# import * as React from "react"
+# import { storiesOf } from "@storybook/react-native"
+# import { StoryScreen, Story, UseCase } from "../../../../../storybook/views"
+# import TradingItem from "./TradingItem"
 
-declare var module
+# declare var module
 
-storiesOf("Trading history card", module)
-  .addDecorator((fn) => <StoryScreen>{fn()}</StoryScreen>)
-  .add("normal item", () => (
-    <Story>
-      <UseCase text="default" usage="default">
-        <TradingItem />
-      </UseCase>
-    </Story>
-  ))
+# storiesOf("Trading history card", module)
+  # .addDecorator((fn) => <StoryScreen>{fn()}</StoryScreen>)
+  # .add("normal item", () => (
+    # <Story>
+      # <UseCase text="default" usage="default">
+        # <TradingItem />
+      # </UseCase>
+    # </Story>
+  # ))
 
-endsnippet
+# endsnippet
 
 
 snippet rnf "create react native stateless"
 import React, { useState } from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View } from 'components'
+import styled from 'styled-components'
 
 interface  ${1:`!v expand('%:t:r')`}Props{
 	
 }
 
-export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = ({})=>{
+export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = (props)=>{
 		return (
 			<${3:View}>
 				<Text>123 </Text>
 			</$3>
 		);
 }
-
-const styles= StyleSheet.create({
-	container:{}
-})
 
 endsnippet
 
@@ -192,20 +186,9 @@ const $1: React.FC<$1Props> = () => {
 
 endsnippet
 
-snippet cstyles " const style"
-import { StyleSheet } from 'react-native'
-
-const styles= StyleSheet.create({
-	container:{}
-})
-
-endsnippet
-
-
 snippet dp " destructoring props"
 const { $1 } = props;
 endsnippet
-
 
 snippet ds " destructoring states"
 const { $1 } = state;
@@ -219,40 +202,22 @@ snippet cmt "cmt"
 /* ------------- $1 ------------- */
 endsnippet
 
-snippet clc "tronlog"
-console.tron.log(" $1 ", $1)
-endsnippet
-
-snippet rdf "render formik form" 
-render$1 = ({} : FormikProps<FormValues>) => {}
-endsnippet
+# snippet rdf "render formik form" 
+# render$1 = ({} : FormikProps<FormValues>) => {}
+# endsnippet
 
 # snippet styled "styled component" 
 # const Styled$1= styled($2)`$3`
 # endsnippet
 
-snippet exp "export * from" 
-export * from './$1'
-endsnippet
-
-snippet exp "export * from" 
-export * from "./$1"
-endsnippet
-
-snippet styles "styles" 
-const styles= StyleSheet.create({
-	$1
-})
-endsnippet
 
 snippet lodash "lodash" 
-import "_" from "lodash"
+import _ from "lodash"
 endsnippet
 
 snippet func "func const" 
 const $1 = ( $2 ) => { $3 }
 endsnippet
-
 
 snippet useMemoOne "useMemoOne" 
 const {} = useMemoOne(() => ({
@@ -263,27 +228,27 @@ endsnippet
 snippet eslint "Description" b
 // eslint-disable-next-line
 endsnippet
-snippet uss "useState" w
-const [$1, set$2] = React.useState(${3:''})${0:;}
+snippet uss "useState" 
+const [$1, set${2:$1}] = React.useState(${3:''})
 endsnippet
 
-snippet use "useEffect" w
+snippet use "useEffect" 
 React.useEffect(() => {
   $1
-})${0:;}
+},[])
 endsnippet
 
-snippet user "useEffect with return" w
+snippet user "useEffect with return" 
 React.useEffect(() => {
   $1
 	return () => {
     $2
 	};
-})${0:;}
+},[])
 endsnippet
 
 snippet usc "useContext" w
-const $1 = React.useContext($2)${0:;}
+const $1 = React.useContext($2)
 endsnippet
 
 snippet uscb "useCallback" w
@@ -298,11 +263,11 @@ endsnippet
 snippet usm "useMemo" w
 const $1 = React.useMemo(() => {
 	$2
-}, [$3])${0:;}
+}, [$3])
 endsnippet
 
 snippet usrf "useRef" w
-const $1 = React.useRef($2)${0:;}
+const $1 = React.useRef($2)
 endsnippet
 
 
@@ -404,7 +369,6 @@ snippet ()=> "function arrow without any param"
 endsnippet
 
 
-
 snippet Styled "Styled component with tailwind" 
 const Styled$1= styled.main.attrs({
 	className: "",
@@ -422,3 +386,96 @@ endsnippet
 snippet loremlong "lorem long" 
 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 endsnippet
+
+snippet styled "const styled component" 
+const $1 = styled($2)(p=>({
+	$3
+}))
+endsnippet
+
+snippet cstyled "const styled component" 
+const $1 = styled($2)(p=>({
+	$3
+}))
+endsnippet
+
+snippet csty "const styled component" 
+const $1 = styled($2)(p=>({
+	$3
+}))
+endsnippet
+
+snippet sd "const styled component" 
+const $1 = styled(${2:View})({
+	$3
+})
+endsnippet
+
+snippet sdview "Styled view component" 
+const $1 = styled(View)({
+	
+})
+endsnippet
+
+snippet sdtext "Styled Text component" 
+const $1 = styled(Text)({
+
+})
+endsnippet
+
+snippet sdprops "styled props" 
+${( p )=> \`
+	$1
+\`}
+endsnippet
+
+snippet jcmt "jsxcommet" 
+{/**----------- $1 ----------------*/}
+endsnippet
+
+
+snippet ira "import reanimated" 
+import Animated, {
+	// @ts-ignore
+	useAnimatedGestureHandler,
+	// @ts-ignore
+	useAnimatedStyle,
+	// @ts-ignore
+	useSharedValue,
+	// @ts-ignore
+	withSpring,
+} from "react-native-reanimated"
+endsnippet
+
+snippet gestureHandler "get gestureHandler"
+const gestureHandler = useAnimatedGestureHandler({
+		onStart: (_, ctx) => {
+			ctx.startX = x.value
+		},
+		onActive: (event, ctx) => {
+			x.value = ctx.startX + event.translationX
+		},
+		onEnd: _ => {
+			x.value = withSpring(0)
+		},
+	}
+endsnippet
+
+snippet useAnimatedStyle "useAnimatedStyle" 
+const $1 = useAnimatedStyle(()=>{
+	return {
+		$2
+	}
+})
+endsnippet
+
+snippet transform "transform style" 
+transform: [{ $1 }, ],
+endsnippet
+
+
+snippet sizedbox "SizedBox" 
+<SizedBox h={${1:4}} />
+endsnippet
+
+

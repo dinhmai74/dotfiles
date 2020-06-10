@@ -16,7 +16,7 @@ export const run = async function(toolbox: GluegunToolbox) {
     filesystem,
     patching
   } = toolbox
-  const { pascalCase, isBlank, camelCase } = strings
+  const { pascalCase, isBlank, camelCase, kebabCase } = strings
 
   // validation
   if (isBlank(parameters.first)) {
@@ -27,6 +27,7 @@ export const run = async function(toolbox: GluegunToolbox) {
 
   const name = parameters.first
   const pascalName = pascalCase(name)
+  const kebabName = kebabCase(name)
   const camelCaseName = camelCase(name)
   const props = { name, pascalName, camelCaseName }
 
@@ -39,21 +40,19 @@ export const run = async function(toolbox: GluegunToolbox) {
     },
     {
       template: 'graphql-input.ts.ejs',
-      target: `./src/graphql-types/${pascalName}Input.ts`,
-      exportToAdd: `export * from "./${pascalName}Input"\n`,
+      target: `./src/graphql-types/${kebabName}/${pascalName}Input.ts`,
+      exportToAdd: `export * from "./${kebabName}/${pascalName}Input"\n`,
       barrel: './src/graphql-types/index.ts'
     },
     {
       template: 'graphql-response.ts.ejs',
-      target: `./src/graphql-types/${pascalName}Response.ts`,
-      exportToAdd: `export * from "./${pascalName}Response"\n`,
+      target: `./src/graphql-types/${kebabName}/${pascalName}Response.ts`,
+      exportToAdd: `export * from "./${kebabName}/${pascalName}Response"\n`,
       barrel: './src/graphql-types/index.ts'
     },
     {
       template: 'graphql-resolver.ts.ejs',
-      target: `./src/resolvers/${pascalName}Resolver.ts`,
-      exportToAdd: `export * from "./${pascalName}Resolver"\n`,
-      barrel: './src/resolvers/index.ts'
+      target: `./src/resolvers/${kebabName}/${pascalName}.resolver.ts`
     }
   ]
 
@@ -71,9 +70,7 @@ export const run = async function(toolbox: GluegunToolbox) {
         `No '${barrel}' file found. Can't export component.` +
         `Export your new component manually.`
       print.warning(msg)
-      process.exit(1)
-    }
-    await patching.append(barrel, exportToAdd)
+    } else await patching.append(barrel, exportToAdd)
 
     print.info('Created file ' + e.target)
   }

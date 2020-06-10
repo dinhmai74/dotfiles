@@ -11,12 +11,16 @@ Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
-Plug 'christoomey/vim-tmux-navigator'
+" Plug 'christoomey/vim-tmux-navigator'
 
 " themeing
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
+Plug 'srcery-colors/srcery-vim'
+Plug 'joshdick/onedark.vim'
+Plug 'rakr/vim-one'
+Plug 'KeitaNakamura/neodark.vim'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'chemzqm/vim-jsx-improve'
@@ -30,7 +34,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 " util
 Plug 'terryma/vim-multiple-cursors'
-Plug 'tmhedberg/SimpylFold' "fold code
+" Plug 'tmhedberg/SimpylFold' "fold code
 Plug 'alvan/vim-closetag' "auto close tags
 Plug 'christoomey/vim-system-copy'
 Plug 'christoomey/vim-sort-motion'
@@ -86,17 +90,6 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " j/k will move virtual lines (lines that wrap)
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-
-set relativenumber
-
-set smarttab
-set cindent
-set tabstop=2
-set shiftwidth=2
-" always uses spaces instead of tab characters
-set expandtab
-
-colorscheme gruvbox
 
 " coc config
 let g:coc_global_extensions = [
@@ -213,13 +206,16 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
+" set statusline+=\ %*
+" set stl+=%{expand('%:~:.')}
+" set statusline+=\ %*
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Using CocList
 " Show all diagnostics
 nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions
-nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+" nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
 " Show commands
 nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document
@@ -243,6 +239,18 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set nu
+set relativenumber
+
+set smarttab
+set cindent
+set tabstop=2
+set shiftwidth=2
+" always uses spaces instead of tab characters
+set expandtab
+
+
+
 
 autocmd BufEnter * silent! :lcd%:p:h
 au FileType * set fo-=c fo-=r fo-=o "disable auto comment new line
@@ -269,9 +277,13 @@ cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
 cnoreabbrev qa1 qa! 
+cnoreabbrev ag Ag 
+cnoreabbrev rg Rg 
 cabbrev t tabnew
 nnoremap ; :
 vnoremap ; :
+tnoremap <space>t <C-\><C-n> 
+
 "*****************************************************************************
 "" Commands
 "*****************************************************************************
@@ -303,10 +315,10 @@ augroup vimrc-remember-cursor-position
 augroup END
 
 "" txt
-augroup vimrc-wrapping
-  autocmd!
-  autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
-augroup END
+" augroup vimrc-wrapping
+  " autocmd!
+  " autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
+" augroup END
 
 "" make/cmake
 "augroup vimrc-make-cmake
@@ -321,6 +333,39 @@ set autoread
 source ~/.config/nvim/key-mapping.vim
 
 
+" #------------------------------------------------------------------------------#
+" #                                 Custom theme                                 #
+" #------------------------------------------------------------------------------#
+ " colorscheme gruvbox
+syntax on
+let g:onedark_hide_endofbuffer=1
+let g:onedark_terminal_italics=1
+let g:onedark_termcolors=256
+let g:one_allow_italics = 1 " I love italic for comments
+let g:neodark#use_256color = 1 " default: 0
+let g:neodark#terminal_transparent = 1 " default: 0
+let g:neodark#solid_vertsplit = 1 " default: 0
+
+
+"Credit joshdick
+"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+"If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
+"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+if (empty($TMUX))
+  if (has("nvim"))
+  "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+  "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+  " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+colorscheme one
+hi Normal guibg=NONE ctermbg=NONE
+
 " #  ----vimariline----#
 let g:airline_theme="onedark"
 try
@@ -334,7 +379,7 @@ let g:airline_section_z = airline#section#create(['linenr'])
 let g:airline_skip_empty_sections = 1
 
 " Smartly uniquify buffers names with similar filename, suppressing common parts of paths.
-let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " Custom setup that removes filetype/whitespace from default vim airline bar
 let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
@@ -376,14 +421,15 @@ let g:indentLine_char = '┊'
 "" fzf.vim
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
-let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
+" let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
+let $FZF_DEFAULT_COMMAND="rg --files"
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:NERDSpaceDelims = 1
 let g:vim_jsx_pretty_colorful_config = 1 
 au FileType * set fo-=c fo-=r fo-=o
 " session management
-let g:session_directory = "~/.config/nvim/session"
+let g:session_directory = "~/nvim/session"
 let g:session_autoload = "no"
 let g:session_autosave = "no"
 let g:session_command_aliases = 1
@@ -397,4 +443,19 @@ autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
 
 " for jsx comment
 let g:NERDCustomDelimiters = { 'javascript.js': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }, 'typescript.jsx': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }}
+"Start the completion menu with CTRL-N/CTRL-P, then run this map.
+inoremap <expr> <F1> fzf#vim#complete({'source': map(complete_info().items, "v:val.word")})
+
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.php,*.jsx, *.tsx"
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ }
+let g:closetag_shortcut = '>'
+" coc auto enter format work awseome when enter use for coc-pairs
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+				\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" make coctsserver response better
+set updatetime=300
+
 
