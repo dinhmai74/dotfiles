@@ -54,6 +54,7 @@ Plug 'xolox/vim-session'
 
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'mike-hearn/vim-combosearch'
 
 Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
 Plug 'elzr/vim-json' " display indents (for yam) :IndentLineToggle
@@ -461,3 +462,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 set updatetime=100
 
 
+map z/ <Plug>(incsearch-fuzzy-/)
+map z? <Plug>(incsearch-fuzzy-?)
+map zg/ <Plug>(incsearch-fuzzy-stay)
+" let g:combosearch_trigger_key = "<c-p>"
