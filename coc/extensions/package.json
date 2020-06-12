@@ -13,7 +13,7 @@
     "coc-project": ">=0.0.9",
     "coc-python": ">=1.2.12",
     "coc-scssmodules": ">=0.2.0",
-    "coc-snippets": ">=2.1.27",
+    "coc-snippets": ">=2.1.28",
     "coc-styled-components": ">=0.3.0",
     "coc-tailwindcss": ">=0.6.0",
     "coc-terminal": ">=0.3.1",

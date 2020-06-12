@@ -1,255 +1,307 @@
-5d86e732f9383b873321e421ce6deae6|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|115|1|v|typescriptreact
+9f0be42518645326a1088020c251ea8a|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|1|28|v|typescript
+	AppCircleButton
+e18ca1dc874d4fee6846a3dd706a1351|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|1|28|v|typescript
+	app_circle_button
+f193978bbde8a95e19ce68a40e6838d3|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|1|28|v|typescript
+	appCircleButton
+7dc63474f2924b0a4a4f654184b7c0a9|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|2|28|v|typescript
+	AppFooter
+9be1fa7d4fae2c041623363da9d8cc51|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|3|28|v|typescript
+	AppKittenIcon
+d8844ad40aafb15a1c6d711b2ad945f3|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|4|28|v|typescript
+	AppSnackbar
+0bb3cc952e990998c0f0c8cbfc8622a5|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|7|28|v|typescript
+	AppLoading
+1cb251ec0d568de6a929b520c4aed8d1|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|10|39|v|typescript
+	text
+d4b4fa1f8a5de6512c77c077372d668c|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|10|39|v|typescript
+	text-field
+9fced129522f128b2445a41fb0b6ef9f|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|11|37|v|typescript
+	checkbox
+fee203b36e6653c5cbe12bd1f3c6b119|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|10|39|v|typescript
+	textfield
+ec70c2003c3b91a4d84a9760059e48a7|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|10|39|v|typescript
+	TEXT_FIELD
+09b939a0af76a8ed0a661b6b1956faf9|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|10|39|v|typescript
+	textField
+3fcdb73d36d54f2cc22d0f68e6b6e182|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/storybook/storybook-registry.ts|8|37|v|typescript
+	form
+7d8f3a53b397357606b8c139711b973d|file:///Users/dinhmai/workplace/project/dotnet/Hollypocket/HollypocketBackend/Controllers/AccountsController.cs|60|1|v|cs
+	            if (HttpContext.User.Identity is ClaimsIdentity identity)
+	            {
+	                userId = identity.FindFirst(ClaimTypes.Name).Value;
+	            }
 	
 	
-	  return (
-	    <HomeWrapper onRefresh={() => fetchEvent()}>
-	     
-07cdb22cf46dab4077b0627407794f63|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|112|1|v|typescriptreact
-	        <AppError messages={['homeScreen.errors.loadLocation']} />
-	      </HomeWrapper>
-	 
-4534214af2c31f7d0d0fbe4e0af2272e|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|112|1|v|typescriptreact
-	        <AppError messages={['homeScreen.errors.loadLocation']} />
-	      </HomeWrapper>
-	    )
-	
-	
-	
-53044316ba92232b28d58318f6d3cf78|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|112|1|v|typescriptreact
-	        <AppError messages={['homeScreen.errors.loadLocation']} />
-	      </HomeWrapper>
-	    )
-	
-	
-5efee26ba06711f9395b3c3bc7a9d94a|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|108|5|V|typescriptreact
-	    {}
-91b1bded48169a9c73bb63442268efdc|file:///Users/dinhmai/.config/nvim/init.vim|43|1|V|vim
-	Plug 'tpope/vim-unimpaired'
-f2c32afbd1afcba3b3c07862fe715ff6|file:///Users/dinhmai/.SpaceVim/plugged/coc.nvim/doc/coc.txt|1179|37|v|help
-	` "coc.preferences.formatOnType": true`
-	
-6f5ecc16326242bb7f0a1930cf751a9b|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|108|5|V|typescriptreact
-	    {
-ea5a1cbe764918679997181a3ea281d3|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|108|5|V|typescriptreact
-	    }
-0433d25a8175361fb8d6b0d48339efef|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|108|1|V|typescriptreact
-	const {  } = state;
-51a7a32abd3491d1246c1d78a3471374|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|108|5|V|typescriptreact
-	    ::h indentexpr
-024cbb0de3cab74a6ba02d9212c41e9d|file:///Users/dinhmai/.config/nvim/coc-settings.json|3|1|v|jsonc
-	  "coc.preferences.formatOnSaveFiletypes": [
-	    "javascript",
-	    "typescript",
-	    "typescriptreact",
-	    "json",
-	    "javascriptreact",
-	    "typescript.tsx",
-	    "graphql",
-	    "python",
-	    "cs",
-	    "csharp",
-	    "scss"
-	  ],
-463de74948025b2f7a2971ab474583e5|file:///Users/dinhmai/.SpaceVim/plugged/coc.nvim/doc/coc.txt|1176|1|v|help
-		inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-					\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-	<
-	
-e0d3a0a03b179b0ddcd9ebef4017e707|file:///Users/dinhmai/.config/nvim/init.vim|431|1|V|vim
-	:h indentexpr
-741d2dd6dc2c0867f2296255b67cf172|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|108|5|V|typescriptreact
-	    {
-	    }
-8f4cfced625cf53889b12e51661cb13e|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|108|3|V|typescriptreact
-	  {
-	
-	  }
-356efcfd11ac256bf4e4cb469be814d2|file:///Users/dinhmai/.config/nvim/init.vim|20|1|V|vim
-	Plug 'drewtempelmeyer/palenight.vim'
-4bcacbffcee5ab822e9a828975222eff|file:///Users/dinhmai/.config/nvim/init.vim|14|1|V|vim
-	Plug 'christoomey/vim-tmux-navigator'
-cc61158a70ea58f996bc5fc3b9b5f804|file:///Users/dinhmai/.config/nvim/init.vim|433|1|V|vim
-	set timeoutlen=1000
-	
-	set ttimeoutlen=0
-	maptimeout 0
-	
-	
-d1a1facc4adb6a70eb4ff2c8ef46002d|file:///Users/dinhmai/.config/nvim/init.vim|432|1|V|vim
-	
-	set timeoutlen=1000
-	
-	set ttimeoutlen=0
-	maptimeout 0
-	
-	
-e0ef3b65842af3e5874ead032405739d|file:///Users/dinhmai/.config/nvim/coc-settings.json|19|1|V|jsonc
-	  "tailwindCSS.emmetCompletions": true,
-7df957ea9caf56e0caae1d4b0c92d26e|file:///Users/dinhmai/.config/nvim/coc-settings.json|23|3|v|jsonc
-	"coc.preferences.formatOnTypeFiletypes": [
-	    "javascript",
-	    "typescript",
-	    "typescriptreact",
-	    "json",
-	    "javascriptreact",
-	    "typescript.tsx",
-	    "graphql",
-	    "python",
-	    "cs",
-	    "csharp",
-	    "scss"
-	  ]
-	
-38456fd0e77218564ff1f4451da27f06|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|41|3|V|typescriptreact
-	  const {  } =  ;
-a9b2473ea4c2da9784ca45be3d77011e|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|41|3|V|typescriptreact
-	  forModalPresentationIOS
-58d41880cde6924b73ddf3343d126fd8|file:///Users/dinhmai/.config/nvim/init.vim|257|1|V|vim
-	set termguicolors
-2dfb2db6f0f51a8c48e23a3ea20322cc|file:///Users/dinhmai/.config/nvim/init.vim|253|1|v|vim
-	" colorscheme gruvbox
-	syntax on
-	let g:onedark_hide_endofbuffer=1
-	let g:onedark_terminal_italics=1
-	let g:onedark_termcolors=256
-	
-	set termguicolors
-	colorscheme onedark
-	" colorscheme srcery
-	" colorscheme palenight
-	" colorscheme onehalfdark
-	" let g:airline_theme='onehalfdark'
-	
-	let g:airline_theme="onedark"
-	" let g:airline_theme = "palenight"
-	
-f990a0630e79250434950d70e369e577|file:///Users/dinhmai/.config/nvim/init.vim|353|1|V|vim
-	let g:onedark_termcolors=256
-544b7d0eb95a0b7c4783472cd1fa13ce|file:///Users/dinhmai/.config/nvim/init.vim|346|1|V|vim
-	" colorscheme srcery
-	" colorscheme palenight
-	" colorscheme onehalfdark
-	" let g:airline_theme='onehalfdark'
-9c79338ac4d2830bfee498220301e384|file:///Users/dinhmai/.config/nvim/init.vim|22|1|V|vim
-	Plug 'joshdick/onedark.vim'
-41227458fea5de49a4d613e46e493ed0|file:///Users/dinhmai/.config/nvim/init.vim|23|7|v|vim
-	joshdick/onedark.vim
-a82fd95db10ff25dfad39f07372ebe37|file:///Users/dinhmai/.config/nvim/init.vim|346|13|v|vim
-	dark
-71bdf5313a75ee6234f38253784d38a7|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|33|1|v|typescriptreact
-	Colors
-	
-5d50889672f6f860d14f502de3de1957|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|33|1|V|typescriptreact
-	Colors
-71cd9bf74d001c5efd80b7e3b971b182|file:///Users/dinhmai/.config/nvim/init.vim|21|1|V|vim
-	Plug 'sonph/onehalf' , {'rtp': 'vim/'}
-bfde5cba93235385dbf8388f31b3bdb9|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|18|11|V|typescriptreact
-	          afd
-2d0eb972212267ae660b3ba42cd03aa2|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/home-screen/home-screen.tsx|14|3|V|typescriptreact
-	  adfl
-e114d67f6c17a814152bd397a44f69d5|file:///Users/dinhmai/.config/nvim/init.vim|368|22|v|vim
-	onedark
-69167133cbab9fd8e204057818ad90c3|file:///Users/dinhmai/.config/nvim/init.vim|368|22|v|vim
-	neodark
-69167133cbab9fd8e204057818ad90c3|file:///Users/dinhmai/.config/nvim/init.vim|368|22|v|vim
-	neodark
-79639b457bb6934dd464b285f527ecca|file:///Users/dinhmai/.config/nvim/init.vim|369|1|V|vim
-	" let g:airline_theme = "palenight"
-cc7cb04cc5b9e1edbb1704a474f9ba5c|file:///Users/dinhmai/.config/nvim/init.vim|371|1|V|vim
-	" let g:airline_theme="onedark"
-42508597030be3c5a3c3c5edac5e4a34|file:///Users/dinhmai/.config/nvim/init.vim|368|1|V|vim
-	let g:airline_theme="onedark"
-40fd0682f2ab407e29ae966e22a0cf97|file:///Users/dinhmai/.config/nvim/init.vim|366|1|V|vim
-	colorscheme onedark
-2b522a28e8c562c12e4193eaa4dbd73e|file:///Users/dinhmai/.config/nvim/init.vim|348|1|V|vim
-	hi Normal guibg=NONE ctermbg=NONE
-c5c1cf925fdc46d5c8ce0ccdd6048b14|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|26|54|v|typescript
-	Event 
-a4ecfc70574394990cf17bd83df499f7|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|25|16|v|typescript
-	Event
-6ad8d707da171e5db10530ccda404afb|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|29|11|v|typescript
-	getEventById
-4119639092e62c55ea8be348e4d9260d|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|33|12|v|typescript
-	event
-0cf31b2c283ce3431794586df7b0996d|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|30|21|v|typescript
-	    
-2b18895370b6bc848fac25899f819408|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|31|5|V|typescript
-	    rs.membersInfo= event!.membersInfo.
-16bf74f76e4aa8fbdb97afc111c56ac9|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|31|44|v|typescript
-	callbackfn
-cd0c6092d6a6874f379fe4827ed1db8b|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|31|58|v|typescript
-	PUBLIC
-10e51314a7eed86b1b229ccdf383502e|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|29|5|v|typescript
-	const 
-277f82bf62a7cd47b4b5613d9bfa619f|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|33|3|V|typescript
-	  rs.
-856373ea098cd33a284bb577dc590912|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|76|4|v|typescript
-	   event.startTime = startTime
-	      event.endTime = endTime
-	      event.place = place
-	      event.information = information
-	      event.membersInfo = []
-	      event.tags = tags
-	      event.hostId = user!.id
-	      event.galleries = []
-	
-	    
-e62a155c5cb0c9d1925cf8497c63643e|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|33|19|v|typescript
-	 = startTime
-254822299718dfbb13c015ccc7ab9573|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|34|20|v|typescript
-	 = endTime
-8480aa7d8cbafa29dd1ea1bae8fa0036|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|35|19|v|typescript
-	= place
-f78bdbebef9ffebda1d8b708a85f12b8|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|36|24|v|typescript
-	 = information
-5a53d5a0c90734254d08773388b44444|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|37|24|v|typescript
-	 = []
-0ececd07201f97a2259fe2d534d475d6|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|38|17|v|typescript
-	 = tags
-d654c3f10c639480b8430c01c0714e9b|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|39|20|v|typescript
-	= user!.id
-d89a3148d022243047c55047d33ee7f9|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|37|4|V|typescript
-	      event.membersInfo
-f3af7c0336d64f331cbf9f0b433e4c80|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|40|5|V|typescript
-	    rs.
-0ea58c9f8ff73d41a4da4aaffe278179|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|32|5|V|typescript
-	    else rs.membersInfo = []
-2063c1608d6e0baf80249c42e2be5804|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|47|44|v|typescript
+c96120416294d66bd666edc767eba629|file:///Users/dinhmai/.config/gluegun/gon/src/commands/component.ts|20|42|v|typescript
+	snakeCase 
+dd1e75c078008a55f43d6bad66f88023|file:///Users/dinhmai/.config/gluegun/gon/src/commands/component.ts|20|43|v|typescript
+	dash 
+2063c1608d6e0baf80249c42e2be5804|file:///Users/dinhmai/.config/gluegun/gon/src/commands/component.ts|20|53|v|typescript
 	value
-e0c87cfb9a82cc3940da9a604a79a505|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|31|5|V|typescript
-	    rs.id=event!.id
-8121f9d7c298d5b9c053d5b186702720|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|27|5|V|typescript
-	    try {
-5e3a2f078969b6eb9e1f437ee479b0c9|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|46|17|V|typescript
-	    } catch (e) {
-	      console.log('e', e)
-	      throw new ApolloError(JSON.stringify(e))
+025ef69168114f1bbd8c21344d4f770f|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/sign-in-screen/SignInScreen.tsx|35|5|V|typescriptreact
+	    <Transition.Out type="scale" />
+0cb47aeb6e5f9323f0969e628c4e59f5|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/sign-in-screen/SignInScreen.tsx|35|27|v|typescriptreact
+	scale
+c837cab29b0b52e5aa3db9d8e3efe5ad|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/sign-in-screen/SignInScreen.tsx|234|1|v|typescriptreact
+	              onPress={() => {
+	                refForm.current.animateNextTransition()
+	                setIsSignIn(p => !p)
+	              }}
+	 
+25d8c30fe77ee8f3d5bc62b99e046c6f|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/sign-in-screen/SignInScreen.tsx|229|1|V|typescriptreact
+	              style={styles.btnForgot}
+32442fe19dbf2db0ae1a7d2df8d29afb|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/sign-in-screen/SignInScreen.tsx|232|13|V|typescriptreact
+	            <TouchableOpacity
+3ddd2d2a631ea4b021f9a97b81d47d95|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/sign-in-screen/SignInScreen.tsx|232|12|V|typescriptreact
+	           >
+5e0447078b634d16fd89a4a6000241b7|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/screens/sign-in-screen/SignInScreen.tsx|240|13|V|typescriptreact
+	            </TouchableOpacity>
+4144c01065b8df11d6901249d27a832c|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/components/auth-header/AuthHeader.tsx|44|9|V|typescriptreact
+	        // fill={color['color-basic-600']}
+378c7fe3df893cdd8e9f3c9742bb2ad4|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/components/auth-header/AuthHeader.tsx|35|9|V|typescriptreact
+	          // fill={color['color-basic-600']}
+70dda5dfb8053dc6d1c492574bce9bfd|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/components/auth-header/AuthHeader.tsx|18|11|v|typescriptreact
+	color
+2d34aeb749563b108f4365ef3304f48f|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/components/auth-header/AuthHeader.tsx|32|10|v|typescriptreact
+	Icon 
+f5cf587013c6e307331a911fd1bc6466|file:///Users/dinhmai/workplace/project/uit/bowie/mobile/app/components/auth-header/AuthHeader.tsx|33|10|v|typescriptreact
+	AppKittenIcon 
+5d41402abc4b2a76b9719d911017c592|untitled:1|1|1|V|
+	hello
+8d624f149e63b9dc3cc5f2ff21e41290|untitled:1|2|1|V|
+	dfjla
+6603a51aeb76df6d715f11354a6437a8|untitled:1|2|1|V|
+	dfdd
+716b2eb1fe154639b313c3ed2a172544|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/api-config.ts|23|1|v|typescript
+	const request = async (method: Method, url: string, data: any) => {
+	  // const url = ROOT_URL + endpoint
+	
+	  const params: any = {
+	    url,
+	    method,
+	  }
+	
+	  if (method === "GET") {
+	    params.headers = {
+	      Accept: "application/json",
+	      "Content-Type": "application/json",
 	    }
-4f9916f92292d43ebf970354aefb1279|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|47|7|V|typescript
-	      console.log('e', e)
-c1c4427f612e2a84340f2adcbd78b2da|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|48|7|v|typescript
-	if(e.mess)
-7cd0a446a209d7146de84caeeff1e88e|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|48|29|v|typescript
-	JSON.stringify(e)
-f082a43aca4b7291771a0c946b9ec07f|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|29|25|v|typescript
-	new 
-2ad6a78efc9d1cfe33bf714c39aa7db8|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|29|25|v|typescript
-	ApolloError
-8ecbc33030eef98aebd40162d6626d40|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|47|1|V|typescript
-	      const mess = e!.message || JSON.stringify(e)
-	      throw new ApolloError(mess)
-cb5e100e5a9a3e7f6d1fd97512215282|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|142|14|v|typescript
-	error
-c8d9d01a33ebae113e25b4c5d20767a7|file:///Users/dinhmai/workplace/project/uit/bowie/backend/src/resolvers/event/EventResolver.ts|143|7|V|typescript
-	      throw new ApolloError(JSON.stringify(error))
-5ad2e54869603b8e83ecd53723707c0c|file:///Users/dinhmai/.config/coc/ultisnips/typescript.snippets|143|7|v|snippets
-	ppet
+	  } else if (method === "POST") {
+	    params.headers = {
+	      Accept: "application/json",
+	      "Content-Type": "application/json",
+	    }
 	
-	snippet @ctx "ctx" 
-	@Ctx() ctx: MyContext,
-	endsnippet
+	    params.body = JSON.stringify(data)
+	    console.log("body req", JSON.stringify(params.body))
+	  }
 	
-8dc3ec143f2a5ae16b1d2f86fe5e158f|file:///Users/dinhmai/.config/coc/ultisnips/typescript.snippets|149|9|v|snippets
-	Tab_trigger 
-b5a7adde1af5c87d7fd797b6245c2a39|file:///Users/dinhmai/.config/coc/ultisnips/typescript.snippets|149|21|v|snippets
-	Description
+	  // const idToken = localStorage.getItem(strings.token)
+	  // if (idToken) {
+	  // params.headers = { ...params.headers, authorization: "Bearer " + idToken }
+	  // }
+	
+	  return await fetch(params.url, params).then(handleResponse)
+	}
+	
+8bcf6629759bd278a5c6266bd9c054f8|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/api-config.ts|46|40|v|typescript
+	strings
+94a08da1fecbb6e8b46990538c7b50b2|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/api-config.ts|46|40|v|typescript
+	token
+2b3583e6e17721c54496bd04e57a0c15|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/api-config.ts|3|29|v|typescript
+	utils
+5b180a437f5d8b467f493e1d1850108d|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/api-config.ts|3|1|V|typescript
+	import { strings } from "../tools/strings"
+dc32b316ca1692cf7b2ed0799affde04|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/api-config.ts|53|3|V|typescript
+	  console.log("url", params.url)
+b0273cfadc2eb1ad29e2ac119ae67094|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/api-worker.ts|3|1|v|typescript
+	const getBooks = async () => {
+	  return await API.get("https://www.googleapis.com/books/v1/volumes?q='english'")
+	}
+6a8bd546d13978511a3d0e4084a65baa|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|1|10|v|typescript
+	useInfiniteQuery
+d02ba89a04afe7c9a2d33f8e74d61573|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|4|19|v|typescript
+	ProductResponse
+603abcbbd6237eb05f248e2615331dc0|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.d.ts|1|11|v|typescript
+	RootObject 
+2b1f94ef23b79bf90eb891cae1df7a90|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|4|19|v|typescript
+	Book
+136a6ec0cc83eb747f000740ef3836a0|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/utils/animations/useAnimations.tsx|63|5|V|typescriptreact
+	    unique: true,
+2b21663c4af66324af95a218f96da366|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/utils/animations/useAnimations.tsx|61|1|v|typescriptreact
+	export const useScaleGroup = (data: any[]): any => {
+	  const transitions = useTransition(data, (item: any) => data.indexOf(item), {
+	    trail: 400 / data.length,
+	    from: { opacity: 0, transform: "scale(0)" },
+	    enter: { opacity: 1, transform: "scale(1)" },
+	    leave: { opacity: 0, transform: "scale(0)" },
+	  })
+	
+	  return transitions
+	}
+9b896a9b2ce2ef98012c5c7458597bd9|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|4|1|V|typescript
+	const getBooks=
+6b7da01836f298f059e8bbb1d7061d5a|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|6|10|v|typescript
+	Posts 
+2d790c88d4d19fa42abc55f99d5c97c0|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|13|64|v|typescript
+	getProduct
+a4db941dfa1409c7bc611f02a4702731|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|8|6|v|typescript
+	https://jsonplaceholder.typicode.com/posts
+7306fabc3dcbca8377eb04917df5b71e|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/api-worker.ts|4|25|v|typescript
+	https://www.googleapis.com/books/v1/volumes?q='english'
+139a99e4b8797d2dee8e8bf52267becc|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.d.ts|1|1|V|typescript
+	interface GetBookResponse {
+	  kind: string
+	  totalItems: number
+	  items: Item[]
+	}
+	
+	interface Item {
+	  kind: string
+	  id: string
+	  etag: string
+	  selfLink: string
+	  volumeInfo: VolumeInfo
+	  saleInfo: SaleInfo
+	  accessInfo: AccessInfo
+	  searchInfo: SearchInfo
+	}
+	
+	interface SearchInfo {
+	  textSnippet: string
+	}
+	
+	interface AccessInfo {
+	  country: string
+	  viewability: string
+	  embeddable: boolean
+	  publicDomain: boolean
+	  textToSpeechPermission: string
+	  epub: Epub
+	  pdf: Pdf
+	  webReaderLink: string
+	  accessViewStatus: string
+	  quoteSharingAllowed: boolean
+	}
+	
+	interface Pdf {
+	  isAvailable: boolean
+	}
+	
+	interface Epub {
+	  isAvailable: boolean
+	  acsTokenLink?: string
+	}
+	
+	interface SaleInfo {
+	  country: string
+	  saleability: string
+	  isEbook: boolean
+	  listPrice?: ListPrice
+	  retailPrice?: ListPrice
+	  buyLink?: string
+	}
+	
+	interface ListPrice {
+	  amount: number
+	  currencyCode: string
+	}
+	
+	interface VolumeInfo {
+	  title: string
+	  authors: string[]
+	  publisher: string
+	  publishedDate?: string
+	  description: string
+	  industryIdentifiers?: IndustryIdentifier[]
+	  readingModes: ReadingModes
+	  pageCount?: number
+	  printType: string
+	  categories?: string[]
+	  maturityRating: string
+	  allowAnonLogging: boolean
+	  contentVersion: string
+	  panelizationSummary?: PanelizationSummary
+	  imageLinks: ImageLinks
+	  language: string
+	  previewLink: string
+	  infoLink: string
+	  canonicalVolumeLink: string
+	  subtitle?: string
+	  averageRating?: number
+	  ratingsCount?: number
+	}
+	
+	interface ImageLinks {
+	  smallThumbnail: string
+	  thumbnail: string
+	}
+	
+	interface PanelizationSummary {
+	  containsEpubBubbles: boolean
+	  containsImageBubbles: boolean
+	}
+	
+	interface ReadingModes {
+	  text: boolean
+	  image: boolean
+	}
+	
+	interface IndustryIdentifier {
+	  type: string
+	  identifier: string
+	}
+2d9725ff1adc36112191bd0b50accbdb|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|2|1|V|typescript
+	import { GetBookResponse } from "./book.d"
+24842401a0e7cb938c741c46d73e8512|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|9|19|v|typescript
+	GetBookResponse
+7cd2aa20a5e0a1c1eebe6c07fc5e7009|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|2|1|V|typescript
+	import  = require('')
+0268e9274b5711d2084c8016e52b9e26|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/BookGeneralScreen.tsx|4|1|V|typescriptreact
+	import { BookInfo } from "./components/BookItem.d"
+67c868a2648e180adfdd3913b92ac732|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/components/BookItem.tsx|3|14|v|typescriptreact
+	Info 
+ab8524a5b452642eda697f91414ff4a5|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/components/BookItem.tsx|3|24|v|typescriptreact
+	BookItem
+4059b0251f66a18cb56f544728796875|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/components/BookItem.tsx|6|13|v|typescriptreact
+	Info
+d32dfe4de07ad39b575fb079e0398a39|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/BookGeneralScreen.tsx|12|3|V|typescriptreact
+	  const { da}
+56b9858e0405293cf84f1aa7b0deef84|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|9|20|v|typescript
+	Product 
+b6654c3a3a38989f147f3f3c285d6d42|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|9|28|v|typescript
+	id: string
+828079e6c39448f36f563b0557700c94|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|10|44|v|typescript
+	["products", id],
+00a9088968f0c63b69ffaf0ff1bfcd2d|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|11|5|V|typescript
+	    return useQuery("posts", getPosts);
+7d8949bcbf85067fceda9f84a6affb6b|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/BookGeneralScreen.tsx|13|17|v|typescriptreact
+	books
+49ffe26fe01265e4b9a151d9ccf70f85|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/BookGeneralScreen.tsx|24|3|V|typescriptreact
+	  console.log("books", books)
+55b01f00ad4e19667d535442ce9eb19c|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|6|35|V|typescript
+	  const { data } = await axios.get("https://www.googleapis.com/books/v1/volumes?q='english'")
+	  console.log("data", data)
+	  return data
+e0160534c0a37f6bc4ef93de6982a096|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/BookGeneralScreen.tsx|32|1|v|typescriptreact
+	        <StackGrid columnWidth={600} duration={0}>
+	          {data?.items.map((v, i) => (
+	            <BookItem book={v} key={i} className="mx-8 mb-24" />
+	          ))}
+	        </StackGrid>
+	 
+6c79d136ecd6e98efa9082942d9c24b2|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/BookGeneralScreen.tsx|13|17|v|typescriptreact
+	loading 
+a14fa2166ed698f3d04061f57e5ab9b9|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/BookGeneralScreen.tsx|25|7|v|typescriptreact
+	loading
+872bbdb1c4307611414a24553df44db3|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/containers/book-general-screen/BookGeneralScreen.tsx|25|26|v|typescriptreact
+	<p>Loading...</p>
+37da2ed69013eb2ef81072c94aadd969|file:///Users/dinhmai/workplace/project/uit/eng-web/project/src/api/book.api.ts|6|26|v|typescript
+	axios.get("https://www.googleapis.com/books/v1/volumes?q='english'")
+b068931cc450442b63f5b3d276ea4297|file:///Users/dinhmai/.config/gluegun/gon/src/commands/component.ts|96|41|v|typescript
+	name
+0819eb30cc2cd18cf6b02042458c5da1|file:///Users/dinhmai/.config/gluegun/gon/src/commands/component.ts|96|47|v|typescript
+	Case
+3cb862c0df3bd0814e079a27fd0de406|file:///Users/dinhmai/.config/gluegun/gon/src/commands/component.ts|106|41|v|typescript
+	pascalCase

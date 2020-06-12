@@ -86,14 +86,14 @@ export const run = async function(toolbox: GluegunToolbox) {
   if (haveStyle) {
     jobs.push({
       template: 'styles.ts.ejs',
-      target: `app/components/${name}/${name}.styles.ts`
+      target: `app/components/${name}/${pascalName}.styles.ts`
     })
   }
 
   if (storybook === 'yes') {
     jobs.push({
       template: 'component.story.tsx.ejs',
-      target: `app/components/${name}/${name}.story.tsx`
+      target: `app/components/${name}/${pascalName}.story.tsx`
     })
   }
 
@@ -103,7 +103,7 @@ export const run = async function(toolbox: GluegunToolbox) {
   ) {
     jobs.push({
       template: 'function-component.tsx.ejs',
-      target: `app/components/${name}/${name}.tsx`
+      target: `app/components/${name}/${pascalName}.tsx`
     })
   } else if (
     componentType === 'statelessFunction' ||
@@ -111,12 +111,12 @@ export const run = async function(toolbox: GluegunToolbox) {
   ) {
     jobs.push({
       template: 'component.tsx.ejs',
-      target: `app/components/${name}/${name}.tsx`
+      target: `app/components/${name}/${pascalName}.tsx`
     })
   } else {
     jobs.push({
       template: 'class-component.tsx.ejs',
-      target: `app/components/${name}/${name}.tsx`
+      target: `app/components/${name}/${pascalName}.tsx`
     })
   }
 
@@ -133,7 +133,7 @@ export const run = async function(toolbox: GluegunToolbox) {
 
   // patch the barrel export file
   const barrelExportPath = `${process.cwd()}/app/components/index.ts`
-  const exportToAdd = `export * from "./${name}/${name}"\n`
+  const exportToAdd = `export * from "./${name}/${pascalName}"\n`
 
   if (!filesystem.exists(barrelExportPath)) {
     const msg =
@@ -147,7 +147,7 @@ export const run = async function(toolbox: GluegunToolbox) {
   if (storybook === 'yes') {
     await patching.prepend(
       './storybook/storybook-registry.ts',
-      `require("../app/components/${name}/${name}.story")\n`
+      `require("../app/components/${name}/${pascalName}.story")\n`
     )
   }
 }

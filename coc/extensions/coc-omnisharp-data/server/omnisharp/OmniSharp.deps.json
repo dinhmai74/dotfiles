@@ -26,7 +26,7 @@
         "dependencies": {
           "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
           "Microsoft.SourceLink.GitHub": "1.0.0",
-          "OmniSharp.Stdio": "1.35.2",
+          "OmniSharp.Stdio": "1.35.3",
           "Microsoft.CSharp.Reference": "4.0.0.0",
           "System.ComponentModel.Composition.Reference": "4.0.0.0",
           "System.ComponentModel.DataAnnotations": "4.0.0.0",
@@ -802,18 +802,18 @@
           "lib/net46/Cake.Scripting.Transport.dll": {}
         }
       },
-      "Dotnet.Script.DependencyModel/0.51.0": {
+      "Dotnet.Script.DependencyModel/0.53.0": {
         "dependencies": {
-          "Microsoft.DotNet.PlatformAbstractions": "3.1.0",
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.4",
           "NuGet.ProjectModel": "5.2.0"
         },
         "compile": {
           "lib/netstandard2.0/Dotnet.Script.DependencyModel.dll": {}
         }
       },
-      "Dotnet.Script.DependencyModel.NuGet/0.51.0": {
+      "Dotnet.Script.DependencyModel.NuGet/0.53.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-4.20311.4"
         },
         "compile": {
           "lib/netstandard2.0/Dotnet.Script.DependencyModel.NuGet.dll": {}
@@ -867,12 +867,12 @@
       },
       "Microsoft.Build.Tasks.Git/1.0.0": {},
       "Microsoft.CodeAnalysis.Analyzers/3.0.0": {},
-      "Microsoft.CodeAnalysis.AnalyzerUtilities/3.0.0": {
+      "Microsoft.CodeAnalysis.AnalyzerUtilities/3.3.0": {
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.Common/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.Common/3.7.0-4.20311.4": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "3.0.0",
           "System.Collections.Immutable": "1.5.0",
@@ -886,54 +886,54 @@
           "lib/netstandard2.0/Microsoft.CodeAnalysis.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.CSharp/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.CSharp/3.7.0-4.20311.4": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Features/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.CSharp.Features/3.7.0-4.20311.4": {
         "dependencies": {
           "Humanizer.Core": "2.2.0",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Features": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Features": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-4.20311.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Features.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Scripting/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.CSharp.Scripting/3.7.0-4.20311.4": {
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Scripting.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Scripting.Common": "3.7.0-4.20311.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Workspaces/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/3.7.0-4.20311.4": {
         "dependencies": {
           "Humanizer.Core": "2.2.0",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-4.20311.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.Features/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.Features/3.7.0-4.20311.4": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.AnalyzerUtilities": "3.0.0",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-2.20269.10",
+          "Microsoft.CodeAnalysis.AnalyzerUtilities": "3.3.0",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-4.20311.4",
           "Microsoft.DiaSymReader": "1.3.0",
           "System.Threading.Tasks.Extensions": "4.5.3"
         },
@@ -941,18 +941,18 @@
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Features.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.Scripting.Common/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.Scripting.Common/3.7.0-4.20311.4": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Scripting.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.Workspaces.Common/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.Workspaces.Common/3.7.0-4.20311.4": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
           "System.Composition": "1.0.31"
         },
         "compile": {
@@ -965,9 +965,9 @@
           "lib/net20/Microsoft.DiaSymReader.dll": {}
         }
       },
-      "Microsoft.DotNet.PlatformAbstractions/3.1.0": {
+      "Microsoft.DotNet.PlatformAbstractions/3.1.4": {
         "dependencies": {
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
         },
         "compile": {
           "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
@@ -1044,7 +1044,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
@@ -1065,8 +1065,8 @@
       },
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
-          "Microsoft.DotNet.PlatformAbstractions": "3.1.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.4",
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
@@ -1171,10 +1171,11 @@
           "Microsoft.SourceLink.Common": "1.0.0"
         }
       },
-      "Microsoft.TestPlatform.ObjectModel/15.7.2": {
+      "Microsoft.TestPlatform.ObjectModel/16.6.1": {
         "dependencies": {
+          "NuGet.Frameworks": "5.2.0",
           "System.Reflection.Metadata": "1.6.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
         },
         "compile": {
           "lib/net451/Microsoft.TestPlatform.CoreUtilities.dll": {},
@@ -1182,10 +1183,10 @@
           "lib/net451/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {}
         }
       },
-      "Microsoft.TestPlatform.TranslationLayer/15.7.2": {
+      "Microsoft.TestPlatform.TranslationLayer/16.6.1": {
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "15.7.2",
-          "Newtonsoft.Json": "11.0.2"
+          "Microsoft.TestPlatform.ObjectModel": "16.6.1",
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "lib/net451/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
@@ -1195,7 +1196,7 @@
           "lib/net451/Microsoft.VisualStudio.TestPlatform.Common.dll": {}
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "compile": {
           "lib/net45/Newtonsoft.Json.dll": {}
         }
@@ -1241,7 +1242,7 @@
       },
       "NuGet.Packaging/5.2.0": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "NuGet.Configuration": "5.2.0",
           "NuGet.Versioning": "5.2.0"
         },
@@ -1286,7 +1287,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Reactive": "4.1.2"
         },
         "compile": {
@@ -1408,7 +1409,7 @@
           "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {},
+      "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {},
       "System.Text.Encoding.CodePages/4.5.1": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.7.0"
@@ -1435,11 +1436,11 @@
           "ref/net47/System.ValueTuple.dll": {}
         }
       },
-      "OmniSharp.Abstractions/1.35.2": {
+      "OmniSharp.Abstractions/1.35.3": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "NuGet.Versioning": "5.2.0",
           "System.Collections.Immutable": "1.5.0",
           "System.Composition": "1.0.31",
@@ -1449,31 +1450,31 @@
           "OmniSharp.Abstractions.dll": {}
         }
       },
-      "OmniSharp.Cake/1.35.2": {
+      "OmniSharp.Cake/1.35.3": {
         "dependencies": {
           "Cake.Scripting.Transport": "0.3.0",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-2.20269.10",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn": "1.35.2",
-          "OmniSharp.Shared": "1.35.2"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-4.20311.4",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn": "1.35.3",
+          "OmniSharp.Shared": "1.35.3"
         },
         "compile": {
           "OmniSharp.Cake.dll": {}
         }
       },
-      "OmniSharp.DotNetTest/1.35.2": {
+      "OmniSharp.DotNetTest/1.35.3": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.TestPlatform.TranslationLayer": "15.7.2",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn": "1.35.2"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.TestPlatform.TranslationLayer": "16.6.1",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn": "1.35.3"
         },
         "compile": {
           "OmniSharp.DotNetTest.dll": {}
         }
       },
-      "OmniSharp.Host/1.35.2": {
+      "OmniSharp.Host/1.35.3": {
         "dependencies": {
           "McMaster.Extensions.CommandLineUtils": "2.2.4",
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
@@ -1486,49 +1487,49 @@
           "Microsoft.Extensions.Logging.Console": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn": "1.35.2",
-          "OmniSharp.Shared": "1.35.2"
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn": "1.35.3",
+          "OmniSharp.Shared": "1.35.3"
         },
         "compile": {
           "OmniSharp.Host.dll": {}
         }
       },
-      "OmniSharp.LanguageServerProtocol/1.35.2": {
+      "OmniSharp.LanguageServerProtocol/1.35.3": {
         "dependencies": {
-          "OmniSharp.DotNetTest": "1.35.2",
+          "OmniSharp.DotNetTest": "1.35.3",
           "OmniSharp.Extensions.LanguageServer": "0.14.2",
-          "OmniSharp.Host": "1.35.2",
-          "OmniSharp.MSBuild": "1.35.2",
-          "OmniSharp.Roslyn.CSharp": "1.35.2",
-          "OmniSharp.Script": "1.35.2"
+          "OmniSharp.Host": "1.35.3",
+          "OmniSharp.MSBuild": "1.35.3",
+          "OmniSharp.Roslyn.CSharp": "1.35.3",
+          "OmniSharp.Script": "1.35.3"
         },
         "compile": {
           "OmniSharp.LanguageServerProtocol.dll": {}
         }
       },
-      "OmniSharp.MSBuild/1.35.2": {
+      "OmniSharp.MSBuild/1.35.3": {
         "dependencies": {
           "Microsoft.Extensions.Options": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "NuGet.Packaging.Core": "5.2.0",
           "NuGet.ProjectModel": "5.2.0",
           "NuGet.Versioning": "5.2.0",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn.CSharp": "1.35.2",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn.CSharp": "1.35.3",
           "System.Threading.Tasks.Dataflow": "4.9.0"
         },
         "compile": {
           "OmniSharp.MSBuild.dll": {}
         }
       },
-      "OmniSharp.Roslyn/1.35.2": {
+      "OmniSharp.Roslyn/1.35.3": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-2.20269.10",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-4.20311.4",
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Shared": "1.35.2",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Shared": "1.35.3",
           "System.ComponentModel.Composition": "4.5.0",
           "System.Reflection.DispatchProxy": "4.5.1"
         },
@@ -1536,42 +1537,42 @@
           "OmniSharp.Roslyn.dll": {}
         }
       },
-      "OmniSharp.Roslyn.CSharp/1.35.2": {
+      "OmniSharp.Roslyn.CSharp/1.35.3": {
         "dependencies": {
           "ICSharpCode.Decompiler": "5.0.2.5153",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.CSharp.Features": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.7.0-2.20269.10",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn": "1.35.2",
-          "OmniSharp.Shared": "1.35.2",
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.CSharp.Features": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.7.0-4.20311.4",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn": "1.35.3",
+          "OmniSharp.Shared": "1.35.3",
           "System.Reactive": "4.1.2"
         },
         "compile": {
           "OmniSharp.Roslyn.CSharp.dll": {}
         }
       },
-      "OmniSharp.Script/1.35.2": {
+      "OmniSharp.Script/1.35.3": {
         "dependencies": {
-          "Dotnet.Script.DependencyModel": "0.51.0",
-          "Dotnet.Script.DependencyModel.NuGet": "0.51.0",
-          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-2.20269.10",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn.CSharp": "1.35.2",
+          "Dotnet.Script.DependencyModel": "0.53.0",
+          "Dotnet.Script.DependencyModel.NuGet": "0.53.0",
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-4.20311.4",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn.CSharp": "1.35.3",
           "System.ValueTuple": "4.4.0"
         },
         "compile": {
           "OmniSharp.Script.dll": {}
         }
       },
-      "OmniSharp.Shared/1.35.2": {
+      "OmniSharp.Shared/1.35.3": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
           "Microsoft.Extensions.FileProviders.Physical": "2.1.1",
           "Microsoft.Extensions.FileSystemGlobbing": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "OmniSharp.Abstractions": "1.35.2",
+          "OmniSharp.Abstractions": "1.35.3",
           "System.Collections.Immutable": "1.5.0",
           "System.Composition": "1.0.31"
         },
@@ -1579,15 +1580,15 @@
           "OmniSharp.Shared.dll": {}
         }
       },
-      "OmniSharp.Stdio/1.35.2": {
+      "OmniSharp.Stdio/1.35.3": {
         "dependencies": {
-          "OmniSharp.Cake": "1.35.2",
-          "OmniSharp.DotNetTest": "1.35.2",
-          "OmniSharp.Host": "1.35.2",
-          "OmniSharp.LanguageServerProtocol": "1.35.2",
-          "OmniSharp.MSBuild": "1.35.2",
-          "OmniSharp.Roslyn.CSharp": "1.35.2",
-          "OmniSharp.Script": "1.35.2"
+          "OmniSharp.Cake": "1.35.3",
+          "OmniSharp.DotNetTest": "1.35.3",
+          "OmniSharp.Host": "1.35.3",
+          "OmniSharp.LanguageServerProtocol": "1.35.3",
+          "OmniSharp.MSBuild": "1.35.3",
+          "OmniSharp.Roslyn.CSharp": "1.35.3",
+          "OmniSharp.Script": "1.35.3"
         },
         "compile": {
           "OmniSharp.Stdio.dll": {}
@@ -1599,7 +1600,7 @@
         "dependencies": {
           "Microsoft.NETFramework.ReferenceAssemblies": "1.0.0",
           "Microsoft.SourceLink.GitHub": "1.0.0",
-          "OmniSharp.Stdio": "1.35.2",
+          "OmniSharp.Stdio": "1.35.3",
           "Microsoft.CSharp.Reference": "4.0.0.0",
           "System.ComponentModel.Composition.Reference": "4.0.0.0",
           "System.ComponentModel.DataAnnotations": "4.0.0.0",
@@ -1745,18 +1746,18 @@
           "lib/net46/Cake.Scripting.Transport.dll": {}
         }
       },
-      "Dotnet.Script.DependencyModel/0.51.0": {
+      "Dotnet.Script.DependencyModel/0.53.0": {
         "dependencies": {
-          "Microsoft.DotNet.PlatformAbstractions": "3.1.0",
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.4",
           "NuGet.ProjectModel": "5.2.0"
         },
         "runtime": {
           "lib/netstandard2.0/Dotnet.Script.DependencyModel.dll": {}
         }
       },
-      "Dotnet.Script.DependencyModel.NuGet/0.51.0": {
+      "Dotnet.Script.DependencyModel.NuGet/0.53.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-4.20311.4"
         },
         "runtime": {
           "lib/netstandard2.0/Dotnet.Script.DependencyModel.NuGet.dll": {}
@@ -1810,12 +1811,12 @@
       },
       "Microsoft.Build.Tasks.Git/1.0.0": {},
       "Microsoft.CodeAnalysis.Analyzers/3.0.0": {},
-      "Microsoft.CodeAnalysis.AnalyzerUtilities/3.0.0": {
+      "Microsoft.CodeAnalysis.AnalyzerUtilities/3.3.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll": {}
         }
       },
-      "Microsoft.CodeAnalysis.Common/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.Common/3.7.0-4.20311.4": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "3.0.0",
           "System.Collections.Immutable": "1.5.0",
@@ -1870,9 +1871,9 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.CSharp/3.7.0-4.20311.4": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll": {}
@@ -1919,14 +1920,14 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Features/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.CSharp.Features/3.7.0-4.20311.4": {
         "dependencies": {
           "Humanizer.Core": "2.2.0",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Features": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Features": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-4.20311.4"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Features.dll": {}
@@ -1973,12 +1974,12 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Scripting/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.CSharp.Scripting/3.7.0-4.20311.4": {
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Scripting.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Scripting.Common": "3.7.0-4.20311.4"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll": {}
@@ -2025,12 +2026,12 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Workspaces/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/3.7.0-4.20311.4": {
         "dependencies": {
           "Humanizer.Core": "2.2.0",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-4.20311.4"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
@@ -2077,11 +2078,11 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.Features/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.Features/3.7.0-4.20311.4": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.AnalyzerUtilities": "3.0.0",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-2.20269.10",
+          "Microsoft.CodeAnalysis.AnalyzerUtilities": "3.3.0",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-4.20311.4",
           "Microsoft.DiaSymReader": "1.3.0",
           "System.Threading.Tasks.Extensions": "4.5.3"
         },
@@ -2130,9 +2131,9 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.Scripting.Common/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.Scripting.Common/3.7.0-4.20311.4": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10"
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.CodeAnalysis.Scripting.dll": {}
@@ -2179,10 +2180,10 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.Workspaces.Common/3.7.0-2.20269.10": {
+      "Microsoft.CodeAnalysis.Workspaces.Common/3.7.0-4.20311.4": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
           "System.Composition": "1.0.31"
         },
         "runtime": {
@@ -2236,9 +2237,9 @@
           "lib/net20/Microsoft.DiaSymReader.dll": {}
         }
       },
-      "Microsoft.DotNet.PlatformAbstractions/3.1.0": {
+      "Microsoft.DotNet.PlatformAbstractions/3.1.4": {
         "dependencies": {
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
         },
         "runtime": {
           "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll": {}
@@ -2315,7 +2316,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
@@ -2336,8 +2337,8 @@
       },
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
-          "Microsoft.DotNet.PlatformAbstractions": "3.1.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.4",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/net451/Microsoft.Extensions.DependencyModel.dll": {}
@@ -2442,10 +2443,11 @@
           "Microsoft.SourceLink.Common": "1.0.0"
         }
       },
-      "Microsoft.TestPlatform.ObjectModel/15.7.2": {
+      "Microsoft.TestPlatform.ObjectModel/16.6.1": {
         "dependencies": {
+          "NuGet.Frameworks": "5.2.0",
           "System.Reflection.Metadata": "1.6.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
         },
         "runtime": {
           "lib/net451/Microsoft.TestPlatform.CoreUtilities.dll": {},
@@ -2533,10 +2535,10 @@
           }
         }
       },
-      "Microsoft.TestPlatform.TranslationLayer/15.7.2": {
+      "Microsoft.TestPlatform.TranslationLayer/16.6.1": {
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "15.7.2",
-          "Newtonsoft.Json": "11.0.2"
+          "Microsoft.TestPlatform.ObjectModel": "16.6.1",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/net451/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
@@ -2663,7 +2665,7 @@
           }
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
         }
@@ -2709,7 +2711,7 @@
       },
       "NuGet.Packaging/5.2.0": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "NuGet.Configuration": "5.2.0",
           "NuGet.Versioning": "5.2.0"
         },
@@ -2754,7 +2756,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
           "Microsoft.Extensions.Logging.Abstractions": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Reactive": "4.1.2"
         },
         "runtime": {
@@ -2876,7 +2878,7 @@
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
-      "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {},
+      "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {},
       "System.Text.Encoding.CodePages/4.5.1": {
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.7.0"
@@ -2903,11 +2905,11 @@
           "lib/net47/System.ValueTuple.dll": {}
         }
       },
-      "OmniSharp.Abstractions/1.35.2": {
+      "OmniSharp.Abstractions/1.35.3": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "NuGet.Versioning": "5.2.0",
           "System.Collections.Immutable": "1.5.0",
           "System.Composition": "1.0.31",
@@ -2917,31 +2919,31 @@
           "OmniSharp.Abstractions.dll": {}
         }
       },
-      "OmniSharp.Cake/1.35.2": {
+      "OmniSharp.Cake/1.35.3": {
         "dependencies": {
           "Cake.Scripting.Transport": "0.3.0",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-2.20269.10",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn": "1.35.2",
-          "OmniSharp.Shared": "1.35.2"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-4.20311.4",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn": "1.35.3",
+          "OmniSharp.Shared": "1.35.3"
         },
         "runtime": {
           "OmniSharp.Cake.dll": {}
         }
       },
-      "OmniSharp.DotNetTest/1.35.2": {
+      "OmniSharp.DotNetTest/1.35.3": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.TestPlatform.TranslationLayer": "15.7.2",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn": "1.35.2"
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.TestPlatform.TranslationLayer": "16.6.1",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn": "1.35.3"
         },
         "runtime": {
           "OmniSharp.DotNetTest.dll": {}
         }
       },
-      "OmniSharp.Host/1.35.2": {
+      "OmniSharp.Host/1.35.3": {
         "dependencies": {
           "McMaster.Extensions.CommandLineUtils": "2.2.4",
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
@@ -2954,49 +2956,49 @@
           "Microsoft.Extensions.Logging.Console": "2.1.1",
           "Microsoft.Extensions.Options": "2.1.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn": "1.35.2",
-          "OmniSharp.Shared": "1.35.2"
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn": "1.35.3",
+          "OmniSharp.Shared": "1.35.3"
         },
         "runtime": {
           "OmniSharp.Host.dll": {}
         }
       },
-      "OmniSharp.LanguageServerProtocol/1.35.2": {
+      "OmniSharp.LanguageServerProtocol/1.35.3": {
         "dependencies": {
-          "OmniSharp.DotNetTest": "1.35.2",
+          "OmniSharp.DotNetTest": "1.35.3",
           "OmniSharp.Extensions.LanguageServer": "0.14.2",
-          "OmniSharp.Host": "1.35.2",
-          "OmniSharp.MSBuild": "1.35.2",
-          "OmniSharp.Roslyn.CSharp": "1.35.2",
-          "OmniSharp.Script": "1.35.2"
+          "OmniSharp.Host": "1.35.3",
+          "OmniSharp.MSBuild": "1.35.3",
+          "OmniSharp.Roslyn.CSharp": "1.35.3",
+          "OmniSharp.Script": "1.35.3"
         },
         "runtime": {
           "OmniSharp.LanguageServerProtocol.dll": {}
         }
       },
-      "OmniSharp.MSBuild/1.35.2": {
+      "OmniSharp.MSBuild/1.35.3": {
         "dependencies": {
           "Microsoft.Extensions.Options": "2.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "NuGet.Packaging.Core": "5.2.0",
           "NuGet.ProjectModel": "5.2.0",
           "NuGet.Versioning": "5.2.0",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn.CSharp": "1.35.2",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn.CSharp": "1.35.3",
           "System.Threading.Tasks.Dataflow": "4.9.0"
         },
         "runtime": {
           "OmniSharp.MSBuild.dll": {}
         }
       },
-      "OmniSharp.Roslyn/1.35.2": {
+      "OmniSharp.Roslyn/1.35.3": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-2.20269.10",
+          "Microsoft.CodeAnalysis.Common": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "3.7.0-4.20311.4",
           "Microsoft.Extensions.Caching.Memory": "2.1.1",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Shared": "1.35.2",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Shared": "1.35.3",
           "System.ComponentModel.Composition": "4.5.0",
           "System.Reflection.DispatchProxy": "4.5.1"
         },
@@ -3004,42 +3006,42 @@
           "OmniSharp.Roslyn.dll": {}
         }
       },
-      "OmniSharp.Roslyn.CSharp/1.35.2": {
+      "OmniSharp.Roslyn.CSharp/1.35.3": {
         "dependencies": {
           "ICSharpCode.Decompiler": "5.0.2.5153",
-          "Microsoft.CodeAnalysis.CSharp": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.CSharp.Features": "3.7.0-2.20269.10",
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.7.0-2.20269.10",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn": "1.35.2",
-          "OmniSharp.Shared": "1.35.2",
+          "Microsoft.CodeAnalysis.CSharp": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.CSharp.Features": "3.7.0-4.20311.4",
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.7.0-4.20311.4",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn": "1.35.3",
+          "OmniSharp.Shared": "1.35.3",
           "System.Reactive": "4.1.2"
         },
         "runtime": {
           "OmniSharp.Roslyn.CSharp.dll": {}
         }
       },
-      "OmniSharp.Script/1.35.2": {
+      "OmniSharp.Script/1.35.3": {
         "dependencies": {
-          "Dotnet.Script.DependencyModel": "0.51.0",
-          "Dotnet.Script.DependencyModel.NuGet": "0.51.0",
-          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-2.20269.10",
-          "OmniSharp.Abstractions": "1.35.2",
-          "OmniSharp.Roslyn.CSharp": "1.35.2",
+          "Dotnet.Script.DependencyModel": "0.53.0",
+          "Dotnet.Script.DependencyModel.NuGet": "0.53.0",
+          "Microsoft.CodeAnalysis.CSharp.Scripting": "3.7.0-4.20311.4",
+          "OmniSharp.Abstractions": "1.35.3",
+          "OmniSharp.Roslyn.CSharp": "1.35.3",
           "System.ValueTuple": "4.4.0"
         },
         "runtime": {
           "OmniSharp.Script.dll": {}
         }
       },
-      "OmniSharp.Shared/1.35.2": {
+      "OmniSharp.Shared/1.35.3": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.Binder": "2.1.1",
           "Microsoft.Extensions.FileProviders.Physical": "2.1.1",
           "Microsoft.Extensions.FileSystemGlobbing": "2.1.1",
           "Microsoft.Extensions.Logging": "2.1.1",
-          "OmniSharp.Abstractions": "1.35.2",
+          "OmniSharp.Abstractions": "1.35.3",
           "System.Collections.Immutable": "1.5.0",
           "System.Composition": "1.0.31"
         },
@@ -3047,15 +3049,15 @@
           "OmniSharp.Shared.dll": {}
         }
       },
-      "OmniSharp.Stdio/1.35.2": {
+      "OmniSharp.Stdio/1.35.3": {
         "dependencies": {
-          "OmniSharp.Cake": "1.35.2",
-          "OmniSharp.DotNetTest": "1.35.2",
-          "OmniSharp.Host": "1.35.2",
-          "OmniSharp.LanguageServerProtocol": "1.35.2",
-          "OmniSharp.MSBuild": "1.35.2",
-          "OmniSharp.Roslyn.CSharp": "1.35.2",
-          "OmniSharp.Script": "1.35.2"
+          "OmniSharp.Cake": "1.35.3",
+          "OmniSharp.DotNetTest": "1.35.3",
+          "OmniSharp.Host": "1.35.3",
+          "OmniSharp.LanguageServerProtocol": "1.35.3",
+          "OmniSharp.MSBuild": "1.35.3",
+          "OmniSharp.Roslyn.CSharp": "1.35.3",
+          "OmniSharp.Script": "1.35.3"
         },
         "runtime": {
           "OmniSharp.Stdio.dll": {}
@@ -3083,19 +3085,19 @@
       "path": "cake.scripting.transport/0.3.0",
       "hashPath": "cake.scripting.transport.0.3.0.nupkg.sha512"
     },
-    "Dotnet.Script.DependencyModel/0.51.0": {
+    "Dotnet.Script.DependencyModel/0.53.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rgphimLWNel++5rBR4nvJelkf4VI8QNm5Q1K3aImgiKzLX9Hru7FRg7zvtTvCXxyv9XFpBxPjEN6AyeAT27lOQ==",
-      "path": "dotnet.script.dependencymodel/0.51.0",
-      "hashPath": "dotnet.script.dependencymodel.0.51.0.nupkg.sha512"
+      "sha512": "sha512-4AEL9ouV8yEnvPjLifs+7bOnJVJHWMDj4ECxazD+rGpxYOkhU2Ap3ZlMiIPD367h8wl7+WmOGfja5Iqez1GM8w==",
+      "path": "dotnet.script.dependencymodel/0.53.0",
+      "hashPath": "dotnet.script.dependencymodel.0.53.0.nupkg.sha512"
     },
-    "Dotnet.Script.DependencyModel.NuGet/0.51.0": {
+    "Dotnet.Script.DependencyModel.NuGet/0.53.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LKxwHdgamp8ff5RbZ9WRZH5yA+UI4CZS1YNDgmQbql6/8JBIHCKJxxtS+SJxevKD/uixC8MLifWzA+AMXAbZXA==",
-      "path": "dotnet.script.dependencymodel.nuget/0.51.0",
-      "hashPath": "dotnet.script.dependencymodel.nuget.0.51.0.nupkg.sha512"
+      "sha512": "sha512-VR0TIliRV/155JW2sPPhwUqMpYHiLWfF9eqIQkf3k++cPQDpHMyHZzT2KRfDKHAqsQUcNYUe5F1+wo7UmmFKKw==",
+      "path": "dotnet.script.dependencymodel.nuget/0.53.0",
+      "hashPath": "dotnet.script.dependencymodel.nuget.0.53.0.nupkg.sha512"
     },
     "Humanizer.Core/2.2.0": {
       "type": "package",
@@ -3153,68 +3155,68 @@
       "path": "microsoft.codeanalysis.analyzers/3.0.0",
       "hashPath": "microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.AnalyzerUtilities/3.0.0": {
+    "Microsoft.CodeAnalysis.AnalyzerUtilities/3.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-z8rVA1LC8kQv6ZFOSWn5TZhHx7lwdGF/cMcjTXi0h1itV10LEtC5Lm2yZCw0Uz2uyKWXYE0TsBfo+0xQqKHV2Q==",
-      "path": "microsoft.codeanalysis.analyzerutilities/3.0.0",
-      "hashPath": "microsoft.codeanalysis.analyzerutilities.3.0.0.nupkg.sha512"
+      "sha512": "sha512-gyQ70pJ4T7hu/s0+QnEaXtYfeG/JrttGnxHJlrhpxsQjRIUGuRhVwNBtkHHYOrUAZ/l47L98/NiJX6QmTwAyrg==",
+      "path": "microsoft.codeanalysis.analyzerutilities/3.3.0",
+      "hashPath": "microsoft.codeanalysis.analyzerutilities.3.3.0.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Common/3.7.0-2.20269.10": {
+    "Microsoft.CodeAnalysis.Common/3.7.0-4.20311.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qF4VPnNLNkiG5rQdlwb0qdeW+7luPnPIKcWKyFfPbQtiemrTvfMrxBHWKJ86s5zl9EhNvHZ4+1iQjfXCjhcm/g==",
-      "path": "microsoft.codeanalysis.common/3.7.0-2.20269.10",
-      "hashPath": "microsoft.codeanalysis.common.3.7.0-2.20269.10.nupkg.sha512"
+      "sha512": "sha512-mZjKpQrQ9CgqfwkSz2kzg27VNi2ZwDFJdDfo+Q1sSNrJ3XpYmvsQ1C3oPmOAd2/CDhpGKH58K5nGIm0Wy80vJQ==",
+      "path": "microsoft.codeanalysis.common/3.7.0-4.20311.4",
+      "hashPath": "microsoft.codeanalysis.common.3.7.0-4.20311.4.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.CSharp/3.7.0-2.20269.10": {
+    "Microsoft.CodeAnalysis.CSharp/3.7.0-4.20311.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7NNfxl5fKKHhb+zh/ei1x0BuGYZMCGDWYT4HcK75DoRfvzbeauUsuJ0AU/o9RdipxPhZLOVw0x4AN3x3Vg4Mgw==",
-      "path": "microsoft.codeanalysis.csharp/3.7.0-2.20269.10",
-      "hashPath": "microsoft.codeanalysis.csharp.3.7.0-2.20269.10.nupkg.sha512"
+      "sha512": "sha512-YrlmKJDd5cKWI2JSJTEHFq7Sw1YPQ6w8+bqLLh4jO4WKLnOWmPjZk1/jecWN7YexxL4CRgn4opua3RmY764q/g==",
+      "path": "microsoft.codeanalysis.csharp/3.7.0-4.20311.4",
+      "hashPath": "microsoft.codeanalysis.csharp.3.7.0-4.20311.4.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.CSharp.Features/3.7.0-2.20269.10": {
+    "Microsoft.CodeAnalysis.CSharp.Features/3.7.0-4.20311.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Hdq2DWBBNzGoP7857FnDg+bpG6WANL0DPlI3EDa7v/zeVVMpJqSQYCLSrpost5I4sKwi0Ibir4qBOQMs/Ixxkg==",
-      "path": "microsoft.codeanalysis.csharp.features/3.7.0-2.20269.10",
-      "hashPath": "microsoft.codeanalysis.csharp.features.3.7.0-2.20269.10.nupkg.sha512"
+      "sha512": "sha512-AVjljLkZSKECRl2cnrQ6SyZ609FPZ6l66C1+EukG0M1iVey4wt/U10O76nnUGgPWHwWebrUVRdlZ9Dkqjwy+Iw==",
+      "path": "microsoft.codeanalysis.csharp.features/3.7.0-4.20311.4",
+      "hashPath": "microsoft.codeanalysis.csharp.features.3.7.0-4.20311.4.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.CSharp.Scripting/3.7.0-2.20269.10": {
+    "Microsoft.CodeAnalysis.CSharp.Scripting/3.7.0-4.20311.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tNEub+94HQDDbTHfoIiGn0zBpUJlntRVX0R92UV2c/dCPRLMh6ed4YDo8Dl5J2c0ImRB76iL9YtS0Q9jZ+kv2Q==",
-      "path": "microsoft.codeanalysis.csharp.scripting/3.7.0-2.20269.10",
-      "hashPath": "microsoft.codeanalysis.csharp.scripting.3.7.0-2.20269.10.nupkg.sha512"
+      "sha512": "sha512-2KibHcC2tp/3szw681gFgmIkpMFsNw3qfxVjswTPQUJXR5mvf5mXULiL52jhMNxpDXE8ePflqrTGH+mEYR/ECA==",
+      "path": "microsoft.codeanalysis.csharp.scripting/3.7.0-4.20311.4",
+      "hashPath": "microsoft.codeanalysis.csharp.scripting.3.7.0-4.20311.4.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.CSharp.Workspaces/3.7.0-2.20269.10": {
+    "Microsoft.CodeAnalysis.CSharp.Workspaces/3.7.0-4.20311.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kW4fpXHjE/hC50mTkpkCQYWmK3Ky+s3F1N90G9p9b1AauQVv1oBPhiYCYCnJCzelcyuSZfkVqHutm62eKh0vVw==",
-      "path": "microsoft.codeanalysis.csharp.workspaces/3.7.0-2.20269.10",
-      "hashPath": "microsoft.codeanalysis.csharp.workspaces.3.7.0-2.20269.10.nupkg.sha512"
+      "sha512": "sha512-uZ9ftKoAJ1dnHcnSZM6+x8OFyF+RnCzYgZqXYsSuPCoXqlJVFNZbNqSQyXno33+oem8U6SnOefI2GOIlGy8R8g==",
+      "path": "microsoft.codeanalysis.csharp.workspaces/3.7.0-4.20311.4",
+      "hashPath": "microsoft.codeanalysis.csharp.workspaces.3.7.0-4.20311.4.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Features/3.7.0-2.20269.10": {
+    "Microsoft.CodeAnalysis.Features/3.7.0-4.20311.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oYKdBG6lxPXysHvXZngAeq0/aqPzcHVDwNQAjhAFuHJ2GXnBugizIBZBuix/RtNctXIdyAja+kQgKbA8ir5KOg==",
-      "path": "microsoft.codeanalysis.features/3.7.0-2.20269.10",
-      "hashPath": "microsoft.codeanalysis.features.3.7.0-2.20269.10.nupkg.sha512"
+      "sha512": "sha512-znpML76l8QQkuEx0FG2bi447iKiV0sUBncMuL2bFJHel3q1POJr/fvhxRip1bgljC/NT+aVvxHirjIkBcaJa3Q==",
+      "path": "microsoft.codeanalysis.features/3.7.0-4.20311.4",
+      "hashPath": "microsoft.codeanalysis.features.3.7.0-4.20311.4.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Scripting.Common/3.7.0-2.20269.10": {
+    "Microsoft.CodeAnalysis.Scripting.Common/3.7.0-4.20311.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-V7RWZ8f8OzyCsfImed7tBnX7KvAOqWjKL90BIzWe0z5149AmUvuOqdq1XgXl284dHKZ03dqM0MhshtWY4mCSaQ==",
-      "path": "microsoft.codeanalysis.scripting.common/3.7.0-2.20269.10",
-      "hashPath": "microsoft.codeanalysis.scripting.common.3.7.0-2.20269.10.nupkg.sha512"
+      "sha512": "sha512-e3wt9gXtZ74urdRXdrnu+sxhJ1GAC7tw7PUb5V33tSEZvbG5JVhCBNgRogLr9wMZjaoGV+jZBU2ejLyxjmL1lg==",
+      "path": "microsoft.codeanalysis.scripting.common/3.7.0-4.20311.4",
+      "hashPath": "microsoft.codeanalysis.scripting.common.3.7.0-4.20311.4.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Workspaces.Common/3.7.0-2.20269.10": {
+    "Microsoft.CodeAnalysis.Workspaces.Common/3.7.0-4.20311.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-39Cs/a488rC78wtH8qIm0qVW/Y60NqALKKsZJ/1PwkrO3dB4zP/2MHfW9++QIKqZ4/zwJXkSFLgXJb9SwnE31g==",
-      "path": "microsoft.codeanalysis.workspaces.common/3.7.0-2.20269.10",
-      "hashPath": "microsoft.codeanalysis.workspaces.common.3.7.0-2.20269.10.nupkg.sha512"
+      "sha512": "sha512-vFBxZQ/B8RnO6U1s7StH+8Dqp9pvg6AAYgpPpvKbBCmG9I96kTqHpZv87/PEjcamEM5Ov6s0WeEbWrsSY8xSgg==",
+      "path": "microsoft.codeanalysis.workspaces.common/3.7.0-4.20311.4",
+      "hashPath": "microsoft.codeanalysis.workspaces.common.3.7.0-4.20311.4.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",
@@ -3230,12 +3232,12 @@
       "path": "microsoft.diasymreader/1.3.0",
       "hashPath": "microsoft.diasymreader.1.3.0.nupkg.sha512"
     },
-    "Microsoft.DotNet.PlatformAbstractions/3.1.0": {
+    "Microsoft.DotNet.PlatformAbstractions/3.1.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WidpoE1j3eXAnccZRQjb4W+XQeDg2jJFKVgwD7iPF27wOkPB+t9P4B/ctN5GG+Vrp8k+O+01kLweuE+7+nlf9g==",
-      "path": "microsoft.dotnet.platformabstractions/3.1.0",
-      "hashPath": "microsoft.dotnet.platformabstractions.3.1.0.nupkg.sha512"
+      "sha512": "sha512-H0aQg1SVS2OsdWQ/x7SXpg+/9Ji0NLqLeQ8lJrVvNGgUkxiPcxv2COE94iZYhs0yabDRyyE60v5eGH1xnTre/Q==",
+      "path": "microsoft.dotnet.platformabstractions/3.1.4",
+      "hashPath": "microsoft.dotnet.platformabstractions.3.1.4.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/2.1.1": {
       "type": "package",
@@ -3419,26 +3421,26 @@
       "path": "microsoft.sourcelink.github/1.0.0",
       "hashPath": "microsoft.sourcelink.github.1.0.0.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.ObjectModel/15.7.2": {
+    "Microsoft.TestPlatform.ObjectModel/16.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BQHdXGO6X1VhKYvdl3bt3BtMNujiyaLKDhJyHp6v65At/9QD38z1HuudKpt0c7z6/AQC0uXK/mEVXkOPcTCHvw==",
-      "path": "microsoft.testplatform.objectmodel/15.7.2",
-      "hashPath": "microsoft.testplatform.objectmodel.15.7.2.nupkg.sha512"
+      "sha512": "sha512-QFD1oT7Rn8Pv6z8L95gDXHsgRSsQmvMrIIhSrUqsEuKwsKg4HAqlOhWRwR0/UEkFMl9NdWt2w+OH01ttcDTtkg==",
+      "path": "microsoft.testplatform.objectmodel/16.6.1",
+      "hashPath": "microsoft.testplatform.objectmodel.16.6.1.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.TranslationLayer/15.7.2": {
+    "Microsoft.TestPlatform.TranslationLayer/16.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cEoiM+0Brc6wBE2D6vcleyJiWPUUYFcJgZBowY3qOjLuUVZUACgC8QXAklHQupDWt55lex81lLs73tkj+AcUlQ==",
-      "path": "microsoft.testplatform.translationlayer/15.7.2",
-      "hashPath": "microsoft.testplatform.translationlayer.15.7.2.nupkg.sha512"
+      "sha512": "sha512-6X41o4YG/1zkfNrkZhi0FWjUqEniFmcvhOcGueguKyr2LNdr2FfzqoyqH3ELGSqGg7fP8snPOfjCQRpp3R1O/w==",
+      "path": "microsoft.testplatform.translationlayer/16.6.1",
+      "hashPath": "microsoft.testplatform.translationlayer.16.6.1.nupkg.sha512"
     },
-    "Newtonsoft.Json/11.0.2": {
+    "Newtonsoft.Json/12.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "path": "newtonsoft.json/11.0.2",
-      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "NuGet.Common/5.2.0": {
       "type": "package",
@@ -3636,12 +3638,12 @@
       "path": "system.runtime.compilerservices.unsafe/4.7.0",
       "hashPath": "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
     },
-    "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
+    "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cbz4YJMqRDR7oLeMRbdYv7mYzc++17lNhScCX0goO2XpGWdvAt60CGN+FHdePUEHCe/Jy9jUlvNAiNdM+7jsOw==",
-      "path": "system.runtime.interopservices.runtimeinformation/4.3.0",
-      "hashPath": "system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512"
+      "sha512": "sha512-hWPhJxc453RCa8Z29O91EmfGeZIHX1ZH2A8L6lYQVSaKzku2DfArSfMEb1/MYYzPQRJZeu0c9dmYeJKxW5Fgng==",
+      "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
+      "hashPath": "system.runtime.interopservices.runtimeinformation.4.0.0.nupkg.sha512"
     },
     "System.Text.Encoding.CodePages/4.5.1": {
       "type": "package",
@@ -3671,57 +3673,57 @@
       "path": "system.valuetuple/4.4.0",
       "hashPath": "system.valuetuple.4.4.0.nupkg.sha512"
     },
-    "OmniSharp.Abstractions/1.35.2": {
+    "OmniSharp.Abstractions/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Cake/1.35.2": {
+    "OmniSharp.Cake/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.DotNetTest/1.35.2": {
+    "OmniSharp.DotNetTest/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Host/1.35.2": {
+    "OmniSharp.Host/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.LanguageServerProtocol/1.35.2": {
+    "OmniSharp.LanguageServerProtocol/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.MSBuild/1.35.2": {
+    "OmniSharp.MSBuild/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Roslyn/1.35.2": {
+    "OmniSharp.Roslyn/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Roslyn.CSharp/1.35.2": {
+    "OmniSharp.Roslyn.CSharp/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Script/1.35.2": {
+    "OmniSharp.Script/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Shared/1.35.2": {
+    "OmniSharp.Shared/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "OmniSharp.Stdio/1.35.2": {
+    "OmniSharp.Stdio/1.35.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -11,7 +11,7 @@ Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
-" Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator'
 
 " themeing
 Plug 'vim-airline/vim-airline'
@@ -40,6 +40,8 @@ Plug 'christoomey/vim-system-copy'
 Plug 'christoomey/vim-sort-motion'
 Plug 'cometsong/commentframe.vim'
 Plug 'tpope/vim-repeat'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+
 " #------------------------------------------------------------------------------#
 " #                                  crs, crc...                                 #
 " #------------------------------------------------------------------------------#
@@ -456,6 +458,6 @@ let g:closetag_shortcut = '>'
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 				\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 " make coctsserver response better
-set updatetime=300
+set updatetime=100
 
 

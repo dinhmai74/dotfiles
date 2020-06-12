@@ -126,7 +126,9 @@
       "deno",
       "toggle",
       "esli",
-      "eslint"
+      "eslint",
+      "ts",
+      "yank"
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Ffun%2Fdeno-playground": [
       "d"

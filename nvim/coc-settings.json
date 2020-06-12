@@ -20,5 +20,6 @@
   "typescript.showUnused": false,
   "yank.enableCompletion": false,
   "coc.preferences.formatOnType": true,
-  "tsserver.log": "verbose"
+  "tsserver.log": "verbose",
+  "tsserver.npm": "/usr/local/bin/npm"
 }
