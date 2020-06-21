@@ -478,4 +478,23 @@ snippet sizedbox "SizedBox"
 <SizedBox h={${1:4}} />
 endsnippet
 
+snippet map "map jsx" 
+{$1.map((v, i) => {
+	$2
+})}
+endsnippet
 
+
+snippet antpage "ant new page" 
+import { PageContainer } from '@ant-design/pro-layout'
+import { Card } from 'antd'
+import React from 'react'
+
+export default (): React.ReactNode => {
+	return (
+		<PageContainer>
+			<Card></Card>
+		</PageContainer>
+	)
+}
+endsnippet

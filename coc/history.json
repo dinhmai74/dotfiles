@@ -126,12 +126,22 @@
       "deno",
       "toggle",
       "esli",
-      "eslint",
       "ts",
-      "yank"
+      "eslint",
+      "yank",
+      "tss"
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Ffun%2Fdeno-playground": [
       "d"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2FHollypocket": [
+      "eslint"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2Fholly-admin": [
+      "tsserver",
+      "tsser",
+      "ts",
+      "eslint"
     ]
   },
   "extensions": {
@@ -179,6 +189,9 @@
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Ffun%2FReanimatedPlayground": [
       "deno"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2Fholly-admin": [
+      "tail"
     ]
   },
   "marketplace": {

@@ -31,3 +31,18 @@ endsnippet
 snippet eslint "eslint ignore" b
 // eslint-disable-next-line
 endsnippet
+
+snippet cl "cl" 
+console.log("$1", ${2:$1})
+endsnippet
+
+snippet log "log" 
+console.log("$1")
+endsnippet
+
+snippet for "forloop"
+for (let i = 0; i < $1.length; i++){
+	const e=$1[i]
+	$2
+}
+endsnippet

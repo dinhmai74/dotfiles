@@ -125,28 +125,28 @@ nmap <leader>z :JsDoc<CR>
 let g:user_emmet_expandabbr_key='<C-z>'
 
 " easymotion
-map <Leader> <Plug>(easymotion-prefix)
-nmap s <Plug>(easymotion-overwin-f2)
-" Move to line
-map <Leader>L <Plug>(easymotion-bd-jk)
-nmap <Leader>L <Plug>(easymotion-overwin-line)
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
-map  N <Plug>(easymotion-prev)
-map  <Leader>/ <Plug>(easymotion-sn)
-omap <Leader>/ <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
+" map <Leader> <Plug>(easymotion-prefix)
+" nmap s <Plug>(easymotion-overwin-f2)
+" " Move to line
+" map <Leader>L <Plug>(easymotion-bd-jk)
+" nmap <Leader>L <Plug>(easymotion-overwin-line)
+" " Move to word
+" map  <Leader>w <Plug>(easymotion-bd-w)
+" nmap <Leader>w <Plug>(easymotion-overwin-w)
+" map  N <Plug>(easymotion-prev)
+" map  / <Plug>(easymotion-sn)
+" omap / <Plug>(easymotion-tn)
+" map  n <Plug>(easymotion-next)
+" map <Leader>s <Plug>(easymotion-sn)<C-R>*<CR>
+" set clipboard=unnamed
 " transprent bg
 "hi Normal guibg=NONE ctermbg=NONE
 
-nmap <space>z :CocCommand explorer<CR>
 
 " frame command
 nmap <space>f :CommentFrameHashDash ""<Left>
 let g:multi_cursor_select_all_word_key = '<space>n'
 
-map <leader>s :sort<CR>
 map <leader>su :%sort u<CR>
 map <leader>sr :%sort!<CR>
 
@@ -183,5 +183,6 @@ function! Twf()
   startinsert                                                                                                                                                 
 endfunction                                                                                                                                                   
                                                                                                                                                               
-nnoremap <silent> <Space>e :call Twf()<CR>
+nmap <space>e :CocCommand explorer<CR>
+nnoremap <silent> <Space>z :call Twf()<CR>
 map <space>t <Plug>(coc-terminal-toggle)

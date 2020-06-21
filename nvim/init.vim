@@ -7,6 +7,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-rooter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
@@ -339,15 +340,17 @@ source ~/.config/nvim/key-mapping.vim
 " #------------------------------------------------------------------------------#
 " #                                 Custom theme                                 #
 " #------------------------------------------------------------------------------#
- " colorscheme gruvbox
+ colorscheme gruvbox
 syntax on
-let g:onedark_hide_endofbuffer=1
-let g:onedark_terminal_italics=1
-let g:onedark_termcolors=256
+" let g:onedark_hide_endofbuffer=1
+" let g:onedark_terminal_italics=1
+" let g:onedark_termcolors=256
 let g:one_allow_italics = 1 " I love italic for comments
-let g:neodark#use_256color = 1 " default: 0
-let g:neodark#terminal_transparent = 1 " default: 0
-let g:neodark#solid_vertsplit = 1 " default: 0
+" let g:neodark#use_256color = 1 " default: 0
+" let g:neodark#terminal_transparent = 1 " default: 0
+" let g:neodark#solid_vertsplit = 1 " default: 0
+highlight Comment gui=italic
+
 
 
 "Credit joshdick
@@ -366,8 +369,8 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-colorscheme one
-hi Normal guibg=NONE ctermbg=NONE
+" colorscheme one
+" hi Normal guibg=NONE ctermbg=NONE
 
 " #  ----vimariline----#
 let g:airline_theme="onedark"
@@ -462,7 +465,14 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 set updatetime=100
 
 
-map z/ <Plug>(incsearch-fuzzy-/)
-map z? <Plug>(incsearch-fuzzy-?)
-map zg/ <Plug>(incsearch-fuzzy-stay)
-" let g:combosearch_trigger_key = "<c-p>"
+" function! s:find_files()
+    " let git_dir = system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
+    " if git_dir != ''
+        " execute 'GFiles' git_dir
+    " else
+        " execute 'Files'
+    " endif
+" endfunction
+" command! ProjectFiles execute s:find_files()
+let g:rooter_change_directory_for_non_project_files = ''
+
