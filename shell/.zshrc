@@ -1,6 +1,5 @@
 export ZSH="/Users/dinhmai/.oh-my-zsh"
 export TERM="xterm-256color"
-export ZSH_DISABLE_COMPFIX= true
 
 POWERLEVEL9K_MODE="nerdfont-complete"
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -359,3 +358,5 @@ export TOOLCHAINS=swift
 source $(dirname $(gem which colorls))/tab_complete.sh
 eval $(thefuck --alias)
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
+typeset -g ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE='20'
+

@@ -108,6 +108,7 @@ let g:coc_global_extensions = [
   \ 'coc-highlight',
   \ 'coc-marketplace', 
   \ 'coc-word', 
+  \ 'coc-terminal', 
   \ ]
 " from readme
 " if hidden is not set, TextEdit might fail.
