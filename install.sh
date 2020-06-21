@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: Greetings. Preparing to power up and begin diagnostics.$(tput sgr 0)"
 echo "---------------------------------------------------------"
@@ -168,7 +167,7 @@ echo "---------------------------------------------------------"
 echo "$(tput setaf 2)JARVIS: Installing zsh plugins...$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
-cd ${ZSH_CUSTOM1:-$ZSH/custom}/plugins
+cd ~/.oh-my-zsh/custom/plugins
 zshplugins=(
   "https://github.com/zsh-users/zsh-syntax-highlighting.git" 
   "https://github.com/djui/alias-tips.git"

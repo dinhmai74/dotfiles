@@ -1,5 +1,6 @@
 export ZSH="/Users/dinhmai/.oh-my-zsh"
 export TERM="xterm-256color"
+export ZSH_DISABLE_COMPFIX= true
 
 POWERLEVEL9K_MODE="nerdfont-complete"
 ZSH_THEME="powerlevel9k/powerlevel9k"
@@ -348,7 +349,7 @@ PATH="$PATH:$HOME/bin:$GOPATH/bin"
 export PATH
 export NPM_CONFIG_PREFIX=~/.npm-global
 export TOOLCHAINS=swift
-. <(denon --completion)
+# . <(denon --completion)
 
 
 #------------------------------------------------------------------------------#

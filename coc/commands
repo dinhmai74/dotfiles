@@ -1,5 +1,5 @@
-editor.action.organizeImport
 explorer
+editor.action.organizeImport
 prettier.formatFile
 tsserver.restart
 yank.clean

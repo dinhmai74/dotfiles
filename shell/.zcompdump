@@ -1,4 +1,4 @@
-#files: 1077	version: 5.8
+#files: 1079	version: 5.8
 
 _comps=(
 '-' '_precommand'
@@ -115,7 +115,6 @@ _comps=(
 'add-zsh-hook' '_add-zsh-hook'
 'admin' '_sccs'
 'afew' '_afew'
-'ag' '_the_silver_searcher'
 'ali' '_mh'
 'alias' '_alias'
 'amaya' '_webbrowser'
@@ -322,6 +321,7 @@ _comps=(
 'cp' '_cp'
 'cpio' '_cpio'
 'cplay' '_cplay'
+'cppcheck' '_cppcheck'
 'cpupower' '_cpupower'
 'createdb' '_postgresql'
 'createuser' '_postgresql'
@@ -378,7 +378,6 @@ _comps=(
 'declare' '_typeset'
 'defaults' '_defaults'
 'delta' '_sccs'
-'deno' '_deno'
 'designate' '_openstack'
 'devtodo' '_devtodo'
 'df' '_df'
@@ -413,7 +412,6 @@ _comps=(
 'dnf-3' '_dnf'
 'doas' '_doas'
 'docker' '_docker'
-'docker-compose' '_docker-compose'
 'dockerd' '_docker'
 'docpad' '_docpad'
 'domainname' '_yp'
@@ -493,12 +491,12 @@ _comps=(
 'extcheck' '_java'
 'extractres' '_psutils'
 'fab' '_fab'
+'fail2ban-client' '_fail2ban-client'
 'fakeroot' '_fakeroot'
 'false' '_nothing'
 'fc' '_fc'
 'fc-list' '_xft_fonts'
 'fc-match' '_xft_fonts'
-'fd' '_fd'
 'feh' '_feh'
 'fetch' '_fetch'
 'fetchmail' '_fetchmail'
@@ -525,6 +523,7 @@ _comps=(
 'fixwpps' '_psutils'
 'fixwwps' '_psutils'
 'flac' '_flac'
+'flameshot' '_flameshot'
 'fleetctl' '_fleetctl'
 'flex' '_flex'
 'flex++' '_flex'
@@ -636,6 +635,7 @@ _comps=(
 'git-flow' '_git-flow'
 'git-journal' '_git-journal'
 'git-pulls' '_git-pulls'
+'git-revise' '_git-revise'
 'git-wtf' '_git-wtf'
 'gitk' '_git'
 'gjoin' '_join'
@@ -840,6 +840,7 @@ _comps=(
 'irssi' '_irssi'
 'isag' '_sysstat'
 'ispell' '_ispell'
+'itunes' '_music'
 'iwconfig' '_iwconfig'
 'jadetex' '_tex'
 'jail' '_jail'
@@ -893,6 +894,7 @@ _comps=(
 'ldd' '_ldd'
 'less' '_less'
 'let' '_math'
+'lf' '_lf'
 'lftp' '_ncftp'
 'lha' '_lha'
 'light' '_webbrowser'
@@ -968,6 +970,7 @@ _comps=(
 'mark' '_mh'
 'matlab' '_matlab'
 'mattrib' '_mtools'
+'mc' '_mc'
 'mcd' '_mtools'
 'mcopy' '_mtools'
 'md2' '_cksum'
@@ -1053,6 +1056,7 @@ _comps=(
 'mupdf' '_mupdf'
 'murano' '_openstack'
 'mush' '_mail'
+'music' '_music'
 'mussh' '_mussh'
 'mutt' '_mutt'
 'mux' '_tmuxinator'
@@ -1069,6 +1073,7 @@ _comps=(
 'mysqlshow' '_mysql_utils'
 'nail' '_mail'
 'nano' '_nano'
+'nanoc' '_nanoc'
 'native2ascii' '_java'
 'nautilus' '_nautilus'
 'nawk' '_awk'
@@ -1246,6 +1251,7 @@ _comps=(
 'printf' '_print'
 'procstat' '_procstat'
 'prompt' '_prompt'
+'protoc' '_protoc'
 'prove' '_prove'
 'prs' '_sccs'
 'prstat' '_prstat'
@@ -1402,6 +1408,7 @@ _comps=(
 'scutil' '_scutil'
 'sdd' '_sdd'
 'seaf-cli' '_seafile'
+'security' '_security'
 'sed' '_sed'
 'senlin' '_openstack'
 'seq' '_seq'
@@ -1906,6 +1913,8 @@ _postpatcomps=(
 '-value-,*PATH,-default-' '_dir_list'
 '-value-,*path,-default-' '_directories'
 '-value-,CCACHE_*,-default-' '_ccache'
+'-value-,CGO*,-default-' '_golang'
+'-value-,GO*,-default-' '_golang'
 '-value-,LC_*,-default-' '_locales'
 '-value-,RUBY(LIB|OPT|PATH),-default-' '_ruby'
 'c++-*' '_gcc'
@@ -1957,10 +1966,9 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _nvm _yarn _hub _git _docker \
-            _brew _brew_cask _brew_services _deno _docker \
-            _docker-compose _fd _git _hub _rg \
-            _the_silver_searcher _SUSEconfig _a2ps _a2utils _aap \
+autoload -Uz _nvm _security _yarn _hub _git \
+            _docker _brew _brew_cask _git _lf \
+            _rg _SUSEconfig _a2ps _a2utils _aap \
             _abcde _absolute_command_paths _ack _acpi _acpitool \
             _acroread _adb _add-zle-hook-widget _add-zsh-hook _alias \
             _aliases _all_labels _all_matches _alsa-utils _alternative \
@@ -2150,29 +2158,30 @@ autoload -Uz _nvm _yarn _hub _git _docker \
             _bower _bundle _caffeinate _cap _cask \
             _ccache _cf _cheat _choc _chromium \
             _cmake _coffee _composer _conan _concourse \
-            _console _dad _debuild _dget _dhcpcd \
-            _diana _docpad _drush _ecdsautil _emulator \
-            _envdir _exportfs _fab _ffind _fleetctl \
-            _flutter _force _fwupdmgr _gas _ghc \
-            _gist _git-flow _git-journal _git-pulls _git-wtf \
-            _glances _golang _google _gtk-launch _hledger \
-            _homestead _httpie _ibus _include-what-you-use _inxi \
-            _jmeter _jmeter-plugins _jonas _jrnl _kak \
-            _kitchen _knife _language_codes _lunchy _middleman \
+            _console _cppcheck _dad _debuild _dget \
+            _dhcpcd _diana _docpad _drush _ecdsautil \
+            _emulator _envdir _exportfs _fab _fail2ban-client \
+            _ffind _flameshot _fleetctl _flutter _force \
+            _fwupdmgr _gas _ghc _gist _git-flow \
+            _git-journal _git-pulls _git-revise _git-wtf _glances \
+            _golang _google _gtk-launch _hledger _homestead \
+            _httpie _ibus _include-what-you-use _inxi _jmeter \
+            _jmeter-plugins _jonas _jrnl _kak _kitchen \
+            _knife _language_codes _lunchy _mc _middleman \
             _mina _mix _mussh _mvn _nano \
-            _nftables _node _nvm _openssl _optirun \
-            _patool _perf _periscope _pgsql_utils _phing \
-            _pixz _pkcon _play _pm2 _port \
-            _pygmentize _rails _ralio _redis-cli _rfkill \
-            _rkt _rslsync _rspec _rsvm _rubocop \
-            _sbt _scala _scrub _sdd _setcap \
-            _setup.py _sfdx _showoff _srm _stack \
-            _subl _subliminal _supervisorctl _svm _tarsnap \
-            _teamocil _thor _tmuxinator _tmuxp _tox \
-            _trash-empty _trash-list _trash-put _trash-restore _udisksctl \
-            _ufw _vagrant _virtualbox _vnstat _wemux \
-            _wg-quick _xinput _xsel _yaourt _yarn \
-            _zcash-cli
+            _nanoc _nftables _node _nvm _openssl \
+            _optirun _patool _perf _periscope _pgsql_utils \
+            _phing _pixz _pkcon _play _pm2 \
+            _port _protoc _pygmentize _rails _ralio \
+            _redis-cli _rfkill _rkt _rslsync _rspec \
+            _rsvm _rubocop _sbt _scala _scrub \
+            _sdd _setcap _setup.py _sfdx _showoff \
+            _srm _stack _subl _subliminal _supervisorctl \
+            _svm _tarsnap _teamocil _thor _tmuxinator \
+            _tmuxp _tox _trash-empty _trash-list _trash-put \
+            _trash-restore _udisksctl _ufw _vagrant _virtualbox \
+            _vnstat _wemux _wg-quick _xinput _xsel \
+            _yaourt _yarn _zcash-cli
 autoload -Uz +X _call_program
 
 typeset -gUa _comp_assocs

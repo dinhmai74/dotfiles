@@ -1,4 +1,4 @@
-#files: 945	version: 5.8
+#files: 940	version: 5.8
 
 _comps=(
 '-' '_precommand'
@@ -110,7 +110,6 @@ _comps=(
 'add-zle-hook-widget' '_add-zle-hook-widget'
 'add-zsh-hook' '_add-zsh-hook'
 'admin' '_sccs'
-'ag' '_the_silver_searcher'
 'ali' '_mh'
 'alias' '_alias'
 'amaya' '_webbrowser'
@@ -352,7 +351,6 @@ _comps=(
 'declare' '_typeset'
 'defaults' '_defaults'
 'delta' '_sccs'
-'deno' '_deno'
 'designate' '_openstack'
 'devtodo' '_devtodo'
 'df' '_df'
@@ -384,7 +382,6 @@ _comps=(
 'dnf-3' '_dnf'
 'doas' '_doas'
 'docker' '_docker'
-'docker-compose' '_docker-compose'
 'dockerd' '_docker'
 'domainname' '_yp'
 'dos2unix' '_dos2unix'
@@ -462,7 +459,6 @@ _comps=(
 'fc' '_fc'
 'fc-list' '_xft_fonts'
 'fc-match' '_xft_fonts'
-'fd' '_fd'
 'feh' '_feh'
 'fetch' '_fetch'
 'fetchmail' '_fetchmail'
@@ -817,6 +813,7 @@ _comps=(
 'ldd' '_ldd'
 'less' '_less'
 'let' '_math'
+'lf' '_lf'
 'lftp' '_ncftp'
 'lha' '_lha'
 'light' '_webbrowser'
@@ -1286,6 +1283,7 @@ _comps=(
 'scselect' '_scselect'
 'scutil' '_scutil'
 'seaf-cli' '_seafile'
+'security' '_security'
 'sed' '_sed'
 'senlin' '_openstack'
 'seq' '_seq'
@@ -1798,10 +1796,9 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _nvm _yarn _hub _git _docker \
-            _brew _brew_cask _brew_services _deno _docker \
-            _docker-compose _fd _git _hub _rg \
-            _the_silver_searcher _SUSEconfig _a2ps _a2utils _aap \
+autoload -Uz _nvm _security _yarn _hub _git \
+            _docker _brew _brew_cask _git _lf \
+            _rg _SUSEconfig _a2ps _a2utils _aap \
             _abcde _absolute_command_paths _ack _acpi _acpitool \
             _acroread _adb _add-zle-hook-widget _add-zsh-hook _alias \
             _aliases _all_labels _all_matches _alsa-utils _alternative \
@@ -1992,5 +1989,5 @@ autoload -Uz +X _call_program
 typeset -gUa _comp_assocs
 _comp_assocs=( '' )
 
-#omz revision: db94f60d342ba2be7dbe3bfd86f4edb335c2a6a7
+#omz revision: b706a919172955e16a1ab97f36a95b9ee4d9f1dc
 #omz fpath: /Users/dinhmai/.oh-my-zsh/custom/plugins/alias-tips /Users/dinhmai/.oh-my-zsh/custom/plugins/zsh-autosuggestions /Users/dinhmai/.oh-my-zsh/plugins/git /Users/dinhmai/.oh-my-zsh/custom/plugins/zsh-completions /Users/dinhmai/.oh-my-zsh/custom/plugins/zsh-better-npm-completion /Users/dinhmai/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting /Users/dinhmai/.oh-my-zsh/plugins/nvm /Users/dinhmai/.oh-my-zsh/plugins/web-search /Users/dinhmai/.oh-my-zsh/plugins/osx /Users/dinhmai/.oh-my-zsh/plugins/yarn /Users/dinhmai/.oh-my-zsh/plugins/npm /Users/dinhmai/.oh-my-zsh/plugins/node /Users/dinhmai/.oh-my-zsh/plugins/github /Users/dinhmai/.oh-my-zsh/plugins/gitfast /Users/dinhmai/.oh-my-zsh/plugins/docker /Users/dinhmai/.oh-my-zsh/plugins/common-aliases /Users/dinhmai/.oh-my-zsh/plugins/brew /Users/dinhmai/.oh-my-zsh/functions /Users/dinhmai/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/local/Cellar/zsh/5.8/share/zsh/functions
