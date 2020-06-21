@@ -77,8 +77,6 @@ nmap ++ <plug>NERDCommenterToggle
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * NERDTree
 
-
-
 " vim-prettier
 "let g:prettier#quickfix_enabled = 0
 "let g:prettier#quickfix_auto_focus = 0
@@ -95,7 +93,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
-" coc config
+" cocextensions
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
@@ -108,7 +106,7 @@ let g:coc_global_extensions = [
   \ 'coc-highlight',
   \ 'coc-marketplace', 
   \ 'coc-word', 
-  \ 'coc-terminal', 
+  \ 'coc-explorer', 
   \ ]
 " from readme
 " if hidden is not set, TextEdit might fail.
@@ -342,12 +340,15 @@ source ~/.config/nvim/key-mapping.vim
 " #------------------------------------------------------------------------------#
 " #                                 Custom theme                                 #
 " #------------------------------------------------------------------------------#
- colorscheme gruvbox
 syntax on
+" colorscheme onedark
+colorscheme gruvbox
 " let g:onedark_hide_endofbuffer=1
 " let g:onedark_terminal_italics=1
 " let g:onedark_termcolors=256
-let g:one_allow_italics = 1 " I love italic for comments
+set background=dark
+" let g:neodark#background = '#202020'
+" let g:one_allow_italics = 1 " I love italic for comments
 " let g:neodark#use_256color = 1 " default: 0
 " let g:neodark#terminal_transparent = 1 " default: 0
 " let g:neodark#solid_vertsplit = 1 " default: 0
