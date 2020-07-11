@@ -1,4 +1,44 @@
 " Specify a directory for plugins
+"*****************************************************************************
+"" Basic Settings
+"*****************************************************************************
+syntax on
+set mouse=v
+" "" Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set nu
+set relativenumber
+set smarttab
+set cindent
+set tabstop=2
+set shiftwidth=2
+" always uses spaces instead of tab characters
+set expandtab
+autocmd BufEnter * silent! :lcd%:p:h
+au FileType * set fo-=c fo-=r fo-=o "disable auto comment new line
+set noshowmatch
+set nohlsearch
+set hidden
+set noerrorbells
+set smartindent
+set nowrap
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set termguicolors
+set scrolloff=8
+" Give more space for displaying messages.
+set cmdheight=2
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=50
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -111,7 +151,7 @@ let g:coc_global_extensions = [
 " from readme
 " if hidden is not set, TextEdit might fail.
 set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
-set updatetime=300
+set updatetime=50
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
@@ -145,6 +185,8 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
+nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
@@ -154,6 +196,9 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>cr :CocRestart
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -186,7 +231,7 @@ xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap for do codeAction of current line
-nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>ac  <Plug>(coc-codeaction
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
@@ -234,36 +279,6 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 "*****************************************************************************
-"" Basic Settings
-"*****************************************************************************
-"
-set mouse=v
-" "" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-set nu
-set relativenumber
-
-set smarttab
-set cindent
-set tabstop=2
-set shiftwidth=2
-" always uses spaces instead of tab characters
-set expandtab
-
-
-
-
-autocmd BufEnter * silent! :lcd%:p:h
-au FileType * set fo-=c fo-=r fo-=o "disable auto comment new line
-
-if exists("*fugitive#statusline")
-  set statusline+=%{fugitive#statusline()}
-endif
-
-"*****************************************************************************
 "" Abbreviations
 "*****************************************************************************
 "" no one is really happy until you have this shortcuts
@@ -282,7 +297,7 @@ cnoreabbrev Q q
 cnoreabbrev Qall qall
 cnoreabbrev qa1 qa! 
 cnoreabbrev ag Ag 
-cnoreabbrev rg Rg 
+cnoreabbrev rg Rg
 cabbrev t tabnew
 nnoremap ; :
 vnoremap ; :
@@ -341,12 +356,36 @@ source ~/.config/nvim/key-mapping.vim
 " #                                 Custom theme                                 #
 " #------------------------------------------------------------------------------#
 syntax on
-" colorscheme onedark
+let g:gruvbox_contrast_dark = 'hard'
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
+let g:gruvbox_invert_selection='0'
+
+" --- vim go (polyglot) settings.
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_types = 1
+let g:go_highlight_function_parameters = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_generate_tags = 1
+let g:go_highlight_format_strings = 1
+let g:go_highlight_variable_declarations = 1
+let g:go_auto_sameids = 1
+
 colorscheme gruvbox
+set background=dark
+" colorscheme onedark
+" colorscheme gruvbox
 " let g:onedark_hide_endofbuffer=1
 " let g:onedark_terminal_italics=1
 " let g:onedark_termcolors=256
-set background=dark
 " let g:neodark#background = '#202020'
 " let g:one_allow_italics = 1 " I love italic for comments
 " let g:neodark#use_256color = 1 " default: 0
@@ -464,9 +503,6 @@ let g:closetag_shortcut = '>'
 " coc auto enter format work awseome when enter use for coc-pairs
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 				\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-" make coctsserver response better
-set updatetime=100
-
 
 " function! s:find_files()
     " let git_dir = system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
@@ -479,3 +515,10 @@ set updatetime=100
 " command! ProjectFiles execute s:find_files()
 let g:rooter_change_directory_for_non_project_files = ''
 
+if executable('rg')
+    let g:rg_derive_root='true'
+endif
+
+if exists("*fugitive#statusline")
+  set statusline+=%{fugitive#statusline()}
+endif
