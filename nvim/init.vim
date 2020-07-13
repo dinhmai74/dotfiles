@@ -185,9 +185,8 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
-nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
-nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
-
+nmap <silent> gp <Plug>(coc-diagnostic-prev-error)
+nmap <silent> gn <Plug>(coc-diagnostic-next-error)
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
@@ -522,3 +521,5 @@ endif
 if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
+autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
+
