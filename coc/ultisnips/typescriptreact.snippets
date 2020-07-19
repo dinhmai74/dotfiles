@@ -498,3 +498,13 @@ export default (): React.ReactNode => {
 	)
 }
 endsnippet
+
+snippet onError "onError create" 
+const onError = (e) => enqueueSnackbar(e, { variant: "warning" })
+endsnippet
+
+snippet loading "loading" 
+const loading = isFetching
+if(loading) return <AppLoading />
+
+endsnippet

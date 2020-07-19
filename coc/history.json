@@ -142,6 +142,31 @@
       "tsser",
       "ts",
       "eslint"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fuit%2FHollypocket%2Fweb": [
+      "yank"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fuit%2FHollypocket": [
+      "cl"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fuit%2FBowie": [
+      "res",
+      "tsser",
+      "yan"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fuit%2FBowie%2Fmobile": [
+      "yank"
+    ],
+    "%2FUsers%2Fdinhmai%2F": {
+      "config": [
+        "yank"
+      ]
+    },
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Ffun%2FBowie": [
+      "ya",
+      "tsse",
+      "y",
+      "yan"
     ]
   },
   "extensions": {
@@ -255,6 +280,14 @@
   "explorerActions": {
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
       "open"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fuit%2FHollypocket": [
+      "renam"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Ffun%2FBowie": [
+      "past",
+      "copy",
+      "pas"
     ]
   }
 }

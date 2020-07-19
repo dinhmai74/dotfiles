@@ -1,17 +1,20 @@
+
 import React from "react"
-import { View, ViewStyle } from "react-native"
-import { Text } from "../"
+import { View } from "react-native"
+import { Text } from "../text/text"
+<% if (props.haveStyle) { -%>
+import { <%= props.camelCaseName %>Styles as styles } from "./<%= props.name %>.styles"
+<% } -%>
 
-export interface <%= props.pascalName %>Props {
-  style?: ViewStyle
-}
+export interface <%= props.pascalName %>Props {}
 
-export const <%= props.pascalName %> = (props: <%= props.pascalName %>Props) => {
-  // grab the props
-  const { style, ...rest } = props
+
+export const <%= props.pascalName %>: React.FunctionComponent<<%= props.pascalName %>Props> = props => {
+  // const { someStore } = useStores()
 
   return (
-    <View style={style} {...rest}>
+    <View >
+      <Text>Hi Func</Text>
     </View>
   )
 }
