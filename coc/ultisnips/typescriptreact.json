@@ -1,21 +1,11 @@
 {
-  "cmstp": {
-    "prefix": "cmstp",
-    "body": "const mapStateToProps=state=>state;",
-    "description": "const map state to props"
-  },
-  "mstp": {
-    "prefix": "mstp",
-    "body": "const mapStateToProps=(state)=>{\n\treturn {\n\t\t$1: $2\n\t}\n}",
-    "description": "map state to props"
-  },
   "imp": {
-    "prefix": "imp",
+    "prefix": "impd",
     "body": "import ${2: $1 } from '${1}'",
     "description": "import default file"
   },
   "impd": {
-    "prefix": "impd",
+    "prefix": "imp",
     "body": "import {\n\t$2\n} from '$1'",
     "description": "Destructuring import"
   },
@@ -34,20 +24,15 @@
     "body": "import styled from 'styled-components'",
     "description": "import styled-components"
   },
-  "dop": {
-    "prefix": "dop",
-    "body": "const { $1 } = props;",
-    "description": " destructoring props"
-  },
-  "dos": {
-    "prefix": "dos",
-    "body": "const { $1 } = state;",
-    "description": " destructoring states"
-  },
   "dob": {
     "prefix": "dob",
     "body": "const { $2 } = $1;",
     "description": " destructoring "
+  },
+  "dop": {
+    "prefix": "dop",
+    "body": "const { $2 } = state ;",
+    "description": " destructoring state"
   },
   "exd": {
     "prefix": "exd",
@@ -79,16 +64,6 @@
     "body": "import React, { Component } from 'react'\nimport { Text, View } from 'react-native'\nimport { I$1, I$1State } from './$1.presets.tsx'\nimport {  } from './$1.props.tsx'\n\nexport class ${1:`!v expand('%:t:r')`} extends Component <I$1,I$1State>{\n\trender() {\n\t\treturn (\n\t\t\t<${3:View}>\n\t\t\t\t<Text>123 </Text>\n\t\t\t</$3>\n\t\t);\n\t}\n}\n\nexport default $1;",
     "description": "create react native full component snip"
   },
-  "int": {
-    "prefix": "int",
-    "body": "export interface $1 {\n\t$1\n}",
-    "description": "interface"
-  },
-  "story": {
-    "prefix": "story",
-    "body": "import * as React from \"react\"\nimport { storiesOf } from \"@storybook/react-native\"\nimport { StoryScreen, Story, UseCase } from \"../../../../../storybook/views\"\nimport TradingItem from \"./TradingItem\"\n\ndeclare var module\n\nstoriesOf(\"Trading history card\", module)\n  .addDecorator((fn) => <StoryScreen>{fn()}</StoryScreen>)\n  .add(\"normal item\", () => (\n    <Story>\n      <UseCase text=\"default\" usage=\"default\">\n        <TradingItem />\n      </UseCase>\n    </Story>\n  ))\n",
-    "description": "story book default story"
-  },
   "rnf": {
     "prefix": "rnf",
     "body": "import React, { useState } from 'react'\nimport { Text, View } from 'components'\nimport styled from 'styled-components'\n\ninterface  ${1:`!v expand('%:t:r')`}Props{\n\t\n}\n\nexport const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = (props)=>{\n\t\treturn (\n\t\t\t<${3:View}>\n\t\t\t\t<Text>123 </Text>\n\t\t\t</$3>\n\t\t);\n}\n",
@@ -104,11 +79,6 @@
     "body": "interface $1Props {\n\t$3\n}\n\nconst $1: React.FC<$1Props> = () => {\n\t$4\n}\n",
     "description": "function component"
   },
-  "cstyles": {
-    "prefix": "cstyles",
-    "body": "import { StyleSheet } from 'react-native'\n\nconst styles= StyleSheet.create({\n\tcontainer:{}\n})\n",
-    "description": " const style"
-  },
   "ds": {
     "prefix": "ds",
     "body": "const { $1 } = state;",
@@ -118,26 +88,6 @@
     "prefix": "cmt",
     "body": "/* ------------- $1 ------------- */",
     "description": "cmt"
-  },
-  "clc": {
-    "prefix": "clc",
-    "body": "console.tron.log(\" $1 \", $1)",
-    "description": "tronlog"
-  },
-  "rdf": {
-    "prefix": "rdf",
-    "body": "render$1 = ({} : FormikProps<FormValues>) => {}",
-    "description": "render formik form"
-  },
-  "exp": {
-    "prefix": "exp",
-    "body": "export * from \"./$1\"",
-    "description": "export * from"
-  },
-  "styles": {
-    "prefix": "styles",
-    "body": "const styles= StyleSheet.create({\n\t$1\n})",
-    "description": "styles"
   },
   "lodash": {
     "prefix": "lodash",
@@ -161,22 +111,22 @@
   },
   "uss": {
     "prefix": "uss",
-    "body": "const [$1, set$2] = React.useState(${3:''})${0:;}",
+    "body": "const [$1, set${2:$1}] = React.useState(${3:''})",
     "description": "useState"
   },
   "use": {
     "prefix": "use",
-    "body": "React.useEffect(() => {\n  $1\n})${0:;}",
+    "body": "React.useEffect(() => {\n  $1\n},[])",
     "description": "useEffect"
   },
   "user": {
     "prefix": "user",
-    "body": "React.useEffect(() => {\n  $1\n\treturn () => {\n    $2\n\t};\n})${0:;}",
+    "body": "React.useEffect(() => {\n  $1\n\treturn () => {\n    $2\n\t};\n},[])",
     "description": "useEffect with return"
   },
   "usc": {
     "prefix": "usc",
-    "body": "const $1 = React.useContext($2)${0:;}",
+    "body": "const $1 = React.useContext($2)",
     "description": "useContext"
   },
   "uscb": {
@@ -186,12 +136,12 @@
   },
   "usm": {
     "prefix": "usm",
-    "body": "const $1 = React.useMemo(() => {\n\t$2\n}, [$3])${0:;}",
+    "body": "const $1 = React.useMemo(() => {\n\t$2\n}, [$3])",
     "description": "useMemo"
   },
   "usrf": {
     "prefix": "usrf",
-    "body": "const $1 = React.useRef($2)${0:;}",
+    "body": "const $1 = React.useRef($2)",
     "description": "useRef"
   },
   "useThemes": {
@@ -364,14 +314,29 @@
     "body": "transform: [{ $1 }, ],",
     "description": "transform style"
   },
-  "Tab_trigger": {
-    "prefix": "Tab_trigger",
-    "body": "\nconst Container = styled(View)(p => ({\n\tflexDirection: ",
-    "description": "Description"
-  },
   "sizedbox": {
     "prefix": "sizedbox",
     "body": "<SizedBox h={${1:4}} />",
     "description": "SizedBox"
+  },
+  "map": {
+    "prefix": "map",
+    "body": "{$1.map((v, i) => {\n\t$2\n})}",
+    "description": "map jsx"
+  },
+  "antpage": {
+    "prefix": "antpage",
+    "body": "import { PageContainer } from '@ant-design/pro-layout'\nimport { Card } from 'antd'\nimport React from 'react'\n\nexport default (): React.ReactNode => {\n\treturn (\n\t\t<PageContainer>\n\t\t\t<Card></Card>\n\t\t</PageContainer>\n\t)\n}",
+    "description": "ant new page"
+  },
+  "onError": {
+    "prefix": "onError",
+    "body": "const onError = (e) => enqueueSnackbar(e, { variant: \"warning\" })",
+    "description": "onError create"
+  },
+  "loading": {
+    "prefix": "loading",
+    "body": "const loading = isFetching\nif(loading) return <AppLoading />\n",
+    "description": "loading"
   }
 }

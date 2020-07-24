@@ -1,7 +1,7 @@
-editor.action.organizeImport
 explorer
-yank.clean
+editor.action.organizeImport
 tsserver.restart
+yank.clean
 prettier.formatFile
 eslint.executeAutofix
 eslint.createConfig
