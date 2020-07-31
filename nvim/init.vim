@@ -106,6 +106,8 @@ Plug 'mattn/emmet-vim'
 "graphql
 Plug 'jparise/vim-graphql'
 
+Plug 'AndrewRadev/sideways.vim'
+
 call plug#end()
 
 inoremap jk <ESC>

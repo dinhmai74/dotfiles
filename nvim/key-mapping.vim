@@ -186,3 +186,4 @@ endfunction
 nmap <space>e :CocCommand explorer<CR>
 nnoremap <silent> <Space>z :call Twf()<CR>
 map <space>t <Plug>(coc-terminal-toggle)
+
