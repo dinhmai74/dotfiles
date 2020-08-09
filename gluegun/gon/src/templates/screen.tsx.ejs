@@ -1,5 +1,5 @@
 import React from "react"
-import { Screen, Text, Header, View } from "components"
+import { Screen} from "components"
 import { NativeStackNavigationProp } from "react-native-screens/native-stack"
 import { ParamListBase } from "@react-navigation/native"
 
@@ -7,17 +7,13 @@ export interface <%= props.pascalName %>Props {
   navigation: NativeStackNavigationProp<ParamListBase>
 }
 
-export const <%= props.pascalName %>: React.FunctionComponent<<%= props.pascalName %>Props> = (props) => {
+export const <%= props.pascalName %>: React.FC<<%= props.pascalName %>Props> = (props) => {
   // const { someStore, anotherStore } = useStores()
   // OR
   // const rootStore = useStores()
 
   return (
     <Screen preset="scroll">
-      <Header headerTx="<%= props.camelName %>.header" leftIcon="back" />
-      <View >
-        <Text>123</Text>
-      </View>
     </Screen>
   )
 }
