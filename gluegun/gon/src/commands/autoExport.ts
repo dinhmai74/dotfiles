@@ -1,8 +1,7 @@
 import { GluegunToolbox } from 'gluegun'
 const fs = require('fs')
 
-export const description =
-  'Generates a component, supporting files, and a storybook test.'
+export const description = 'auto export all file to index dir'
 
 export const name = 'autoexport'
 export const alias = 'ae'
