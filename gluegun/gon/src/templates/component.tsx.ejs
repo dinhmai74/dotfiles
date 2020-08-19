@@ -1,12 +1,11 @@
 
 import React from "react"
 import { View } from "react-native"
-import { Text } from "../text/text"
 <% if (props.haveStyle) { -%>
 import { <%= props.camelCaseName %>Styles as styles } from "./<%= props.name %>.styles"
 <% } -%>
 
-export interface <%= props.pascalName %>Props {}
+export type <%= props.pascalName %>Props = {}
 
 
 export const <%= props.pascalName %>: React.FunctionComponent<<%= props.pascalName %>Props> = props => {
@@ -14,7 +13,6 @@ export const <%= props.pascalName %>: React.FunctionComponent<<%= props.pascalNa
 
   return (
     <View >
-      <Text>Hi Func</Text>
     </View>
   )
 }
