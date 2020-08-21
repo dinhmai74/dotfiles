@@ -38,6 +38,7 @@ set cmdheight=2
 set updatetime=50
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
+set autoread
 
 call plug#begin('~/.vim/plugged')
 
@@ -151,9 +152,6 @@ let g:coc_global_extensions = [
   \ 'coc-explorer', 
   \ ]
 " from readme
-" if hidden is not set, TextEdit might fail.
-set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
-set updatetime=50
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c
@@ -323,10 +321,10 @@ endif
 "" Autocmd Rules
 "*****************************************************************************
 "" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
-augroup vimrc-sync-fromstart
-  autocmd!
-  autocmd BufEnter * :syntax sync maxlines=200
-augroup END
+" augroup vimrc-sync-fromstart
+  " autocmd!
+  " autocmd BufEnter * :syntax sync maxlines=200
+" augroup END
 
 "" Remember cursor position
 augroup vimrc-remember-cursor-position
@@ -347,7 +345,6 @@ augroup END
   "autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
 "augroup END
 
-set autoread
 
 
 source ~/.config/nvim/key-mapping.vim
@@ -524,6 +521,7 @@ if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
 
+" create a dir if not exists when use te command
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 function s:MkNonExDir(file, buf)
@@ -538,3 +536,13 @@ augroup BWCCreateDir
     autocmd!
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
+if ! exists("g:CheckUpdateStarted")
+    let g:CheckUpdateStarted=1
+    call timer_start(1,'CheckUpdate')
+endif
+
+" update file if any change from another text editor
+function! CheckUpdate(timer)
+    silent! checktime
+    call timer_start(1000,'CheckUpdate')
+endfunction

@@ -1,8 +1,8 @@
-explorer
 editor.action.organizeImport
-tsserver.restart
+explorer
 yank.clean
 prettier.formatFile
+tsserver.restart
 eslint.executeAutofix
 eslint.createConfig
 tsserver.openTsServerLog

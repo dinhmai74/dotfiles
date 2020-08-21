@@ -65,6 +65,9 @@ endsnippet
 snippet dob " destructoring object"
 const { $2 } = $1 ;
 endsnippet
+snippet doa "destructoring by array"
+const [ $2 ] = $1 ;
+endsnippet
 snippet dop " destructoring props"
 const { $2 } = props;
 endsnippet
@@ -142,18 +145,13 @@ endsnippet
 
 snippet rnf "create react native stateless"
 import React, { useState } from 'react'
-import { Text, View } from 'components'
-import styled from 'styled-components'
 
-interface  ${1:`!v expand('%:t:r')`}Props{
+type ${1:`!v expand('%:t:r')`}Props = {
 	
 }
 
-export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = (props)=>{
+export const ${1:`!v expand('%:t:r')`} = (props : ${1:`!v expand('%:t:r')`}Props )=>{
 		return (
-			<${3:View}>
-				<Text>123 </Text>
-			</$3>
 		);
 }
 
@@ -162,11 +160,11 @@ endsnippet
 snippet rf "create react FunctionComponent"
 import React from 'react'
 
-interface  ${1:`!v expand('%:t:r')`}Props{
+type ${1:`!v expand('%:t:r')`}Props = {
 	
 }
 
-export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props> = (props) => {
+export const ${1:`!v expand('%:t:r')`} = (props : ${1:`!v expand('%:t:r')`}Props )=>{
 		return (
 			<${3:div}>
 			</$3>
@@ -176,11 +174,11 @@ export const ${1:`!v expand('%:t:r')`}: React.FC<${1:`!v expand('%:t:r')`}Props>
 endsnippet
 
 snippet fc "function component" 
-interface $1Props {
+type $1Props = {
 	$3
 }
 
-const $1: React.FC<$1Props> = () => {
+export const $1 = (props : $1Props )=>{
 	$4
 }
 
@@ -331,7 +329,7 @@ endsnippet
 
 
 snippet zustand "create zustand" 
-interface $1State{
+type $1State = {
 
 }
 
@@ -507,9 +505,4 @@ snippet loading "loading"
 const loading = isFetching
 if(loading) return <AppLoading />
 
-endsnippet
-
-snippet Tab_trigger "Description" b
-l="m"
-					borderRadius="s
 endsnippet

@@ -1,5 +1,6 @@
 {
   "suggest.noselect": false,
+  "coc.preferences.jumpCommand": "tab drop",
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "typescript",
@@ -13,7 +14,7 @@
     "csharp",
     "scss"
   ],
-	"diagnostic.errorSign": "✖",
+  "diagnostic.errorSign": "✖",
   "diagnostic.warningSign": "⚠",
   "diagnostic.infoSign": "",
   "tailwindCSS.emmetCompletions": true,

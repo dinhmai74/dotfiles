@@ -46,3 +46,11 @@ for (let i = 0; i < $1.length; i++){
 	$2
 }
 endsnippet
+
+snippet rf "rf"
+import React from "react";
+
+export const ${1:`!v expand('%:t:r')`}  = () => {
+	return <div></div>;
+};
+endsnippet
