@@ -1,6 +1,6 @@
 editor.action.organizeImport
-explorer
 yank.clean
+explorer
 prettier.formatFile
 tsserver.restart
 eslint.executeAutofix

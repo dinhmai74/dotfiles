@@ -93,13 +93,15 @@ nnoremap <leader>t :!open -a /Applications/iTerm.app .<cr>
 
 "" Git
 noremap <Leader>ga :Gwrite<CR>
-noremap <Leader>gc :Gcommit<CR>
+noremap <Leader>gcm :Gcommit<CR>
 noremap <Leader>gsh :Gpush<CR>
-noremap <Leader>glhl :Gpull<CR>
+noremap <Leader>gl:Gpull<CR>
 noremap <Leader>gs :Gstatus<CR>
 noremap <Leader>gb :Gblame<CR>
 noremap <Leader>gd :Gvdiff<CR>
 noremap <Leader>gr :Gremove<CR>
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
 " session management
 nnoremap <leader>so :OpenSession<Space>
 nnoremap <leader>ss :SaveSession<Space>
@@ -187,3 +189,25 @@ nmap <space>e :CocCommand explorer<CR>
 nnoremap <silent> <Space>z :call Twf()<CR>
 map <space>t <Plug>(coc-terminal-toggle)
 
+nmap <leader>gs :G<CR>
+" global search
+nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+
+inoremap jk <ESC>
+vmap ++ <plug>NERDCommenterToggle
+nmap ++ <plug>NERDCommenterToggle
+
+
+" j/k will move virtual lines (lines that wrap)
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
+" Sweet Sweet FuGITive
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
+nmap <leader>gs :G<CR>
+nnoremap <leader>gco :GCheckout<CR>
+
+let g:fzf_checkout_track_key = 'ctrl-t'

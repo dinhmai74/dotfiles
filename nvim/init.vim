@@ -35,10 +35,13 @@ set scrolloff=8
 set cmdheight=2
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=50
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
+set updatetime=30
 set autoread
+" don't give |ins-completion-menu| messages.
+set shortmess+=c
+" always show signcolumns
+set signcolumn=yes
+
 
 call plug#begin('~/.vim/plugged')
 
@@ -65,11 +68,19 @@ Plug 'rakr/vim-one'
 Plug 'KeitaNakamura/neodark.vim'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
-Plug 'chemzqm/vim-jsx-improve'
 
+" syntax highlight
+Plug 'chemzqm/vim-jsx-improve'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'mxw/vim-jsx'
+Plug 'lilydjwg/colorizer' "colorize all text 
+Plug 'luochen1990/rainbow'
+
+" util
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion' 
-Plug 'lilydjwg/colorizer' "colorize all text 
+
 " git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -96,6 +107,7 @@ Plug 'xolox/vim-session'
 
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'stsewd/fzf-checkout.vim'
 Plug 'mike-hearn/vim-combosearch'
 
 Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
@@ -110,31 +122,6 @@ Plug 'jparise/vim-graphql'
 Plug 'AndrewRadev/sideways.vim'
 
 call plug#end()
-
-inoremap jk <ESC>
-
-vmap ++ <plug>NERDCommenterToggle
-nmap ++ <plug>NERDCommenterToggle
-
-" open NERDTree automatically
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * NERDTree
-
-" vim-prettier
-"let g:prettier#quickfix_enabled = 0
-"let g:prettier#quickfix_auto_focus = 0
-" prettier command for coc
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-" run prettier on save
-"let g:prettier#autoformat = 0
-"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
-
-" ctrlp
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
-" j/k will move virtual lines (lines that wrap)
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 " cocextensions
 let g:coc_global_extensions = [
@@ -153,11 +140,10 @@ let g:coc_global_extensions = [
   \ ]
 " from readme
 
-" don't give |ins-completion-menu| messages.
-set shortmess+=c
-
-" always show signcolumns
-set signcolumn=yes
+" #------------------------------------------------------------------------------#
+" #                                 coc-settings                                 #
+" #------------------------------------------------------------------------------#
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
@@ -332,22 +318,6 @@ augroup vimrc-remember-cursor-position
   autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup END
 
-"" txt
-" augroup vimrc-wrapping
-  " autocmd!
-  " autocmd BufRead,BufNewFile *.txt call s:setupWrapping()
-" augroup END
-
-"" make/cmake
-"augroup vimrc-make-cmake
-  "autocmd!
-  "autocmd FileType make setlocal noexpandtab
-  "autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
-"augroup END
-
-
-
-source ~/.config/nvim/key-mapping.vim
 
 
 " #------------------------------------------------------------------------------#
@@ -390,7 +360,6 @@ set background=dark
 " let g:neodark#terminal_transparent = 1 " default: 0
 " let g:neodark#solid_vertsplit = 1 " default: 0
 highlight Comment gui=italic
-
 
 
 "Credit joshdick
@@ -457,11 +426,9 @@ catch
 endtry
 
 
-
 " #------------------------------------------------------------------------------#
 " #                                plugin settings                               #
 " #------------------------------------------------------------------------------#
-
 
 let g:indentLine_char = '┊'
 "" fzf.vim
@@ -482,11 +449,6 @@ let g:session_command_aliases = 1
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:vim_json_syntax_conceal = 0
-autocmd InsertEnter *.json setlocal concealcursor=
-autocmd InsertLeave *.json setlocal concealcursor=inc
-
-autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
-
 " for jsx comment
 let g:NERDCustomDelimiters = { 'javascript.js': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }, 'typescript.jsx': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }}
 "Start the completion menu with CTRL-N/CTRL-P, then run this map.
@@ -502,17 +464,6 @@ let g:closetag_shortcut = '>'
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 				\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-" function! s:find_files()
-    " let git_dir = system('git rev-parse --show-toplevel 2> /dev/null')[:-2]
-    " if git_dir != ''
-        " execute 'GFiles' git_dir
-    " else
-        " execute 'Files'
-    " endif
-" endfunction
-" command! ProjectFiles execute s:find_files()
-let g:rooter_change_directory_for_non_project_files = ''
-
 if executable('rg')
     let g:rg_derive_root='true'
 endif
@@ -520,6 +471,35 @@ endif
 if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
+
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
+let $FZF_DEFAULT_OPTS='--reverse'
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:javascript_conceal_function             = "ƒ"
+let g:javascript_conceal_null                 = "ø"
+let g:javascript_conceal_this                 = "@"
+let g:javascript_conceal_return               = "⇚"
+let g:javascript_conceal_undefined            = "¿"
+let g:javascript_conceal_NaN                  = "ℕ"
+let g:javascript_conceal_prototype            = "¶"
+let g:javascript_conceal_static               = "•"
+let g:javascript_conceal_super                = "Ω"
+let g:javascript_conceal_arrow_function       = "⇒"
+let g:javascript_conceal_noarg_arrow_function = "🞅"
+let g:javascript_conceal_underscore_arrow_function = "🞅"
+" vim jsx pretty
+let g:vim_jsx_pretty_disable_tsx	= 1
+let g:vim_jsx_pretty_colorful_config= 1
+let g:vim_jsx_pretty_highlight_close_tag = 1
+
+" vim rainbow parentheses
+let g:rainbow_active = 1
+
+
+" #------------------------------------------------------------------------------#
+" #                                custom settings                               #
+" #------------------------------------------------------------------------------#
+
 
 " create a dir if not exists when use te command
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
@@ -546,3 +526,12 @@ function! CheckUpdate(timer)
     silent! checktime
     call timer_start(1000,'CheckUpdate')
 endfunction
+
+let g:rooter_change_directory_for_non_project_files = ''
+autocmd InsertEnter *.json setlocal concealcursor=
+autocmd InsertLeave *.json setlocal concealcursor=inc
+
+autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
+
+
+source ~/.config/nvim/key-mapping.vim
