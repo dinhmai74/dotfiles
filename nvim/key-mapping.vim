@@ -194,6 +194,7 @@ nmap <leader>gs :G<CR>
 nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>pr :%s/<C-R>=expand("<cword>")<CR>/<C-R>=expand("<cword>")<C-R> .
 
 inoremap jk <ESC>
 vmap ++ <plug>NERDCommenterToggle

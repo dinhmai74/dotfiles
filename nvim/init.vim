@@ -72,14 +72,15 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 " syntax highlight
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'yuezk/vim-js'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'mxw/vim-jsx'
+" Plug 'maxmellon/vim-jsx-pretty'
+" Plug 'mxw/vim-jsx'
 Plug 'lilydjwg/colorizer' "colorize all text 
 Plug 'luochen1990/rainbow'
 
 " util
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion' 
+Plug 'romainl/vim-cool'  "disable highlight when searched
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -464,9 +465,9 @@ let g:closetag_shortcut = '>'
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 				\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-if executable('rg')
-    let g:rg_derive_root='true'
-endif
+" if executable('rg')
+    " let g:rg_derive_root='true'
+" endif
 
 if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
@@ -475,18 +476,18 @@ endif
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let $FZF_DEFAULT_OPTS='--reverse'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_null                 = "ø"
-let g:javascript_conceal_this                 = "@"
-let g:javascript_conceal_return               = "⇚"
-let g:javascript_conceal_undefined            = "¿"
-let g:javascript_conceal_NaN                  = "ℕ"
-let g:javascript_conceal_prototype            = "¶"
-let g:javascript_conceal_static               = "•"
-let g:javascript_conceal_super                = "Ω"
-let g:javascript_conceal_arrow_function       = "⇒"
-let g:javascript_conceal_noarg_arrow_function = "🞅"
-let g:javascript_conceal_underscore_arrow_function = "🞅"
+" let g:javascript_conceal_function             = "ƒ"
+" let g:javascript_conceal_null                 = "ø"
+" let g:javascript_conceal_this                 = "@"
+" let g:javascript_conceal_return               = "⇚"
+" let g:javascript_conceal_undefined            = "¿"
+" let g:javascript_conceal_NaN                  = "ℕ"
+" let g:javascript_conceal_prototype            = "¶"
+" let g:javascript_conceal_static               = "•"
+" let g:javascript_conceal_super                = "Ω"
+" let g:javascript_conceal_arrow_function       = "⇒"
+" let g:javascript_conceal_noarg_arrow_function = "🞅"
+" let g:javascript_conceal_underscore_arrow_function = "🞅"
 " vim jsx pretty
 let g:vim_jsx_pretty_disable_tsx	= 1
 let g:vim_jsx_pretty_colorful_config= 1
