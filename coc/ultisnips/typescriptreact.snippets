@@ -49,6 +49,10 @@ snippet (cl) "console.log"
 console.log('${2:$1: }', ${1});
 endsnippet
 
+snippet log "log" 
+console.log({ $1 })
+endsnippet
+
 
 snippet style " create styel file"
 import { StyleSheet } from 'react-native'
@@ -505,4 +509,7 @@ snippet loading "loading"
 const loading = isFetching
 if(loading) return <AppLoading />
 
+endsnippet
+snippet moment "moment" 
+import moment from 'moment'
 endsnippet

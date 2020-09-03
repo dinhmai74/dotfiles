@@ -66,8 +66,10 @@ Plug 'srcery-colors/srcery-vim'
 Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
 Plug 'KeitaNakamura/neodark.vim'
+Plug 'mg979/vim-xtabline' " tab line
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+
 
 " syntax highlight
 Plug 'chemzqm/vim-jsx-improve'
@@ -384,6 +386,7 @@ endif
 
 " #  ----vimariline----#
 let g:airline_theme="onedark"
+let g:airline#extensions#tabline#enabled = 0
 try
 " Enable extensions
 let g:airline_extensions = ['branch', 'hunks', 'coc']
@@ -536,3 +539,4 @@ autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
 
 
 source ~/.config/nvim/key-mapping.vim
+

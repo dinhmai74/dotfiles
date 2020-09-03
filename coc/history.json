@@ -171,7 +171,18 @@
       "yank"
     ],
     "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Ffun%2Ftesting": [
-      "clea"
+      "clea",
+      "unfold"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fend-game%2FBowie": [
+      "oc",
+      "editsni",
+      "snip",
+      "yan",
+      "ts",
+      "yank",
+      "tsser",
+      "tsserver"
     ]
   },
   "extensions": {
@@ -293,6 +304,10 @@
       "past",
       "copy",
       "pas"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fend-game%2FBowie": [
+      "coll",
+      "co"
     ]
   }
 }
