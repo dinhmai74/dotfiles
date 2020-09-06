@@ -13,35 +13,47 @@ set nu
 set relativenumber
 set smarttab
 set cindent
-set tabstop=2
-set shiftwidth=2
-" always uses spaces instead of tab characters
-set expandtab
 autocmd BufEnter * silent! :lcd%:p:h
 au FileType * set fo-=c fo-=r fo-=o "disable auto comment new line
 set noshowmatch
 set nohlsearch
-set hidden
 set noerrorbells
-set smartindent
-set nowrap
 set noswapfile
-set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set termguicolors
 set scrolloff=8
-" Give more space for displaying messages.
-set cmdheight=2
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
 set updatetime=30
 set autoread
 " don't give |ins-completion-menu| messages.
-set shortmess+=c
 " always show signcolumns
 set signcolumn=yes
-
+set hidden                              " Required to keep multiple buffers open multiple buffers
+set nowrap                              " Display long lines as just one line
+set encoding=utf-8                      " The encoding displayed
+set pumheight=10                        " Makes popup menu smaller
+set fileencoding=utf-8                  " The encoding written to file
+set ruler              			            " Show the cursor position all the time
+set cmdheight=2                         " More space for displaying messages
+set splitbelow                          " Horizontal splits will automatically be below
+set splitright                          " Vertical splits will automatically be to the right
+set t_Co=256                            " Support 256 colors
+set conceallevel=0                      " So that I can see `` in markdown files
+set tabstop=2                           " Insert 2 spaces for a tab
+set shiftwidth=2                        " Change the number of space characters inserted for indentation
+set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
+set expandtab                           " Converts tabs to spaces
+set smartindent                         " Makes indenting smart
+set laststatus=2                        " Always display the status line
+set showtabline=2                       " Always show tabs
+set nobackup                            " This is recommended by coc
+set nowritebackup                       " This is recommended by coc
+set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
+set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
+set timeoutlen=500                      " By default timeoutlen is 1000 
+set guifont=Fira\ Code\ Nerd\ Font
 
 call plug#begin('~/.vim/plugged')
 
@@ -70,7 +82,6 @@ Plug 'mg979/vim-xtabline' " tab line
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
-
 " syntax highlight
 Plug 'chemzqm/vim-jsx-improve'
 Plug 'yuezk/vim-js'
@@ -83,6 +94,16 @@ Plug 'luochen1990/rainbow'
 Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion' 
 Plug 'romainl/vim-cool'  "disable highlight when searched
+" Start Screen
+" Zen mode
+Plug 'junegunn/goyo.vim'
+Plug 'mhinz/vim-startify'
+" Smooth scroll
+" Plug 'psliwka/vim-smoothie'
+" Text Navigation
+" Plug 'unblevable/quick-scope'
+" Useful for React Commenting 
+Plug 'suy/vim-context-commentstring'
 
 " git
 Plug 'airblade/vim-gitgutter'
@@ -110,6 +131,8 @@ Plug 'xolox/vim-session'
 
 Plug 'junegunn/fzf', { 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 Plug 'stsewd/fzf-checkout.vim'
 Plug 'mike-hearn/vim-combosearch'
 
@@ -140,6 +163,7 @@ let g:coc_global_extensions = [
   \ 'coc-marketplace', 
   \ 'coc-word', 
   \ 'coc-explorer', 
+  \ 'coc-terminal', 
   \ ]
 " from readme
 
@@ -265,6 +289,58 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+" Explorer
+let g:coc_explorer_global_presets = {
+\   'floating': {
+\      'position': 'floating',
+\   },
+\   'floatingLeftside': {
+\      'position': 'floating',
+\      'floating-position': 'left-center',
+\      'floating-width': 30,
+\   },
+\   'floatingRightside': {
+\      'position': 'floating',
+\      'floating-position': 'right-center',
+\      'floating-width': 30,
+\   },
+\   'simplify': {
+\     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+\   }
+\ }
+
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+
+" Snippets
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand)
+
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <C-j> <Plug>(coc-snippets-select)
+
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-j>'
+
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-k>'
+
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)
+nmap <space>e :CocCommand explorer --preset floating<CR>
+
+" set mouse=a
+
+" nnoremap <silent> <space><space> :<C-u>CocFzfList<CR>
+" nnoremap <silent> <space>a       :<C-u>CocFzfList diagnostics<CR>
+" nnoremap <silent> <space>b       :<C-u>CocFzfList diagnostics --current-buf<CR>
+" nnoremap <silent> <space>c       :<C-u>CocFzfList commands<CR>
+" nnoremap <silent> <space>e       :<C-u>CocFzfList extensions<CR>
+" nnoremap <silent> <space>l       :<C-u>CocFzfList location<CR>
+" nnoremap <silent> <space>o       :<C-u>CocFzfList outline<CR>
+" nnoremap <silent> <space>s       :<C-u>CocFzfList symbols<CR>
+" nnoremap <silent> <space>p       :<C-u>CocFzfListResume<CR>
+" let g:coc_fzf_preview = ''
+" let g:coc_fzf_opts = []
 
 "*****************************************************************************
 "" Abbreviations
@@ -326,44 +402,6 @@ augroup END
 " #------------------------------------------------------------------------------#
 " #                                 Custom theme                                 #
 " #------------------------------------------------------------------------------#
-syntax on
-let g:gruvbox_contrast_dark = 'hard'
-if exists('+termguicolors')
-    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-endif
-let g:gruvbox_invert_selection='0'
-
-" --- vim go (polyglot) settings.
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_types = 1
-let g:go_highlight_function_parameters = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_generate_tags = 1
-let g:go_highlight_format_strings = 1
-let g:go_highlight_variable_declarations = 1
-let g:go_auto_sameids = 1
-
-colorscheme gruvbox
-set background=dark
-" colorscheme onedark
-" colorscheme gruvbox
-" let g:onedark_hide_endofbuffer=1
-" let g:onedark_terminal_italics=1
-" let g:onedark_termcolors=256
-" let g:neodark#background = '#202020'
-" let g:one_allow_italics = 1 " I love italic for comments
-" let g:neodark#use_256color = 1 " default: 0
-" let g:neodark#terminal_transparent = 1 " default: 0
-" let g:neodark#solid_vertsplit = 1 " default: 0
-highlight Comment gui=italic
-
 
 "Credit joshdick
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
@@ -384,62 +422,12 @@ endif
 " colorscheme one
 " hi Normal guibg=NONE ctermbg=NONE
 
-" #  ----vimariline----#
-let g:airline_theme="onedark"
-let g:airline#extensions#tabline#enabled = 0
-try
-" Enable extensions
-let g:airline_extensions = ['branch', 'hunks', 'coc']
-
-" Update section z to just have line number
-let g:airline_section_z = airline#section#create(['linenr'])
-
-" Do not draw separators for empty sections (only for the active window) >
-let g:airline_skip_empty_sections = 1
-
-" Smartly uniquify buffers names with similar filename, suppressing common parts of paths.
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-
-" Custom setup that removes filetype/whitespace from default vim airline bar
-let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
-
-" Customize vim airline per filetype
-" 'nerdtree'  - Hide nerdtree status line
-" 'list'      - Only show file type plus current line number out of total
-let g:airline_filetype_overrides = {
-  \ 'nerdtree': [ get(g:, 'NERDTreeStatusline', ''), '' ],
-  \ 'list': [ '%y', '%l/%L'],
-  \ }
-
-" Enable powerline fonts
-let g:airline_powerline_fonts = 1
-
-" Enable caching of syntax highlighting groups
-let g:airline_highlighting_cache = 1
-
-" Define custom airline symbols
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-
-" Don't show git changes to current file in airline
-let g:airline#extensions#hunks#enabled=0
-
-catch
-  echo 'Airline not installed. It should work after running :PlugInstall'
-endtry
-
-
 " #------------------------------------------------------------------------------#
 " #                                plugin settings                               #
 " #------------------------------------------------------------------------------#
 
 let g:indentLine_char = '┊'
-"" fzf.vim
-set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
-" let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
-let $FZF_DEFAULT_COMMAND="rg --files"
+
 " ctrlp
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:NERDSpaceDelims = 1
@@ -476,34 +464,9 @@ if exists("*fugitive#statusline")
   set statusline+=%{fugitive#statusline()}
 endif
 
-let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
-let $FZF_DEFAULT_OPTS='--reverse'
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-" let g:javascript_conceal_function             = "ƒ"
-" let g:javascript_conceal_null                 = "ø"
-" let g:javascript_conceal_this                 = "@"
-" let g:javascript_conceal_return               = "⇚"
-" let g:javascript_conceal_undefined            = "¿"
-" let g:javascript_conceal_NaN                  = "ℕ"
-" let g:javascript_conceal_prototype            = "¶"
-" let g:javascript_conceal_static               = "•"
-" let g:javascript_conceal_super                = "Ω"
-" let g:javascript_conceal_arrow_function       = "⇒"
-" let g:javascript_conceal_noarg_arrow_function = "🞅"
-" let g:javascript_conceal_underscore_arrow_function = "🞅"
-" vim jsx pretty
-let g:vim_jsx_pretty_disable_tsx	= 1
-let g:vim_jsx_pretty_colorful_config= 1
-let g:vim_jsx_pretty_highlight_close_tag = 1
-
-" vim rainbow parentheses
-let g:rainbow_active = 1
-
-
 " #------------------------------------------------------------------------------#
 " #                                custom settings                               #
 " #------------------------------------------------------------------------------#
-
 
 " create a dir if not exists when use te command
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
@@ -536,7 +499,45 @@ autocmd InsertEnter *.json setlocal concealcursor=
 autocmd InsertLeave *.json setlocal concealcursor=inc
 
 autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
+if exists('g:vscode')
+  " VS Code extension
+  source $HOME/.config/nvim/vscode/settings.vim
+  source $HOME/.config/nvim/plug-config/easymotion.vim
+else
 
-
+  " Themes
+  source $HOME/.config/nvim/themes/syntax.vim
+  source $HOME/.config/nvim/themes/gruvbox.vim
+  source $HOME/.config/nvim/themes/airline.vim
+  " Plugin Configuration
+  " source $HOME/.config/nvim/keys/which-key.vim
+  source $HOME/.config/nvim/plug-config/rainbow.vim
+  " source $HOME/.config/nvim/plug-config/rnvimr.vim
+  " source $HOME/.config/nvim/plug-config/better-whitespace.vim
+  source $HOME/.config/nvim/plug-config/fzf.vim
+  " source $HOME/.config/nvim/plug-config/sneak.vim
+  " source $HOME/.config/nvim/plug-config/codi.vim
+  " source $HOME/.config/nvim/plug-config/vim-wiki.vim
+  source $HOME/.config/nvim/plug-config/coc.vim
+  source $HOME/.config/nvim/plug-config/nerd-commenter.vim
+  " source $HOME/.config/nvim/plug-config/goyo.vim
+  "source $HOME/.config/nvim/plug-config/vim-rooter.vim
+  source $HOME/.config/nvim/plug-config/start-screen.vim
+  " source $HOME/.config/nvim/plug-config/gitgutter.vim
+  " source $HOME/.config/nvim/plug-config/git-messenger.vim
+  source $HOME/.config/nvim/plug-config/closetags.vim
+  " source $HOME/.config/nvim/plug-config/floaterm.vim
+  " source $HOME/.config/nvim/plug-config/vista.vim
+  "source $HOME/.config/nvim/plug-config/xtabline.vim
+  source $HOME/.config/nvim/plug-config/polyglot.vim
+  " source $HOME/.config/nvim/plug-config/far.vim
+  " source $HOME/.config/nvim/plug-config/tagalong.vim
+  " source $HOME/.config/nvim/plug-config/illuminate.vim
+  " source $HOME/.config/nvim/plug-config/bracey.vim
+  " source $HOME/.config/nvim/plug-config/asynctask.vim
+  " source $HOME/.config/nvim/plug-config/window-swap.vim
+  " source $HOME/.config/nvim/plug-config/markdown-preview.vim
+  " source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
+  " source $HOME/.config/nvim/plug-config/ale.vim
+endif
 source ~/.config/nvim/key-mapping.vim
-

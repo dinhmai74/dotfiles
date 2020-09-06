@@ -182,7 +182,8 @@
       "ts",
       "yank",
       "tsser",
-      "tsserver"
+      "tsserver",
+      "ma"
     ]
   },
   "extensions": {

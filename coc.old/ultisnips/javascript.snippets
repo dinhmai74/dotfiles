@@ -1,0 +1,56 @@
+# A valid snippet should starts with:
+#
+#		snippet trigger_word [ "description" [ options ] ]
+#
+# and end with:
+#
+#		endsnippet
+#
+# Snippet options:
+#
+#		b - Beginning of line.
+#		i - In-word expansion.
+#		w - Word boundary.
+#		r - Regular expression
+#		e - Custom context snippet
+#		A - Snippet will be triggered automatically, when condition matches.
+#
+# Basic example:
+#
+#		snippet emitter "emitter properties" b
+#		private readonly ${1} = new Emitter<$2>()
+#		public readonly ${1/^_(.*)/$1/}: Event<$2> = this.$1.event
+#		endsnippet
+#
+# Online reference: https://github.com/SirVer/ultisnips/blob/master/doc/UltiSnips.txt
+
+snippet lodash "lodash" b
+import _ from 'lodash'
+endsnippet
+
+snippet eslint "eslint ignore" b
+// eslint-disable-next-line
+endsnippet
+
+snippet cl "cl" 
+console.log("$1", ${2:$1})
+endsnippet
+
+snippet log "log" 
+console.log("$1")
+endsnippet
+
+snippet for "forloop"
+for (let i = 0; i < $1.length; i++){
+	const e=$1[i]
+	$2
+}
+endsnippet
+
+snippet rf "rf"
+import React from "react";
+
+export const ${1:`!v expand('%:t:r')`}  = () => {
+	return <div></div>;
+};
+endsnippet
