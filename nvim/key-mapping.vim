@@ -1,8 +1,13 @@
 "*****************************************************************************
 "" Mappings
 "*****************************************************************************
-inoremap jk <ESC>
 
+if exists('g:vscode')
+
+  " Simulate same TAB behavior in VSCode
+  nmap <Tab> :Tabnext<CR>
+  nmap <S-Tab> :Tabprev<CR>
+else
 "" Split
 nnoremap th  :tabfirst<CR>
 nnoremap tj  :tabnext<CR>
@@ -115,6 +120,7 @@ nmap <leader>y :History:<CR>
 nnoremap <Leader>o :.Gbrowse<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>e :GFiles<CR>
+nnoremap <silent> <c-p> :Files<CR>
 " nnoremap <silent> <C-e> :GFiles<CR>
 " Allows you to save files you opened without write permissions via sudo
 cmap w!! w !sudo tee %
@@ -146,7 +152,7 @@ let g:user_emmet_expandabbr_key='<C-z>'
 
 
 " frame command
-nmap <space>f :CommentFrameHashDash ""<Left>
+nmap <space>uc :CommentFrameHashDash ""<Left>
 let g:multi_cursor_select_all_word_key = '<space>n'
 
 map <leader>su :%sort u<CR>
@@ -196,7 +202,6 @@ nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>pr :%s/<C-R>=expand("<cword>")<CR>/<C-R>=expand("<cword>")<C-R> .
 
 
-
 " j/k will move virtual lines (lines that wrap)
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
@@ -208,3 +213,4 @@ nmap <leader>gs :G<CR>
 nnoremap <leader>gco :GCheckout<CR>
 
 let g:fzf_checkout_track_key = 'ctrl-t'
+endif

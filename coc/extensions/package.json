@@ -1,8 +1,6 @@
 {
   "dependencies": {
     "coc-actions": ">=1.4.1",
-    "coc-cssmodules": ">=1.0.0",
-    "coc-emmet": ">=1.1.6",
     "coc-emoji": ">=1.2.3",
     "coc-eslint": ">=1.2.7",
     "coc-explorer": ">=0.7.11",

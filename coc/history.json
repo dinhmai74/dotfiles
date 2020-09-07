@@ -160,6 +160,9 @@
     "%2FUsers%2Fdinhmai%2F": {
       "config": [
         "yank"
+      ],
+      "config%2Fnvim": [
+        "mark"
       ]
     },
     "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Ffun%2FBowie": [
@@ -183,7 +186,8 @@
       "yank",
       "tsser",
       "tsserver",
-      "ma"
+      "ma",
+      "server"
     ]
   },
   "extensions": {
@@ -310,5 +314,12 @@
       "coll",
       "co"
     ]
+  },
+  "lists": {
+    "%2FUsers%2Fdinhmai%2F": {
+      "config%2Fnvim": [
+        "exten"
+      ]
+    }
   }
 }

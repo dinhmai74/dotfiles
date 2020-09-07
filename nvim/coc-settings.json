@@ -21,5 +21,15 @@
   "yank.enableCompletion": false,
   "coc.preferences.formatOnType": true,
   "tsserver.log": "verbose",
-  "tsserver.npm": "/usr/local/bin/npm"
+  "tsserver.npm": "/usr/local/bin/npm",
+  "coc.preferences.colorSupport": true,
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
+  },
+  "coc.source.emoji.filetypes": ["markdown"],
+  "coc.source.emoji.triggerCharacters": ["TRIGGERCHAR"]
 }

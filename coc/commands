@@ -1,10 +1,10 @@
-editor.action.organizeImport
 explorer
-tsserver.reloadProjects
+prettier.formatFile
+editor.action.organizeImport
 tsserver.restart
+tsserver.reloadProjects
 yank.clean
 snippets.editSnippets
-prettier.formatFile
 eslint.executeAutofix
 eslint.createConfig
 tsserver.openTsServerLog
