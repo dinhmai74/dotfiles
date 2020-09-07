@@ -1,6 +1,6 @@
 explorer
-prettier.formatFile
 editor.action.organizeImport
+prettier.formatFile
 tsserver.restart
 tsserver.reloadProjects
 yank.clean

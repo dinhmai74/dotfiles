@@ -19,7 +19,7 @@ nnoremap tn  :tabnext<Space>
 nnoremap td  :tabclose<CR>
 nnoremap tb  :e#<CR>
 nnoremap gb :e#<CR>
-noremap <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
+" noremap <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
 
 "" Tabs
 nnoremap <Tab> gt
@@ -119,7 +119,7 @@ nmap <leader>y :History:<CR>
 "" Open current line on GitHub
 nnoremap <Leader>o :.Gbrowse<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>e :GFiles<CR>
+" nnoremap <silent> <leader>e :GFiles<CR>
 nnoremap <silent> <c-p> :Files<CR>
 " nnoremap <silent> <C-e> :GFiles<CR>
 " Allows you to save files you opened without write permissions via sudo
@@ -210,7 +210,6 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
 nmap <leader>gs :G<CR>
-nnoremap <leader>gco :GCheckout<CR>
+nnoremap <leader>gco :GBranches<CR>
 
-let g:fzf_checkout_track_key = 'ctrl-t'
 endif

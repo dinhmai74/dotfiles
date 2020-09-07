@@ -7,7 +7,7 @@ let g:startify_custom_header = [
         \ '    /_/ |_/  |___/\____/\____/\__,_/\___/ ',
         \]
                                       
-let g:startify_session_dir = '~/.config/nvim/session'
+let g:startify_session_dir = '~/.config/nvim/startify/session'
 
 
 let g:startify_lists = [

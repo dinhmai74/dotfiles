@@ -62,7 +62,7 @@ set timeoutlen=500                      " By default timeoutlen is 1000
 set guifont=Fira\ Code\ Nerd\ Font
 
 " Specify a directory for plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-commentary'
 
@@ -79,8 +79,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'morhetz/gruvbox'
     Plug 'mg979/vim-xtabline' " tab line
-        " Colorizer
-    Plug 'norcalli/nvim-colorizer.lua'
     " Rainbow brackets
     Plug 'luochen1990/rainbow'
     " Plug 'srcery-colors/srcery-vim'
@@ -98,7 +96,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'mattn/emmet-vim'
     Plug 'junegunn/goyo.vim' " Zen mode
     Plug 'mhinz/vim-startify' " Start screen
-    Plug 'psliwka/vim-smoothie' " Smooth scroll
     Plug 'suy/vim-context-commentstring' " Useful for React Commenting 
     Plug 'terryma/vim-multiple-cursors'
      " Plug 'tmhedberg/SimpylFold' "fold code
@@ -124,7 +121,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'xolox/vim-session'
     Plug 'junegunn/fzf', { 'do': './install --bin' }
     Plug 'junegunn/fzf.vim'
-    Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
     Plug 'stsewd/fzf-checkout.vim'
     " Plug 'mike-hearn/vim-combosearch'
@@ -231,7 +228,7 @@ let g:NERDSpaceDelims = 1
 " let g:vim_jsx_pretty_colorful_config = 1 
 au FileType * set fo-=c fo-=r fo-=o
 " session management
-let g:session_directory = "~/nvim/session"
+let g:session_directory = "~/.config/nvim/session"
 let g:session_autoload = "no"
 let g:session_autosave = "no"
 let g:session_command_aliases = 1
@@ -296,7 +293,6 @@ else
   " Plugin Configuration
   " source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/plug-config/rainbow.vim
-  " source $HOME/.config/nvim/plug-config/rnvimr.vim
   " source $HOME/.config/nvim/plug-config/better-whitespace.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
   " source $HOME/.config/nvim/plug-config/sneak.vim
@@ -314,7 +310,6 @@ else
   " source $HOME/.config/nvim/plug-config/vista.vim
   "source $HOME/.config/nvim/plug-config/xtabline.vim
   source $HOME/.config/nvim/plug-config/polyglot.vim
-  luafile $HOME/.config/nvim/lua/plug-colorizer.lua
   " source $HOME/.config/nvim/plug-config/far.vim
   " source $HOME/.config/nvim/plug-config/tagalong.vim
   " source $HOME/.config/nvim/plug-config/illuminate.vim
