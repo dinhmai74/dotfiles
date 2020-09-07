@@ -263,7 +263,8 @@
       "config": [
         "coc-yank",
         "omni",
-        "css"
+        "css",
+        "lua"
       ]
     },
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
@@ -319,6 +320,10 @@
     "%2FUsers%2Fdinhmai%2F": {
       "config%2Fnvim": [
         "exten"
+      ],
+      "config": [
+        "mark",
+        "market"
       ]
     }
   }

@@ -13,7 +13,8 @@ let g:coc_global_extensions = [
   \ 'coc-word', 
   \ 'coc-explorer', 
   \ 'coc-terminal', 
-  \ 'coc-emoji'
+  \ 'coc-emoji',
+  \ 'coc-lua'
   \ ]
 " from readme
 

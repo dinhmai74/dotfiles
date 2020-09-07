@@ -5,7 +5,6 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   "autocmd VimEnter * PlugInstall
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
-" Specify a directory for plugins
 "*****************************************************************************
 "" Basic Settings
 "*****************************************************************************
@@ -62,6 +61,7 @@ set signcolumn=yes                      " Always show the signcolumn, otherwise 
 set timeoutlen=500                      " By default timeoutlen is 1000 
 set guifont=Fira\ Code\ Nerd\ Font
 
+" Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-commentary'
@@ -79,6 +79,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'morhetz/gruvbox'
     Plug 'mg979/vim-xtabline' " tab line
+        " Colorizer
+    Plug 'norcalli/nvim-colorizer.lua'
+    " Rainbow brackets
+    Plug 'luochen1990/rainbow'
     " Plug 'srcery-colors/srcery-vim'
     " Plug 'joshdick/onedark.vim'
     " Plug 'rakr/vim-one'
@@ -263,10 +267,10 @@ augroup BWCCreateDir
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
 
-if ! exists("g:CheckUpdateStarted")
-    let g:CheckUpdateStarted=1
-    call timer_start(1,'CheckUpdate')
-endif
+" if ! exists("g:CheckUpdateStarted")
+    " let g:CheckUpdateStarted=1
+    " call timer_start(1,'CheckUpdate')
+" endif
 
 " update file if any change from another text editor
 " function! CheckUpdate(timer)
@@ -310,6 +314,7 @@ else
   " source $HOME/.config/nvim/plug-config/vista.vim
   "source $HOME/.config/nvim/plug-config/xtabline.vim
   source $HOME/.config/nvim/plug-config/polyglot.vim
+  luafile $HOME/.config/nvim/lua/plug-colorizer.lua
   " source $HOME/.config/nvim/plug-config/far.vim
   " source $HOME/.config/nvim/plug-config/tagalong.vim
   " source $HOME/.config/nvim/plug-config/illuminate.vim
