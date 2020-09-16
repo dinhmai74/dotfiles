@@ -2,15 +2,15 @@ let SessionLoad = 1
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/workspace/project/end-game/Bowie
+cd ~/.config/nvim
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 app/screens/add-event-screen/add-detail-screen/pick-tag-content/SelectedTagsRow.tsx
+badd +1 plug-config/coc.vim
 argglobal
 %argdel
-edit app/screens/add-event-screen/add-detail-screen/pick-tag-content/SelectedTagsRow.tsx
+edit plug-config/coc.vim
 set splitbelow splitright
 wincmd t
 set winminheight=0
@@ -27,13 +27,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 28 - ((27 * winheight(0) + 20) / 41)
+let s:l = 183 - ((35 * winheight(0) + 24) / 49)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-28
+183
 normal! 0
-lcd ~/workspace/project/end-game/Bowie/app/screens/add-event-screen/add-detail-screen/pick-tag-content
 tabnext 1
 if exists('s:wipebuf') && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf

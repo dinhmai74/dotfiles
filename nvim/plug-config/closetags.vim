@@ -4,3 +4,5 @@ let g:closetag_regions = {
     \ 'javascript.jsx': 'jsxRegion',
     \ }
 let g:closetag_shortcut = '>'
+let g:closetag_emptyTags_caseSensitive = 1
+

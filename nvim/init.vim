@@ -79,8 +79,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'morhetz/gruvbox'
     Plug 'mg979/vim-xtabline' " tab line
+    Plug 'habamax/vim-gruvbit'
+
     " Rainbow brackets
     Plug 'luochen1990/rainbow'
+
     " Plug 'srcery-colors/srcery-vim'
     " Plug 'joshdick/onedark.vim'
     " Plug 'rakr/vim-one'
@@ -88,6 +91,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " #------------------------------------------------------------------------------#
     " #                                 Utils things                                 #
     " #------------------------------------------------------------------------------#
+    Plug 'voldikss/vim-floaterm'
     Plug 'scrooloose/nerdcommenter'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'tpope/vim-surround'
@@ -124,6 +128,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
     Plug 'stsewd/fzf-checkout.vim'
+    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
     " Plug 'mike-hearn/vim-combosearch'
     
     
@@ -137,7 +142,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
     " Plug 'maxmellon/vim-jsx-pretty'
     " Plug 'mxw/vim-jsx'
+    Plug 'alvan/vim-closetag'
     Plug 'jparise/vim-graphql'
+    Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
   endif
 
 call plug#end()
@@ -289,7 +296,9 @@ else
   " Themes
   source $HOME/.config/nvim/themes/syntax.vim
   source $HOME/.config/nvim/themes/gruvbox.vim
+  " source $HOME/.config/nvim/themes/gruvbit.vim
   source $HOME/.config/nvim/themes/airline.vim
+  source $HOME/.config/nvim/CustomConfig/extract-variable.vim
   " Plugin Configuration
   " source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/plug-config/rainbow.vim
@@ -299,13 +308,14 @@ else
   " source $HOME/.config/nvim/plug-config/codi.vim
   " source $HOME/.config/nvim/plug-config/vim-wiki.vim
   source $HOME/.config/nvim/plug-config/coc.vim
+  source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/plug-config/nerd-commenter.vim
   " source $HOME/.config/nvim/plug-config/goyo.vim
   "source $HOME/.config/nvim/plug-config/vim-rooter.vim
-  source $HOME/.config/nvim/plug-config/start-screen.vim
+  " source $HOME/.config/nvim/plug-config/start-screen.vim
   " source $HOME/.config/nvim/plug-config/gitgutter.vim
   " source $HOME/.config/nvim/plug-config/git-messenger.vim
-  " source $HOME/.config/nvim/plug-config/closetags.vim
+  source $HOME/.config/nvim/plug-config/closetags.vim
   " source $HOME/.config/nvim/plug-config/floaterm.vim
   " source $HOME/.config/nvim/plug-config/vista.vim
   "source $HOME/.config/nvim/plug-config/xtabline.vim
@@ -324,3 +334,7 @@ source ~/.config/nvim/key-mapping.vim
 let g:vim_jsx_pretty_disable_tsx	= 1
 let g:vim_jsx_pretty_colorful_config= 1
 let g:vim_jsx_pretty_highlight_close_tag = 1
+if exists("g:loaded_extract_variable") || &cp
+  finish
+endif
+let g:loaded_extract_variable = 1

@@ -238,6 +238,9 @@
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fdotnet%2Fholly-admin": [
       "tail"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fend-game%2FBowie": [
+      "float"
     ]
   },
   "marketplace": {
@@ -265,6 +268,9 @@
         "omni",
         "css",
         "lua"
+      ],
+      "config%2Fnvim": [
+        "fz"
       ]
     },
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie": [
@@ -287,6 +293,10 @@
     ],
     "%2FUsers%2Fdinhmai%2Fworkplace%2Fproject%2Fuit%2Fbowie-backend": [
       "deno"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fend-game%2FBowie": [
+      "lua",
+      "i"
     ]
   },
   "outline": {
@@ -314,6 +324,10 @@
     "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fend-game%2FBowie": [
       "coll",
       "co"
+    ],
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Ffun%2Fmy-app": [
+      "copy",
+      "past"
     ]
   },
   "lists": {
@@ -325,6 +339,24 @@
         "mark",
         "market"
       ]
-    }
+    },
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fend-game%2FBowie": [
+      "exten"
+    ]
+  },
+  "quickfix": {
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fend-game%2FBowie": [
+      "i"
+    ]
+  },
+  "grep": {
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fend-game%2FBowie": [
+      "i"
+    ]
+  },
+  "maps": {
+    "%2FUsers%2Fdinhmai%2Fworkspace%2Fproject%2Fend-game%2FBowie": [
+      "i"
+    ]
   }
 }

@@ -118,7 +118,7 @@ nnoremap <leader>sc :CloseSession<CR>
 nmap <leader>y :History:<CR>
 "" Open current line on GitHub
 nnoremap <Leader>o :.Gbrowse<CR>
-nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <silent> <space>b :Buffers<CR>
 " nnoremap <silent> <leader>e :GFiles<CR>
 nnoremap <silent> <c-p> :Files<CR>
 " nnoremap <silent> <C-e> :GFiles<CR>
@@ -127,7 +127,7 @@ cmap w!! w !sudo tee %
 
 " === vim-jsdoc shortcuts ==="
 " Generate jsdoc for function under cursor
-nmap <leader>z :JsDoc<CR>
+" nmap <leader>z :JsDoc<CR>
 
 " let g:vcoolor_map = '<C-c>'
 let g:user_emmet_expandabbr_key='<C-z>'
@@ -192,9 +192,7 @@ function! Twf()
 endfunction                                                                                                                                                   
                                                                                                                                                               
 nnoremap <silent> <Space>z :call Twf()<CR>
-map <space>t <Plug>(coc-terminal-toggle)
 
-nmap <leader>gs :G<CR>
 " global search
 nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
 nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>

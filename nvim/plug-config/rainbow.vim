@@ -44,3 +44,11 @@ let g:rainbow_conf = {
 \		'css': 0, 
 \	}
 \}
+
+" let g:rainbow#max_level = 16
+
+" kien version
+" au VimEnter * RainbowParenthesesToggle
+" au Syntax * RainbowParenthesesLoadRound
+" au Syntax * RainbowParenthesesLoadSquare
+" au Syntax * RainbowParenthesesLoadBraces

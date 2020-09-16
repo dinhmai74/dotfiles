@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/dinhmai/workspace/project/fun/my-app'
+let g:netrw_dirhist_5='/Users/dinhmai/.config/coc/extensions/node_modules/es7-react-js-snippets'
+let g:netrw_dirhist_4='/Users/dinhmai/.config/coc/extensions/node_modules'
 let g:netrw_dirhist_3='/Users/dinhmai/Workplace/Project/python-project/olx/olx'
 let g:netrw_dirhist_2='/Users/dinhmai/.config'
 let g:netrw_dirhist_1='/Users/dinhmai/.doom.d'

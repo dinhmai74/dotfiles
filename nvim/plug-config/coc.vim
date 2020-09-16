@@ -12,9 +12,10 @@ let g:coc_global_extensions = [
   \ 'coc-marketplace', 
   \ 'coc-word', 
   \ 'coc-explorer', 
-  \ 'coc-terminal', 
+  \ 'coc-react-refactor', 
   \ 'coc-emoji',
-  \ 'coc-lua'
+  \ 'coc-floatinput',
+  \ 'coc-leetcode'
   \ ]
 " from readme
 
@@ -75,8 +76,7 @@ endfunction
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Remap for rename current word
-nmap <F2> <Plug>(coc-rename)
+
 
 " Remap for format selected region
 xmap <leader>f  <Plug>(coc-format-selected)
@@ -178,7 +178,7 @@ let g:coc_explorer_global_presets = {
 
 nnoremap <silent> <space><space> :<C-u>CocFzfList<CR>
 nnoremap <silent> <space>a       :<C-u>CocFzfList diagnostics<CR>
-nnoremap <silent> <space>b       :<C-u>CocFzfList diagnostics --current-buf<CR>
+nnoremap <silent> <leader>b       :<C-u>CocFzfList diagnostics --current-buf<CR>
 nnoremap <silent> <space>c       :<C-u>CocFzfList commands<CR>
 nnoremap <silent> <leader>e      :<C-u>CocFzfList extensions<CR>
 nnoremap <silent> <space>l       :<C-u>CocFzfList location<CR>
@@ -188,3 +188,27 @@ nnoremap <silent> <space>p       :<C-u>CocFzfListResume<CR>
 " let g:coc_fzf_preview = ''
 " let g:coc_fzf_opts = []
 
+" make coc-pairs become god
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+				\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+augroup fzf_preview
+  autocmd!
+  autocmd User fzf_preview#initialized call s:fzf_preview_settings()
+augroup END
+
+function! s:fzf_preview_settings() abort
+  let g:fzf_preview_command = 'COLORTERM=truecolor ' . g:fzf_preview_command
+  let g:fzf_preview_grep_preview_cmd = 'COLORTERM=truecolor ' . g:fzf_preview_grep_preview_cmd
+endfunction
+
+
+" #------------------------------------------------------------------------------#
+" #                                  Float input                                 #
+" #------------------------------------------------------------------------------#
+autocmd ColorScheme *
+      \ hi CocHelperNormalFloatBorder guifg=#dddddd guibg=#575B54
+      \ | hi CocHelperNormalFloat guibg=#575B54
+" Remap for rename current word
+nmap <F2> <Plug>(coc-floatinput-rename)
+nmap <silent> <Leader>: <Plug>(coc-floatinput-command)

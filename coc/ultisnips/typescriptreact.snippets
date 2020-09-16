@@ -320,9 +320,8 @@ const useStyles = makeStyles((theme: Theme) =>
 
 endsnippet
 
-snippet constfc "const fc" b
+snippet constfc "const fc" 
 const $1 = () => {
-	return null
 }
 
 endsnippet
@@ -332,19 +331,19 @@ https://picsum.photos/350/350
 endsnippet
 
 
-snippet zustand "create zustand" 
-type $1State = {
+# snippet zustand "create zustand" 
+# type $1State = {
 
-}
+# }
 
-export const [$1] = create<$1State>(
-	persist("$2")(
-		immer((set: any,get: any)=>({
-			$3
-		}))
-	)
-)
-endsnippet
+# export const [$1] = create<$1State>(
+	# persist("$2")(
+		# immer((set: any,get: any)=>({
+			# $3
+		# }))
+	# )
+# )
+# endsnippet
 
 snippet cx "className with cx" 
 className={cx("$1")}
