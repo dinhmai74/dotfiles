@@ -1,4 +1,13 @@
+/Users/dinhmai/.config/install.sh
+/Users/dinhmai/.config/nvim/utils/install.sh
+/Users/dinhmai/.config/nvim/plug-config/start-screen.vim
+/Users/dinhmai/.config/shell/.zshrc
+/Users/dinhmai/.config/model.ts
 /Users/dinhmai/.config/nvim/init.vim
+/Users/dinhmai/.config/nvim/plug-config/vim-rooter.vim
+/Users/dinhmai/.config/nvim/plug-config/nerd-commenter.vim
+/Users/dinhmai/workspace/project/fun/Bowie/app/themes/themeProvider.tsx
+/Users/dinhmai/workspace/project/fun/Bowie/package.json
 /Users/dinhmai/workspace/project/fun/my-app/src/redux/counter/counterSlice.ts
 /Users/dinhmai/workspace/project/fun/my-app/src/components/Counter.tsx
 /Users/dinhmai/workspace/project/fun/my-app/src/screens/HomeScreen.tsx
@@ -95,12 +104,9 @@
 /Users/dinhmai/workspace/project/end-game/Bowie/app/screens/add-event-screen/chose-time-screen/ChoseTimeScreen.tsx
 /Users/dinhmai/workspace/project/end-game/Bowie/app/screens/add-event-screen/index.ts
 /Users/dinhmai/workspace/project/end-game/Bowie/app/screens/add-event-screen/chose-time-screen/ChoseDateRow.tsx
-/Users/dinhmai/.config/nvim/plug-config/start-screen.vim
-/Users/dinhmai/.config/install.sh
 /Users/dinhmai/.config/nvim/plug-config/rnvimr.vim
 /Users/dinhmai/workspace/project/end-game/Bowie/babel.config.js
 /Users/dinhmai/.config/ranger/rc.conf
-/Users/dinhmai/.config/nvim/utils/install.sh
 /Users/dinhmai/workspace/project/end-game/Bowie/app/components/app-input/AppInput.tsx
 /Users/dinhmai/workspace/project/end-game/Bowie/init.vim
 /Users/dinhmai/.config/nvim/lua/plug-colorizer.lua
@@ -118,9 +124,7 @@
 /Users/dinhmai/workspace/project/end-game/Bowie/app/app-graphql/mutations/event.graphql
 /Users/dinhmai/workspace/project/end-game/Bowie/app/screens/home-screen/Marker.tsx
 /Users/dinhmai/workspace/project/end-game/Bowie/app/components/box/Box.tsx
-/Users/dinhmai/.config/nvim/plug-config/vim-rooter.vim
 /Users/dinhmai/workspace/project/end-game/Bowie/node_modules/@types/react/index.d.ts
-/Users/dinhmai/.config/nvim/plug-config/nerd-commenter.vim
 /Users/dinhmai/.config/nvim/plug-config/xtabline.vim
 /Users/dinhmai/.config/nvim/themes/nord.vim
 /Users/dinhmai/.config/nvim/plug-config/polyglot.vim

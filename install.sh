@@ -42,6 +42,8 @@ packages=(
   "thefuck"
   "go"
   "gcc"
+  "fortune"
+  "cowsay"
   "--HEAD wvanlint/twf/twf"
 )
 
@@ -109,6 +111,7 @@ gemPackages=(
   "environment"
   "cocoapods"
   "iStats"
+  "lolcat"
 )
 
 for i in "${gemPackages[@]}"
