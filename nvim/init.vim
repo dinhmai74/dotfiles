@@ -91,6 +91,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " #------------------------------------------------------------------------------#
     " #                                 Utils things                                 #
     " #------------------------------------------------------------------------------#
+    Plug 'SirVer/ultisnips'
     Plug 'voldikss/vim-floaterm'
     Plug 'scrooloose/nerdcommenter'
     Plug 'christoomey/vim-tmux-navigator'
@@ -125,7 +126,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'xolox/vim-session'
     Plug 'junegunn/fzf', { 'do': './install --bin' }
     Plug 'junegunn/fzf.vim'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
     Plug 'stsewd/fzf-checkout.vim'
     Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
@@ -144,7 +144,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'mxw/vim-jsx'
     Plug 'alvan/vim-closetag'
     Plug 'jparise/vim-graphql'
-    Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
   endif
 
 call plug#end()
@@ -292,6 +291,14 @@ if exists('g:vscode')
   source $HOME/.config/nvim/vscode/settings.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
 else
+  
+    " Trigger configuration. You need to change this to something else than <tab> if you use https://github.com/Valloric/YouCompleteMe.
+  let g:UltiSnipsExpandTrigger="<c-j>"
+  " let g:UltiSnipsJumpForwardTrigger="<c-b>"
+  " let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+  
+  " If you want :UltiSnipsEdit to split your window.
+  let g:UltiSnipsEditSplit="vertical"
 
   " Themes
   source $HOME/.config/nvim/themes/syntax.vim
