@@ -54,3 +54,29 @@ export const ${1:`!v expand('%:t:r')`}  = () => {
 	return <div></div>;
 };
 endsnippet
+
+snippet rxconst "redux const" b
+export const $1 = '$1';
+endsnippet
+
+snippet rxaction "redux action" b
+export const $1= (payload) => ({
+  type: $2,
+	payload
+});
+endsnippet
+
+snippet rf "create react FunctionComponent" b
+import React from 'react'
+
+
+export const ${1:`!v expand('%:t:r')`} = (props) =>{
+		return (
+			<${3:div}>
+			</$3>
+		);
+}
+
+endsnippet
+
+

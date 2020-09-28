@@ -1,31 +1,136 @@
-snippet impd "import default file" b
-import ${2: $1 } from '${1}'
+snippet lodash "lodash" b
+import _ from 'lodash'
 endsnippet
 
-snippet imp "Destructuring import" b
-import { $2 } from '$1'
+snippet eslint "eslint ignore" b
+// eslint-disable-next-line
 endsnippet
 
-snippet (cl) "console.log"
-console.log('${2:$1: }', ${1});
+snippet cl "cl" 
+console.log("$1", ${2:$1})
 endsnippet
 
 snippet log "log" 
-console.log({ $1 })
+console.log("$1")
+endsnippet
+
+snippet for "forloop"
+for (let i = 0; i < $1.length; i++){
+	const e=$1[i]
+	$2
+}
+endsnippet
+
+snippet rf "rf"
+import React from "react";
+
+export const ${1:`!v expand('%:t:r')`}  = () => {
+	return <div></div>;
+};
+endsnippet
+
+snippet rxconst "redux const" b
+export const $1 = '$1';
+endsnippet
+
+snippet rxaction "redux action" b
+export const $1= (payload) => ({
+  type: $2,
+	payload
+});
+endsnippet
+
+snippet rf "create react FunctionComponent" 
+import React from 'react'
+
+
+export const ${1:`!v expand('%:t:r')`} = (props) =>{
+		return (
+			<${3:div}>
+			</$3>
+		);
+}
+
+endsnippet
+
+snippet dp " destructoring props"
+const { $1 } = props;
+endsnippet
+
+snippet ds " destructoring states"
+const { $1 } = state;
+endsnippet
+
+snippet dob " destructoring "
+const { $2 } = $1;
+endsnippet
+
+snippet cmt "cmt"
+/* ------------- $1 ------------- */
+endsnippet
+
+snippet lodash "lodash" 
+import _ from "lodash"
+endsnippet
+
+snippet func "func const" 
+const $1 = ( $2 ) => { $3 }
+endsnippet
+
+snippet useMemoOne "useMemoOne" 
+const {} = useMemoOne(() => ({
+	$1		
+}),[])
 endsnippet
 
 
-snippet style " create styel file" b
-import { StyleSheet } from 'react-native'
 
-export default StyleSheet.create({
-	container:{}
-})
+snippet use "useEffect" 
+React.useEffect(() => {
+  $1
+},[])
 endsnippet
 
-snippet ims "import styled-components" b
-import styled from 'styled-components'
+snippet user "useEffect with return" 
+React.useEffect(() => {
+  $1
+	return () => {
+    $2
+	};
+},[])
 endsnippet
+
+snippet usc "useContext" w
+const $1 = React.useContext($2)
+endsnippet
+
+snippet uscb "useCallback" w
+React.useCallback(
+	() => {
+		$1
+	},
+	[$2],
+)${0:;}
+endsnippet
+
+snippet usm "useMemo" w
+const $1 = React.useMemo(() => {
+	$2
+}, [$3])
+endsnippet
+
+snippet usrf "useRef" w
+const $1 = React.useRef($2)
+endsnippet
+
+snippet impd "import default file"
+import ${2: $1 } from '${1}'
+endsnippet
+
+snippet imp "Destructuring import"
+import { $2 } from '$1'
+endsnippet
+
 
 snippet dob " destructoring object"
 const { $2 } = $1 ;
@@ -40,11 +145,11 @@ snippet dop " destructoring state"
 const { $2 } = state ;
 endsnippet
 
-snippet exd "export * from" b
+snippet exd "export * from"
 export * from './$1'
 endsnippet
 
-snippet dp "default props" b
+snippet dp "default props"
 ${1:`!v expand('%:t:r')`}.defaultProps={
 	$2
 }
@@ -62,7 +167,7 @@ snippet tl "tron log"
 console.tlog('$1', $1)
 endsnippet
 
-snippet rnce "create react native full component snip" b
+snippet rnce "create react native full component snip"
 import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 import { I$1, I$1State } from './$1.presets.tsx'
@@ -108,7 +213,7 @@ endsnippet
 # endsnippet
 
 
-snippet rnf "create react native stateless" b
+snippet rnf "create react native stateless"
 import React, { useState } from 'react'
 
 type ${1:`!v expand('%:t:r')`}Props = {
@@ -122,7 +227,7 @@ export const ${1:`!v expand('%:t:r')`} = (props : ${1:`!v expand('%:t:r')`}Props
 
 endsnippet
 
-snippet rf "create react FunctionComponent" b
+snippet rf "create react FunctionComponent"
 import React from 'react'
 
 type ${1:`!v expand('%:t:r')`}Props = {
@@ -138,7 +243,7 @@ export const ${1:`!v expand('%:t:r')`} = (props : ${1:`!v expand('%:t:r')`}Props
 
 endsnippet
 
-snippet fc "function component"  b
+snippet fc "function component" 
 type $1Props = {
 	$3
 }
@@ -174,11 +279,11 @@ endsnippet
 # endsnippet
 
 
-snippet lodash "lodash" b
+snippet lodash "lodash" 
 import _ from "lodash"
 endsnippet
 
-snippet func "func const" b
+snippet func "func const" 
 const $1 = ( $2 ) => { $3 }
 endsnippet
 
@@ -231,7 +336,7 @@ const $1 = React.useRef($2)
 endsnippet
 
 
-snippet useThemes "Description" b
+snippet useThemes "Description" 
 const { color } = useThemes()
 endsnippet
 
@@ -245,7 +350,7 @@ const history = useHistory()
 endsnippet
 
 
-snippet v4 "v4"  b
+snippet v4 "v4" 
 import { v4 } from 'uuid'
 endsnippet
 
@@ -444,35 +549,6 @@ snippet map "map jsx"
 endsnippet
 
 
-snippet antpage "ant new page" 
-import { PageContainer } from '@ant-design/pro-layout'
-import { Card } from 'antd'
-import React from 'react'
-
-export default (): React.ReactNode => {
-	return (
-		<PageContainer>
-			<Card></Card>
-		</PageContainer>
-	)
-}
-endsnippet
-
-snippet onError "onError create" 
-const onError = (e) => enqueueSnackbar(e, { variant: "warning" })
-endsnippet
-
-snippet loading "loading" 
-const loading = isFetching
-if(loading) return <AppLoading />
-
-endsnippet
-snippet moment "moment" 
-import moment from 'moment'
-endsnippet
-
-snippet styles "styles" 
-const styles = StyleSheet.create({
-	$1
-})
+snippet useDispatch "use dispath hoooks" b
+const dispatch = useDispatch()
 endsnippet

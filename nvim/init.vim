@@ -79,7 +79,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'morhetz/gruvbox'
     Plug 'mg979/vim-xtabline' " tab line
-    Plug 'habamax/vim-gruvbit'
+    " Plug 'habamax/vim-gruvbit'
 
     " Rainbow brackets
     Plug 'luochen1990/rainbow'
@@ -94,7 +94,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'SirVer/ultisnips'
     Plug 'voldikss/vim-floaterm'
     Plug 'scrooloose/nerdcommenter'
-    Plug 'christoomey/vim-tmux-navigator'
+    " Plug 'christoomey/vim-tmux-navigator'
     Plug 'tpope/vim-surround'
     Plug 'easymotion/vim-easymotion' 
     Plug 'romainl/vim-cool'  " Disable highlight when searched
@@ -107,7 +107,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'christoomey/vim-system-copy'
     Plug 'christoomey/vim-sort-motion'
     Plug 'cometsong/commentframe.vim'
-    Plug 'tpope/vim-repeat'
+    Plug 'tpope/vim-repeat' "repeat exts when user accro
     Plug 'alvan/vim-closetag' "auto close tags
     Plug 'AndrewRadev/sideways.vim' " move params funciton easily
     Plug 'tpope/vim-abolish' "turn case crs crc etc
@@ -141,7 +141,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'yuezk/vim-js'
     Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
     " Plug 'maxmellon/vim-jsx-pretty'
-    " Plug 'mxw/vim-jsx'
+    Plug 'mxw/vim-jsx'
     Plug 'alvan/vim-closetag'
     Plug 'jparise/vim-graphql'
   endif
@@ -171,7 +171,7 @@ cnoreabbrev rg Rg
 cabbrev t tabnew
 nnoremap ; :
 vnoremap ; :
-tnoremap <space>t <C-\><C-n> 
+" tnoremap <space>t <C-\><C-n> 
 
 "*****************************************************************************
 "" Commands
@@ -345,3 +345,6 @@ if exists("g:loaded_extract_variable") || &cp
   finish
 endif
 let g:loaded_extract_variable = 1
+
+
+let g:coc_global_extensions

@@ -78,9 +78,14 @@ if has('macunix')
 endif
 
 " Split window
-nmap ss :split<Return><C-w>w
-nmap sv :vsplit<Return><C-w>w
-
+" nmap ss :split<Return><C-w>w
+" nmap ss :split<Return><C-w>w
+nmap sv :vsplit<CR>
+nmap sv :vsplit<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 " python excue
 " nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
