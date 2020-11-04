@@ -298,9 +298,9 @@ alias cfi='caffeinate -i -t 9999999999'
 alias pj='cd ~/workspace/project'
 alias st='cd ~/workspace/project/swift'
 alias uit='cd ~/workspace/project/uit'
-alias nf='cd ~/workspace/project/nextfunc'
 alias getAdress='ipconfig getifaddr en0'
-alias ipAd='ipconfig getifaddr en0'
+alias getadress='ipconfig getifaddr en0'
+alias ipad='ipconfig getifaddr en0'
 alias fun='cd ~/workspace/Project/fun'
 alias ig='ignite'
 alias igg='ignite generate'
@@ -324,6 +324,7 @@ alias devmenu="adb shell input keyevent 82"
 alias top="vtop --theme=wizard"
 alias ystory= "yarn storybook"
 alias py= "py3"
+alias f="fuck"
 
 autoload -U compinit && compinit
 
@@ -345,6 +346,7 @@ PATH="$PATH:/Users/dinhmai/.dotnet/tools"
 PATH="/Users/dinhmai/.deno/bin:$PATH"
 export GOPATH="$HOME/go"
 PATH="$PATH:$HOME/bin:$GOPATH/bin"
+PATH="$PATH:/usr/local/lib/ruby/gems/2.7.0/bin"
 export PATH
 export NPM_CONFIG_PREFIX=~/.npm-global
 export TOOLCHAINS=swift

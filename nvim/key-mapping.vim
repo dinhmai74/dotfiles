@@ -2,12 +2,12 @@
 "" Mappings
 "*****************************************************************************
 
-if exists('g:vscode')
+" if exists('g:vscode')
 
-  " Simulate same TAB behavior in VSCode
-  nmap <Tab> :Tabnext<CR>
-  nmap <S-Tab> :Tabprev<CR>
-else
+  " " Simulate same TAB behavior in VSCode
+  " nmap <Tab> :Tabnext<CR>
+  " nmap <S-Tab> :Tabprev<CR>
+" else
 "" Split
 nnoremap th  :tabfirst<CR>
 nnoremap tj  :tabnext<CR>
@@ -29,20 +29,20 @@ nnoremap <silent> <S-t> :tabnew<CR>
 " map dir
 nnoremap <leader>. :lcd %:p:h<CR>
 "" Opens a tab edit command with the path of the currently edited file filled
-noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
+" noremap <Leader>te :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Delete current visual selection and dump in black hole buffer before pasting
 " Used when you want to paste over something without it getting copied to
 " Vim's default buffer
-vnoremap <leader>p "_dP
-noremap YY "+y<CR>
+" vnoremap <leader>p "_dP
+" noremap YY "+y<CR>
 " noremap <leader>p "+gP<CR>
-noremap XX "+x<CR>
+" noremap XX "+x<CR>
 
-"" Buffer nav
-noremap <leader>z :bp<CR>
-noremap <leader>q :bp<CR>
-noremap <leader>x :bn<CR>
-noremap <leader>w :bn<CR>
+" Buffer nav
+" noremap <leader>z :bp<CR>
+" noremap <leader>q :bp<CR>
+" noremap <leader>x :bn<CR>
+" noremap <leader>w :bn<CR>
 
 "" Close buffer
 noremap <leader>c :bd<CR>
@@ -88,12 +88,12 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 " python excue
 " nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
-nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
-nnoremap <F5> :w<CR>:exec '!dotnet run' shellescape(@%, 1)<cr>
+" nnoremap <F9> :w<CR>:exec '!python' shellescape(@%, 1)<cr>
+" nnoremap <F5> :w<CR>:exec '!dotnet run' shellescape(@%, 1)<cr>
 "ZZ to :w, ZX to :wq
-noremap zz :w<CR>
-noremap zx :wq<CR>
-noremap XXX :q!<CR>
+" noremap zz :w<CR>
+" noremap zx :wq<CR>
+" noremap XXX :q!<CR>
 nnoremap <leader>t :!open -a /Applications/iTerm.app .<cr>
 
 
@@ -112,6 +112,10 @@ noremap <Leader>gd :Gvdiff<CR>
 noremap <Leader>gr :Gremove<CR>
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
+nmap <leader>gs :G<CR>
+nnoremap <leader>gco :GBranches<CR>
+
+
 " session management
 nnoremap <leader>so :OpenSession<Space>
 nnoremap <leader>ss :SaveSession<Space>
@@ -122,10 +126,10 @@ nnoremap <leader>sc :CloseSession<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :History:<CR>
 "" Open current line on GitHub
-nnoremap <Leader>o :.Gbrowse<CR>
+" nnoremap <Leader>o :.Gbrowse<CR>
 nnoremap <silent> <space>b :Buffers<CR>
 " nnoremap <silent> <leader>e :GFiles<CR>
-nnoremap <silent> <c-p> :Files<CR>
+nnoremap <silent> <c-p> :GFiles<CR>
 " nnoremap <silent> <C-e> :GFiles<CR>
 " Allows you to save files you opened without write permissions via sudo
 cmap w!! w !sudo tee %
@@ -175,44 +179,37 @@ nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 
 " make J, K, L, and H move the cursor MORE.
 
-function! TwfExit(path)                                                                                                                                       
-  function! TwfExitClosure(job_id, data, event) closure                                                                                                       
-    bd!                                                                                                                                                       
-    try                                                                                                                                                       
-      let out = filereadable(a:path) ? readfile(a:path) : []                                                                                                  
-    finally                                                                                                                                                   
-      silent! call delete(a:path)                                                                                                                             
-    endtry                                                                                                                                                    
-    if !empty(out)                                                                                                                                            
-      execute 'edit! ' . out[0]                                                                                                                               
-    endif                                                                                                                                                     
-  endfunction                                                                                                                                                 
-  return funcref('TwfExitClosure')                                                                                                                            
-endfunction                                                                                                                                                   
+" function! TwfExit(path)                                                                                                                                       
+  " function! TwfExitClosure(job_id, data, event) closure                                                                                                       
+    " bd!                                                                                                                                                       
+    " try                                                                                                                                                       
+      " let out = filereadable(a:path) ? readfile(a:path) : []                                                                                                  
+    " finally                                                                                                                                                   
+      " silent! call delete(a:path)                                                                                                                             
+    " endtry                                                                                                                                                    
+    " if !empty(out)                                                                                                                                            
+      " execute 'edit! ' . out[0]                                                                                                                               
+    " endif                                                                                                                                                     
+  " endfunction                                                                                                                                                 
+  " return funcref('TwfExitClosure')                                                                                                                            
+" endfunction                                                                                                                                                   
                                                                                                                                                               
-function! Twf()                                                                                                                                               
-  let temp = tempname()                                                                                                                                       
-  call termopen('twf ' . @% . ' > ' . temp, { 'on_exit': TwfExit(temp) })                                                                                     
-  startinsert                                                                                                                                                 
-endfunction                                                                                                                                                   
+" function! Twf()                                                                                                                                               
+  " let temp = tempname()                                                                                                                                       
+  " call termopen('twf ' . @% . ' > ' . temp, { 'on_exit': TwfExit(temp) })                                                                                     
+  " startinsert                                                                                                                                                 
+" endfunction                                                                                                                                                   
                                                                                                                                                               
-nnoremap <silent> <Space>z :call Twf()<CR>
+" nnoremap <silent> <Space>z :call Twf()<CR>
 
 " global search
-nnoremap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>ghw :h <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>pw :Rg <C-R>=expand("<cword>")<CR><CR>
-nnoremap <leader>pr :%s/<C-R>=expand("<cword>")<CR>/<C-R>=expand("<cword>")<C-R> .
+nnoremap <leader>pws :CocSearch <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>gwh :h <C-R>=expand("<cword>")<CR><CR>
+nnoremap <leader>pww :Rg <C-R>=expand("<cword>")<CR><CR>
+nnoremap <space>pwr :%s/<C-R>=expand("<cword>")<CR>/ .
 
 
 " j/k will move virtual lines (lines that wrap)
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-
-" Sweet Sweet FuGITive
-nmap <leader>gh :diffget //3<CR>
-nmap <leader>gu :diffget //2<CR>
-nmap <leader>gs :G<CR>
-nnoremap <leader>gco :GBranches<CR>
-
-endif
+" endif

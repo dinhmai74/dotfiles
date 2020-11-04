@@ -1,25 +1,22 @@
 " cocextensions
+  " \ 'coc-tailwindcss',
+  " \ 'coc-json', 
+  " \ 'coc-word', 
+  " \ 'coc-emoji',
 let g:coc_global_extensions = [
-  \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
   \ 'coc-prettier', 
-  \ 'coc-json', 
-  \ 'coc-tailwindcss',
   \ 'coc-yank', 
   \ 'coc-highlight',
   \ 'coc-marketplace', 
-  \ 'coc-word', 
   \ 'coc-explorer', 
   \ 'coc-react-refactor', 
-  \ 'coc-emoji',
   \ 'coc-floatinput',
+  \ 'coc-fzf-preview',
   \ 'coc-leetcode'
   \ ]
-" from readme
-
-
 " #------------------------------------------------------------------------------#
 " #                                 coc-settings                                 #
 " #------------------------------------------------------------------------------#
@@ -199,14 +196,3 @@ function! s:fzf_preview_settings() abort
   let g:fzf_preview_command = 'COLORTERM=truecolor ' . g:fzf_preview_command
   let g:fzf_preview_grep_preview_cmd = 'COLORTERM=truecolor ' . g:fzf_preview_grep_preview_cmd
 endfunction
-
-
-" #------------------------------------------------------------------------------#
-" #                                  Float input                                 #
-" #------------------------------------------------------------------------------#
-autocmd ColorScheme *
-      \ hi CocHelperNormalFloatBorder guifg=#dddddd guibg=#575B54
-      \ | hi CocHelperNormalFloat guibg=#575B54
-" Remap for rename current word
-nmap <F2> <Plug>(coc-floatinput-rename)
-nmap <silent> <Leader>: <Plug>(coc-floatinput-command)

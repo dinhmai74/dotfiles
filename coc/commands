@@ -1,4 +1,8 @@
+floatinput.coc.command
+floatinput.command
 editor.action.organizeImport
-explorer
-snippets.editSnippets
 tsserver.restart
+explorer
+yank.clean
+snippets.editSnippets
+eslint.executeAutofix

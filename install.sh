@@ -70,6 +70,7 @@ echo "$(tput setaf 2)Gon: Installing Python NeoVim client.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
 pip3 install neovim
+pip3 install neovim-remote
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Gon: Installing yarn$(tput sgr 0)"
@@ -119,7 +120,6 @@ do
   sudo gem install $i
   echo "---------------------------------------------------------"
 done
-
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)Gon: Installing system fonts.$(tput sgr 0)"

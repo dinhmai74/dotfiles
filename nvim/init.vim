@@ -1,10 +1,10 @@
 " auto-install vim-plug
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
+" if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  " silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+    " \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  " "autocmd VimEnter * PlugInstall
+  " autocmd VimEnter * PlugInstall | source $MYVIMRC
+" endif
 "*****************************************************************************
 "" Basic Settings
 "*****************************************************************************
@@ -28,14 +28,13 @@ set noswapfile
 set undodir=~/.vim/undodir
 set undofile
 set termguicolors
-set scrolloff=8
+" set scrolloff=8
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=30
+set updatetime=50
 set autoread
 " don't give |ins-completion-menu| messages.
 " always show signcolumns
-set signcolumn=yes
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -58,13 +57,13 @@ set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
 set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
-set timeoutlen=500                      " By default timeoutlen is 1000 
+set timeoutlen=300                      " By default timeoutlen is 1000 
 set guifont=Fira\ Code\ Nerd\ Font
 
 " Specify a directory for plugins
 call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-repeat'
-  Plug 'tpope/vim-commentary'
+  " Plug 'tpope/vim-commentary'
 
   if exists('g:vscode')
     " Easy motion for VSCode
@@ -75,14 +74,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " #------------------------------------------------------------------------------#
     " #                                    Themes                                    #
     " #------------------------------------------------------------------------------#
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    " Plug 'vim-airline/vim-airline'
+    " Plug 'vim-airline/vim-airline-themes'
     Plug 'morhetz/gruvbox'
-    Plug 'mg979/vim-xtabline' " tab line
+    " Plug 'mg979/vim-xtabline' " tab line
     " Plug 'habamax/vim-gruvbit'
 
     " Rainbow brackets
-    Plug 'luochen1990/rainbow'
+    " Plug 'luochen1990/rainbow'
 
     " Plug 'srcery-colors/srcery-vim'
     " Plug 'joshdick/onedark.vim'
@@ -91,36 +90,34 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " #------------------------------------------------------------------------------#
     " #                                 Utils things                                 #
     " #------------------------------------------------------------------------------#
-    Plug 'SirVer/ultisnips'
+    " Plug 'SirVer/ultisnips'
     Plug 'voldikss/vim-floaterm'
     Plug 'scrooloose/nerdcommenter'
     " Plug 'christoomey/vim-tmux-navigator'
     Plug 'tpope/vim-surround'
     Plug 'easymotion/vim-easymotion' 
-    Plug 'romainl/vim-cool'  " Disable highlight when searched
+    " Plug 'romainl/vim-cool'  " Disable highlight when searched
     Plug 'mattn/emmet-vim'
-    Plug 'junegunn/goyo.vim' " Zen mode
+    " Plug 'junegunn/goyo.vim' " Zen mode
     Plug 'mhinz/vim-startify' " Start screen
-    Plug 'suy/vim-context-commentstring' " Useful for React Commenting 
+    " Plug 'suy/vim-context-commentstring' " Useful for React Commenting 
     Plug 'terryma/vim-multiple-cursors'
      " Plug 'tmhedberg/SimpylFold' "fold code
     Plug 'christoomey/vim-system-copy'
     Plug 'christoomey/vim-sort-motion'
     Plug 'cometsong/commentframe.vim'
-    Plug 'tpope/vim-repeat' "repeat exts when user accro
-    Plug 'alvan/vim-closetag' "auto close tags
-    Plug 'AndrewRadev/sideways.vim' " move params funciton easily
+    " Plug 'tpope/vim-repeat' "repeat exts when user accro
+    " Plug 'AndrewRadev/sideways.vim' " move params funciton easily
     Plug 'tpope/vim-abolish' "turn case crs crc etc
-    Plug 'elzr/vim-json' " display indents (for yam) :IndentLineToggle
-    Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
+    " Plug 'elzr/vim-json' " display indents (for yam) :IndentLineToggle
+    " Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
     
     " git
     Plug 'ryanoasis/vim-devicons'
-    Plug 'airblade/vim-gitgutter'
     Plug 'airblade/vim-rooter'
     Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+    " Plug 'tpope/vim-fugitive'
+    " Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
     "session
     Plug 'xolox/vim-misc'
     Plug 'xolox/vim-session'
@@ -128,7 +125,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
     Plug 'stsewd/fzf-checkout.vim'
-    Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+    " Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
     " Plug 'mike-hearn/vim-combosearch'
     
     
@@ -137,13 +134,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " #------------------------------------------------------------------------------#
     Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
     " syntax highlight
-    Plug 'chemzqm/vim-jsx-improve'
-    Plug 'yuezk/vim-js'
+    " Plug 'chemzqm/vim-jsx-improve'
+    " Plug 'yuezk/vim-js'
     Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
     " Plug 'maxmellon/vim-jsx-pretty'
-    Plug 'mxw/vim-jsx'
+    " Plug 'mxw/vim-jsx'
     Plug 'alvan/vim-closetag'
-    Plug 'jparise/vim-graphql'
+    " Plug 'jparise/vim-graphql'
   endif
 
 call plug#end()
@@ -304,11 +301,11 @@ else
   source $HOME/.config/nvim/themes/syntax.vim
   source $HOME/.config/nvim/themes/gruvbox.vim
   " source $HOME/.config/nvim/themes/gruvbit.vim
-  source $HOME/.config/nvim/themes/airline.vim
+  " source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/CustomConfig/extract-variable.vim
   " Plugin Configuration
   " source $HOME/.config/nvim/keys/which-key.vim
-  source $HOME/.config/nvim/plug-config/rainbow.vim
+  " source $HOME/.config/nvim/plug-config/rainbow.vim
   " source $HOME/.config/nvim/plug-config/better-whitespace.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
   " source $HOME/.config/nvim/plug-config/sneak.vim
@@ -323,10 +320,11 @@ else
   " source $HOME/.config/nvim/plug-config/gitgutter.vim
   " source $HOME/.config/nvim/plug-config/git-messenger.vim
   source $HOME/.config/nvim/plug-config/closetags.vim
+  source $HOME/.config/nvim/plug-config/floatinput.vim
   " source $HOME/.config/nvim/plug-config/floaterm.vim
   " source $HOME/.config/nvim/plug-config/vista.vim
   "source $HOME/.config/nvim/plug-config/xtabline.vim
-  source $HOME/.config/nvim/plug-config/polyglot.vim
+  " source $HOME/.config/nvim/plug-config/polyglot.vim
   " source $HOME/.config/nvim/plug-config/far.vim
   " source $HOME/.config/nvim/plug-config/tagalong.vim
   " source $HOME/.config/nvim/plug-config/illuminate.vim
@@ -348,3 +346,5 @@ let g:loaded_extract_variable = 1
 
 
 let g:coc_global_extensions
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
