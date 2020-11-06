@@ -14,6 +14,7 @@ let g:coc_global_extensions = [
   \ 'coc-explorer', 
   \ 'coc-react-refactor', 
   \ 'coc-floatinput',
+  \ 'coc-snippets',
   \ 'coc-fzf-preview',
   \ 'coc-leetcode'
   \ ]

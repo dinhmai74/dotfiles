@@ -1,8 +1,7 @@
-floatinput.coc.command
-floatinput.command
-editor.action.organizeImport
-tsserver.restart
 explorer
-yank.clean
-snippets.editSnippets
+editor.action.organizeImport
 eslint.executeAutofix
+tsserver.restart
+fzf-preview.Yankround
+yank.clean
+floatinput.command

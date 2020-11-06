@@ -340,6 +340,7 @@ PATH=$PATH:$ANDROID_HOME/platform-tools
 PATH=$PATH:$ANDROID_HOME/emulator
 PATH="/usr/local/opt/ruby/bin:$PATH"
 PATH=$PATH:$(ruby -e 'puts Gem.bindir')
+PATH=$PATH:"/Users/dinhmai/.gem/ruby/2.7.0/bin"
 PATH=$PATH:~/.npm-global/bin
 PATH=~/development/flutter/bin:$PATH
 PATH="$PATH:/Users/dinhmai/.dotnet/tools"

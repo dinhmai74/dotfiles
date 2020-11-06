@@ -17,16 +17,14 @@
   "diagnostic.warningSign": "⚠",
   "diagnostic.infoSign": "",
   "tailwindCSS.emmetCompletions": true,
-  "typescript.showUnused": false,
+  "typescript.showUnused": true,
   "yank.enableCompletion": false,
   "coc.preferences.formatOnType": false,
-  "tsserver.log": "verbose",
-  "tsserver.npm": "/usr/local/bin/npm",
   "coc.preferences.colorSupport": true,
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
-  "explorer.keyMappings": {
+  "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },

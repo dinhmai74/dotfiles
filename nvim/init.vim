@@ -70,7 +70,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'asvetliakov/vim-easymotion'
   else
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+    " Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
     " #------------------------------------------------------------------------------#
     " #                                    Themes                                    #
     " #------------------------------------------------------------------------------#
@@ -140,6 +140,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'maxmellon/vim-jsx-pretty'
     " Plug 'mxw/vim-jsx'
     Plug 'alvan/vim-closetag'
+    Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
     " Plug 'jparise/vim-graphql'
   endif
 
@@ -209,18 +210,18 @@ augroup END
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
 "(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
-if (empty($TMUX))
-  if (has("nvim"))
-  "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
-  "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
-  " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
-  if (has("termguicolors"))
-    set termguicolors
-  endif
-endif
+" if (empty($TMUX))
+  " if (has("nvim"))
+  " "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+  " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  " endif
+  " "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+  " "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+  " " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+  " if (has("termguicolors"))
+    " set termguicolors
+  " endif
+" endif
 
 " #------------------------------------------------------------------------------#
 " #                                plugin settings                               #
@@ -239,7 +240,6 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:vim_json_syntax_conceal = 0
 " for jsx comment
-let g:NERDCustomDelimiters = { 'javascript.js': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }, 'typescript.jsx': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' }}
 "Start the completion menu with CTRL-N/CTRL-P, then run this map.
 " if executable('rg')
     " let g:rg_derive_root='true'
@@ -250,9 +250,10 @@ let g:NERDCustomDelimiters = { 'javascript.js': { 'left': '//', 'leftAlt': '/*',
 " #                                custom settings                               #
 " #------------------------------------------------------------------------------#
 
-autocmd FileType apache setlocal commentstring=#\ %s
-autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+" autocmd FileType apache setlocal commentstring=#\ %s
+" autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+" autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
 " create a dir if not exists when use te command
 function s:MkNonExDir(file, buf)
     if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
@@ -278,17 +279,16 @@ augroup END
     " call timer_start(1000,'CheckUpdate')
 " endfunction
 
-let g:rooter_change_directory_for_non_project_files = ''
-autocmd InsertEnter *.json setlocal concealcursor=
-autocmd InsertLeave *.json setlocal concealcursor=inc
+" let g:rooter_change_directory_for_non_project_files = ''
+" autocmd InsertEnter *.json setlocal concealcursor=
+" autocmd InsertLeave *.json setlocal concealcursor=inc
 
-autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
+" autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
 if exists('g:vscode')
   " VS Code extension
   source $HOME/.config/nvim/vscode/settings.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
 else
-  
     " Trigger configuration. You need to change this to something else than <tab> if you use https://github.com/Valloric/YouCompleteMe.
   let g:UltiSnipsExpandTrigger="<c-j>"
   " let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -334,17 +334,15 @@ else
   " source $HOME/.config/nvim/plug-config/markdown-preview.vim
   " source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
   " source $HOME/.config/nvim/plug-config/ale.vim
-endif
-source ~/.config/nvim/key-mapping.vim
-let g:vim_jsx_pretty_disable_tsx	= 1
-let g:vim_jsx_pretty_colorful_config= 1
-let g:vim_jsx_pretty_highlight_close_tag = 1
-if exists("g:loaded_extract_variable") || &cp
-  finish
-endif
-let g:loaded_extract_variable = 1
-
-
-let g:coc_global_extensions
+" let g:vim_jsx_pretty_disable_tsx	= 1
+" let g:vim_jsx_pretty_colorful_config= 1
+" let g:vim_jsx_pretty_highlight_close_tag = 1
+" if exists("g:loaded_extract_variable") || &cp
+  " finish
+" endif
+" let g:loaded_extract_variable = 1
 " set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+endif
+
+source ~/.config/nvim/key-mapping.vim
 
