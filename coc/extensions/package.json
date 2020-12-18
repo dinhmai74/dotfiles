@@ -12,6 +12,6 @@
     "coc-react-refactor": ">=0.3.0",
     "coc-snippets": ">=2.2.3",
     "coc-tsserver": ">=1.6.0",
-    "coc-yank": ">=1.1.8"
+    "coc-yank": ">=1.1.11"
   }
 }

@@ -57,7 +57,7 @@ set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
 set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
-set timeoutlen=300                      " By default timeoutlen is 1000 
+set timeoutlen=200                      " By default timeoutlen is 1000
 set guifont=Fira\ Code\ Nerd\ Font
 
 " Specify a directory for plugins
@@ -95,12 +95,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/nerdcommenter'
     " Plug 'christoomey/vim-tmux-navigator'
     Plug 'tpope/vim-surround'
-    Plug 'easymotion/vim-easymotion' 
+    Plug 'easymotion/vim-easymotion'
     " Plug 'romainl/vim-cool'  " Disable highlight when searched
     Plug 'mattn/emmet-vim'
     " Plug 'junegunn/goyo.vim' " Zen mode
     Plug 'mhinz/vim-startify' " Start screen
-    " Plug 'suy/vim-context-commentstring' " Useful for React Commenting 
+    " Plug 'suy/vim-context-commentstring' " Useful for React Commenting
     Plug 'terryma/vim-multiple-cursors'
      " Plug 'tmhedberg/SimpylFold' "fold code
     Plug 'christoomey/vim-system-copy'
@@ -110,14 +110,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'AndrewRadev/sideways.vim' " move params funciton easily
     Plug 'tpope/vim-abolish' "turn case crs crc etc
     " Plug 'elzr/vim-json' " display indents (for yam) :IndentLineToggle
-    " Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
-    
+    Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
+
     " git
     Plug 'ryanoasis/vim-devicons'
     Plug 'airblade/vim-rooter'
     Plug 'airblade/vim-gitgutter'
-    " Plug 'tpope/vim-fugitive'
-    " Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
     "session
     Plug 'xolox/vim-misc'
     Plug 'xolox/vim-session'
@@ -127,8 +127,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'stsewd/fzf-checkout.vim'
     " Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
     " Plug 'mike-hearn/vim-combosearch'
-    
-    
+
+
     " #------------------------------------------------------------------------------#
     " #                                 react things                                 #
     " #------------------------------------------------------------------------------#
@@ -153,7 +153,7 @@ call plug#end()
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
 cnoreabbrev q1 q!
-cnoreabbrev or OR 
+cnoreabbrev or OR
 cnoreabbrev w1 w!
 cnoreabbrev Qall! qall!
 cnoreabbrev Wq wq
@@ -163,19 +163,20 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
-cnoreabbrev qa1 qa! 
-cnoreabbrev ag Ag 
+cnoreabbrev qa1 qa!
+cnoreabbrev ag Ag
 cnoreabbrev rg Rg
 cabbrev t tabnew
 nnoremap ; :
 vnoremap ; :
-" tnoremap <space>t <C-\><C-n> 
+" tnoremap <space>t <C-\><C-n>
 
 "*****************************************************************************
 "" Commands
 "*****************************************************************************
 " remove trailing whitespaces
 command! FixWhitespace :%s/\s\+$//e
+command! EditConfig :tabe ~/.config
 
 "*****************************************************************************
 "" Convenience variables
@@ -229,7 +230,7 @@ augroup END
 
 let g:indentLine_char = '┊'
 let g:NERDSpaceDelims = 1
-" let g:vim_jsx_pretty_colorful_config = 1 
+" let g:vim_jsx_pretty_colorful_config = 1
 au FileType * set fo-=c fo-=r fo-=o
 " session management
 let g:session_directory = "~/.config/nvim/session"
@@ -293,7 +294,7 @@ else
   let g:UltiSnipsExpandTrigger="<c-j>"
   " let g:UltiSnipsJumpForwardTrigger="<c-b>"
   " let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-  
+
   " If you want :UltiSnipsEdit to split your window.
   let g:UltiSnipsEditSplit="vertical"
 
@@ -342,7 +343,11 @@ else
 " endif
 " let g:loaded_extract_variable = 1
 " set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+  autocmd Filetype json let g:indentLine_setConceal = 0
 endif
 
 source ~/.config/nvim/key-mapping.vim
+
+
 

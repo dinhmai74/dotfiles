@@ -15,10 +15,9 @@
   ],
   "diagnostic.errorSign": "✖",
   "diagnostic.warningSign": "⚠",
-  "diagnostic.infoSign": "",
+  "diagnostic.infoSign": "ⓘ",
   "tailwindCSS.emmetCompletions": true,
-  "typescript.showUnused": true,
-  "yank.enableCompletion": false,
+  "typescript.showUnused": false,
   "coc.preferences.formatOnType": false,
   "coc.preferences.colorSupport": true,
   "explorer.width": 30,
@@ -28,5 +27,10 @@
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
-  "floatinput.status.enabled": true
+  "floatinput.status.enabled": false,
+  "yank.highlight.enable": true,
+  "yank.enableCompletion": false,
+  "yank.limit": 3,
+  "yank.priority": 200,
+  "tsserver.log": "verbose"
 }

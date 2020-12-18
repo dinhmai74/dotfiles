@@ -326,6 +326,8 @@ alias ystory= "yarn storybook"
 alias py= "py3"
 alias f="fuck"
 
+alias wp="cd ~/workspace/project/expo/Expo-bowie"
+
 autoload -U compinit && compinit
 
 
@@ -351,6 +353,8 @@ PATH="$PATH:/usr/local/lib/ruby/gems/2.7.0/bin"
 export PATH
 export NPM_CONFIG_PREFIX=~/.npm-global
 export TOOLCHAINS=swift
+export GOOGLE_APPLICATION_CREDENTIALS="~/Downloads/adminsdk.json"
+# export NODE_ENV=production
 # . <(denon --completion)
 
 
@@ -361,5 +365,5 @@ export TOOLCHAINS=swift
 source $(dirname $(gem which colorls))/tab_complete.sh
 eval $(thefuck --alias)
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
-typeset -g ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE='20'
+typeset -g ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE='10'
 
