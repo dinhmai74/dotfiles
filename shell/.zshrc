@@ -1,6 +1,8 @@
-export ZSH="/Users/dinhmai/.oh-my-zsh"
-export TERM="xterm-256color"
 
+export ZSH="/Users/dinhmai/.oh-my-zsh"
+ZSH_DISABLE_COMPFIX=true
+
+export TERM="xterm-256color" 
 POWERLEVEL9K_MODE="nerdfont-complete"
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
