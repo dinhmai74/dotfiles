@@ -8,6 +8,51 @@
   " nmap <Tab> :Tabnext<CR>
   " nmap <S-Tab> :Tabprev<CR>
 " else
+
+inoremap jk <Esc>
+" Yank from current cursor position to the end of the line (make it
+" consistent with the behavior of D, C)
+nnoremap Y y$
+
+" Move the cursor based on physical lines, not the actual lines.
+nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
+nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
+nnoremap ^ g^
+nnoremap 0 g0
+" Do not include white space characters when using $ in visual mode,
+" see https://vi.stackexchange.com/q/12607/15292
+xnoremap $ g_
+
+" Jump to matching pairs easily in normal mode
+nnoremap <Tab> %
+" Go to start or end of line easier
+nnoremap H ^
+xnoremap H ^
+nnoremap L g_
+xnoremap L g_
+" Edit and reload init.vim quickly
+nnoremap <silent> <leader>sv :<C-U>silent update $MYVIMRC <bar> source $MYVIMRC <bar>
+      \ echomsg "Nvim config successfully reloaded!"<cr>
+" Find and replace (like Sublime Text 3)
+nnoremap <C-H> :%s/
+xnoremap <C-H> :s/
+" Search in selected region
+xnoremap / :<C-U>call feedkeys('/\%>'.(line("'<")-1).'l\%<'.(line("'>")+1)."l")<CR>
+" Change text without putting it into the vim register,
+" see https://stackoverflow.com/q/54255/6064933
+nnoremap c "_c
+nnoremap C "_C
+nnoremap cc "_cc
+xnoremap c "_c
+
+" Text objects for URL
+xnoremap <silent> iu :<C-U>call text_obj#URL()<CR>
+onoremap <silent> iu :<C-U>call text_obj#URL()<CR>
+
+" Text objects for entire buffer
+xnoremap <silent> iB 0ggoG
+onoremap <silent> iB :normal viB<CR>
+
 "" Split
 nnoremap th  :tabfirst<CR>
 nnoremap tj  :tabnext<CR>
@@ -18,7 +63,10 @@ nnoremap tm  :!mkdir <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap tn  :tabnext<Space>
 nnoremap td  :tabclose<CR>
 nnoremap tb  :e#<CR>
-nnoremap gb :e#<CR>
+" nnoremap gb :e#<CR>
+nnoremap <silent> gb :<C-U>call buf_utils#GoToBuffer(v:count, 'forward')<CR>
+nnoremap <silent> gB :<C-U>call buf_utils#GoToBuffer(v:count, 'backward')<CR>
+
 " noremap <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
 
 "" Tabs
@@ -33,10 +81,10 @@ nnoremap <leader>. :lcd %:p:h<CR>
 " Delete current visual selection and dump in black hole buffer before pasting
 " Used when you want to paste over something without it getting copied to
 " Vim's default buffer
-" vnoremap <leader>p "_dP
-" noremap YY "+y<CR>
-" noremap <leader>p "+gP<CR>
-" noremap XX "+x<CR>
+vnoremap <leader>p "_dP
+noremap YY "+y<CR>
+noremap <leader>p "+gP<CR>
+noremap XX "+x<CR>
 
 " Buffer nav
 " noremap <leader>z :bp<CR>

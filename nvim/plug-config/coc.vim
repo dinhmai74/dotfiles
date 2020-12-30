@@ -15,8 +15,7 @@ let g:coc_global_extensions = [
   \ 'coc-react-refactor', 
   \ 'coc-floatinput',
   \ 'coc-snippets',
-  \ 'coc-fzf-preview',
-  \ 'coc-leetcode'
+  \ 'coc-fzf-preview'
   \ ]
 " #------------------------------------------------------------------------------#
 " #                                 coc-settings                                 #

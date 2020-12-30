@@ -9,21 +9,26 @@
 "" Basic Settings
 "*****************************************************************************
 syntax on
+" Ignore certain files and folders when globbing
+set wildignore+=*.o,*.obj,*.bin,*.dll,*.exe
+set wildignore+=*/.git/*,*/.svn/*,*/__pycache__/*,*/build/**
+set wildignore+=*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,*.svg,*.ico
+set wildignore+=*.pyc
+set wildignore+=*.DS_Store
+set wildignore+=*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz
+set wildignorecase  " ignore file and dir name cases in cmd-completion
 set mouse=v
+set noshowmode
 " "" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-set nu
-set relativenumber
+set hlsearch incsearch
+set ignorecase smartcase
+set nu relativenumber
 set smarttab
 set cindent
 autocmd BufEnter * silent! :lcd%:p:h
 au FileType * set fo-=c fo-=r fo-=o "disable auto comment new line
 set noshowmatch
-set nohlsearch
-set noerrorbells
+set visualbell noerrorbells  " Do not use visual and errorbells
 set noswapfile
 set undodir=~/.vim/undodir
 set undofile
@@ -31,7 +36,7 @@ set termguicolors
 " set scrolloff=8
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=50
+set updatetime=100
 set autoread
 " don't give |ins-completion-menu| messages.
 " always show signcolumns
@@ -57,93 +62,64 @@ set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
 set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
-set timeoutlen=200                      " By default timeoutlen is 1000
+set timeoutlen=300                      " By default timeoutlen is 1000
 set guifont=Fira\ Code\ Nerd\ Font
 
 " Specify a directory for plugins
 call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-repeat'
-  " Plug 'tpope/vim-commentary'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  "fzf
+  Plug 'junegunn/fzf', { 'do': './install --bin' }
+  Plug 'junegunn/fzf.vim'
+  Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
+  Plug 'stsewd/fzf-checkout.vim'
+  Plug 'morhetz/gruvbox'
+  " #------------------------------------------------------------------------------#
+  " #                                 Utils things                                 #
+  " #------------------------------------------------------------------------------#
+  Plug 'voldikss/vim-floaterm'
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'tpope/vim-surround'
+  Plug 'easymotion/vim-easymotion'
+  Plug 'mattn/emmet-vim'
+  Plug 'mhinz/vim-startify' " Start screen
+  Plug 'terryma/vim-multiple-cursors'
+  Plug 'justinmk/vim-sneak'
+  " Plug 'romainl/vim-cool'  " Disable highlight when searched
+  " Plug 'junegunn/goyo.vim' " Zen mode
+  " Plug 'suy/vim-context-commentstring' " Useful for React Commenting
+   " Plug 'tmhedberg/SimpylFold' "fold code
+  Plug 'christoomey/vim-system-copy'
+  Plug 'christoomey/vim-sort-motion'
+  Plug 'cometsong/commentframe.vim'
+  Plug 'tpope/vim-repeat' "repeat exts when user accro
+  Plug 'tpope/vim-abolish' "turn case crs crc etc
+  Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
+  Plug 'justinmk/vim-sneak'
+  " git
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'airblade/vim-rooter'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
+  "session
+  Plug 'xolox/vim-misc'
+  Plug 'xolox/vim-session'
 
-  if exists('g:vscode')
-    " Easy motion for VSCode
-    Plug 'asvetliakov/vim-easymotion'
-  else
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    " Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-    " #------------------------------------------------------------------------------#
-    " #                                    Themes                                    #
-    " #------------------------------------------------------------------------------#
-    " Plug 'vim-airline/vim-airline'
-    " Plug 'vim-airline/vim-airline-themes'
-    Plug 'morhetz/gruvbox'
-    " Plug 'mg979/vim-xtabline' " tab line
-    " Plug 'habamax/vim-gruvbit'
-
-    " Rainbow brackets
-    " Plug 'luochen1990/rainbow'
-
-    " Plug 'srcery-colors/srcery-vim'
-    " Plug 'joshdick/onedark.vim'
-    " Plug 'rakr/vim-one'
-    " Plug 'KeitaNakamura/neodark.vim'
-    " #------------------------------------------------------------------------------#
-    " #                                 Utils things                                 #
-    " #------------------------------------------------------------------------------#
-    " Plug 'SirVer/ultisnips'
-    Plug 'voldikss/vim-floaterm'
-    Plug 'scrooloose/nerdcommenter'
-    " Plug 'christoomey/vim-tmux-navigator'
-    Plug 'tpope/vim-surround'
-    Plug 'easymotion/vim-easymotion'
-    " Plug 'romainl/vim-cool'  " Disable highlight when searched
-    Plug 'mattn/emmet-vim'
-    " Plug 'junegunn/goyo.vim' " Zen mode
-    Plug 'mhinz/vim-startify' " Start screen
-    " Plug 'suy/vim-context-commentstring' " Useful for React Commenting
-    Plug 'terryma/vim-multiple-cursors'
-     " Plug 'tmhedberg/SimpylFold' "fold code
-    Plug 'christoomey/vim-system-copy'
-    Plug 'christoomey/vim-sort-motion'
-    Plug 'cometsong/commentframe.vim'
-    " Plug 'tpope/vim-repeat' "repeat exts when user accro
-    " Plug 'AndrewRadev/sideways.vim' " move params funciton easily
-    Plug 'tpope/vim-abolish' "turn case crs crc etc
-    " Plug 'elzr/vim-json' " display indents (for yam) :IndentLineToggle
-    Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
-
-    " git
-    Plug 'ryanoasis/vim-devicons'
-    Plug 'airblade/vim-rooter'
-    Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
-    "session
-    Plug 'xolox/vim-misc'
-    Plug 'xolox/vim-session'
-    Plug 'junegunn/fzf', { 'do': './install --bin' }
-    Plug 'junegunn/fzf.vim'
-    Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
-    Plug 'stsewd/fzf-checkout.vim'
-    " Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
-    " Plug 'mike-hearn/vim-combosearch'
-
-
-    " #------------------------------------------------------------------------------#
-    " #                                 react things                                 #
-    " #------------------------------------------------------------------------------#
-    Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-    " syntax highlight
-    " Plug 'chemzqm/vim-jsx-improve'
-    " Plug 'yuezk/vim-js'
-    Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
-    " Plug 'maxmellon/vim-jsx-pretty'
-    " Plug 'mxw/vim-jsx'
-    Plug 'alvan/vim-closetag'
-    Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
-    " Plug 'jparise/vim-graphql'
-  endif
-
+  " #------------------------------------------------------------------------------#
+  " #                                 react things                                 #
+  " #------------------------------------------------------------------------------#
+  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+  Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+  Plug 'alvan/vim-closetag'
+  Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+  " syntax highlight
+  " Plug 'chemzqm/vim-jsx-improve'
+  " Plug 'yuezk/vim-js'
+  " Plug 'maxmellon/vim-jsx-pretty'
+  " Plug 'mxw/vim-jsx'
+  " Plug 'jparise/vim-graphql'
 call plug#end()
 
 "*****************************************************************************
@@ -204,56 +180,24 @@ augroup END
 
 
 " #------------------------------------------------------------------------------#
-" #                                 Custom theme                                 #
-" #------------------------------------------------------------------------------#
-
-"Credit joshdick
-"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
-"If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
-"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
-" if (empty($TMUX))
-  " if (has("nvim"))
-  " "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
-  " let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  " endif
-  " "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
-  " "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
-  " " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
-  " if (has("termguicolors"))
-    " set termguicolors
-  " endif
-" endif
-
-" #------------------------------------------------------------------------------#
 " #                                plugin settings                               #
 " #------------------------------------------------------------------------------#
 
 let g:indentLine_char = '┊'
 let g:NERDSpaceDelims = 1
-" let g:vim_jsx_pretty_colorful_config = 1
 au FileType * set fo-=c fo-=r fo-=o
 " session management
 let g:session_directory = "~/.config/nvim/session"
 let g:session_autoload = "no"
 let g:session_autosave = "no"
 let g:session_command_aliases = 1
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 let g:vim_json_syntax_conceal = 0
-" for jsx comment
-"Start the completion menu with CTRL-N/CTRL-P, then run this map.
-" if executable('rg')
-    " let g:rg_derive_root='true'
-" endif
-
 
 " #------------------------------------------------------------------------------#
 " #                                custom settings                               #
 " #------------------------------------------------------------------------------#
 
-" autocmd FileType apache setlocal commentstring=#\ %s
-" autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-" autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 " create a dir if not exists when use te command
 function s:MkNonExDir(file, buf)
@@ -269,85 +213,25 @@ augroup BWCCreateDir
     autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
 augroup END
 
-" if ! exists("g:CheckUpdateStarted")
-    " let g:CheckUpdateStarted=1
-    " call timer_start(1,'CheckUpdate')
-" endif
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsEditSplit="vertical"
 
-" update file if any change from another text editor
-" function! CheckUpdate(timer)
-    " silent! checktime
-    " call timer_start(1000,'CheckUpdate')
-" endfunction
-
-" let g:rooter_change_directory_for_non_project_files = ''
-" autocmd InsertEnter *.json setlocal concealcursor=
-" autocmd InsertLeave *.json setlocal concealcursor=inc
-
-" autocmd FileType css,scss set iskeyword=@,48-57,_,-,?,!,192-255
-if exists('g:vscode')
-  " VS Code extension
-  source $HOME/.config/nvim/vscode/settings.vim
-  source $HOME/.config/nvim/plug-config/easymotion.vim
-else
-    " Trigger configuration. You need to change this to something else than <tab> if you use https://github.com/Valloric/YouCompleteMe.
-  let g:UltiSnipsExpandTrigger="<c-j>"
-  " let g:UltiSnipsJumpForwardTrigger="<c-b>"
-  " let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-  " If you want :UltiSnipsEdit to split your window.
-  let g:UltiSnipsEditSplit="vertical"
-
-  " Themes
-  source $HOME/.config/nvim/themes/syntax.vim
-  source $HOME/.config/nvim/themes/gruvbox.vim
-  " source $HOME/.config/nvim/themes/gruvbit.vim
-  " source $HOME/.config/nvim/themes/airline.vim
-  source $HOME/.config/nvim/CustomConfig/extract-variable.vim
-  " Plugin Configuration
-  " source $HOME/.config/nvim/keys/which-key.vim
-  " source $HOME/.config/nvim/plug-config/rainbow.vim
-  " source $HOME/.config/nvim/plug-config/better-whitespace.vim
-  source $HOME/.config/nvim/plug-config/fzf.vim
-  " source $HOME/.config/nvim/plug-config/sneak.vim
-  " source $HOME/.config/nvim/plug-config/codi.vim
-  " source $HOME/.config/nvim/plug-config/vim-wiki.vim
-  source $HOME/.config/nvim/plug-config/coc.vim
-  source $HOME/.config/nvim/plug-config/floaterm.vim
-  source $HOME/.config/nvim/plug-config/nerd-commenter.vim
-  " source $HOME/.config/nvim/plug-config/goyo.vim
-  source $HOME/.config/nvim/plug-config/vim-rooter.vim
-  source $HOME/.config/nvim/plug-config/start-screen.vim
-  " source $HOME/.config/nvim/plug-config/gitgutter.vim
-  " source $HOME/.config/nvim/plug-config/git-messenger.vim
-  source $HOME/.config/nvim/plug-config/closetags.vim
-  source $HOME/.config/nvim/plug-config/floatinput.vim
-  " source $HOME/.config/nvim/plug-config/floaterm.vim
-  " source $HOME/.config/nvim/plug-config/vista.vim
-  "source $HOME/.config/nvim/plug-config/xtabline.vim
-  " source $HOME/.config/nvim/plug-config/polyglot.vim
-  " source $HOME/.config/nvim/plug-config/far.vim
-  " source $HOME/.config/nvim/plug-config/tagalong.vim
-  " source $HOME/.config/nvim/plug-config/illuminate.vim
-  " source $HOME/.config/nvim/plug-config/bracey.vim
-  " source $HOME/.config/nvim/plug-config/asynctask.vim
-  " source $HOME/.config/nvim/plug-config/window-swap.vim
-  " source $HOME/.config/nvim/plug-config/markdown-preview.vim
-  " source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
-  " source $HOME/.config/nvim/plug-config/ale.vim
-" let g:vim_jsx_pretty_disable_tsx	= 1
-" let g:vim_jsx_pretty_colorful_config= 1
-" let g:vim_jsx_pretty_highlight_close_tag = 1
-" if exists("g:loaded_extract_variable") || &cp
-  " finish
-" endif
-" let g:loaded_extract_variable = 1
-" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
-  autocmd Filetype json let g:indentLine_setConceal = 0
-endif
+ " Themes
+source $HOME/.config/nvim/themes/syntax.vim
+source $HOME/.config/nvim/themes/gruvbox.vim
+source $HOME/.config/nvim/CustomConfig/extract-variable.vim
+source $HOME/.config/nvim/plug-config/fzf.vim
+source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/floaterm.vim
+source $HOME/.config/nvim/plug-config/nerd-commenter.vim
+source $HOME/.config/nvim/plug-config/vim-rooter.vim
+source $HOME/.config/nvim/plug-config/start-screen.vim
+source $HOME/.config/nvim/plug-config/closetags.vim
+source $HOME/.config/nvim/plug-config/gitgutter.vim
+source $HOME/.config/nvim/plug-config/sneak.vim
+source $HOME/.config/nvim/plug-config/floatinput.vim
+source $HOME/.config/nvim/plug-config/vim-wiki.vim
+autocmd Filetype json let g:indentLine_setConceal = 0
 
 source ~/.config/nvim/key-mapping.vim
-
-
 

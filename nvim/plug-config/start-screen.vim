@@ -1,12 +1,12 @@
 
 let g:startify_custom_header = [
-      \'                                  ',
-      \'     _____  .__                   ',
-      \'    /  _  \ |  |   ____ ___  ___  ',
-      \'   /  /_\  \|  | _/ __ \\  \/  /  ',
-      \'  /    |    \  |_\  ___/ >    <   ',
-      \'  \____|__  /____/\___  >__/\_ \  ',
-      \'          \/          \/      \/  ',
+      \'                                  ',  
+      \'     _____  .__                   ',  
+      \'    /  _  \ |  |   ____ ___  ___  ',  
+      \'   /  /_\  \|  | _/ __ \\  \/  /  ',  
+      \'  /    |    \  |_\  ___/ >    <   ',  
+      \'  \____|__  /____/\___  >__/\_ \  ',  
+      \'          \/          \/      \/  ',  
       \'                                  '
       \ ]
                                       
@@ -34,12 +34,13 @@ function! StartifyEntryFormat()
     endfunction
 
 let g:startify_bookmarks = [
-            \ { 'c': '~/.config/i3/config' },
+            \ { 'c': '~/.config' },
+            \ { 's': '~/.config/nvim/plug-config/start-screen.vim' },
             \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'z': '~/.zshrc' },
-            \ '~/Blog',
-            \ '~/Code',
-            \ '~/Pics',
+            \ { 'z': '~/.config/shell/.zshrc' },
+            \ '~/workspace/project/Expo-bowie',
+            \ '~/workspace/project/bowie-backend',
+            \ '~/workspace/project/Expo-bowie',
             \ ]
 
 let g:startify_enable_special = 0

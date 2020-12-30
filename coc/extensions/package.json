@@ -5,13 +5,13 @@
     "coc-floatinput": ">=1.5.2",
     "coc-fzf-preview": ">=0.4.27",
     "coc-highlight": ">=1.2.7",
-    "coc-leetcode": ">=1.2.0",
     "coc-marketplace": ">=1.8.0",
     "coc-pairs": ">=1.2.21",
     "coc-prettier": ">=1.1.20",
     "coc-react-refactor": ">=0.3.0",
     "coc-snippets": ">=2.3.1",
     "coc-tsserver": ">=1.6.6",
-    "coc-yank": ">=1.1.11"
+    "coc-yank": ">=1.1.11",
+    "es7-react-js-snippets": "https://github.com/dsznajder/vscode-es7-javascript-react-snippets"
   }
 }

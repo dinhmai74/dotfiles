@@ -9,4 +9,5 @@ let g:gruvbox_invert_selection='0'
 colorscheme gruvbox
 set background=dark
 highlight Comment gui=italic
+" hi Normal guibg=NONE ctermbg=NONE
 

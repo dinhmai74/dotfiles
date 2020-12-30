@@ -1,9 +1,9 @@
 explorer
 editor.action.organizeImport
+snippets.editSnippets
 tsserver.restart
 yank.clean
 prettier.formatFile
-snippets.editSnippets
 eslint.executeAutofix
 fzf-preview.Yankround
 floatinput.command
