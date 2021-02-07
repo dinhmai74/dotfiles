@@ -1,5 +1,5 @@
 
-export ZSH="/Users/dinhmai/.oh-my-zsh"
+export ZSH="/Users/dinhma/.oh-my-zsh"
 ZSH_DISABLE_COMPFIX=true
 
 export TERM="xterm-256color" 
@@ -303,7 +303,7 @@ alias uit='cd ~/workspace/project/uit'
 alias getAdress='ipconfig getifaddr en0'
 alias getadress='ipconfig getifaddr en0'
 alias ipad='ipconfig getifaddr en0'
-alias fun='cd ~/workspace/Project/fun'
+alias fun='cd ~/workspace/project/fun'
 alias ig='ignite'
 alias igg='ignite generate'
 alias igs='ignite generate screen'
