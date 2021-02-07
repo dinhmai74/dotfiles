@@ -22,6 +22,7 @@ let g:fzf_colors =
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 let $FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git/**'"
+" let FZF_DEFAULT_COMMAND='rg --hidden -l ""'
 let $FZF_DEFAULT_OPTS='--reverse'
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 " let g:fzf_branch_actions= 'ctrl-t'

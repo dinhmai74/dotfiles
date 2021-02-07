@@ -1,0 +1,317 @@
+{
+  "us.er": {
+    "prefix": "us.er",
+    "body": "useEffect(() => {\n  $1\n\treturn () => {\n    $2\n\t};\n})${0:;}",
+    "description": "useEffect with return"
+  },
+  "impd": {
+    "prefix": "impd",
+    "body": "import ${2: $1 } from '${1}'",
+    "description": "import default file"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": "import { $2 } from '$1'",
+    "description": "Destructuring import"
+  },
+  "rnstyle": {
+    "prefix": "rnstyle",
+    "body": "import { StyleSheet } from 'react-native'\n\nexport default StyleSheet.create({\n\tcontainer:{}\n})",
+    "description": " create style file"
+  },
+  "ims": {
+    "prefix": "ims",
+    "body": "import styled from 'styled-components'",
+    "description": "import styled-components"
+  },
+  "dob": {
+    "prefix": "dob",
+    "body": "const { $2 } = $1 ;",
+    "description": " destructoring object"
+  },
+  "doa": {
+    "prefix": "doa",
+    "body": "const [ $2 ] = $1 ;",
+    "description": "destructoring by array"
+  },
+  "dop": {
+    "prefix": "dop",
+    "body": "const { $2 } = state ;",
+    "description": " destructoring state"
+  },
+  "exd": {
+    "prefix": "exd",
+    "body": "export * from './$1'",
+    "description": "export * from"
+  },
+  "dp": {
+    "prefix": "dp",
+    "body": "${1:`!v expand('%:t:r')`}.defaultProps={\n\t$2\n}",
+    "description": "default props"
+  },
+  "ctl": {
+    "prefix": "ctl",
+    "body": "console.tron.log($1)",
+    "description": "tron log string"
+  },
+  "ctlo": {
+    "prefix": "ctlo",
+    "body": "console.tron.log('$1', $1)",
+    "description": "tron log"
+  },
+  "tl": {
+    "prefix": "tl",
+    "body": "console.tlog('$1', $1)",
+    "description": "tron log"
+  },
+  "rnf": {
+    "prefix": "rnf",
+    "body": "import React, { useState } from 'react'\n\ntype ${1:`!v expand('%:t:r')`}Props = {\n\t\n}\n\nexport const ${1:`!v expand('%:t:r')`} = (props : ${1:`!v expand('%:t:r')`}Props )=>{\n\t\treturn (\n\t\t);\n}\n",
+    "description": "create react native stateless"
+  },
+  "rf": {
+    "prefix": "rf",
+    "body": "import React from 'react'\n\ntype ${1:`!v expand('%:t:r')`}Props = {\n\t\n}\n\nexport const ${1:`!v expand('%:t:r')`} = (props : ${1:`!v expand('%:t:r')`}Props )=>{\n\t\treturn (\n\t\t\t<${3}>\n\t\t\t</$3>\n\t\t);\n}\n",
+    "description": "create react FunctionComponent"
+  },
+  "fc": {
+    "prefix": "fc",
+    "body": "type $1Props = {\n\t$3\n}\n\nexport const $1 = (props : $1Props )=>{\n\t$4\n}\n",
+    "description": "function component"
+  },
+  "cmt": {
+    "prefix": "cmt",
+    "body": "/* ------------- $1 ------------- */",
+    "description": "cmt"
+  },
+  "lodash": {
+    "prefix": "lodash",
+    "body": "import _ from \"lodash\"",
+    "description": "lodash"
+  },
+  "func": {
+    "prefix": "func",
+    "body": "const $1 = ( $2 ) => { $3 }",
+    "description": "func const"
+  },
+  "useMemoOne": {
+    "prefix": "useMemoOne",
+    "body": "const {} = useMemoOne(() => ({\n\t$1\t\t\n}),[])",
+    "description": "useMemoOne"
+  },
+  "eslint": {
+    "prefix": "eslint",
+    "body": "// eslint-disable-next-line",
+    "description": "Description"
+  },
+  "use": {
+    "prefix": "use",
+    "body": "React.useEffect(() => {\n  $1\n},[])",
+    "description": "useEffect"
+  },
+  "user": {
+    "prefix": "user",
+    "body": "React.useEffect(() => {\n  $1\n\treturn () => {\n    $2\n\t};\n},[])",
+    "description": "useEffect with return"
+  },
+  "usc": {
+    "prefix": "usc",
+    "body": "const $1 = React.useContext($2)",
+    "description": "useContext"
+  },
+  "uscb": {
+    "prefix": "uscb",
+    "body": "React.useCallback(\n\t() => {\n\t\t$1\n\t},\n\t[$2],\n)${0:;}",
+    "description": "useCallback"
+  },
+  "usm": {
+    "prefix": "usm",
+    "body": "const $1 = React.useMemo(() => {\n\t$2\n}, [$3])",
+    "description": "useMemo"
+  },
+  "usrf": {
+    "prefix": "usrf",
+    "body": "const $1 = React.useRef($2)",
+    "description": "useRef"
+  },
+  "useThemes": {
+    "prefix": "useThemes",
+    "body": "const { color } = useThemes()",
+    "description": "Description"
+  },
+  "cl": {
+    "prefix": "cl",
+    "body": "console.log(\"$1\", $1)",
+    "description": "console.log"
+  },
+  "useHistory": {
+    "prefix": "useHistory",
+    "body": "const history = useHistory()",
+    "description": "Description"
+  },
+  "v4": {
+    "prefix": "v4",
+    "body": "import { v4 } from 'uuid'",
+    "description": "v4"
+  },
+  "icx": {
+    "prefix": "icx",
+    "body": "import cx from \"classnames\"",
+    "description": "import classnames"
+  },
+  "fragment": {
+    "prefix": "fragment",
+    "body": "<>\n\t$1\n</>",
+    "description": "fragment"
+  },
+  "muiBtn": {
+    "prefix": "muiBtn",
+    "body": "<Button variant=\"contained\" color=\"primary\">$1</Button>",
+    "description": "mui button contained primary"
+  },
+  "muiUseStyles": {
+    "prefix": "muiUseStyles",
+    "body": "import { makeStyles, createStyles } from \"@material-ui/core\"\n\nconst useStyles = makeStyles((theme: Theme) =>\n\tcreateStyles({\n\t\t$1\t\n\t}),\n)\n",
+    "description": "create useStyle mui"
+  },
+  "constfc": {
+    "prefix": "constfc",
+    "body": "const $1 = () => {\n}\n",
+    "description": "const fc"
+  },
+  "piscsum": {
+    "prefix": "piscsum",
+    "body": "https://picsum.photos/350/350",
+    "description": "photo piscsum"
+  },
+  "cx": {
+    "prefix": "cx",
+    "body": "className={cx(\"$1\")}",
+    "description": "className with cx"
+  },
+  "fca": {
+    "prefix": "fca",
+    "body": "() => { $1 }",
+    "description": "function arrow without any param"
+  },
+  "afc": {
+    "prefix": "afc",
+    "body": "() => { $1 }",
+    "description": "function arrow without any param"
+  },
+  "()=>": {
+    "prefix": "()=>",
+    "body": "() => { $1 }",
+    "description": "function arrow without any param"
+  },
+  "twstyled": {
+    "prefix": "twstyled",
+    "body": "const Styled$1= styled.main.attrs({\n\tclassName: \"\",\n})``",
+    "description": "Styled component with tailwind"
+  },
+  "lorem": {
+    "prefix": "lorem",
+    "body": "\"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,\"",
+    "description": "loremedium"
+  },
+  "loremshort": {
+    "prefix": "loremshort",
+    "body": "\"Lorem Ipsum is simply dummy text of the printing\"",
+    "description": "short"
+  },
+  "loremlong": {
+    "prefix": "loremlong",
+    "body": "\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\"",
+    "description": "lorem long"
+  },
+  "styled": {
+    "prefix": "styled",
+    "body": "const $1 = styled($2)(p=>({\n\t$3\n}))",
+    "description": "const styled component"
+  },
+  "sd": {
+    "prefix": "sd",
+    "body": "const $1 = styled(${2:View})({\n\t$3\n})",
+    "description": "const styled component"
+  },
+  "sdview": {
+    "prefix": "sdview",
+    "body": "const $1 = styled(View)({\n\t\n})",
+    "description": "Styled view component"
+  },
+  "sdtext": {
+    "prefix": "sdtext",
+    "body": "const $1 = styled(Text)({\n\n})",
+    "description": "Styled Text component"
+  },
+  "sdprops": {
+    "prefix": "sdprops",
+    "body": "${( p )=> \\`\n\t$1\n\\`}",
+    "description": "styled props"
+  },
+  "jcmt": {
+    "prefix": "jcmt",
+    "body": "{/**----------- $1 ----------------*/}",
+    "description": "jsxcommet"
+  },
+  "gestureHandler": {
+    "prefix": "gestureHandler",
+    "body": "const gestureHandler = useAnimatedGestureHandler({\n\t\tonStart: (_, ctx) => {\n\t\t\tctx.startX = x.value\n\t\t},\n\t\tonActive: (event, ctx) => {\n\t\t\tx.value = ctx.startX + event.translationX\n\t\t},\n\t\tonEnd: _ => {\n\t\t\tx.value = withSpring(0)\n\t\t},\n\t}",
+    "description": "get gestureHandler"
+  },
+  "useAnimatedStyle": {
+    "prefix": "useAnimatedStyle",
+    "body": "const $1 = useAnimatedStyle(()=>{\n\treturn {\n\t\t$2\n\t}\n})",
+    "description": "useAnimatedStyle"
+  },
+  "transform": {
+    "prefix": "transform",
+    "body": "transform: [{ $1 }, ],",
+    "description": "transform style"
+  },
+  "sizedbox": {
+    "prefix": "sizedbox",
+    "body": "<SizedBox h={${1:4}} />",
+    "description": "SizedBox"
+  },
+  "map": {
+    "prefix": "map",
+    "body": "{$1.map((v, i) => {\n\t$2\n})}",
+    "description": "map jsx"
+  },
+  "loading": {
+    "prefix": "loading",
+    "body": "const loading = isFetching\nif(loading) return <AppLoading />\n",
+    "description": "loading"
+  },
+  "styles": {
+    "prefix": "styles",
+    "body": "const styles = StyleSheet.create({\n\t$1\n})",
+    "description": "styles"
+  },
+  "clyellow": {
+    "prefix": "clyellow",
+    "body": "console.log('\\x1b[33m%s\\x1b[0m', $1 )",
+    "description": "Log terminal with yello"
+  },
+  "clcyan": {
+    "prefix": "clcyan",
+    "body": "console.log('\\x1b[36m%s\\x1b[0m', $1 )",
+    "description": "Log terminal with color"
+  },
+  "clgreen": {
+    "prefix": "clgreen",
+    "body": "console.log('\\x1b[36m%s\\x1b[32m', $1 )",
+    "description": "Log terminal with color green"
+  },
+  "clred": {
+    "prefix": "clred",
+    "body": "console.log('\\x1b[36m%s\\x1b[31m', $1 )",
+    "description": "Log terminal with color red"
+  },
+  "clwhite": {
+    "prefix": "clwhite",
+    "body": "console.log('\\x1b[36m%s\\x1b[37m', $1 )",
+    "description": "Log terminal with color white"
+  }
+}

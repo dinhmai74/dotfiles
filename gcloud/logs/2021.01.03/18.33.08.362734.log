@@ -1,0 +1,517 @@
+2021-01-03 18:33:09,479 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2021-01-03 18:33:09,492 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'list']
+2021-01-03 18:33:09,496 DEBUG    root            Running [gcloud.components.list] with arguments: [--quiet: "True"]
+2021-01-03 18:33:22,153 INFO     ___FILE_ONLY___ 
+Your current Cloud SDK version is: 321.0.0
+
+2021-01-03 18:33:22,154 INFO     ___FILE_ONLY___ The latest available version is: 321.0.0
+
+2021-01-03 18:33:22,154 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,155 INFO     root            Display format: "table[box,title="Components"](state.name:label=Status,name:label=Name,id:label=ID,size.size(zero="",min=1048576):label=Size:align=right)"
+2021-01-03 18:33:22,421 INFO     ___FILE_ONLY___ ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+2021-01-03 18:33:22,421 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,422 INFO     ___FILE_ONLY___ │                                                 Components                                                 │
+2021-01-03 18:33:22,422 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,422 INFO     ___FILE_ONLY___ ├───────────────┬──────────────────────────────────────────────────────┬──────────────────────────┬──────────┤
+2021-01-03 18:33:22,422 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,422 INFO     ___FILE_ONLY___ │     Status    │                         Name                         │            ID            │   Size   │
+2021-01-03 18:33:22,422 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,422 INFO     ___FILE_ONLY___ ├───────────────┼──────────────────────────────────────────────────────┼──────────────────────────┼──────────┤
+2021-01-03 18:33:22,423 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,423 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,423 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,423 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,423 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,423 INFO     ___FILE_ONLY___ App Engine Go Extensions                            
+2021-01-03 18:33:22,423 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,423 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,424 INFO     ___FILE_ONLY___ app-engine-go           
+2021-01-03 18:33:22,424 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,424 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,424 INFO     ___FILE_ONLY___  4.8 MiB
+2021-01-03 18:33:22,424 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,424 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,424 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,424 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,425 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,425 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,425 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,425 INFO     ___FILE_ONLY___ Appctl                                              
+2021-01-03 18:33:22,425 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,425 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,425 INFO     ___FILE_ONLY___ appctl                  
+2021-01-03 18:33:22,425 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,426 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,426 INFO     ___FILE_ONLY___ 18.5 MiB
+2021-01-03 18:33:22,426 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,426 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,426 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,427 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,427 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,428 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,428 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,428 INFO     ___FILE_ONLY___ Cloud Bigtable Command Line Tool                    
+2021-01-03 18:33:22,428 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,428 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,428 INFO     ___FILE_ONLY___ cbt                     
+2021-01-03 18:33:22,428 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,429 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,429 INFO     ___FILE_ONLY___  7.6 MiB
+2021-01-03 18:33:22,429 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,429 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,429 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,429 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,430 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,430 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,430 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,430 INFO     ___FILE_ONLY___ Cloud Bigtable Emulator                             
+2021-01-03 18:33:22,430 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,430 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,430 INFO     ___FILE_ONLY___ bigtable                
+2021-01-03 18:33:22,430 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,430 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,431 INFO     ___FILE_ONLY___  6.6 MiB
+2021-01-03 18:33:22,431 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,431 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,431 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,431 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,431 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,431 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,431 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,431 INFO     ___FILE_ONLY___ Cloud Datalab Command Line Tool                     
+2021-01-03 18:33:22,432 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,432 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,432 INFO     ___FILE_ONLY___ datalab                 
+2021-01-03 18:33:22,432 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,432 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,432 INFO     ___FILE_ONLY___  < 1 MiB
+2021-01-03 18:33:22,432 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,432 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,432 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,433 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,433 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,433 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,433 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,433 INFO     ___FILE_ONLY___ Cloud Datastore Emulator                            
+2021-01-03 18:33:22,433 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,433 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,433 INFO     ___FILE_ONLY___ cloud-datastore-emulator
+2021-01-03 18:33:22,433 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,434 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,434 INFO     ___FILE_ONLY___ 18.4 MiB
+2021-01-03 18:33:22,434 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,434 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,434 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,434 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,434 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,434 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,434 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___ Cloud Firestore Emulator                            
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___ cloud-firestore-emulator
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___ 41.5 MiB
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,435 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,436 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,436 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,436 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,436 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,436 INFO     ___FILE_ONLY___ Cloud Pub/Sub Emulator                              
+2021-01-03 18:33:22,436 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,436 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,436 INFO     ___FILE_ONLY___ pubsub-emulator         
+2021-01-03 18:33:22,437 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,437 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,437 INFO     ___FILE_ONLY___ 56.4 MiB
+2021-01-03 18:33:22,437 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,437 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,437 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,437 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,437 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,437 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,438 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,438 INFO     ___FILE_ONLY___ Cloud SQL Proxy                                     
+2021-01-03 18:33:22,438 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,438 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,438 INFO     ___FILE_ONLY___ cloud_sql_proxy         
+2021-01-03 18:33:22,438 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,438 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,438 INFO     ___FILE_ONLY___  7.4 MiB
+2021-01-03 18:33:22,439 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,439 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,439 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,439 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,439 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,439 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,439 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,439 INFO     ___FILE_ONLY___ Emulator Reverse Proxy                              
+2021-01-03 18:33:22,440 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,440 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,440 INFO     ___FILE_ONLY___ emulator-reverse-proxy  
+2021-01-03 18:33:22,440 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,440 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,440 INFO     ___FILE_ONLY___ 14.5 MiB
+2021-01-03 18:33:22,440 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,440 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,441 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,441 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,441 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,441 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,441 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,441 INFO     ___FILE_ONLY___ Google Cloud Build Local Builder                    
+2021-01-03 18:33:22,441 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,442 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,442 INFO     ___FILE_ONLY___ cloud-build-local       
+2021-01-03 18:33:22,442 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,442 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,442 INFO     ___FILE_ONLY___  6.2 MiB
+2021-01-03 18:33:22,442 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,442 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,442 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___ Google Container Registry's Docker credential helper
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___ docker-credential-gcr   
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___  1.8 MiB
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,443 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___ Kind                                                
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___ kind                    
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___  4.4 MiB
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,444 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ Kustomize                                           
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ kustomize               
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ 22.8 MiB
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,445 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,446 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,446 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,447 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,448 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,448 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,448 INFO     ___FILE_ONLY___ Minikube                                            
+2021-01-03 18:33:22,448 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,449 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,449 INFO     ___FILE_ONLY___ minikube                
+2021-01-03 18:33:22,449 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,449 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,449 INFO     ___FILE_ONLY___ 22.8 MiB
+2021-01-03 18:33:22,449 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,449 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,450 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,450 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,450 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,450 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,450 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,450 INFO     ___FILE_ONLY___ Nomos CLI                                           
+2021-01-03 18:33:22,450 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,450 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,451 INFO     ___FILE_ONLY___ nomos                   
+2021-01-03 18:33:22,451 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,451 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,451 INFO     ___FILE_ONLY___ 17.7 MiB
+2021-01-03 18:33:22,451 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,451 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,451 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,451 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,452 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,452 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,452 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,452 INFO     ___FILE_ONLY___ Skaffold                                            
+2021-01-03 18:33:22,452 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,452 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,452 INFO     ___FILE_ONLY___ skaffold                
+2021-01-03 18:33:22,453 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,453 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,453 INFO     ___FILE_ONLY___ 16.1 MiB
+2021-01-03 18:33:22,453 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,453 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,453 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,453 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,453 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,454 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,454 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,454 INFO     ___FILE_ONLY___ anthos-auth                                         
+2021-01-03 18:33:22,454 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,454 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,454 INFO     ___FILE_ONLY___ anthos-auth             
+2021-01-03 18:33:22,454 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,454 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,455 INFO     ___FILE_ONLY___ 16.4 MiB
+2021-01-03 18:33:22,455 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,455 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,455 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,455 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,455 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,455 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,455 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,456 INFO     ___FILE_ONLY___ config-connector                                    
+2021-01-03 18:33:22,456 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,456 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,456 INFO     ___FILE_ONLY___ config-connector        
+2021-01-03 18:33:22,456 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,456 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,456 INFO     ___FILE_ONLY___ 42.0 MiB
+2021-01-03 18:33:22,456 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,456 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,457 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,457 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,457 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,457 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,457 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,457 INFO     ___FILE_ONLY___ gcloud Alpha Commands                               
+2021-01-03 18:33:22,457 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,458 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,458 INFO     ___FILE_ONLY___ alpha                   
+2021-01-03 18:33:22,458 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,458 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,458 INFO     ___FILE_ONLY___  < 1 MiB
+2021-01-03 18:33:22,459 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,459 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,459 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,459 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,459 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,459 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,459 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,460 INFO     ___FILE_ONLY___ gcloud Beta Commands                                
+2021-01-03 18:33:22,460 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,460 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,460 INFO     ___FILE_ONLY___ beta                    
+2021-01-03 18:33:22,460 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,460 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,460 INFO     ___FILE_ONLY___  < 1 MiB
+2021-01-03 18:33:22,460 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,461 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,461 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,461 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,461 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,461 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,461 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,461 INFO     ___FILE_ONLY___ gcloud app Java Extensions                          
+2021-01-03 18:33:22,461 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,462 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,462 INFO     ___FILE_ONLY___ app-engine-java         
+2021-01-03 18:33:22,462 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,462 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,462 INFO     ___FILE_ONLY___ 59.6 MiB
+2021-01-03 18:33:22,462 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,462 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,462 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,463 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,463 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,463 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,463 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,463 INFO     ___FILE_ONLY___ gcloud app PHP Extensions                           
+2021-01-03 18:33:22,463 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,463 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,463 INFO     ___FILE_ONLY___ app-engine-php          
+2021-01-03 18:33:22,463 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,464 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,464 INFO     ___FILE_ONLY___ 21.9 MiB
+2021-01-03 18:33:22,464 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,464 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,464 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,464 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,464 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,464 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,465 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,465 INFO     ___FILE_ONLY___ gcloud app Python Extensions                        
+2021-01-03 18:33:22,465 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,465 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,465 INFO     ___FILE_ONLY___ app-engine-python       
+2021-01-03 18:33:22,465 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,465 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,465 INFO     ___FILE_ONLY___  6.1 MiB
+2021-01-03 18:33:22,465 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,466 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,466 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,466 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,466 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,466 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,466 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,466 INFO     ___FILE_ONLY___ gcloud app Python Extensions (Extra Libraries)      
+2021-01-03 18:33:22,466 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,466 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,467 INFO     ___FILE_ONLY___ app-engine-python-extras
+2021-01-03 18:33:22,467 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,467 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,467 INFO     ___FILE_ONLY___ 27.1 MiB
+2021-01-03 18:33:22,467 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,467 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,467 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,467 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,468 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,468 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,468 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,468 INFO     ___FILE_ONLY___ kpt                                                 
+2021-01-03 18:33:22,468 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,468 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,468 INFO     ___FILE_ONLY___ kpt                     
+2021-01-03 18:33:22,468 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,468 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,469 INFO     ___FILE_ONLY___ 12.0 MiB
+2021-01-03 18:33:22,469 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,469 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,469 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,469 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,469 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,469 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,469 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,469 INFO     ___FILE_ONLY___ kubectl                                             
+2021-01-03 18:33:22,470 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,470 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,470 INFO     ___FILE_ONLY___ kubectl                 
+2021-01-03 18:33:22,470 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,470 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,470 INFO     ___FILE_ONLY___  < 1 MiB
+2021-01-03 18:33:22,470 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,470 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,471 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,471 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,471 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,471 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,471 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,472 INFO     ___FILE_ONLY___ kubectl-oidc                                        
+2021-01-03 18:33:22,472 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,472 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,472 INFO     ___FILE_ONLY___ kubectl-oidc            
+2021-01-03 18:33:22,472 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,472 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,472 INFO     ___FILE_ONLY___ 16.4 MiB
+2021-01-03 18:33:22,472 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,473 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,473 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,473 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,473 INFO     ___FILE_ONLY___ Not Installed
+2021-01-03 18:33:22,473 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,473 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,473 INFO     ___FILE_ONLY___ pkg                                                 
+2021-01-03 18:33:22,473 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,474 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,474 INFO     ___FILE_ONLY___ pkg                     
+2021-01-03 18:33:22,474 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,474 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,474 INFO     ___FILE_ONLY___         
+2021-01-03 18:33:22,474 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,474 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,475 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,475 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,475 INFO     ___FILE_ONLY___ Installed    
+2021-01-03 18:33:22,475 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,475 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,475 INFO     ___FILE_ONLY___ BigQuery Command Line Tool                          
+2021-01-03 18:33:22,476 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,476 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,476 INFO     ___FILE_ONLY___ bq                      
+2021-01-03 18:33:22,476 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,476 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,476 INFO     ___FILE_ONLY___  < 1 MiB
+2021-01-03 18:33:22,476 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,477 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,477 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,477 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,477 INFO     ___FILE_ONLY___ Installed    
+2021-01-03 18:33:22,477 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,477 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,478 INFO     ___FILE_ONLY___ Cloud SDK Core Libraries                            
+2021-01-03 18:33:22,478 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,478 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,478 INFO     ___FILE_ONLY___ core                    
+2021-01-03 18:33:22,478 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,479 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,479 INFO     ___FILE_ONLY___ 15.9 MiB
+2021-01-03 18:33:22,479 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,479 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,480 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,480 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,480 INFO     ___FILE_ONLY___ Installed    
+2021-01-03 18:33:22,480 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,480 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,480 INFO     ___FILE_ONLY___ Cloud Storage Command Line Tool                     
+2021-01-03 18:33:22,481 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,481 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,481 INFO     ___FILE_ONLY___ gsutil                  
+2021-01-03 18:33:22,481 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,481 INFO     ___FILE_ONLY___ │ 
+2021-01-03 18:33:22,481 INFO     ___FILE_ONLY___  3.5 MiB
+2021-01-03 18:33:22,481 INFO     ___FILE_ONLY___  
+2021-01-03 18:33:22,482 INFO     ___FILE_ONLY___ │
+2021-01-03 18:33:22,482 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,482 INFO     ___FILE_ONLY___ └───────────────┴──────────────────────────────────────────────────────┴──────────────────────────┴──────────┘
+2021-01-03 18:33:22,482 INFO     ___FILE_ONLY___ 
+
+2021-01-03 18:33:22,482 INFO     ___FILE_ONLY___ To install or remove components at your current SDK version [321.0.0], run:
+  $ gcloud components install COMPONENT_ID
+  $ gcloud components remove COMPONENT_ID
+
+To update your SDK installation to the latest version [321.0.0], run:
+  $ gcloud components update
+
+

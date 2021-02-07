@@ -63,8 +63,8 @@ nnoremap tm  :!mkdir <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap tn  :tabnext<Space>
 nnoremap td  :tabclose<CR>
 nnoremap tb  :e#<CR>
-" nnoremap gb :e#<CR>
-nnoremap <silent> gb :<C-U>call buf_utils#GoToBuffer(v:count, 'forward')<CR>
+nnoremap gb :e#<CR>
+" nnoremap <silent> gB :<C-U>call buf_utils#GoToBuffer(v:count, 'forward')<CR>
 nnoremap <silent> gB :<C-U>call buf_utils#GoToBuffer(v:count, 'backward')<CR>
 
 " noremap <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
@@ -81,7 +81,15 @@ nnoremap <leader>. :lcd %:p:h<CR>
 " Delete current visual selection and dump in black hole buffer before pasting
 " Used when you want to paste over something without it getting copied to
 " Vim's default buffer
+" delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+nnoremap <leader>x "_x
+vnoremap <leader>x "_x
+" replace currently selected text with default register
+" without yanking it
 vnoremap <leader>p "_dP
+" replace currently selected text
 noremap YY "+y<CR>
 noremap <leader>p "+gP<CR>
 noremap XX "+x<CR>
@@ -129,7 +137,7 @@ endif
 " nmap ss :split<Return><C-w>w
 " nmap ss :split<Return><C-w>w
 nmap sv :vsplit<CR>
-nmap sv :vsplit<CR>
+nmap sh :sp<CR>
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k

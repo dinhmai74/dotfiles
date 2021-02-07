@@ -27,3 +27,24 @@
 snippet cl "console.log" 
 console.log("$1", $1)
 endsnippet
+
+snippet clyellow "Log terminal with yello" b
+console.log('\x1b[33m%s\x1b[0m', $1 )
+endsnippet
+
+snippet clcyan "Log terminal with color" b
+console.log('\x1b[36m%s\x1b[0m', $1 )
+endsnippet
+
+snippet clgreen "Log terminal with color green" b
+console.log('\x1b[36m%s\x1b[32m', $1 )
+endsnippet
+
+snippet clred "Log terminal with color red" b
+console.log('\x1b[36m%s\x1b[31m', $1 )
+endsnippet
+
+snippet clwhite "Log terminal with color white" b
+console.log('\x1b[36m%s\x1b[37m', $1 )
+endsnippet
+

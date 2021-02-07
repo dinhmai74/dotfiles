@@ -96,7 +96,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-repeat' "repeat exts when user accro
   Plug 'tpope/vim-abolish' "turn case crs crc etc
   Plug 'Yggdroot/indentLine' " display indents (for yam) :IndentLineToggle
-  Plug 'justinmk/vim-sneak'
   " git
   Plug 'ryanoasis/vim-devicons'
   Plug 'airblade/vim-rooter'
