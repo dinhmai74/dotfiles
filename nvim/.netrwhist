@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =0
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/dinhma/workspace/project/fun/RedditClone/mobile'
 let g:netrw_dirhist_0='/Users/dinhmai/.config'
 let g:netrw_dirhist_9='/Users/dinhmai/.config/nvim'
 let g:netrw_dirhist_8='/Users/dinhmai/.config'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_5='/Users/dinhmai/.config/coc/extensions/node_modules/es7-re
 let g:netrw_dirhist_4='/Users/dinhmai/.config/coc/extensions/node_modules'
 let g:netrw_dirhist_3='/Users/dinhmai/Workplace/Project/python-project/olx/olx'
 let g:netrw_dirhist_2='/Users/dinhmai/.config'
-let g:netrw_dirhist_1='/Users/dinhmai/.doom.d'

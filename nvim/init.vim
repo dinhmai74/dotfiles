@@ -36,12 +36,12 @@ set termguicolors
 " set scrolloff=8
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=100
+set updatetime=250
 set autoread
 " don't give |ins-completion-menu| messages.
 " always show signcolumns
 set hidden                              " Required to keep multiple buffers open multiple buffers
-set nowrap                              " Display long lines as just one line
+" set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -106,6 +106,17 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'xolox/vim-misc'
   Plug 'xolox/vim-session'
 
+  Plug 'bkad/CamelCaseMotion'
+
+
+  " #------------------------------------------------------------------------------#
+  " #                                     Theme#
+  " #------------------------------------------------------------------------------#
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'mg979/vim-xtabline' " tab line
+
+
   " #------------------------------------------------------------------------------#
   " #                                 react things                                 #
   " #------------------------------------------------------------------------------#
@@ -113,6 +124,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
   Plug 'alvan/vim-closetag'
   Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+  Plug 'kien/rainbow_parentheses.vim'
+
   " syntax highlight
   " Plug 'chemzqm/vim-jsx-improve'
   " Plug 'yuezk/vim-js'
@@ -230,6 +243,9 @@ source $HOME/.config/nvim/plug-config/gitgutter.vim
 source $HOME/.config/nvim/plug-config/sneak.vim
 source $HOME/.config/nvim/plug-config/floatinput.vim
 source $HOME/.config/nvim/plug-config/vim-wiki.vim
+source $HOME/.config/nvim/plug-config/xtabline.vim
+source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/themes/CamelCaseMotion.vim
 autocmd Filetype json let g:indentLine_setConceal = 0
 
 source ~/.config/nvim/key-mapping.vim

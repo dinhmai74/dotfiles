@@ -18,7 +18,7 @@
   "diagnostic.infoSign": "ⓘ",
   "tailwindCSS.emmetCompletions": true,
   "typescript.showUnused": false,
-  "coc.preferences.formatOnType": false,
+  "coc.preferences.formatOnType": true,
   "coc.preferences.colorSupport": true,
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,

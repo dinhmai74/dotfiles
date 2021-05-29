@@ -265,7 +265,7 @@ alias ohmyzsh="code ~/.oh-my-zsh"
 alias zshreset="source ~/.zshrc"
 alias yclean="rm -rf node_modules/ && yarn install"
 alias npmclean="rm -rf node_modules/ && npm install"
-alias ls="colorls --dark --sort-dirs --report"
+alias lsd="colorls --dark --sort-dirs --report"
 alias lc="colorls --tree --dark"
 alias mvnci="mvn clean install -DskipTests"
 alias mvnrun="mvn spring-boot:run"
@@ -281,7 +281,8 @@ alias c="code-insiders ."
 alias ra="flutter emulators --launch Nexus_5X_API_29_x86"
 alias cowf="Fortune | cowsay -f vader | lolcat"
 alias ns="npm start"
-alias rn='npx react-native run-ios --simulator="iPhone 6"'
+# alias rn='npx react-native run-ios --simulator="iPhone 6"'
+alias rn='npx react-native run-ios'
 alias rna='npx react-native run-android'
 alias rn6='npx react-native run-ios --simulator="iPhone 6"'
 alias rn6s='npx react-native run-ios --simulator="iPhone 6s"'
@@ -329,7 +330,8 @@ alias ystory= "yarn storybook"
 alias py= "py3"
 alias f="fuck"
 
-alias wp="cd ~/workspace/project/expo/Expo-bowie"
+# alias wp="cd ~/workspace/project/expo/Expo-bowie"
+alias startwindow='prlctl start "Windows 10"'
 
 autoload -U compinit && compinit
 
@@ -353,6 +355,7 @@ PATH="/Users/dinhmai/.deno/bin:$PATH"
 export GOPATH="$HOME/go"
 PATH="$PATH:$HOME/bin:$GOPATH/bin"
 PATH="$PATH:/usr/local/lib/ruby/gems/2.7.0/bin"
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH
 export NPM_CONFIG_PREFIX=~/.npm-global
 export TOOLCHAINS=swift

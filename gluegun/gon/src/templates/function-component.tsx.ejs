@@ -1,6 +1,5 @@
-import { Box } from 'components/box/Box'
 import React from "react"
-import { AppText } from '../app-text/AppText'
+import { View } from "react-native"
 <% if (props.haveStyle) { -%>
 import { <%= props.camelCaseName %>Styles as styles } from "./<%= props.name %>.styles"
 <% } -%>
@@ -12,8 +11,6 @@ export const <%= props.pascalName %>  = (props: <%= props.pascalName %>Props) =>
   // const { someStore } = useStores()
 
   return (
-    <Box>
-      <AppText>Hi Func</AppText>
-    </Box>
+      <View />
   )
 }
