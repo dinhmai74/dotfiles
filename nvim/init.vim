@@ -132,6 +132,23 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Plug 'maxmellon/vim-jsx-pretty'
   " Plug 'mxw/vim-jsx'
   " Plug 'jparise/vim-graphql'
+  Plug 'nvim-lua/popup.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+
+  Plug 'kyazdani42/nvim-web-devicons'
+  " Plug 'romgrk/barbar.nvim'
+  Plug 'akinsho/nvim-bufferline.lua'
+  Plug 'monaqa/dial.nvim'
+  Plug 'edluffy/specs.nvim'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+  Plug 'p00f/nvim-ts-rainbow'
+  " Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+" Plug 'ryanoasis/vim-devicons' Icons without colours
+" Plug 'akinsho/nvim-bufferline.lua'
+  Plug 'mxw/vim-jsx'
+
+  "end plug
 call plug#end()
 
 "*****************************************************************************
@@ -249,4 +266,3 @@ source $HOME/.config/nvim/themes/CamelCaseMotion.vim
 autocmd Filetype json let g:indentLine_setConceal = 0
 
 source ~/.config/nvim/key-mapping.vim
-
